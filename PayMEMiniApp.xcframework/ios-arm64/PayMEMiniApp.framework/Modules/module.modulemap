@@ -1,0 +1,11 @@
+framework module PayMEMiniApp {
+  umbrella header "PayMEMiniApp.h"
+
+  export *
+  module * { export * }
+}
+
+module PayMEMiniApp.Swift {
+  header "PayMEMiniApp-Swift.h"
+  requires objc
+}

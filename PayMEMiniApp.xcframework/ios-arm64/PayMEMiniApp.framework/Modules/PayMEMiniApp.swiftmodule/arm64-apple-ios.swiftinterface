@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayMEMiniApp
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Combine
+import ContactsUI
+import CoreImage
+import Foundation
+import GCDWebServer
+import LocalAuthentication
+import Lottie
+import NSLogger
+@_exported import PayMEMiniApp
+import Photos
+import Swift
+import SwiftyJSON
+import UIKit
+import Vision
+import WebKit
+import ZIPFoundation
+import _Concurrency
+import _StringProcessing
+@objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
+  @_Concurrency.MainActor(unsafe) public var backgroundSessionCompletionHandler: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public func open()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayMEConfig {
+  public static let instance: PayMEMiniApp.PayMEConfig
+  public var theme: PayMEMiniApp.Theme
+  @objc deinit
+}
+public protocol PayMEDelegate {
+  func onSendTags(data: [Swift.String : Swift.String])
+  func onDeleteTags(data: [Swift.String])
+}
+@_hasMissingDesignatedInitializers public class BiometricAuthenication {
+  @objc deinit
+}
+public struct Console {
+}
+@available(iOS 13.0, *)
+extension PayMEMiniApp.PayME : Foundation.URLSessionDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
+}
+@available(iOS 13.0, *)
+extension PayMEMiniApp.PayME : Foundation.URLSessionDownloadDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didWriteData bytesWritten: Swift.Int64, totalBytesWritten: Swift.Int64, totalBytesExpectedToWrite: Swift.Int64)
+}
+public class Theme {
+  public var primary: UIKit.UIColor
+  public var background: UIKit.UIColor
+  public var textPrimary: UIKit.UIColor
+  public init(primary: UIKit.UIColor, background: UIKit.UIColor, textPrimary: UIKit.UIColor)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayMECombine {
+  final public let notificationSubject: Combine.CurrentValueSubject<SwiftyJSON.JSON?, Swift.Never>
+  @objc deinit
+}
