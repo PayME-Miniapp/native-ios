@@ -56,5 +56,9 @@ Pod::Spec.new do |spec|
   spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-
+  spec.dependency 'ZIPFoundation'
+  spec.dependency 'GCDWebServer'
+  spec.dependency 'SwiftyJSON', '~> 4.0'
+  spec.dependency 'NSLogger/Swift'
+  spec.dependency 'lottie-ios', '<4.0'
 end
