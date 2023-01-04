@@ -578,17 +578,32 @@
           {
             "kind": "Function",
             "name": "open",
-            "printedName": "open()",
+            "printedName": "open(from:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A2MEC4openyyF",
-            "mangledName": "$s12PayMEMiniApp0A2MEC4openyyF",
+            "usr": "s:12PayMEMiniApp0A2MEC4open4fromySo16UIViewControllerCSg_tF",
+            "mangledName": "$s12PayMEMiniApp0A2MEC4open4fromySo16UIViewControllerCSg_tF",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "Custom",
@@ -2480,14 +2495,14 @@
     {
       "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
-      "offset": 3287,
+      "offset": 3574,
       "length": 31,
       "value": "\"com.payme.app.user.downloadjs\""
     },
     {
       "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "BooleanLiteral",
-      "offset": 3358,
+      "offset": 3645,
       "length": 5,
       "value": "false"
     },

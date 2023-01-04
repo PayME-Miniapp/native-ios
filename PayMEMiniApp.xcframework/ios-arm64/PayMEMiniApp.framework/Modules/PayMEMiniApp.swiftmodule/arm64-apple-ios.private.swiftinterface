@@ -29,7 +29,7 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) @objc dynamic public init()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func open()
+  @_Concurrency.MainActor(unsafe) public func open(from currentVC: UIKit.UIViewController? = nil)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PayMEConfig {
