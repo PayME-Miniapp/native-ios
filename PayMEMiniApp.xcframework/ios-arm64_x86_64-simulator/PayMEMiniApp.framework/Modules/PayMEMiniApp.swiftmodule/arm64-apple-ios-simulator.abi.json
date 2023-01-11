@@ -2297,1064 +2297,1064 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/CameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/CameraController.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 17,
       "value": "\"VideoDataOutput\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/CameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/CameraController.swift",
       "kind": "Array",
       "offset": 261,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/CameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/CameraController.swift",
       "kind": "StringLiteral",
       "offset": 27,
       "length": 16,
       "value": "\"PayMEMiniApp.CameraController\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
       "kind": "StringLiteral",
       "offset": 192,
       "length": 8,
       "value": "\"active\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
       "kind": "StringLiteral",
       "offset": 192,
       "length": 8,
       "value": "\"active\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2716,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "FloatLiteral",
       "offset": 2750,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 2801,
       "length": 9,
       "value": "\"#E8E9EB\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 2854,
       "length": 9,
       "value": "\"#33CB33\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 2903,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2938,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 3014,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 3034,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 3052,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 3086,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 3105,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 3282,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 3489,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 3530,
       "length": 9,
       "value": "\"#6E6E6E\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 3613,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 3652,
       "length": 28,
       "value": "\"Đang tải dữ liệu...\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 3868,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 3909,
       "length": 9,
       "value": "\"#6E6E6E\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 3992,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 163,
       "length": 17,
       "value": "\"PayMEMiniApp.PatchProgressView\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "IntegerLiteral",
       "offset": 318,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 7,
       "value": "\"0.0.0\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "BooleanLiteral",
       "offset": 568,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
       "offset": 3574,
       "length": 31,
       "value": "\"com.payme.app.user.downloadjs\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "BooleanLiteral",
       "offset": 3645,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 5,
       "value": "\"PayMEMiniApp.PayME\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "FloatLiteral",
       "offset": 227,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "BooleanLiteral",
       "offset": 259,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 275,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "BooleanLiteral",
       "offset": 284,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "IntegerLiteral",
       "offset": 458,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "IntegerLiteral",
       "offset": 561,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "IntegerLiteral",
       "offset": 2546,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "StringLiteral",
       "offset": 120,
       "length": 20,
       "value": "\"PayMEMiniApp.CircularProgressView\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 5869,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 6055,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6111,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6164,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6173,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6184,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6194,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 6217,
       "length": 8,
       "value": "\"Đóng\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 6438,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 6484,
       "length": 24,
       "value": "\"arrow.counterclockwise\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 6668,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6711,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6791,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 6927,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 7112,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 7158,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 17,
       "value": "\"PayMEMiniApp.WebViewController\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
       "offset": 3173,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 264,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6574,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6778,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6917,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7074,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 7155,
       "length": 10,
       "value": "\"iconBack\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7231,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7241,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7253,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7264,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7410,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 7491,
       "length": 13,
       "value": "\"iconCapture\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7676,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
       "offset": 7748,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7896,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8003,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8033,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8210,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8264,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8273,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8285,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8295,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8348,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8431,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8583,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
       "offset": 8642,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8678,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8718,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
       "offset": 8742,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 28,
       "value": "\"PayMEMiniApp.CardDetectorCameraController\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/Console.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/Console.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 16,
       "value": "\"nslogger_queue\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 426,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 445,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 498,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 5564,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 5768,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 5907,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6064,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 6145,
       "length": 10,
       "value": "\"iconBack\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6221,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6231,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6243,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6254,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6420,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6625,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6732,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6811,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 168,
       "length": 28,
       "value": "\"PayMEMiniApp.FaceDetectorCameraController\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/PartialTransparentView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/PartialTransparentView.swift",
       "kind": "FloatLiteral",
       "offset": 205,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/PartialTransparentView.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/CameraController\/PartialTransparentView.swift",
       "kind": "FloatLiteral",
       "offset": 270,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/AppViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/AppViewController.swift",
       "kind": "StringLiteral",
       "offset": 323,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/AppViewController.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/ViewController\/AppViewController.swift",
       "kind": "StringLiteral",
       "offset": 204,
       "length": 17,
       "value": "\"PayMEMiniApp.AppViewController\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 7,
       "value": "\"jsLog\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 266,
       "length": 15,
       "value": "\"jsPreferences\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 22,
       "value": "\"jsRequestPreferences\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 27,
       "value": "\"jsBiometricAuthentication\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 18,
       "value": "\"jsRequestCardKYC\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 18,
       "value": "\"jsRequestFaceKYC\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 15,
       "value": "\"jsOpenSetting\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 544,
       "length": 21,
       "value": "\"jsRequestDeviceInfo\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 19,
       "value": "\"jsRequestContacts\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 21,
       "value": "\"jsRequestPermission\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 15,
       "value": "\"jsOpenWebView\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 724,
       "length": 21,
       "value": "\"jsOneSignalSendTags\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 775,
       "length": 23,
       "value": "\"jsOneSignalDeleteTags\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 7,
       "value": "\"jsLog\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 266,
       "length": 15,
       "value": "\"jsPreferences\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 22,
       "value": "\"jsRequestPreferences\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 27,
       "value": "\"jsBiometricAuthentication\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 18,
       "value": "\"jsRequestCardKYC\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 18,
       "value": "\"jsRequestFaceKYC\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 15,
       "value": "\"jsOpenSetting\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 544,
       "length": 21,
       "value": "\"jsRequestDeviceInfo\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 19,
       "value": "\"jsRequestContacts\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 21,
       "value": "\"jsRequestPermission\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 15,
       "value": "\"jsOpenWebView\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 724,
       "length": 21,
       "value": "\"jsOneSignalSendTags\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 775,
       "length": 23,
       "value": "\"jsOneSignalDeleteTags\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 8,
       "value": "\"CAMERA\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 222,
       "length": 15,
       "value": "\"READ_CONTACTS\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 7,
       "value": "\"PHOTO\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 8,
       "value": "\"CAMERA\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 222,
       "length": 15,
       "value": "\"READ_CONTACTS\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 7,
       "value": "\"PHOTO\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 9,
       "value": "\"GRANTED\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 9,
       "value": "\"BLOCKED\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 9,
       "value": "\"LIMITED\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 9,
       "value": "\"GRANTED\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 9,
       "value": "\"BLOCKED\""
     },
     {
-      "filePath": "\/Users\/montossc\/Frameworks\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/WebViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 9,
