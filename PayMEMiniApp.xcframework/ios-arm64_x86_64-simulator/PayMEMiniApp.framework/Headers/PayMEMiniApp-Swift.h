@@ -259,7 +259,6 @@ using UInt = size_t;
 
 SWIFT_CLASS("_TtC12PayMEMiniApp5PayME") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface PayME : UIViewController
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -565,7 +564,6 @@ using UInt = size_t;
 
 SWIFT_CLASS("_TtC12PayMEMiniApp5PayME") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface PayME : UIViewController
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;

@@ -21,15 +21,26 @@ import WebKit
 import ZIPFoundation
 import _Concurrency
 import _StringProcessing
+public enum PayMEError {
+  case miniApp(PayMEMiniApp.MiniAppError)
+  case userCancel
+  public var code: Swift.String {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var oneSignalDelegate: PayMEMiniApp.PayMEOneSignalDelegate?
   @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
   @_Concurrency.MainActor(unsafe) public var backgroundSessionCompletionHandler: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
-  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func open(from currentVC: UIKit.UIViewController? = nil)
+  @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PayMEConfig {
@@ -37,9 +48,15 @@ import _StringProcessing
   public var theme: PayMEMiniApp.Theme
   @objc deinit
 }
-public protocol PayMEDelegate {
+public protocol PayMEOneSignalDelegate {
   func onSendTags(data: [Swift.String : Swift.String])
   func onDeleteTags(data: [Swift.String])
+}
+public protocol PayMEDelegate {
+  func onError(_ error: PayMEMiniApp.PayMEError)
+  func onResponse(_ response: Swift.Dictionary<Swift.String, Any>)
+}
+public struct MiniAppError {
 }
 @_hasMissingDesignatedInitializers public class BiometricAuthenication {
   @objc deinit
@@ -55,6 +72,28 @@ extension PayMEMiniApp.PayME : Foundation.URLSessionDownloadDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didWriteData bytesWritten: Swift.Int64, totalBytesWritten: Swift.Int64, totalBytesExpectedToWrite: Swift.Int64)
 }
+public enum PayMEAction {
+  case PayME
+  case Link
+  case Pay
+  public var value: Swift.String {
+    get
+  }
+  public static func == (a: PayMEMiniApp.PayMEAction, b: PayMEMiniApp.PayMEAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PayMEKey {
+  public init(appId: Swift.String, publicKey: Swift.String, privateKey: Swift.String)
+}
+public struct PayMEPaymentParam {
+  public init(amount: Swift.Int, transactionId: Swift.String, note: Swift.String?)
+}
+public struct PayMEOpeningParam {
+  public init(action: PayMEMiniApp.PayMEAction, phone: Swift.String, data: Any? = nil)
+}
 public class Theme {
   public var primary: UIKit.UIColor
   public var background: UIKit.UIColor
@@ -66,3 +105,5 @@ public class Theme {
   final public let notificationSubject: Combine.CurrentValueSubject<SwiftyJSON.JSON?, Swift.Never>
   @objc deinit
 }
+extension PayMEMiniApp.PayMEAction : Swift.Equatable {}
+extension PayMEMiniApp.PayMEAction : Swift.Hashable {}
