@@ -1938,7 +1938,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1948,16 +1948,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDySSypGtF",
-            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDySSypGtF",
+            "usr": "s:12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDyS2SGtF",
+            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDyS2SGtF",
             "moduleName": "PayMEMiniApp",
             "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEDelegate>",
             "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEDelegate>",

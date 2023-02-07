@@ -66,7 +66,7 @@ public protocol PayMEOneSignalDelegate {
 }
 public protocol PayMEDelegate {
   func onError(action: PayMEMiniApp.PayMEAction, error: PayMEMiniApp.PayMEError)
-  func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Any>)
+  func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Swift.String>)
 }
 public struct MiniAppError {
 }

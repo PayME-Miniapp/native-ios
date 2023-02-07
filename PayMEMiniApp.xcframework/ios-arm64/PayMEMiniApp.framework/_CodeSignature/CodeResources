@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		yKa+8Py7n8Gfk08O5KqQm8pRW2M=
+		PVPbUHR/a3LUSTh8KVQs0jx5vsc=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		g3OdMnwR0tLxf0GRGacbN6Is4pA=
+		ikDlVgxPYjEQFG3t2kP7upFaGcE=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		g3OdMnwR0tLxf0GRGacbN6Is4pA=
+		ikDlVgxPYjEQFG3t2kP7upFaGcE=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		AGjavqyAiwvI9Wb54/rjH2klzxQ=
+		SnSBoesLWQ7BCJYO5mav1svMY5I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		EtVmE3zEmz5rpla4q5JpcQf2iog=
+		TyY//x/ZXYi91p7qBnrYuMk01tA=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4AGuyJCmlzfxlhtP9Kk+1uYSiL9gJ8y/5Ct01vxLPi4=
+			/7EP6EoSR7DJFgTW2kkJfZC4cUXyT4k1bpCx7SLUANE=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f/C1QPwDbxOKrSwfUiAJ0lA6aWm5HmQi+Ib8YXwrru8=
+			uKt5gurCDpURp47pkvPdhLPIJmAmnXb6wYV9g72QMHs=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f/C1QPwDbxOKrSwfUiAJ0lA6aWm5HmQi+Ib8YXwrru8=
+			uKt5gurCDpURp47pkvPdhLPIJmAmnXb6wYV9g72QMHs=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5c1kTDwJ88IB1A3LRoY5mMw6UIyE3wC6ijLMScrADLA=
+			IC5bkTorwyiy3IMeKXaoE9vaVgiQL6Bgg3P+EUEijrU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozbm8iYp/sAuZHSNoUXtDM+KvyydZa4RPs/uipLYJSU=
+			ShKqlDO0BsydgEQS2eKhhA0M0HNiFDrYBF9kz+QsT5w=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>
