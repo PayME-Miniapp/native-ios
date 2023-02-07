@@ -1273,6 +1273,279 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "local",
+            "printedName": "local",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.Environment.Type) -> PayMEMiniApp.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "PayMEMiniApp.Environment",
+                        "usr": "s:12PayMEMiniApp11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp11EnvironmentO5localyA2CmF",
+            "mangledName": "$s12PayMEMiniApp11EnvironmentO5localyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "dev",
+            "printedName": "dev",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.Environment.Type) -> PayMEMiniApp.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "PayMEMiniApp.Environment",
+                        "usr": "s:12PayMEMiniApp11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp11EnvironmentO3devyA2CmF",
+            "mangledName": "$s12PayMEMiniApp11EnvironmentO3devyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "sbx",
+            "printedName": "sbx",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.Environment.Type) -> PayMEMiniApp.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "PayMEMiniApp.Environment",
+                        "usr": "s:12PayMEMiniApp11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp11EnvironmentO3sbxyA2CmF",
+            "mangledName": "$s12PayMEMiniApp11EnvironmentO3sbxyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.Environment.Type) -> PayMEMiniApp.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "PayMEMiniApp.Environment",
+                        "usr": "s:12PayMEMiniApp11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp11EnvironmentO4prodyA2CmF",
+            "mangledName": "$s12PayMEMiniApp11EnvironmentO4prodyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12PayMEMiniApp11EnvironmentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12PayMEMiniApp11EnvironmentO8rawValueACSgSS_tcfc",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12PayMEMiniApp11EnvironmentO8rawValueSSvp",
+            "mangledName": "$s12PayMEMiniApp11EnvironmentO8rawValueSSvp",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp11EnvironmentO8rawValueSSvg",
+                "mangledName": "$s12PayMEMiniApp11EnvironmentO8rawValueSSvg",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12PayMEMiniApp11EnvironmentO",
+        "mangledName": "$s12PayMEMiniApp11EnvironmentO",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PayMEConfig",
         "printedName": "PayMEConfig",
         "children": [
@@ -1411,6 +1684,92 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "env",
+            "printedName": "env",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "PayMEMiniApp.Environment",
+                "usr": "s:12PayMEMiniApp11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvp",
+            "mangledName": "$s12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvp",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvg",
+                "mangledName": "$s12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvg",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PayMEMiniApp.Environment",
+                    "usr": "s:12PayMEMiniApp11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvs",
+                "mangledName": "$s12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvs",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvM",
+                "mangledName": "$s12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvM",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -1530,12 +1889,18 @@
           {
             "kind": "Function",
             "name": "onError",
-            "printedName": "onError(_:)",
+            "printedName": "onError(action:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEAction",
+                "printedName": "PayMEMiniApp.PayMEAction",
+                "usr": "s:12PayMEMiniApp0A8MEActionO"
               },
               {
                 "kind": "TypeNominal",
@@ -1545,8 +1910,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A10MEDelegateP7onErroryyAA0A7MEErrorOF",
-            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP7onErroryyAA0A7MEErrorOF",
+            "usr": "s:12PayMEMiniApp0A10MEDelegateP7onError6action5erroryAA0A8MEActionO_AA0A7MEErrorOtF",
+            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP7onError6action5erroryAA0A8MEActionO_AA0A7MEErrorOtF",
             "moduleName": "PayMEMiniApp",
             "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEDelegate>",
             "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEDelegate>",
@@ -1557,12 +1922,18 @@
           {
             "kind": "Function",
             "name": "onResponse",
-            "printedName": "onResponse(_:)",
+            "printedName": "onResponse(action:response:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEAction",
+                "printedName": "PayMEMiniApp.PayMEAction",
+                "usr": "s:12PayMEMiniApp0A8MEActionO"
               },
               {
                 "kind": "TypeNominal",
@@ -1585,8 +1956,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A10MEDelegateP10onResponseyySDySSypGF",
-            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP10onResponseyySDySSypGF",
+            "usr": "s:12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDySSypGtF",
+            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDySSypGtF",
             "moduleName": "PayMEMiniApp",
             "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEDelegate>",
             "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEDelegate>",
@@ -2289,8 +2660,8 @@
           },
           {
             "kind": "Var",
-            "name": "Link",
-            "printedName": "Link",
+            "name": "Open",
+            "printedName": "Open",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -2320,8 +2691,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12PayMEMiniApp0A8MEActionO4LinkyA2CmF",
-            "mangledName": "$s12PayMEMiniApp0A8MEActionO4LinkyA2CmF",
+            "usr": "s:12PayMEMiniApp0A8MEActionO4OpenyA2CmF",
+            "mangledName": "$s12PayMEMiniApp0A8MEActionO4OpenyA2CmF",
             "moduleName": "PayMEMiniApp"
           },
           {
@@ -3428,10 +3799,66 @@
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 7,
+      "value": "\"LOCAL\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 5,
+      "value": "\"DEV\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 9,
+      "value": "\"SANDBOX\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 12,
+      "value": "\"PRODUCTION\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 7,
+      "value": "\"LOCAL\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 5,
+      "value": "\"DEV\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 9,
+      "value": "\"SANDBOX\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 12,
+      "value": "\"PRODUCTION\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 275,
-      "length": 4,
-      "value": "true"
+      "offset": 442,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
@@ -4101,6 +4528,13 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/AppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
+      "offset": 870,
+      "length": 9,
+      "value": "\"jsClose\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/AppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
       "offset": 237,
       "length": 7,
       "value": "\"jsLog\""
@@ -4202,6 +4636,13 @@
       "offset": 842,
       "length": 12,
       "value": "\"jsResponse\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/AppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 870,
+      "length": 9,
+      "value": "\"jsClose\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/AppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",

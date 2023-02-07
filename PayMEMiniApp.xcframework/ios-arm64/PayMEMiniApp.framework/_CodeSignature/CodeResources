@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mWqWN/BdCEKQNwlA3p2B+GPf06E=
+		sZCA1PTvpFxEVTT8bpH8FBvouSU=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		9y88spKoic535nrnIaHLVzRxSSs=
+		yKa+8Py7n8Gfk08O5KqQm8pRW2M=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		0CMGnptRpcyjPnK46xO0jYM5jVk=
+		g3OdMnwR0tLxf0GRGacbN6Is4pA=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0CMGnptRpcyjPnK46xO0jYM5jVk=
+		g3OdMnwR0tLxf0GRGacbN6Is4pA=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2y41212LaLOuBBGpCTjbCtzKEbA=
+		AGjavqyAiwvI9Wb54/rjH2klzxQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		TBTh8LdwQeDimJeV5CllcHrTACU=
+		EtVmE3zEmz5rpla4q5JpcQf2iog=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Exm0Z4Cwo766neC9kp61WBuyVB+LrxFtWQHYd5uhmrU=
+			4AGuyJCmlzfxlhtP9Kk+1uYSiL9gJ8y/5Ct01vxLPi4=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TB0BdG7VaYqCwunUMJCancj7jvpuT8PTN3H925ufuq0=
+			f/C1QPwDbxOKrSwfUiAJ0lA6aWm5HmQi+Ib8YXwrru8=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TB0BdG7VaYqCwunUMJCancj7jvpuT8PTN3H925ufuq0=
+			f/C1QPwDbxOKrSwfUiAJ0lA6aWm5HmQi+Ib8YXwrru8=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nHDFDEcFSMbhW8ko6jjQmEz8PwAtqy3sc19hPzqPZdE=
+			5c1kTDwJ88IB1A3LRoY5mMw6UIyE3wC6ijLMScrADLA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d4xkzrbkVEGQLE3E3T4KaaMqcxqttOvoHQXa8rCaZPg=
+			ozbm8iYp/sAuZHSNoUXtDM+KvyydZa4RPs/uipLYJSU=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>

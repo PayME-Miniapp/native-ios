@@ -43,9 +43,21 @@ public enum PayMEError {
   @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil)
   @objc deinit
 }
+public enum Environment : Swift.String {
+  case local
+  case dev
+  case sbx
+  case prod
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class PayMEConfig {
   public static let instance: PayMEMiniApp.PayMEConfig
   public var theme: PayMEMiniApp.Theme
+  public var env: PayMEMiniApp.Environment
   @objc deinit
 }
 public protocol PayMEOneSignalDelegate {
@@ -53,8 +65,8 @@ public protocol PayMEOneSignalDelegate {
   func onDeleteTags(data: [Swift.String])
 }
 public protocol PayMEDelegate {
-  func onError(_ error: PayMEMiniApp.PayMEError)
-  func onResponse(_ response: Swift.Dictionary<Swift.String, Any>)
+  func onError(action: PayMEMiniApp.PayMEAction, error: PayMEMiniApp.PayMEError)
+  func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Any>)
 }
 public struct MiniAppError {
 }
@@ -74,7 +86,7 @@ extension PayMEMiniApp.PayME : Foundation.URLSessionDownloadDelegate {
 }
 public enum PayMEAction {
   case PayME
-  case Link
+  case Open
   case Pay
   public var value: Swift.String {
     get
@@ -105,5 +117,8 @@ public class Theme {
   final public let notificationSubject: Combine.CurrentValueSubject<SwiftyJSON.JSON?, Swift.Never>
   @objc deinit
 }
+extension PayMEMiniApp.Environment : Swift.Equatable {}
+extension PayMEMiniApp.Environment : Swift.Hashable {}
+extension PayMEMiniApp.Environment : Swift.RawRepresentable {}
 extension PayMEMiniApp.PayMEAction : Swift.Equatable {}
 extension PayMEMiniApp.PayMEAction : Swift.Hashable {}
