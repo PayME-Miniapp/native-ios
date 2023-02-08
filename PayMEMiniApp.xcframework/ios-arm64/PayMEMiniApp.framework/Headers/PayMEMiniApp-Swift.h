@@ -266,17 +266,12 @@ SWIFT_CLASS("_TtC12PayMEMiniApp5PayME") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @end
 
 @class NSURLSession;
-
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface PayME (SWIFT_EXTENSION(PayMEMiniApp)) <NSURLSessionDelegate>
-- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
-@end
-
 @class NSURLSessionDownloadTask;
 @class NSURL;
 
 SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface PayME (SWIFT_EXTENSION(PayMEMiniApp)) <NSURLSessionDownloadDelegate>
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
 - (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
 - (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
 @end

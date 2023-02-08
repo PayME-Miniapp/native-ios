@@ -1,1 +1,61 @@
-# native-ios
+# PayMEMiniApp (iOS)
+
+[Cài đặt](#cai-dat)
+- [Cài thư viện từ CocoaPods](#cai-thu-vien-tu-cocoapods)
+- [Khởi tạo PayMEMiniApp](#khoi-tao-paymeminiapp)
+# Cài đặt
+## Cài thư viện từ CocoaPods 
+PayMEMiniApp là một dynamic framework được cung cấp thông qua CocoaPods. Để cài đặt vào project, thêm khai báo sử dụng framework vào Podfile
+```swift
+use_framework!
+
+pod PayMEMiniApp
+```
+## Khởi tạo PayMEMiniApp
+### Thiết lập bộ key từ PayME 
+Bộ key bao gồm: appId, publicKey, privateKey. Liên hệ PayME để được hướng dẫn.
+### Khởi tạo object
+- Khởi tạo PayMEKey: là một object chứa bộ key đã được cấp ở bước trên
+    ```swift
+    PayMEKey(appId: String, publicKey: String, privateKey: String)
+    ```
+- Khởi tạo PayME: là UIViewController chứa toàn bộ PayMEMiniApp. Việc khởi tạo object này cũng sẽ bắt đầu việc kiểm tra và download phiên bản của PayMEMiniApp, do đó khuyến khích khởi tạo càng sớm càng tốt khi chạy app.
+    ```swift
+    PayME(key: PayMEKey): UIViewController
+    ```
+  Ví dụ:
+    ```swift
+    let payme = PayME(key: PayMEKey(appId: "559163930378",
+                                  publicKey: """
+                                  -----BEGIN PUBLIC KEY-----
+                                  MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAK0RONYVPYn/3IWloU83Qy16hKNHhlCx
+                                  gTJay6/rERk8tmsMbILLzTYW7H9WOqN2gS0s0ymD+3TxP+q+MxEp0qECAwEAAQ==
+                                  -----END PUBLIC KEY-----
+                                  """,
+                                  privateKey: """
+                                  -----BEGIN RSA PRIVATE KEY-----
+                                  MIIBOgIBAAJBAMXIuvTT8Z5U/AqyFvBbDApQ2STLm9Ca2nmu2pxqwhrhN+80mOLb
+                                  MzbQDRCNpro6S61d34A7cEIX/5gxxrAaVAkCAwEAAQJAfzB70e/uJHTgdHxcNgtG
+                                  7edaDMiHFhpPPwtL+GTLGH70yhFDs2eIXFHLY/wfRRcxzwGyGOyvXlGbDjsMFdpn
+                                  lQIhAPIoUVsADDfI4KNZEKHaJRVAmz2D0xdiB6R716HA7A0XAiEA0RcPxHzYLhVp
+                                  +adoGpJBq7e87BzQrVBJQFSOg8Kim98CIQCYmynyFEye1zwiFR3zMfuOsiFjGfFs
+                                  2f2A/f69VEwuTwIgFN/3jAdm0dsDdJBZHWYCtnEmpHAQCW2dkpWekNsKvwMCIGXm
+                                  rg+mppNNZQx6+6Swsp8L8Hgc+HikKy02Okijjw0W
+                                  -----END RSA PRIVATE KEY-----
+                                  """))
+    ```
+  ### Thiết lập cập nhật phiên bản PayMEMiniApp
+    Thêm dòng sau vào AppDelegate
+    ```swift
+    import UIKit
+    import PayMEMiniApp
+    
+    @main
+    class AppDelegate: UIResponder, UIApplicationDelegate {
+    ...
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+       completionHandler()
+    }
+    ...
+    }
+    ```

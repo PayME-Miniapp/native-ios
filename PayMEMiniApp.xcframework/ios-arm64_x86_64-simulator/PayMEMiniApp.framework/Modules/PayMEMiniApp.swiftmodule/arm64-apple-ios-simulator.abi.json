@@ -601,150 +601,6 @@
           },
           {
             "kind": "Var",
-            "name": "backgroundSessionCompletionHandler",
-            "printedName": "backgroundSessionCompletionHandler",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvp",
-            "mangledName": "$s12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvp",
-            "moduleName": "PayMEMiniApp",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvg",
-                "mangledName": "$s12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvg",
-                "moduleName": "PayMEMiniApp",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvs",
-                "mangledName": "$s12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvs",
-                "moduleName": "PayMEMiniApp",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvM",
-                "mangledName": "$s12PayMEMiniApp0A2MEC34backgroundSessionCompletionHandleryycSgvM",
-                "moduleName": "PayMEMiniApp",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "combine",
             "printedName": "combine",
             "children": [
@@ -2955,7 +2811,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(amount:transactionId:note:)",
+            "printedName": "init(amount:transactionId:note:ipnUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2987,12 +2843,28 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4noteACSi_S2SSgtcfc",
-            "mangledName": "$s12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4noteACSi_S2SSgtcfc",
+            "usr": "s:12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4note6ipnUrlACSi_S2SSgAHtcfc",
+            "mangledName": "$s12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4note6ipnUrlACSi_S2SSgAHtcfc",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "AccessControl"
@@ -3744,57 +3616,50 @@
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "kind": "StringLiteral",
+      "offset": 323,
+      "length": 31,
+      "value": "\"com.payme.app.user.downloadjs\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
+      "offset": 382,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
-      "offset": 351,
+      "offset": 415,
       "length": 7,
       "value": "\"0.0.0\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "BooleanLiteral",
-      "offset": 626,
+      "offset": 627,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
-      "offset": 4050,
-      "length": 31,
-      "value": "\"com.payme.app.user.downloadjs\""
-    },
-    {
-      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4121,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
+      "offset": 225,
       "length": 5,
       "value": "\"PayMEMiniApp.PayME\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "FloatLiteral",
-      "offset": 227,
+      "offset": 273,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "BooleanLiteral",
-      "offset": 259,
+      "offset": 305,
       "length": 5,
       "value": "false"
     },

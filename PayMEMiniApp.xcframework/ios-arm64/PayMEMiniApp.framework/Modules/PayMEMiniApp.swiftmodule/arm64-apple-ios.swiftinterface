@@ -35,7 +35,6 @@ public enum PayMEError {
 @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var oneSignalDelegate: PayMEMiniApp.PayMEOneSignalDelegate?
   @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
-  @_Concurrency.MainActor(unsafe) public var backgroundSessionCompletionHandler: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
   @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
@@ -76,11 +75,8 @@ public struct MiniAppError {
 public struct Console {
 }
 @available(iOS 13.0, *)
-extension PayMEMiniApp.PayME : Foundation.URLSessionDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
-}
-@available(iOS 13.0, *)
 extension PayMEMiniApp.PayME : Foundation.URLSessionDownloadDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didWriteData bytesWritten: Swift.Int64, totalBytesWritten: Swift.Int64, totalBytesExpectedToWrite: Swift.Int64)
 }
@@ -101,7 +97,7 @@ public struct PayMEKey {
   public init(appId: Swift.String, publicKey: Swift.String, privateKey: Swift.String)
 }
 public struct PayMEPaymentParam {
-  public init(amount: Swift.Int, transactionId: Swift.String, note: Swift.String?)
+  public init(amount: Swift.Int, transactionId: Swift.String, note: Swift.String? = nil, ipnUrl: Swift.String? = nil)
 }
 public struct PayMEOpeningParam {
   public init(action: PayMEMiniApp.PayMEAction, phone: Swift.String, data: Any? = nil)
