@@ -1,8 +1,8 @@
 # PayMEMiniApp (iOS)
-
 [Cài đặt](#cai-dat)
 - [Cài thư viện từ CocoaPods](#cai-thu-vien-tu-cocoapods)
 - [Khởi tạo PayMEMiniApp](#khoi-tao-paymeminiapp)
+
 # Cài đặt
 ## Cài thư viện từ CocoaPods 
 PayMEMiniApp là một dynamic framework được cung cấp thông qua CocoaPods. Để cài đặt vào project, thêm khai báo sử dụng framework vào Podfile
@@ -10,6 +10,40 @@ PayMEMiniApp là một dynamic framework được cung cấp thông qua CocoaPod
 use_framework!
 
 pod PayMEMiniApp
+```
+Thêm vào cuối Podfile:
+```swift
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
+end
+```
+## Thiết lập application tương thích với PayMEMiniApp
+### Info.plist
+Cập nhật Info.plist những key như bên dưới để đảm bảo PayMEMiniApp có thể hoạt động
+![img.png](documents/info_plist.png)
+### Thêm Capabilities
+Ở XCode, chọn app của bạn ở mục Targets -> Signing & Capabilities -> Nhấn dấu "+" ở góc trên bên phải để mở cửa sổ thêm capability cho app
+![img_1.png](documents/capabilities.png)
+Tìm và chọn "Background Modes", bật lựa chọn "Background Fetch"
+![img.png](documents/background_fetch.png)
+### Thiết lập cập nhật phiên bản PayMEMiniApp
+Thêm dòng sau vào AppDelegate:
+```swift
+import UIKit
+import PayMEMiniApp
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+...
+func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+   completionHandler()
+}
+...
+}
 ```
 ## Khởi tạo PayMEMiniApp
 ### Thiết lập bộ key từ PayME 
@@ -44,18 +78,4 @@ Bộ key bao gồm: appId, publicKey, privateKey. Liên hệ PayME để đượ
                                   -----END RSA PRIVATE KEY-----
                                   """))
     ```
-  ### Thiết lập cập nhật phiên bản PayMEMiniApp
-    Thêm dòng sau vào AppDelegate
-    ```swift
-    import UIKit
-    import PayMEMiniApp
-    
-    @main
-    class AppDelegate: UIResponder, UIApplicationDelegate {
-    ...
-    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
-       completionHandler()
-    }
-    ...
-    }
-    ```
+

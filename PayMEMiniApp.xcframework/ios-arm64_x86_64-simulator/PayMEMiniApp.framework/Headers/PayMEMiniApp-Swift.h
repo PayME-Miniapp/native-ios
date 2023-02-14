@@ -230,7 +230,6 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import UIKit;
 #endif
 
@@ -257,26 +256,13 @@ using UInt = size_t;
 @class NSString;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC12PayMEMiniApp5PayME") SWIFT_AVAILABILITY(ios,introduced=13.0)
+SWIFT_CLASS("_TtC12PayMEMiniApp5PayME")
 @interface PayME : UIViewController
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-@class NSURLSession;
-@class NSURLSessionDownloadTask;
-@class NSURL;
-
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface PayME (SWIFT_EXTENSION(PayMEMiniApp)) <NSURLSessionDownloadDelegate>
-- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
-@end
-
-
 
 
 
@@ -530,7 +516,6 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import UIKit;
 #endif
 
@@ -557,26 +542,13 @@ using UInt = size_t;
 @class NSString;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC12PayMEMiniApp5PayME") SWIFT_AVAILABILITY(ios,introduced=13.0)
+SWIFT_CLASS("_TtC12PayMEMiniApp5PayME")
 @interface PayME : UIViewController
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-@class NSURLSession;
-@class NSURLSessionDownloadTask;
-@class NSURL;
-
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface PayME (SWIFT_EXTENSION(PayMEMiniApp)) <NSURLSessionDownloadDelegate>
-- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
-@end
-
-
 
 
 

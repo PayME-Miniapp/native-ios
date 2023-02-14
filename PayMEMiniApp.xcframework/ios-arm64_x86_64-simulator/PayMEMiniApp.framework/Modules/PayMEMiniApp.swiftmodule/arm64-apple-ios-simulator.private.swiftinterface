@@ -31,8 +31,7 @@ public enum PayMEError {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-@_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var oneSignalDelegate: PayMEMiniApp.PayMEOneSignalDelegate?
   @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
@@ -57,28 +56,24 @@ public enum Environment : Swift.String {
   public static let instance: PayMEMiniApp.PayMEConfig
   public var theme: PayMEMiniApp.Theme
   public var env: PayMEMiniApp.Environment
+  public var isLogging: Swift.Bool
   @objc deinit
-}
-public protocol PayMEOneSignalDelegate {
-  func onSendTags(data: [Swift.String : Swift.String])
-  func onDeleteTags(data: [Swift.String])
 }
 public protocol PayMEDelegate {
   func onError(action: PayMEMiniApp.PayMEAction, error: PayMEMiniApp.PayMEError)
   func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Swift.String>)
+}
+public protocol PayMEOneSignalDelegate {
+  func onSendTags(data: [Swift.String : Swift.String])
+  func onDeleteTags(data: [Swift.String])
 }
 public struct MiniAppError {
 }
 @_hasMissingDesignatedInitializers public class BiometricAuthenication {
   @objc deinit
 }
-public struct Console {
-}
-@available(iOS 13.0, *)
-extension PayMEMiniApp.PayME : Foundation.URLSessionDownloadDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didWriteData bytesWritten: Swift.Int64, totalBytesWritten: Swift.Int64, totalBytesExpectedToWrite: Swift.Int64)
+@_hasMissingDesignatedInitializers public class Console {
+  @objc deinit
 }
 public enum PayMEAction {
   case PayME
