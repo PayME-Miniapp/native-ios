@@ -3249,6 +3249,83 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlSubject",
+            "printedName": "urlSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurrentValueSubject",
+                "printedName": "Combine.CurrentValueSubject<Swift.String, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine19CurrentValueSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12PayMEMiniApp0A9MECombineC10urlSubject7Combine012CurrentValueF0CySSs5NeverOGvp",
+            "mangledName": "$s12PayMEMiniApp0A9MECombineC10urlSubject7Combine012CurrentValueF0CySSs5NeverOGvp",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrentValueSubject",
+                    "printedName": "Combine.CurrentValueSubject<Swift.String, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine19CurrentValueSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A9MECombineC10urlSubject7Combine012CurrentValueF0CySSs5NeverOGvg",
+                "mangledName": "$s12PayMEMiniApp0A9MECombineC10urlSubject7Combine012CurrentValueF0CySSs5NeverOGvg",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -3601,6 +3678,13 @@
       "offset": 442,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 8,
+      "value": "\"1.0.13\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
@@ -4277,6 +4361,13 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
+      "offset": 881,
+      "length": 11,
+      "value": "\"jsOpenUrl\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
       "offset": 221,
       "length": 7,
       "value": "\"jsLog\""
@@ -4387,6 +4478,13 @@
       "value": "\"jsClose\""
     },
     {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 11,
+      "value": "\"jsOpenUrl\""
+    },
+    {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 196,
@@ -4469,6 +4567,13 @@
       "offset": 366,
       "length": 9,
       "value": "\"LIMITED\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMECombine.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }

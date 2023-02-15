@@ -106,6 +106,7 @@ public class Theme {
 }
 @_hasMissingDesignatedInitializers public class PayMECombine {
   final public let notificationSubject: Combine.CurrentValueSubject<SwiftyJSON.JSON?, Swift.Never>
+  final public let urlSubject: Combine.CurrentValueSubject<Swift.String, Swift.Never>
   @objc deinit
 }
 extension PayMEMiniApp.Environment : Swift.Equatable {}

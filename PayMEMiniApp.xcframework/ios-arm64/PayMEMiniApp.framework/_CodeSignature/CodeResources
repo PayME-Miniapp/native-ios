@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sZCA1PTvpFxEVTT8bpH8FBvouSU=
+		r85Xj2jWyk93BDhhrkJtZ/jmm5Q=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CdojyMdCEz32hE1ltXaBXCnx484=
+		wzvoXsWo0/5WsirlT3Ooa81y6vk=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		sgvoI1gAwgGCTBh2pnewwKvFq1M=
+		tul9xyQBQjfDWDl7dlmWcR4sawM=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		sgvoI1gAwgGCTBh2pnewwKvFq1M=
+		tul9xyQBQjfDWDl7dlmWcR4sawM=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		JYr+orTgos/xyAh0794Ec9SXKVA=
+		W41cjUy736qngQrtpFyqC7jhxjs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		E6MvzMagmgTDi21jn0l88ZLZ+YY=
+		WlQCMs0SynQ6J5RqUd6Tc+pLcNY=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zIYcOs22kvhqJUZbzSschqZzZfbCWl9V6Wy6wXgMEkI=
+			i6ieeh7jsSomm3Flty8Hz7tOMleMwUBU4/NRK0WRL44=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vkjJ4kZkpGtaSvgNPpr5be035itXpjVSEiXo8By7d2E=
+			BYDoSAQjqyFFE98vsSlxrrUhkHkCUTbd8mwCvR0OnB8=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vkjJ4kZkpGtaSvgNPpr5be035itXpjVSEiXo8By7d2E=
+			BYDoSAQjqyFFE98vsSlxrrUhkHkCUTbd8mwCvR0OnB8=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJNebM+c8e8mF50RJpSVd4Tn5J7xDh1NIERLFXFye3E=
+			EUthrgaDA2qgyZe6mBx+2KBIerpJnQeTPAFM0yQQ3Xo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B5HMHn6qpTFNV5E/sDX5xvOdye/EpY124Z5//hxDeNE=
+			D2tZBmYZyibnw6oAgvt5OZWX5HQoZ5ewj/9kkCjHbdQ=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>
