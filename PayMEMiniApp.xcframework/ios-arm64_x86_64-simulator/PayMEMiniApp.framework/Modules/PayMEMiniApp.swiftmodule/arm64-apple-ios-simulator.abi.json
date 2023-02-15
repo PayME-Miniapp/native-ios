@@ -67,6 +67,23 @@
       },
       {
         "kind": "Import",
+        "name": "Mixpanel",
+        "printedName": "Mixpanel",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -372,6 +389,13 @@
         "kind": "Import",
         "name": "ZIPFoundation",
         "printedName": "ZIPFoundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Mixpanel",
+        "printedName": "Mixpanel",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -964,8 +988,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
@@ -974,8 +998,8 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -1510,92 +1534,6 @@
                 "declKind": "Accessor",
                 "usr": "s:12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvM",
                 "mangledName": "$s12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvM",
-                "moduleName": "PayMEMiniApp",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isLogging",
-            "printedName": "isLogging",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12PayMEMiniApp0A8MEConfigC9isLoggingSbvp",
-            "mangledName": "$s12PayMEMiniApp0A8MEConfigC9isLoggingSbvp",
-            "moduleName": "PayMEMiniApp",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A8MEConfigC9isLoggingSbvg",
-                "mangledName": "$s12PayMEMiniApp0A8MEConfigC9isLoggingSbvg",
-                "moduleName": "PayMEMiniApp",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A8MEConfigC9isLoggingSbvs",
-                "mangledName": "$s12PayMEMiniApp0A8MEConfigC9isLoggingSbvs",
-                "moduleName": "PayMEMiniApp",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A8MEConfigC9isLoggingSbvM",
-                "mangledName": "$s12PayMEMiniApp0A8MEConfigC9isLoggingSbvM",
                 "moduleName": "PayMEMiniApp",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3406,6 +3344,20 @@
       "value": "\"active\""
     },
     {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 16,
+      "value": "\"mixpanel_queue\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
+      "kind": "Dictionary",
+      "offset": 311,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2716,
@@ -3555,7 +3507,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
-      "offset": 200,
+      "offset": 216,
       "length": 5,
       "value": "\"PayMEMiniApp.PayME\""
     },
@@ -3646,14 +3598,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 451,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 473,
+      "offset": 442,
       "length": 5,
       "value": "false"
     },
