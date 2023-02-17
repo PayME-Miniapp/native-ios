@@ -203,6 +203,56 @@
           },
           {
             "kind": "Var",
+            "name": "networking",
+            "printedName": "networking",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.PayMEError.Type) -> (PayMEMiniApp.NetworkError) -> PayMEMiniApp.PayMEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PayMEMiniApp.NetworkError) -> PayMEMiniApp.PayMEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEError",
+                        "printedName": "PayMEMiniApp.PayMEError",
+                        "usr": "s:12PayMEMiniApp0A7MEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.PayMEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEError",
+                        "printedName": "PayMEMiniApp.PayMEError",
+                        "usr": "s:12PayMEMiniApp0A7MEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp0A7MEErrorO10networkingyAcA12NetworkErrorOcACmF",
+            "mangledName": "$s12PayMEMiniApp0A7MEErrorO10networkingyAcA12NetworkErrorOcACmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
             "name": "code",
             "printedName": "code",
             "children": [
@@ -291,6 +341,335 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "encodeFailed",
+            "printedName": "encodeFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PayMEMiniApp.NetworkError",
+                    "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO12encodeFailedyA2CmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO12encodeFailedyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "decodeFailed",
+            "printedName": "decodeFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PayMEMiniApp.NetworkError",
+                    "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO12decodeFailedyA2CmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO12decodeFailedyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "connectionLost",
+            "printedName": "connectionLost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PayMEMiniApp.NetworkError",
+                    "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO14connectionLostyA2CmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO14connectionLostyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "timedOut",
+            "printedName": "timedOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PayMEMiniApp.NetworkError",
+                    "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO8timedOutyA2CmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO8timedOutyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "noResponse",
+            "printedName": "noResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PayMEMiniApp.NetworkError",
+                    "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO10noResponseyA2CmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO10noResponseyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "server",
+            "printedName": "server",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> (Swift.String) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PayMEMiniApp.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO6serveryACSS_tcACmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO6serveryACSS_tcACmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "other",
+            "printedName": "other",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.NetworkError.Type) -> (Swift.String) -> PayMEMiniApp.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PayMEMiniApp.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PayMEMiniApp.NetworkError",
+                        "usr": "s:12PayMEMiniApp12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp12NetworkErrorO5otheryACSS_tcACmF",
+            "mangledName": "$s12PayMEMiniApp12NetworkErrorO5otheryACSS_tcACmF",
+            "moduleName": "PayMEMiniApp"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12PayMEMiniApp12NetworkErrorO",
+        "mangledName": "$s12PayMEMiniApp12NetworkErrorO",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -299,6 +678,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -373,8 +769,22 @@
       },
       {
         "kind": "Import",
+        "name": "Mixpanel",
+        "printedName": "Mixpanel",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
         "name": "NSLogger",
         "printedName": "NSLogger",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -389,13 +799,6 @@
         "kind": "Import",
         "name": "ZIPFoundation",
         "printedName": "ZIPFoundation",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp"
-      },
-      {
-        "kind": "Import",
-        "name": "Mixpanel",
-        "printedName": "Mixpanel",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -797,6 +1200,33 @@
             "declKind": "Func",
             "usr": "s:12PayMEMiniApp0A2MEC4open4with4fromyAA0A14MEOpeningParamV_So16UIViewControllerCSgtF",
             "mangledName": "$s12PayMEMiniApp0A2MEC4open4with4fromyAA0A14MEOpeningParamV_So16UIViewControllerCSgtF",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBalance",
+            "printedName": "getBalance(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
+            "mangledName": "$s12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "Custom",
@@ -1617,7 +2047,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1627,17 +2057,16 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDyS2SGtF",
-            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDyS2SGtF",
+            "usr": "s:12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDySSypGtF",
+            "mangledName": "$s12PayMEMiniApp0A10MEDelegateP10onResponse6action8responseyAA0A8MEActionO_SDySSypGtF",
             "moduleName": "PayMEMiniApp",
             "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEDelegate>",
             "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEDelegate>",
@@ -2152,6 +2581,30 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoSwift",
+        "printedName": "CryptoSwift",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
         "declKind": "Import",
@@ -2460,8 +2913,78 @@
           },
           {
             "kind": "Var",
-            "name": "value",
-            "printedName": "value",
+            "name": "GetBalance",
+            "printedName": "GetBalance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.PayMEAction.Type) -> PayMEMiniApp.PayMEAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEAction",
+                    "printedName": "PayMEMiniApp.PayMEAction",
+                    "usr": "s:12PayMEMiniApp0A8MEActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.PayMEAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEAction",
+                        "printedName": "PayMEMiniApp.PayMEAction",
+                        "usr": "s:12PayMEMiniApp0A8MEActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp0A8MEActionO10GetBalanceyA2CmF",
+            "mangledName": "$s12PayMEMiniApp0A8MEActionO10GetBalanceyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.PayMEAction?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEAction",
+                    "printedName": "PayMEMiniApp.PayMEAction",
+                    "usr": "s:12PayMEMiniApp0A8MEActionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12PayMEMiniApp0A8MEActionO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12PayMEMiniApp0A8MEActionO8rawValueACSgSS_tcfc",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2471,12 +2994,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12PayMEMiniApp0A8MEActionO5valueSSvp",
-            "mangledName": "$s12PayMEMiniApp0A8MEActionO5valueSSvp",
+            "usr": "s:12PayMEMiniApp0A8MEActionO8rawValueSSvp",
+            "mangledName": "$s12PayMEMiniApp0A8MEActionO8rawValueSSvp",
             "moduleName": "PayMEMiniApp",
-            "declAttributes": [
-              "AccessControl"
-            ],
+            "implicit": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -2491,108 +3012,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A8MEActionO5valueSSvg",
-                "mangledName": "$s12PayMEMiniApp0A8MEActionO5valueSSvg",
-                "moduleName": "PayMEMiniApp",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PayMEAction",
-                "printedName": "PayMEMiniApp.PayMEAction",
-                "usr": "s:12PayMEMiniApp0A8MEActionO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PayMEAction",
-                "printedName": "PayMEMiniApp.PayMEAction",
-                "usr": "s:12PayMEMiniApp0A8MEActionO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A8MEActionO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s12PayMEMiniApp0A8MEActionO2eeoiySbAC_ACtFZ",
-            "moduleName": "PayMEMiniApp",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12PayMEMiniApp0A8MEActionO9hashValueSivp",
-            "mangledName": "$s12PayMEMiniApp0A8MEActionO9hashValueSivp",
-            "moduleName": "PayMEMiniApp",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A8MEActionO9hashValueSivg",
-                "mangledName": "$s12PayMEMiniApp0A8MEActionO9hashValueSivg",
+                "usr": "s:12PayMEMiniApp0A8MEActionO8rawValueSSvg",
+                "mangledName": "$s12PayMEMiniApp0A8MEActionO8rawValueSSvg",
                 "moduleName": "PayMEMiniApp",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A8MEActionO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s12PayMEMiniApp0A8MEActionO4hash4intoys6HasherVz_tF",
-            "moduleName": "PayMEMiniApp",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -2602,6 +3028,7 @@
         "declAttributes": [
           "AccessControl"
         ],
+        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -2616,6 +3043,28 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -3380,6 +3829,30 @@
         "printedName": "Lottie",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyRSA",
+        "printedName": "SwiftyRSA",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       }
     ],
     "json_format_version": 8
@@ -3584,7 +4057,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
-      "offset": 216,
+      "offset": 234,
       "length": 5,
       "value": "\"PayMEMiniApp.PayME\""
     },
@@ -3675,14 +4148,14 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 442,
+      "offset": 463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 523,
       "length": 8,
       "value": "\"1.0.13\""
     },
@@ -4567,6 +5040,62 @@
       "offset": 366,
       "length": 9,
       "value": "\"LIMITED\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 179,
+      "length": 7,
+      "value": "\"PAYME\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 6,
+      "value": "\"OPEN\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 221,
+      "length": 5,
+      "value": "\"PAY\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 13,
+      "value": "\"GET_BALANCE\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 179,
+      "length": 7,
+      "value": "\"PAYME\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 6,
+      "value": "\"OPEN\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 221,
+      "length": 5,
+      "value": "\"PAY\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 13,
+      "value": "\"GET_BALANCE\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMECombine.swift",

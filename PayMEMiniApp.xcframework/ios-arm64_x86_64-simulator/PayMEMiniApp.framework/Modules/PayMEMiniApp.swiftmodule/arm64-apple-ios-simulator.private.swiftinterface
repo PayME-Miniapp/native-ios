@@ -4,8 +4,10 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Combine
+import CommonCrypto
 import ContactsUI
 import CoreImage
+import CryptoSwift
 import Foundation
 import GCDWebServer
 import LocalAuthentication
@@ -14,8 +16,10 @@ import Mixpanel
 import NSLogger
 @_exported import PayMEMiniApp
 import Photos
+import Security
 import Swift
 import SwiftyJSON
+import SwiftyRSA
 import UIKit
 import Vision
 import WebKit
@@ -25,12 +29,22 @@ import _StringProcessing
 public enum PayMEError {
   case miniApp(PayMEMiniApp.MiniAppError)
   case userCancel
+  case networking(PayMEMiniApp.NetworkError)
   public var code: Swift.String {
     get
   }
   public var description: Swift.String {
     get
   }
+}
+public enum NetworkError : Swift.Error {
+  case encodeFailed
+  case decodeFailed
+  case connectionLost
+  case timedOut
+  case noResponse
+  case server(description: Swift.String)
+  case other(description: Swift.String)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var oneSignalDelegate: PayMEMiniApp.PayMEOneSignalDelegate?
@@ -40,6 +54,7 @@ public enum PayMEError {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil)
+  @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
   @objc deinit
 }
 public enum Environment : Swift.String {
@@ -61,7 +76,7 @@ public enum Environment : Swift.String {
 }
 public protocol PayMEDelegate {
   func onError(action: PayMEMiniApp.PayMEAction, error: PayMEMiniApp.PayMEError)
-  func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Swift.String>)
+  func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Any>)
 }
 public protocol PayMEOneSignalDelegate {
   func onSendTags(data: [Swift.String : Swift.String])
@@ -75,16 +90,14 @@ public struct MiniAppError {
 @_hasMissingDesignatedInitializers public class Console {
   @objc deinit
 }
-public enum PayMEAction {
+public enum PayMEAction : Swift.String {
   case PayME
   case Open
   case Pay
-  public var value: Swift.String {
-    get
-  }
-  public static func == (a: PayMEMiniApp.PayMEAction, b: PayMEMiniApp.PayMEAction) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  case GetBalance
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -114,3 +127,4 @@ extension PayMEMiniApp.Environment : Swift.Hashable {}
 extension PayMEMiniApp.Environment : Swift.RawRepresentable {}
 extension PayMEMiniApp.PayMEAction : Swift.Equatable {}
 extension PayMEMiniApp.PayMEAction : Swift.Hashable {}
+extension PayMEMiniApp.PayMEAction : Swift.RawRepresentable {}

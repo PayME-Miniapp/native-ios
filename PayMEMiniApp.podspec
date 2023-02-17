@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayMEMiniApp"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
@@ -51,6 +51,8 @@ Pod::Spec.new do |spec|
   spec.dependency 'NSLogger/Swift'
   spec.dependency 'lottie-ios', '< 4.0'
   spec.dependency 'Mixpanel-swift'
+  spec.dependency 'CryptoSwift'
+  spec.dependency 'SwiftyRSA'
   spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
