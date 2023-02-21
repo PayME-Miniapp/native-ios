@@ -21,6 +21,20 @@ post_install do |installer|
   end
 end
 ```
+
+Trường hợp project của bạn không dùng framework, cần thay đổi build config để khai báo framework như sau:
+```swift
+$dynamic_framework = ['PayMEMiniApp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'NSLogger', 'lottie-ios', 'SwiftyJSON', 'ZIPFoundation', 'Mixpanel-swift']
+ pre_install do |installer|
+   installer.pod_targets.each do |pod|
+     if $dynamic_framework.include?(pod.name)
+       def pod.build_type;
+       Pod::BuildType.dynamic_framework
+      end
+    end
+  end
+end
+```
 ## Thiết lập application tương thích với PayMEMiniApp
 ### Info.plist
 Cập nhật Info.plist những key như bên dưới để đảm bảo PayMEMiniApp có thể hoạt động
