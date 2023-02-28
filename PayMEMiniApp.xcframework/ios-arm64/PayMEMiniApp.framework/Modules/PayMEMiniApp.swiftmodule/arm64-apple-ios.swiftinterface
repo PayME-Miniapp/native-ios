@@ -57,14 +57,10 @@ public enum NetworkError : Swift.Error {
   @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
   @objc deinit
 }
-public enum BundleType {
+public enum BundleType : Swift.Equatable {
   case local
-  case tunnel
+  case tunnel(domain: Swift.String)
   public static func == (a: PayMEMiniApp.BundleType, b: PayMEMiniApp.BundleType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public enum Environment : Swift.String {
   case local
@@ -82,6 +78,7 @@ public enum Environment : Swift.String {
   public var theme: PayMEMiniApp.Theme
   public var env: PayMEMiniApp.Environment
   public func setBundleType(_ type: PayMEMiniApp.BundleType)
+  public func setDebugMode(_ isDebug: Swift.Bool)
   @objc deinit
 }
 public protocol PayMEDelegate {
@@ -132,8 +129,6 @@ public class Theme {
   final public let urlSubject: Combine.CurrentValueSubject<Swift.String, Swift.Never>
   @objc deinit
 }
-extension PayMEMiniApp.BundleType : Swift.Equatable {}
-extension PayMEMiniApp.BundleType : Swift.Hashable {}
 extension PayMEMiniApp.Environment : Swift.Equatable {}
 extension PayMEMiniApp.Environment : Swift.Hashable {}
 extension PayMEMiniApp.Environment : Swift.RawRepresentable {}
