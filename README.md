@@ -39,6 +39,26 @@ end
 ### Info.plist
 Cập nhật Info.plist những key như bên dưới để đảm bảo PayMEMiniApp có thể hoạt động
 ![img.png](documents/info_plist.png)
+```swift
+Privacy - Camera Usage Description
+Privacy - Face ID Usage Description
+Privacy - Photo Library Usage Description
+Privacy - Photo Library Additions Usage Description
+Privacy - Contacts Usage Description
+Privacy - Location When In Use Usage Description
+Privacy - Location Always Usage Description
+```
+
+Raw Keys version:
+```swift
+NSCameraUsageDescription
+NSFaceIDUsageDescription
+NSPhotoLibraryUsageDescription
+NSPhotoLibraryAddUsageDescription
+NSContactsUsageDescription
+NSLocationWhenInUseUsageDescription
+NSLocationAlwaysUsageDescription
+```
 ### Thêm Capabilities
 Ở XCode, chọn app của bạn ở mục Targets -> Signing & Capabilities -> Nhấn dấu "+" ở góc trên bên phải để mở cửa sổ thêm capability cho app
 ![img_1.png](documents/capabilities.png)
