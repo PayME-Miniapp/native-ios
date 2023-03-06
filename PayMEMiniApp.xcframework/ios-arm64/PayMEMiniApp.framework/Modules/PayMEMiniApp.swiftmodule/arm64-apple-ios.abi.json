@@ -4107,14 +4107,28 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 174,
+      "length": 12,
+      "value": "\"background\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 174,
+      "length": 12,
+      "value": "\"background\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
       "length": 8,
       "value": "\"active\""
     },
