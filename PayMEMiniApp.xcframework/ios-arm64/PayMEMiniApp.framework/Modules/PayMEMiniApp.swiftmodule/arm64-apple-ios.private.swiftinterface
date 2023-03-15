@@ -47,13 +47,13 @@ public enum NetworkError : Swift.Error {
   case other(description: Swift.String)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var oneSignalDelegate: PayMEMiniApp.PayMEOneSignalDelegate?
+  @_Concurrency.MainActor(unsafe) public var walletDelegate: PayMEMiniApp.PayMEWalletDelegate?
   @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
   @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil)
+  @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil, type: PayMEMiniApp.PayMEOpeningType? = PayMEOpeningType.screen)
   @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
   @objc deinit
 }
@@ -79,15 +79,17 @@ public enum Environment : Swift.String {
   public var env: PayMEMiniApp.Environment
   public func setBundleType(_ type: PayMEMiniApp.BundleType)
   public func setDebugMode(_ isDebug: Swift.Bool)
+  public func setMode(_ mode: Swift.String)
   @objc deinit
 }
 public protocol PayMEDelegate {
   func onError(action: PayMEMiniApp.PayMEAction, error: PayMEMiniApp.PayMEError)
   func onResponse(action: PayMEMiniApp.PayMEAction, response: Swift.Dictionary<Swift.String, Any>)
 }
-public protocol PayMEOneSignalDelegate {
+public protocol PayMEWalletDelegate {
   func onSendTags(data: [Swift.String : Swift.String])
   func onDeleteTags(data: [Swift.String])
+  func onChangeEnv(env: Swift.String)
 }
 public struct MiniAppError {
 }
@@ -117,6 +119,15 @@ public struct PayMEPaymentParam {
 public struct PayMEOpeningParam {
   public init(action: PayMEMiniApp.PayMEAction, phone: Swift.String, data: Any? = nil)
 }
+public enum PayMEOpeningType : Swift.String {
+  case modal
+  case screen
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public class Theme {
   public var primary: UIKit.UIColor
   public var background: UIKit.UIColor
@@ -135,3 +146,6 @@ extension PayMEMiniApp.Environment : Swift.RawRepresentable {}
 extension PayMEMiniApp.PayMEAction : Swift.Equatable {}
 extension PayMEMiniApp.PayMEAction : Swift.Hashable {}
 extension PayMEMiniApp.PayMEAction : Swift.RawRepresentable {}
+extension PayMEMiniApp.PayMEOpeningType : Swift.Equatable {}
+extension PayMEMiniApp.PayMEOpeningType : Swift.Hashable {}
+extension PayMEMiniApp.PayMEOpeningType : Swift.RawRepresentable {}

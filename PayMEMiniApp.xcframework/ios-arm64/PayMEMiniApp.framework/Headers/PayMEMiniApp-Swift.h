@@ -276,7 +276,6 @@ SWIFT_CLASS("_TtC12PayMEMiniApp5PayME")
 
 
 
-
 #endif
 #if defined(__cplusplus)
 #endif

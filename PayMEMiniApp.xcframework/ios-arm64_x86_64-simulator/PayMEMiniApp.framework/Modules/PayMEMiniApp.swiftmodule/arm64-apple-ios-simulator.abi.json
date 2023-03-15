@@ -30,6 +30,13 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -833,27 +840,27 @@
         "children": [
           {
             "kind": "Var",
-            "name": "oneSignalDelegate",
-            "printedName": "oneSignalDelegate",
+            "name": "walletDelegate",
+            "printedName": "walletDelegate",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "PayMEMiniApp.PayMEOneSignalDelegate?",
+                "printedName": "PayMEMiniApp.PayMEWalletDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PayMEOneSignalDelegate",
-                    "printedName": "PayMEMiniApp.PayMEOneSignalDelegate",
-                    "usr": "s:12PayMEMiniApp0A19MEOneSignalDelegateP"
+                    "name": "PayMEWalletDelegate",
+                    "printedName": "PayMEMiniApp.PayMEWalletDelegate",
+                    "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvp",
-            "mangledName": "$s12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvp",
+            "usr": "s:12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvp",
+            "mangledName": "$s12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvp",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "Custom",
@@ -871,21 +878,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PayMEMiniApp.PayMEOneSignalDelegate?",
+                    "printedName": "PayMEMiniApp.PayMEWalletDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PayMEOneSignalDelegate",
-                        "printedName": "PayMEMiniApp.PayMEOneSignalDelegate",
-                        "usr": "s:12PayMEMiniApp0A19MEOneSignalDelegateP"
+                        "name": "PayMEWalletDelegate",
+                        "printedName": "PayMEMiniApp.PayMEWalletDelegate",
+                        "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvg",
-                "mangledName": "$s12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvg",
+                "usr": "s:12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvg",
+                "mangledName": "$s12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvg",
                 "moduleName": "PayMEMiniApp",
                 "implicit": true,
                 "accessorKind": "get"
@@ -903,21 +910,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PayMEMiniApp.PayMEOneSignalDelegate?",
+                    "printedName": "PayMEMiniApp.PayMEWalletDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PayMEOneSignalDelegate",
-                        "printedName": "PayMEMiniApp.PayMEOneSignalDelegate",
-                        "usr": "s:12PayMEMiniApp0A19MEOneSignalDelegateP"
+                        "name": "PayMEWalletDelegate",
+                        "printedName": "PayMEMiniApp.PayMEWalletDelegate",
+                        "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvs",
-                "mangledName": "$s12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvs",
+                "usr": "s:12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvs",
+                "mangledName": "$s12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvs",
                 "moduleName": "PayMEMiniApp",
                 "implicit": true,
                 "accessorKind": "set"
@@ -934,8 +941,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvM",
-                "mangledName": "$s12PayMEMiniApp0A2MEC17oneSignalDelegateAA0a5MEOnefG0_pSgvM",
+                "usr": "s:12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvM",
+                "mangledName": "$s12PayMEMiniApp0A2MEC14walletDelegateAA0a8MEWalletF0_pSgvM",
                 "moduleName": "PayMEMiniApp",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1192,7 +1199,7 @@
           {
             "kind": "Function",
             "name": "open",
-            "printedName": "open(with:from:)",
+            "printedName": "open(with:from:type:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1219,11 +1226,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.PayMEOpeningType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEOpeningType",
+                    "printedName": "PayMEMiniApp.PayMEOpeningType",
+                    "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A2MEC4open4with4fromyAA0A14MEOpeningParamV_So16UIViewControllerCSgtF",
-            "mangledName": "$s12PayMEMiniApp0A2MEC4open4with4fromyAA0A14MEOpeningParamV_So16UIViewControllerCSgtF",
+            "usr": "s:12PayMEMiniApp0A2MEC4open4with4from4typeyAA0A14MEOpeningParamV_So16UIViewControllerCSgAA0aI4TypeOSgtF",
+            "mangledName": "$s12PayMEMiniApp0A2MEC4open4with4from4typeyAA0A14MEOpeningParamV_So16UIViewControllerCSgAA0aI4TypeOSgtF",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "Custom",
@@ -1454,6 +1476,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -2194,6 +2223,32 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMode",
+            "printedName": "setMode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A8MEConfigC7setModeyySSF",
+            "mangledName": "$s12PayMEMiniApp0A8MEConfigC7setModeyySSF",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2310,8 +2365,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PayMEOneSignalDelegate",
-        "printedName": "PayMEOneSignalDelegate",
+        "name": "PayMEWalletDelegate",
+        "printedName": "PayMEWalletDelegate",
         "children": [
           {
             "kind": "Function",
@@ -2345,11 +2400,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A19MEOneSignalDelegateP10onSendTags4dataySDyS2SG_tF",
-            "mangledName": "$s12PayMEMiniApp0A19MEOneSignalDelegateP10onSendTags4dataySDyS2SG_tF",
+            "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP10onSendTags4dataySDyS2SG_tF",
+            "mangledName": "$s12PayMEMiniApp0A16MEWalletDelegateP10onSendTags4dataySDyS2SG_tF",
             "moduleName": "PayMEMiniApp",
-            "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEOneSignalDelegate>",
-            "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEOneSignalDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEWalletDelegate>",
+            "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEWalletDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2380,19 +2435,46 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A19MEOneSignalDelegateP12onDeleteTags4dataySaySSG_tF",
-            "mangledName": "$s12PayMEMiniApp0A19MEOneSignalDelegateP12onDeleteTags4dataySaySSG_tF",
+            "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP12onDeleteTags4dataySaySSG_tF",
+            "mangledName": "$s12PayMEMiniApp0A16MEWalletDelegateP12onDeleteTags4dataySaySSG_tF",
             "moduleName": "PayMEMiniApp",
-            "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEOneSignalDelegate>",
-            "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEOneSignalDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEWalletDelegate>",
+            "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEWalletDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onChangeEnv",
+            "printedName": "onChangeEnv(env:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP11onChangeEnv3envySS_tF",
+            "mangledName": "$s12PayMEMiniApp0A16MEWalletDelegateP11onChangeEnv3envySS_tF",
+            "moduleName": "PayMEMiniApp",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEWalletDelegate>",
+            "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEWalletDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:12PayMEMiniApp0A19MEOneSignalDelegateP",
-        "mangledName": "$s12PayMEMiniApp0A19MEOneSignalDelegateP",
+        "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP",
+        "mangledName": "$s12PayMEMiniApp0A16MEWalletDelegateP",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
           "AccessControl"
@@ -2548,8 +2630,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "ContactsUI",
+        "printedName": "ContactsUI",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
@@ -2558,15 +2640,8 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp"
-      },
-      {
-        "kind": "Import",
-        "name": "ContactsUI",
-        "printedName": "ContactsUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -2574,6 +2649,13 @@
         "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -2766,8 +2848,22 @@
       },
       {
         "kind": "Import",
+        "name": "Mixpanel",
+        "printedName": "Mixpanel",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
         "name": "NSLogger",
         "printedName": "NSLogger",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -2783,16 +2879,6 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -3485,6 +3571,205 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "PayMEOpeningType",
+        "printedName": "PayMEOpeningType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "modal",
+            "printedName": "modal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.PayMEOpeningType.Type) -> PayMEMiniApp.PayMEOpeningType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEOpeningType",
+                    "printedName": "PayMEMiniApp.PayMEOpeningType",
+                    "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.PayMEOpeningType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEOpeningType",
+                        "printedName": "PayMEMiniApp.PayMEOpeningType",
+                        "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO5modalyA2CmF",
+            "mangledName": "$s12PayMEMiniApp0A13MEOpeningTypeO5modalyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "screen",
+            "printedName": "screen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.PayMEOpeningType.Type) -> PayMEMiniApp.PayMEOpeningType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEOpeningType",
+                    "printedName": "PayMEMiniApp.PayMEOpeningType",
+                    "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.PayMEOpeningType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEOpeningType",
+                        "printedName": "PayMEMiniApp.PayMEOpeningType",
+                        "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO6screenyA2CmF",
+            "mangledName": "$s12PayMEMiniApp0A13MEOpeningTypeO6screenyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.PayMEOpeningType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEOpeningType",
+                    "printedName": "PayMEMiniApp.PayMEOpeningType",
+                    "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12PayMEMiniApp0A13MEOpeningTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO8rawValueSSvp",
+            "mangledName": "$s12PayMEMiniApp0A13MEOpeningTypeO8rawValueSSvp",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO8rawValueSSvg",
+                "mangledName": "$s12PayMEMiniApp0A13MEOpeningTypeO8rawValueSSvg",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12PayMEMiniApp0A13MEOpeningTypeO",
+        "mangledName": "$s12PayMEMiniApp0A13MEOpeningTypeO",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4140,13 +4425,6 @@
       "value": "\"mixpanel_queue\""
     },
     {
-      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
-      "kind": "Dictionary",
-      "offset": 311,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2716,
@@ -4303,21 +4581,21 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
-      "offset": 477,
+      "offset": 495,
       "length": 31,
       "value": "\"com.payme.app.user.downloadjs\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "IntegerLiteral",
-      "offset": 555,
+      "offset": 573,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
-      "offset": 567,
+      "offset": 585,
       "length": 7,
       "value": "\"0.0.0\""
     },
@@ -4396,12 +4674,19 @@
       "kind": "StringLiteral",
       "offset": 557,
       "length": 8,
-      "value": "\"1.0.14\""
+      "value": "\"1.0.15\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 9,
+      "value": "\"product\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "Array",
-      "offset": 589,
+      "offset": 612,
       "length": 23,
       "value": "[\"app\", \"250069027220\"]"
     },
@@ -4506,112 +4791,112 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5876,
+      "offset": 5875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6062,
+      "offset": 6061,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6118,
+      "offset": 6117,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6171,
+      "offset": 6170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6180,
+      "offset": 6179,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6191,
+      "offset": 6190,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6201,
+      "offset": 6200,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6224,
+      "offset": 6223,
       "length": 8,
       "value": "\"Đóng\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6445,
+      "offset": 6444,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6491,
+      "offset": 6490,
       "length": 24,
       "value": "\"arrow.counterclockwise\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6675,
+      "offset": 6674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6718,
+      "offset": 6717,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6798,
+      "offset": 6797,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6934,
+      "offset": 6933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7119,
+      "offset": 7118,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7165,
+      "offset": 7164,
       "length": 14,
       "value": "\"chevron.left\""
     },
@@ -4625,9 +4910,16 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
-      "offset": 3797,
+      "offset": 3881,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 185,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
@@ -4667,196 +4959,196 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6407,
+      "offset": 6406,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6611,
+      "offset": 6610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6750,
+      "offset": 6749,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6907,
+      "offset": 6906,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 6988,
+      "offset": 6987,
       "length": 10,
       "value": "\"iconBack\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7064,
+      "offset": 7063,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7074,
+      "offset": 7073,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7086,
+      "offset": 7085,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7097,
+      "offset": 7096,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7243,
+      "offset": 7242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 7324,
+      "offset": 7323,
       "length": 13,
       "value": "\"iconCapture\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7509,
+      "offset": 7508,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 7581,
+      "offset": 7580,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7729,
+      "offset": 7728,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7836,
+      "offset": 7835,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7866,
+      "offset": 7865,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8043,
+      "offset": 8042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8097,
+      "offset": 8096,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8106,
+      "offset": 8105,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8118,
+      "offset": 8117,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8128,
+      "offset": 8127,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8181,
+      "offset": 8180,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8264,
+      "offset": 8263,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8416,
+      "offset": 8415,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 8475,
+      "offset": 8474,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8511,
+      "offset": 8510,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8551,
+      "offset": 8550,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 8575,
+      "offset": 8574,
       "length": 3,
       "value": "0.0"
     },
@@ -4870,7 +5162,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/Console.swift",
       "kind": "StringLiteral",
-      "offset": 220,
+      "offset": 254,
       "length": 16,
       "value": "\"nslogger_queue\""
     },
@@ -5164,6 +5456,13 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
+      "offset": 939,
+      "length": 13,
+      "value": "\"jsChangeEnv\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
       "offset": 221,
       "length": 7,
       "value": "\"jsLog\""
@@ -5286,6 +5585,13 @@
       "offset": 909,
       "length": 10,
       "value": "\"jsSaveQR\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 13,
+      "value": "\"jsChangeEnv\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",

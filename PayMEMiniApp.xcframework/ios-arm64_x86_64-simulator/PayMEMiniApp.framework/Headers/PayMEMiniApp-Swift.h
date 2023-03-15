@@ -276,7 +276,6 @@ SWIFT_CLASS("_TtC12PayMEMiniApp5PayME")
 
 
 
-
 #endif
 #if defined(__cplusplus)
 #endif
@@ -550,7 +549,6 @@ SWIFT_CLASS("_TtC12PayMEMiniApp5PayME")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
 
 
 
