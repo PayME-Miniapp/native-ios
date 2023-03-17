@@ -5167,6 +5167,13 @@
       "value": "\"nslogger_queue\""
     },
     {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/Console.swift",
+      "kind": "BooleanLiteral",
+      "offset": 634,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 245,
