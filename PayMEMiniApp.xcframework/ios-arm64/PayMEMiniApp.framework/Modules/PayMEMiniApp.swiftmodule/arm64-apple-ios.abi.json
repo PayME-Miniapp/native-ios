@@ -4674,19 +4674,19 @@
       "kind": "StringLiteral",
       "offset": 557,
       "length": 8,
-      "value": "\"1.0.15\""
+      "value": "\"1.0.16\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 579,
-      "length": 9,
-      "value": "\"product\""
+      "length": 17,
+      "value": "\"miniapp_product\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "Array",
-      "offset": 612,
+      "offset": 620,
       "length": 23,
       "value": "[\"app\", \"250069027220\"]"
     },
@@ -4910,7 +4910,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
-      "offset": 3881,
+      "offset": 3904,
       "length": 2,
       "value": "[]"
     },
