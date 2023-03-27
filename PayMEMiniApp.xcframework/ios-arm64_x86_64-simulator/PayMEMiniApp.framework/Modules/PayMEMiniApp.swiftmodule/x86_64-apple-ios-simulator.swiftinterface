@@ -53,8 +53,7 @@ public enum NetworkError : Swift.Error {
   @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil, type: PayMEMiniApp.PayMEOpeningType? = PayMEOpeningType.screen)
-  @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func open(with openData: PayMEMiniApp.PayMEOpeningParam, from currentVC: UIKit.UIViewController? = nil, type: PayMEMiniApp.PayMEOpeningType? = .screen)
   @objc deinit
 }
 public enum BundleType : Swift.Equatable {
@@ -92,6 +91,9 @@ public protocol PayMEWalletDelegate {
   func onChangeEnv(env: Swift.String)
 }
 public struct MiniAppError {
+}
+extension PayMEMiniApp.PayME {
+  @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class BiometricAuthenication {
   @objc deinit

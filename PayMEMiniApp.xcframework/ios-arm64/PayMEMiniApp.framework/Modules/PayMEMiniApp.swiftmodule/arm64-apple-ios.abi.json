@@ -81,6 +81,13 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -814,13 +821,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftyJSON",
-        "printedName": "SwiftyJSON",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp"
-      },
-      {
-        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -1254,33 +1254,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "getBalance",
-            "printedName": "getBalance(of:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
-            "mangledName": "$s12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
-            "moduleName": "PayMEMiniApp",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(nibName:bundle:)",
@@ -1334,6 +1307,33 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getBalance",
+            "printedName": "getBalance(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
+            "mangledName": "$s12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2746,6 +2746,23 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -3012,6 +3029,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
         "declKind": "Import",
@@ -3040,6 +3067,23 @@
         "printedName": "SwiftyJSON",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -4420,9 +4464,16 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
       "kind": "StringLiteral",
-      "offset": 242,
+      "offset": 260,
       "length": 16,
       "value": "\"mixpanel_queue\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
+      "kind": "Dictionary",
+      "offset": 344,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
@@ -4574,7 +4625,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
-      "offset": 234,
+      "offset": 216,
       "length": 5,
       "value": "\"PayMEMiniApp.PayME\""
     },
@@ -4672,21 +4723,21 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 557,
-      "length": 8,
-      "value": "\"1.0.16\""
-    },
-    {
-      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 579,
+      "offset": 554,
       "length": 17,
       "value": "\"miniapp_product\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 591,
+      "length": 8,
+      "value": "\"1.0.16\""
+    },
+    {
+      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "Array",
-      "offset": 620,
+      "offset": 623,
       "length": 23,
       "value": "[\"app\", \"250069027220\"]"
     },
@@ -4791,112 +4842,112 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5875,
+      "offset": 5975,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6061,
+      "offset": 6161,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6117,
+      "offset": 6217,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6170,
+      "offset": 6270,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6179,
+      "offset": 6279,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6190,
+      "offset": 6290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6200,
+      "offset": 6300,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6223,
+      "offset": 6323,
       "length": 8,
       "value": "\"Đóng\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6444,
+      "offset": 6544,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6490,
+      "offset": 6590,
       "length": 24,
       "value": "\"arrow.counterclockwise\""
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6674,
+      "offset": 6774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6717,
+      "offset": 6817,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6797,
+      "offset": 6897,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6933,
+      "offset": 7033,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7118,
+      "offset": 7218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7164,
+      "offset": 7264,
       "length": 14,
       "value": "\"chevron.left\""
     },
@@ -4910,7 +4961,7 @@
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
-      "offset": 3904,
+      "offset": 4861,
       "length": 2,
       "value": "[]"
     },
@@ -5165,13 +5216,6 @@
       "offset": 254,
       "length": 16,
       "value": "\"nslogger_queue\""
-    },
-    {
-      "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Services\/Console.swift",
-      "kind": "BooleanLiteral",
-      "offset": 634,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/montossc\/MyLibraries\/PayMEMiniApp\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
