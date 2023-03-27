@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayMEMiniApp"
-  spec.version      = "0.2.3"
+  spec.version      = "0.2.4"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'SwiftyJSON', '~> 4.0'
   spec.dependency 'NSLogger/Swift'
   spec.dependency 'lottie-ios', '< 4.0'
-  spec.dependency 'Mixpanel-swift'
+  spec.dependency 'Mixpanel-swift', '< 4.1'
   spec.dependency 'CryptoSwift'
   spec.dependency 'SwiftyRSA'
   spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
