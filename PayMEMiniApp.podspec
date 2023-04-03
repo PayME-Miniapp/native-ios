@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayMEMiniApp"
-  spec.version      = "0.2.8"
+  spec.version      = "0.2.9"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
@@ -45,14 +45,14 @@ Pod::Spec.new do |spec|
   # spec.libraries = "iconv", "xml2"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.dependency 'ZIPFoundation'
-  spec.dependency 'GCDWebServer'
-  spec.dependency 'SwiftyJSON', '~> 4.0'
-  spec.dependency 'NSLogger/Swift'
-  spec.dependency 'lottie-ios', '< 4.0'
-  spec.dependency 'Mixpanel-swift', '< 4.1'
-  spec.dependency 'CryptoSwift'
-  spec.dependency 'SwiftyRSA'
+  spec.dependency 'ZIPFoundation', '~> 0.9.16'
+  spec.dependency 'GCDWebServer', '~> 3.5.4'
+  spec.dependency 'SwiftyJSON', '~> 4.3.0'
+  spec.dependency 'NSLogger/Swift', '~> 1.9.7'
+  spec.dependency 'lottie-ios', '~> 3.5.0'
+  spec.dependency 'Mixpanel-swift', '~> 4.0.6'
+  spec.dependency 'CryptoSwift', '~> 1.7.0'
+  spec.dependency 'SwiftyRSA', '~> 1.7.0'
   spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
