@@ -54,5 +54,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'CryptoSwift', '~> 1.7.0'
   spec.dependency 'SwiftyRSA', '~> 1.7.0'
   spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+  spec.user_target_xcconfig = { 'IPHONEOS_DEPLOYMENT_TARGET' => '13.0' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
