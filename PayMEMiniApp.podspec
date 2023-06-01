@@ -16,10 +16,10 @@ Pod::Spec.new do |spec|
   # spec.social_media_url   = "https://twitter.com/Phan Thanh Nam"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios
   spec.swift_versions  = "5.0"
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "13.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -54,6 +54,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'CryptoSwift', '~> 1.7.0'
   spec.dependency 'SwiftyRSA', '~> 1.7.0'
   spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
-  spec.user_target_xcconfig = { 'IPHONEOS_DEPLOYMENT_TARGET' => '13.0' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
