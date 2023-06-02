@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
-  spec.name         = "payme-mini-app"
-  spec.version      = "0.2.13"
+  spec.name         = "payme-miniapp"
+  spec.version      = "0.2.14"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
