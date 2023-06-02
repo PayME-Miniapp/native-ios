@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.author             = { "NamPT" => "nampt@payme.vn" }
+  spec.author             = { "DatTM" => "dattm@payme.vn" }
   # spec.social_media_url   = "https://twitter.com/Phan Thanh Nam"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
