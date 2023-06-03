@@ -1,19 +1,17 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayME-Miniapp"
-  spec.version      = "0.2.14"
+  spec.version      = "0.2.15"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
                    DESC
   spec.homepage     = "https://github.com/PayME-Miniapp/native-ios"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.author             = { "DatTM" => "dattm@payme.vn" }
-  # spec.social_media_url   = "https://twitter.com/Phan Thanh Nam"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.platform     = :ios, "13.0"
