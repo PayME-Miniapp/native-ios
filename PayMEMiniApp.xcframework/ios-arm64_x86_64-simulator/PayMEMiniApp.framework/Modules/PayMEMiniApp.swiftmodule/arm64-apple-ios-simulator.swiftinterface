@@ -94,6 +94,7 @@ public struct MiniAppError {
 }
 extension PayMEMiniApp.PayME {
   @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func getAccountInformation(of phone: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class BiometricAuthenication {
   @objc deinit
@@ -111,6 +112,7 @@ public enum PayMEAction : Swift.String {
   case Transfer
   case KYC
   case GetBalance
+  case GetAccountInfo
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

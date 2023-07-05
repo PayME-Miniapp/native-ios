@@ -1334,6 +1334,33 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccountInformation",
+            "printedName": "getAccountInformation(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A2MEC21getAccountInformation2ofySS_tF",
+            "mangledName": "$s12PayMEMiniApp0A2MEC21getAccountInformation2ofySS_tF",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3486,6 +3513,43 @@
             "declKind": "EnumElement",
             "usr": "s:12PayMEMiniApp0A8MEActionO10GetBalanceyA2CmF",
             "mangledName": "$s12PayMEMiniApp0A8MEActionO10GetBalanceyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "GetAccountInfo",
+            "printedName": "GetAccountInfo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.PayMEAction.Type) -> PayMEMiniApp.PayMEAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEAction",
+                    "printedName": "PayMEMiniApp.PayMEAction",
+                    "usr": "s:12PayMEMiniApp0A8MEActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.PayMEAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEAction",
+                        "printedName": "PayMEMiniApp.PayMEAction",
+                        "usr": "s:12PayMEMiniApp0A8MEActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp0A8MEActionO14GetAccountInfoyA2CmF",
+            "mangledName": "$s12PayMEMiniApp0A8MEActionO14GetAccountInfoyA2CmF",
             "moduleName": "PayMEMiniApp"
           },
           {
@@ -6085,6 +6149,13 @@
     {
       "filePath": "\/Users\/tranminhdat\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
+      "offset": 416,
+      "length": 18,
+      "value": "\"GET_ACCOUNT_INFO\""
+    },
+    {
+      "filePath": "\/Users\/tranminhdat\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
       "offset": 179,
       "length": 7,
       "value": "\"PAYME\""
@@ -6147,8 +6218,15 @@
     },
     {
       "filePath": "\/Users\/tranminhdat\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 18,
+      "value": "\"GET_ACCOUNT_INFO\""
+    },
+    {
+      "filePath": "\/Users\/tranminhdat\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1607,
+      "offset": 1650,
       "length": 1,
       "value": "0"
     },
