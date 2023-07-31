@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayMEMiniApp
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -47,8 +47,8 @@ public enum NetworkError : Swift.Error {
   case other(description: Swift.String)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var walletDelegate: PayMEMiniApp.PayMEWalletDelegate?
-  @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
+  @_Concurrency.MainActor(unsafe) public var walletDelegate: (any PayMEMiniApp.PayMEWalletDelegate)?
+  @_Concurrency.MainActor(unsafe) public var delegate: (any PayMEMiniApp.PayMEDelegate)?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
   @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
