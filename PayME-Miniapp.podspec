@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "DatTM" => "dattm@payme.vn" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "12.0"
   spec.swift_versions  = "5.0"
   #  When using multiple platforms
   # spec.ios.deployment_target = "13.0"
