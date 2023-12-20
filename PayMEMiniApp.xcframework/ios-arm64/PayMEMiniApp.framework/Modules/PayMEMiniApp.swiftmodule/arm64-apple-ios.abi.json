@@ -1330,7 +1330,8 @@
             "mangledName": "$s12PayMEMiniApp0A2MEC10getBalance2ofySS_tF",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
-              "Custom"
+              "Custom",
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1357,7 +1358,8 @@
             "mangledName": "$s12PayMEMiniApp0A2MEC21getAccountInformation2ofySS_tF",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
-              "Custom"
+              "Custom",
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1704,80 +1706,6 @@
         "name": "Environment",
         "printedName": "Environment",
         "children": [
-          {
-            "kind": "Var",
-            "name": "local",
-            "printedName": "local",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PayMEMiniApp.Environment.Type) -> PayMEMiniApp.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "PayMEMiniApp.Environment",
-                    "usr": "s:12PayMEMiniApp11EnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PayMEMiniApp.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "PayMEMiniApp.Environment",
-                        "usr": "s:12PayMEMiniApp11EnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:12PayMEMiniApp11EnvironmentO5localyA2CmF",
-            "mangledName": "$s12PayMEMiniApp11EnvironmentO5localyA2CmF",
-            "moduleName": "PayMEMiniApp"
-          },
-          {
-            "kind": "Var",
-            "name": "dev",
-            "printedName": "dev",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PayMEMiniApp.Environment.Type) -> PayMEMiniApp.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "PayMEMiniApp.Environment",
-                    "usr": "s:12PayMEMiniApp11EnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PayMEMiniApp.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "PayMEMiniApp.Environment",
-                        "usr": "s:12PayMEMiniApp11EnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:12PayMEMiniApp11EnvironmentO3devyA2CmF",
-            "mangledName": "$s12PayMEMiniApp11EnvironmentO3devyA2CmF",
-            "moduleName": "PayMEMiniApp"
-          },
           {
             "kind": "Var",
             "name": "sbx",
@@ -5015,77 +4943,49 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 250,
-      "length": 7,
-      "value": "\"LOCAL\""
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 273,
-      "length": 5,
-      "value": "\"DEV\""
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 294,
+      "offset": 248,
       "length": 9,
       "value": "\"SANDBOX\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 320,
+      "offset": 274,
       "length": 12,
       "value": "\"PRODUCTION\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 250,
-      "length": 7,
-      "value": "\"LOCAL\""
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 273,
-      "length": 5,
-      "value": "\"DEV\""
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 294,
+      "offset": 248,
       "length": 9,
       "value": "\"SANDBOX\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 320,
+      "offset": 274,
       "length": 12,
       "value": "\"PRODUCTION\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 519,
+      "offset": 473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 580,
+      "offset": 534,
       "length": 17,
       "value": "\"miniapp_product\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 617,
+      "offset": 571,
       "length": 8,
       "value": "\"1.0.16\""
     },
