@@ -1902,6 +1902,205 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Locale",
+        "printedName": "Locale",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "vi",
+            "printedName": "vi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.Locale.Type) -> PayMEMiniApp.Locale",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "PayMEMiniApp.Locale",
+                    "usr": "s:12PayMEMiniApp6LocaleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.Locale.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Locale",
+                        "printedName": "PayMEMiniApp.Locale",
+                        "usr": "s:12PayMEMiniApp6LocaleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp6LocaleO2viyA2CmF",
+            "mangledName": "$s12PayMEMiniApp6LocaleO2viyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
+            "name": "en",
+            "printedName": "en",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.Locale.Type) -> PayMEMiniApp.Locale",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "PayMEMiniApp.Locale",
+                    "usr": "s:12PayMEMiniApp6LocaleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.Locale.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Locale",
+                        "printedName": "PayMEMiniApp.Locale",
+                        "usr": "s:12PayMEMiniApp6LocaleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp6LocaleO2enyA2CmF",
+            "mangledName": "$s12PayMEMiniApp6LocaleO2enyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.Locale?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "PayMEMiniApp.Locale",
+                    "usr": "s:12PayMEMiniApp6LocaleO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12PayMEMiniApp6LocaleO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12PayMEMiniApp6LocaleO8rawValueACSgSS_tcfc",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12PayMEMiniApp6LocaleO8rawValueSSvp",
+            "mangledName": "$s12PayMEMiniApp6LocaleO8rawValueSSvp",
+            "moduleName": "PayMEMiniApp",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp6LocaleO8rawValueSSvg",
+                "mangledName": "$s12PayMEMiniApp6LocaleO8rawValueSSvg",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12PayMEMiniApp6LocaleO",
+        "mangledName": "$s12PayMEMiniApp6LocaleO",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PayMEConfig",
         "printedName": "PayMEConfig",
         "children": [
@@ -2121,6 +2320,92 @@
                 "declKind": "Accessor",
                 "usr": "s:12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvM",
                 "mangledName": "$s12PayMEMiniApp0A8MEConfigC3envAA11EnvironmentOvM",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locale",
+            "printedName": "locale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Locale",
+                "printedName": "PayMEMiniApp.Locale",
+                "usr": "s:12PayMEMiniApp6LocaleO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvp",
+            "mangledName": "$s12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvp",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "PayMEMiniApp.Locale",
+                    "usr": "s:12PayMEMiniApp6LocaleO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvg",
+                "mangledName": "$s12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvg",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "PayMEMiniApp.Locale",
+                    "usr": "s:12PayMEMiniApp6LocaleO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvs",
+                "mangledName": "$s12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvs",
+                "moduleName": "PayMEMiniApp",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvM",
+                "mangledName": "$s12PayMEMiniApp0A8MEConfigC6localeAA6LocaleOvM",
                 "moduleName": "PayMEMiniApp",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2419,6 +2704,33 @@
             "declKind": "Func",
             "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP11onChangeEnv3envySS_tF",
             "mangledName": "$s12PayMEMiniApp0A16MEWalletDelegateP11onChangeEnv3envySS_tF",
+            "moduleName": "PayMEMiniApp",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEWalletDelegate>",
+            "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEWalletDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onChangeLocale",
+            "printedName": "onChangeLocale(locale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A16MEWalletDelegateP14onChangeLocale6localeySS_tF",
+            "mangledName": "$s12PayMEMiniApp0A16MEWalletDelegateP14onChangeLocale6localeySS_tF",
             "moduleName": "PayMEMiniApp",
             "genericSig": "<τ_0_0 where τ_0_0 : PayMEMiniApp.PayMEWalletDelegate>",
             "sugared_genericSig": "<Self where Self : PayMEMiniApp.PayMEWalletDelegate>",
@@ -4970,22 +5282,50 @@
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 4,
+      "value": "\"vi\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 4,
+      "value": "\"vi\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 473,
+      "offset": 579,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 640,
       "length": 17,
       "value": "\"miniapp_product\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
-      "offset": 571,
+      "offset": 677,
       "length": 8,
       "value": "\"1.0.16\""
     },
@@ -5762,6 +6102,13 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
+      "offset": 975,
+      "length": 16,
+      "value": "\"jsChangeLocale\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
       "offset": 221,
       "length": 7,
       "value": "\"jsLog\""
@@ -5891,6 +6238,13 @@
       "offset": 939,
       "length": 13,
       "value": "\"jsChangeEnv\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 975,
+      "length": 16,
+      "value": "\"jsChangeLocale\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",

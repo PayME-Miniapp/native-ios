@@ -70,10 +70,20 @@ public enum Environment : Swift.String {
     get
   }
 }
+public enum Locale : Swift.String {
+  case vi
+  case en
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class PayMEConfig {
   public static let instance: PayMEMiniApp.PayMEConfig
   public var theme: PayMEMiniApp.Theme
   public var env: PayMEMiniApp.Environment
+  public var locale: PayMEMiniApp.Locale
   public func setBundleType(_ type: PayMEMiniApp.BundleType)
   public func setDebugMode(_ isDebug: Swift.Bool)
   public func setMode(_ mode: Swift.String)
@@ -87,6 +97,7 @@ public protocol PayMEWalletDelegate {
   func onSendTags(data: [Swift.String : Swift.String])
   func onDeleteTags(data: [Swift.String])
   func onChangeEnv(env: Swift.String)
+  func onChangeLocale(locale: Swift.String)
 }
 public struct MiniAppError {
 }
@@ -156,6 +167,9 @@ public class Theme {
 extension PayMEMiniApp.Environment : Swift.Equatable {}
 extension PayMEMiniApp.Environment : Swift.Hashable {}
 extension PayMEMiniApp.Environment : Swift.RawRepresentable {}
+extension PayMEMiniApp.Locale : Swift.Equatable {}
+extension PayMEMiniApp.Locale : Swift.Hashable {}
+extension PayMEMiniApp.Locale : Swift.RawRepresentable {}
 extension PayMEMiniApp.PayMEAction : Swift.Equatable {}
 extension PayMEMiniApp.PayMEAction : Swift.Hashable {}
 extension PayMEMiniApp.PayMEAction : Swift.RawRepresentable {}
