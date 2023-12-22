@@ -62,6 +62,8 @@ public enum BundleType : Swift.Equatable {
   public static func == (a: PayMEMiniApp.BundleType, b: PayMEMiniApp.BundleType) -> Swift.Bool
 }
 public enum Environment : Swift.String {
+  case local
+  case dev
   case sbx
   case prod
   public init?(rawValue: Swift.String)
