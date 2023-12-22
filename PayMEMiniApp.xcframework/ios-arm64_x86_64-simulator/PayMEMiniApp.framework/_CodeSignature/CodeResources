@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XzEX4U73rHSR9j1PryhHSNjBDpU=
+		1FXUqiqT6ESyemQI17J4HtBRWrM=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		XvPsIUeIT0NP4OiOvEbvmF7/QLU=
+		42ZbvX6vmPXPqRnTKrQfjtspoLU=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WgrbnDzeQy7xBtUFtUE6rOkRC1Q=
+		1sDSfjiejhSp9jVoE2YNCGQo7Mw=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XvPsIUeIT0NP4OiOvEbvmF7/QLU=
+		42ZbvX6vmPXPqRnTKrQfjtspoLU=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p+da0Zu5Kfa0dj4F3REKhcM+7qk=
+		VGNZIzmoAGrq+g2zfrYzfIEovHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9tlTL4WnHf4x+2SeTh46xVWCWUK6ZLzQzjJC1pxRRt4=
+			bvMFqHa9jFJ+aLN2jaDZrPnurwjylebUYE05XZ9DdwA=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UvQj9nN8oKIz190Z6iTxBIfxrJcEgjUtDG1+daHoSU8=
+			00iQU4CVAbAw240jcHbmRW4DCpEDmafdf//5M4jhnnk=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9tlTL4WnHf4x+2SeTh46xVWCWUK6ZLzQzjJC1pxRRt4=
+			bvMFqHa9jFJ+aLN2jaDZrPnurwjylebUYE05XZ9DdwA=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -194,7 +194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fq8sW7vrlSL2kxUzY25QvG8/6XKiyGp03BFSaHD/tDI=
+			Ik0wf+W5DnLmrdXHizitDN/bVzMcZM6DOEPwFm+clDM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

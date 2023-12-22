@@ -5327,7 +5327,7 @@
       "kind": "StringLiteral",
       "offset": 677,
       "length": 8,
-      "value": "\"1.0.16\""
+      "value": "\"1.0.17\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
