@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayMEMiniApp
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -26,6 +26,7 @@ import WebKit
 import ZIPFoundation
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum PayMEError {
   case miniApp(PayMEMiniApp.MiniAppError)
   case userCancel
@@ -47,8 +48,8 @@ public enum NetworkError : Swift.Error {
   case other(description: Swift.String)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PayME : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var walletDelegate: PayMEMiniApp.PayMEWalletDelegate?
-  @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
+  @_Concurrency.MainActor(unsafe) public var walletDelegate: (any PayMEMiniApp.PayMEWalletDelegate)?
+  @_Concurrency.MainActor(unsafe) public var delegate: (any PayMEMiniApp.PayMEDelegate)?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
   @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
@@ -66,6 +67,7 @@ public enum Environment : Swift.String {
   case dev
   case sbx
   case prod
+  case staging
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -117,6 +119,7 @@ public enum PayMEAction : Swift.String {
   case PayME
   case Open
   case Pay
+  case Payment
   case Service
   case Deposit
   case Withdraw
@@ -136,11 +139,14 @@ public struct PayMEKey {
 public struct PayMEPaymentParam {
   public init(amount: Swift.Int, transactionId: Swift.String, note: Swift.String? = nil, ipnUrl: Swift.String? = nil)
 }
+public struct PayMEPaymentDirectParam {
+  public init(transaction: Swift.String)
+}
 public struct PayMEServiceParam {
-  public init(service: Swift.String)
+  public init(service: Swift.String, isBackToApp: Swift.Bool? = true)
 }
 public struct PayMEPayParam {
-  public init(amount: Swift.Int? = 0, description: Swift.String? = nil)
+  public init(amount: Swift.Int? = 0, description: Swift.String? = nil, isBackToApp: Swift.Bool? = true)
 }
 public struct PayMEOpeningParam {
   public init(action: PayMEMiniApp.PayMEAction, phone: Swift.String, data: Any? = nil)
