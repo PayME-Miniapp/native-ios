@@ -50,7 +50,7 @@ public enum NetworkError : Swift.Error {
   @_Concurrency.MainActor(unsafe) public var walletDelegate: PayMEMiniApp.PayMEWalletDelegate?
   @_Concurrency.MainActor(unsafe) public var delegate: PayMEMiniApp.PayMEDelegate?
   @_Concurrency.MainActor(unsafe) final public let combine: PayMEMiniApp.PayMECombine
-  @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey)
+  @_Concurrency.MainActor(unsafe) public init(key: PayMEMiniApp.PayMEKey, locale: PayMEMiniApp.Locale? = Locale.vi)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public func close(from currentVC: UIKit.UIViewController? = nil)
@@ -91,6 +91,7 @@ public enum Locale : Swift.String {
   public func setBundleType(_ type: PayMEMiniApp.BundleType)
   public func setDebugMode(_ isDebug: Swift.Bool)
   public func setMode(_ mode: Swift.String)
+  public func setLanguage(_ lang: PayMEMiniApp.Locale)
   @objc deinit
 }
 public protocol PayMEDelegate {

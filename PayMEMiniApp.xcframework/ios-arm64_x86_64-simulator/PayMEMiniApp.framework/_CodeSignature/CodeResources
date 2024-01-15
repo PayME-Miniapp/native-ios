@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Cn3R0+cIlsZWos+dENKD+OmUvf0=
+		QGAWW8dN+CnIl+ncbzjE2RjPUhE=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5uUpIlUBwsRqsCbtttiF7MSDrb8=
+		bYkIlFvtzXkqwpRfR7gPblwdhBQ=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5uUpIlUBwsRqsCbtttiF7MSDrb8=
+		bYkIlFvtzXkqwpRfR7gPblwdhBQ=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		whtvKMPhqw+P6mhnkcWo2B2uyYs=
+		3IOH4iqxXd1L2RlI5KgRFA5gpWU=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Cn3R0+cIlsZWos+dENKD+OmUvf0=
+		QGAWW8dN+CnIl+ncbzjE2RjPUhE=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fJvAmHFc+1haTAyf9nAErIGyMCk=
+		KOyqo90fCPi8ggeX3Fy6eknJd48=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fJvAmHFc+1haTAyf9nAErIGyMCk=
+		KOyqo90fCPi8ggeX3Fy6eknJd48=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7zBrKAJhUD9NArCPaDunnfqzqas=
+		TzFO+h0NnVjF1gpZTQBi5Ac7Z6I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		9D8wrlOfCfxsF7qU4FMIYqIvimE=
+		DagR817p91lRbK8XZqlsCSNYLaQ=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
@@ -131,14 +131,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			enz4FVGqI0g4s41gmk33a6nfPY+TPCs5L/0K4cy4umI=
+			aSl6GyXbgcDd26qkakMdEhsSeNedM17yPGjOoJ2Z2Xc=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o2oup4qmTbzkut+9AWqkz869owYBr4UI99FSsW8+UAI=
+			cxciljHR4RN1bhtx65pWqtvYtWdcQW9Lz4frGxQ3QCc=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -152,28 +152,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o2oup4qmTbzkut+9AWqkz869owYBr4UI99FSsW8+UAI=
+			cxciljHR4RN1bhtx65pWqtvYtWdcQW9Lz4frGxQ3QCc=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BHV3+vXujyKFXEROZxtlmJCUc/Hbry2Z97NEI+YmWY8=
+			6Lc5Wbuj5GNPEi7t9sIzbD/yoj0DpDr42KjbPAyJ88A=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			enz4FVGqI0g4s41gmk33a6nfPY+TPCs5L/0K4cy4umI=
+			aSl6GyXbgcDd26qkakMdEhsSeNedM17yPGjOoJ2Z2Xc=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SW31FQWqq7Votx8xhmrkZnrupNNJVY2PZWTZKkmMJIU=
+			4JCgYqKVvEaSo2uGx//wDptCxB8urcu7CZx+iPgeVMI=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -187,14 +187,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SW31FQWqq7Votx8xhmrkZnrupNNJVY2PZWTZKkmMJIU=
+			4JCgYqKVvEaSo2uGx//wDptCxB8urcu7CZx+iPgeVMI=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Amicp/PlXrufFP0wBYHlzql9a4vfAL4b/E3FlqNmH4Y=
+			T3pMX8PtgVQ6JWlIE950ukaY8hqOOPVnEZxJiDzUAXI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hRMwMmz2mdBDxRJ4ZPvEKcZGDfeYJAtLZh328cyXNoc=
+			nTVTHaGY7jiSBTK1h1GUEB6Lw1okNngRM4dDew8yb+M=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>
