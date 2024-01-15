@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		wznlqSYq+W2OWc56VUSIF7RNNwo=
+		Cn3R0+cIlsZWos+dENKD+OmUvf0=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		acCLrf/0wlHeT6o1staKcLS503Y=
+		K8bH0vMeoglj4iLPH3VVpmQTyBc=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		acCLrf/0wlHeT6o1staKcLS503Y=
+		K8bH0vMeoglj4iLPH3VVpmQTyBc=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CX7gB8GL7V09k4G6fYo2Cole59I=
+		9PKHFh+59PDbxFcS6oG7BVEDh80=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bynTPJN4vrgker8ZNxihxBVGMmAbM14To94F8gQ7K7Y=
+			enz4FVGqI0g4s41gmk33a6nfPY+TPCs5L/0K4cy4umI=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DeMpHzRTZzORAAZi2H9GjPQnmSWz+doZXQ/58Mk90z4=
+			SRHckWhqt0kxPX3w/CLny+4htQDrga9WSMM/x1W9bMg=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DeMpHzRTZzORAAZi2H9GjPQnmSWz+doZXQ/58Mk90z4=
+			SRHckWhqt0kxPX3w/CLny+4htQDrga9WSMM/x1W9bMg=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gifLRHU9uQ2bmzmI2DcJe+RFFIsBiQmvBL4rhKP8y2k=
+			deXsZ+dH8NQZIaMFZpxPLXdDQTHrKCVytax0vlTQkn4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

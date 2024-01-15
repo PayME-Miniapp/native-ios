@@ -4157,7 +4157,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(amount:transactionId:note:ipnUrl:)",
+            "printedName": "init(amount:transactionId:note:ipnUrl:isShowResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4206,11 +4206,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4note6ipnUrlACSi_S2SSgAHtcfc",
-            "mangledName": "$s12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4note6ipnUrlACSi_S2SSgAHtcfc",
+            "usr": "s:12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4note6ipnUrl12isShowResultACSi_S2SSgAISbSgtcfc",
+            "mangledName": "$s12PayMEMiniApp0A14MEPaymentParamV6amount13transactionId4note6ipnUrl12isShowResultACSi_S2SSgAISbSgtcfc",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "AccessControl"
@@ -4234,7 +4249,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(transaction:)",
+            "printedName": "init(transaction:isShowResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4247,11 +4262,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12PayMEMiniApp0A20MEPaymentDirectParamV11transactionACSS_tcfc",
-            "mangledName": "$s12PayMEMiniApp0A20MEPaymentDirectParamV11transactionACSS_tcfc",
+            "usr": "s:12PayMEMiniApp0A20MEPaymentDirectParamV11transaction12isShowResultACSS_SbSgtcfc",
+            "mangledName": "$s12PayMEMiniApp0A20MEPaymentDirectParamV11transaction12isShowResultACSS_SbSgtcfc",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "AccessControl"
@@ -4275,7 +4305,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(service:isBackToApp:)",
+            "printedName": "init(service:isBackToApp:isShowResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4303,11 +4333,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12PayMEMiniApp0A14MEServiceParamV7service08isBackToC0ACSS_SbSgtcfc",
-            "mangledName": "$s12PayMEMiniApp0A14MEServiceParamV7service08isBackToC0ACSS_SbSgtcfc",
+            "usr": "s:12PayMEMiniApp0A14MEServiceParamV7service08isBackToC00G10ShowResultACSS_SbSgAGtcfc",
+            "mangledName": "$s12PayMEMiniApp0A14MEServiceParamV7service08isBackToC00G10ShowResultACSS_SbSgAGtcfc",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "AccessControl"
@@ -4331,7 +4376,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(amount:description:isBackToApp:)",
+            "printedName": "init(amount:description:isBackToApp:isShowResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4383,11 +4428,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12PayMEMiniApp0A10MEPayParamV6amount11description08isBackToC0ACSiSg_SSSgSbSgtcfc",
-            "mangledName": "$s12PayMEMiniApp0A10MEPayParamV6amount11description08isBackToC0ACSiSg_SSSgSbSgtcfc",
+            "usr": "s:12PayMEMiniApp0A10MEPayParamV6amount11description08isBackToC00H10ShowResultACSiSg_SSSgSbSgAJtcfc",
+            "mangledName": "$s12PayMEMiniApp0A10MEPayParamV6amount11description08isBackToC00H10ShowResultACSiSg_SSSgSbSgAJtcfc",
             "moduleName": "PayMEMiniApp",
             "declAttributes": [
               "AccessControl"
@@ -6784,21 +6844,49 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1755,
+      "offset": 1081,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1649,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2058,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2086,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2110,
+      "offset": 2577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2162,
+      "offset": 2629,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2661,
       "length": 4,
       "value": "true"
     },
