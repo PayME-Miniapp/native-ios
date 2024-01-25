@@ -109,6 +109,7 @@ public struct MiniAppError {
 extension PayMEMiniApp.PayME {
   @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
   @_Concurrency.MainActor(unsafe) public func getAccountInformation(of phone: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func setLanguage(of language: PayMEMiniApp.Locale)
 }
 @_hasMissingDesignatedInitializers public class BiometricAuthenication {
   @objc deinit
