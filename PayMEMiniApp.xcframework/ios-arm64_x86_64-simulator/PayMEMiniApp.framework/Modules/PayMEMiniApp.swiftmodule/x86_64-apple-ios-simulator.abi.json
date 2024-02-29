@@ -6542,6 +6542,13 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
+      "offset": 1073,
+      "length": 19,
+      "value": "\"jsPostModalHeight\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
       "offset": 221,
       "length": 7,
       "value": "\"jsLog\""
@@ -6685,6 +6692,13 @@
       "offset": 1024,
       "length": 27,
       "value": "\"jsListScreensSwipeBlocked\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 1073,
+      "length": 19,
+      "value": "\"jsPostModalHeight\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
