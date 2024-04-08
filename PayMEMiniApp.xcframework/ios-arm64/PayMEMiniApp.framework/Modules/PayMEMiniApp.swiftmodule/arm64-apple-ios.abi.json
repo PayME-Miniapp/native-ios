@@ -3788,6 +3788,43 @@
           },
           {
             "kind": "Var",
+            "name": "TransferQR",
+            "printedName": "TransferQR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayMEMiniApp.PayMEAction.Type) -> PayMEMiniApp.PayMEAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEAction",
+                    "printedName": "PayMEMiniApp.PayMEAction",
+                    "usr": "s:12PayMEMiniApp0A8MEActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayMEMiniApp.PayMEAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayMEAction",
+                        "printedName": "PayMEMiniApp.PayMEAction",
+                        "usr": "s:12PayMEMiniApp0A8MEActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12PayMEMiniApp0A8MEActionO10TransferQRyA2CmF",
+            "mangledName": "$s12PayMEMiniApp0A8MEActionO10TransferQRyA2CmF",
+            "moduleName": "PayMEMiniApp"
+          },
+          {
+            "kind": "Var",
             "name": "Service",
             "printedName": "Service",
             "children": [
@@ -4361,6 +4398,95 @@
         "declKind": "Struct",
         "usr": "s:12PayMEMiniApp0A20MEPaymentDirectParamV",
         "mangledName": "$s12PayMEMiniApp0A20MEPaymentDirectParamV",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayMETransferQRParam",
+        "printedName": "PayMETransferQRParam",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(amount:swiftCode:bankNumber:cardHolder:note:isShowResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMETransferQRParam",
+                "printedName": "PayMEMiniApp.PayMETransferQRParam",
+                "usr": "s:12PayMEMiniApp0A17METransferQRParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12PayMEMiniApp0A17METransferQRParamV6amount9swiftCode10bankNumber10cardHolder4note12isShowResultACSi_S4SSgSbSgtcfc",
+            "mangledName": "$s12PayMEMiniApp0A17METransferQRParamV6amount9swiftCode10bankNumber10cardHolder4note12isShowResultACSi_S4SSgSbSgtcfc",
+            "moduleName": "PayMEMiniApp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12PayMEMiniApp0A17METransferQRParamV",
+        "mangledName": "$s12PayMEMiniApp0A17METransferQRParamV",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
           "AccessControl"
@@ -6815,49 +6941,56 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 274,
+      "length": 13,
+      "value": "\"TRANSFER_QR\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
       "length": 9,
       "value": "\"SERVICE\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 298,
+      "offset": 332,
       "length": 9,
       "value": "\"DEPOSIT\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 326,
+      "offset": 360,
       "length": 10,
       "value": "\"WITHDRAW\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 355,
+      "offset": 389,
       "length": 10,
       "value": "\"TRANSFER\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 379,
+      "offset": 413,
       "length": 5,
       "value": "\"KYC\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 405,
+      "offset": 439,
       "length": 13,
       "value": "\"GET_BALANCE\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 477,
       "length": 18,
       "value": "\"GET_ACCOUNT_INFO\""
     },
@@ -6892,98 +7025,112 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 274,
+      "length": 13,
+      "value": "\"TRANSFER_QR\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
       "length": 9,
       "value": "\"SERVICE\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 298,
+      "offset": 332,
       "length": 9,
       "value": "\"DEPOSIT\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 326,
+      "offset": 360,
       "length": 10,
       "value": "\"WITHDRAW\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 355,
+      "offset": 389,
       "length": 10,
       "value": "\"TRANSFER\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 379,
+      "offset": 413,
       "length": 5,
       "value": "\"KYC\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 405,
+      "offset": 439,
       "length": 13,
       "value": "\"GET_BALANCE\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 477,
       "length": 18,
       "value": "\"GET_ACCOUNT_INFO\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1081,
+      "offset": 1115,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1649,
+      "offset": 1683,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2058,
+      "offset": 2246,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2086,
+      "offset": 2877,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2577,
+      "offset": 3396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2629,
+      "offset": 3448,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2661,
+      "offset": 3480,
       "length": 4,
       "value": "true"
     },

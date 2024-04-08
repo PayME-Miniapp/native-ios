@@ -122,6 +122,7 @@ public enum PayMEAction : Swift.String {
   case Open
   case Pay
   case Payment
+  case TransferQR
   case Service
   case Deposit
   case Withdraw
@@ -143,6 +144,9 @@ public struct PayMEPaymentParam {
 }
 public struct PayMEPaymentDirectParam {
   public init(transaction: Swift.String, isShowResult: Swift.Bool? = true)
+}
+public struct PayMETransferQRParam {
+  public init(amount: Swift.Int, swiftCode: Swift.String, bankNumber: Swift.String, cardHolder: Swift.String, note: Swift.String? = nil, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEServiceParam {
   public init(service: Swift.String, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
