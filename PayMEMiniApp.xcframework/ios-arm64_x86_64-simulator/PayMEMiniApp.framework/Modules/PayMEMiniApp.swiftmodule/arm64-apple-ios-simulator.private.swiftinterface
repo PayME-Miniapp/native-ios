@@ -29,6 +29,7 @@ import _StringProcessing
 public enum PayMEError {
   case miniApp(PayMEMiniApp.MiniAppError)
   case userCancel
+  case systemCancel
   case networking(PayMEMiniApp.NetworkError)
   public var code: Swift.String {
     get
@@ -140,19 +141,19 @@ public struct PayMEKey {
   public init(appId: Swift.String, publicKey: Swift.String, privateKey: Swift.String)
 }
 public struct PayMEPaymentParam {
-  public init(amount: Swift.Int, transactionId: Swift.String, note: Swift.String? = nil, ipnUrl: Swift.String? = nil, isShowResult: Swift.Bool? = true)
+  public init(amount: Swift.Int, transactionId: Swift.String, note: Swift.String? = nil, ipnUrl: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEPaymentDirectParam {
-  public init(transaction: Swift.String, isShowResult: Swift.Bool? = true)
+  public init(transaction: Swift.String, extraData: [Swift.String : Any]? = nil, isShowResult: Swift.Bool? = true)
 }
 public struct PayMETransferQRParam {
-  public init(amount: Swift.Int, swiftCode: Swift.String, bankNumber: Swift.String, cardHolder: Swift.String, note: Swift.String? = nil, isShowResult: Swift.Bool? = true)
+  public init(amount: Swift.Int, swiftCode: Swift.String, bankNumber: Swift.String, cardHolder: Swift.String, note: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEServiceParam {
-  public init(service: Swift.String, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
+  public init(service: Swift.String, extraData: [Swift.String : Any]? = nil, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEPayParam {
-  public init(amount: Swift.Int? = 0, description: Swift.String? = nil, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
+  public init(amount: Swift.Int? = 0, extraData: [Swift.String : Any]? = nil, description: Swift.String? = nil, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEOpeningParam {
   public init(action: PayMEMiniApp.PayMEAction, phone: Swift.String, data: Any? = nil)
