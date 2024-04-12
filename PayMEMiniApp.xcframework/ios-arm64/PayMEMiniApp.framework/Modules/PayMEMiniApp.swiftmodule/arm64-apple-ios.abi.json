@@ -6056,7 +6056,7 @@
       "kind": "StringLiteral",
       "offset": 752,
       "length": 8,
-      "value": "\"1.0.18\""
+      "value": "\"1.0.19\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
@@ -6687,6 +6687,13 @@
       "offset": 325,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 664,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
