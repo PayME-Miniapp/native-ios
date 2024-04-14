@@ -147,7 +147,7 @@ public struct PayMEPaymentDirectParam {
   public init(transaction: Swift.String, extraData: [Swift.String : Any]? = nil, isShowResult: Swift.Bool? = true)
 }
 public struct PayMETransferQRParam {
-  public init(amount: Swift.Int, swiftCode: Swift.String, bankNumber: Swift.String, cardHolder: Swift.String, note: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, isShowResult: Swift.Bool? = true)
+  public init(amount: Swift.Int, swiftCode: Swift.String, bankNumber: Swift.String, cardHolder: Swift.String, partnerTransaction: Swift.String? = nil, note: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEServiceParam {
   public init(service: Swift.String, extraData: [Swift.String : Any]? = nil, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
