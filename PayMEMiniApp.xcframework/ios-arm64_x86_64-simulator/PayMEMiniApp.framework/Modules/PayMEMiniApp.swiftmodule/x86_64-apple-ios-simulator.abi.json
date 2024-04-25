@@ -3494,8 +3494,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
@@ -3504,8 +3504,8 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -6699,21 +6699,21 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "StringLiteral",
-      "offset": 325,
+      "offset": 324,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 664,
+      "offset": 658,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "StringLiteral",
-      "offset": 206,
+      "offset": 205,
       "length": 17,
       "value": "\"PayMEMiniApp.AppViewController\""
     },
