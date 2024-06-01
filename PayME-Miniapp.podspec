@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayME-Miniapp"
-  spec.version      = "0.2.46"
+  spec.version      = "0.2.47"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
@@ -14,13 +14,15 @@ Pod::Spec.new do |spec|
   spec.author             = { "DatTM" => "dattm@payme.vn" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.platform     = :ios, "12.0"
+  # spec.platform     = :ios, "12.0"
   spec.swift_versions  = "5.0"
+
   #  When using multiple platforms
-  # spec.ios.deployment_target = "13.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
+  spec.ios.deployment_target = '12.0'
+  spec.osx.deployment_target = '10.12'
+  spec.tvos.deployment_target = '12.0'
+  spec.watchos.deployment_target = '2.0'
+  spec.visionos.deployment_target = '1.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.source       = { :git => "https://github.com/PayME-Miniapp/native-ios.git", :tag => spec.version.to_s }
@@ -51,6 +53,8 @@ Pod::Spec.new do |spec|
   spec.dependency 'Mixpanel-swift', '~> 4.0'
   spec.dependency 'CryptoSwift', '~> 1.8.0'
   spec.dependency 'SwiftyRSA'
+
+  spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   # spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
