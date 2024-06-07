@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayME-Miniapp"
-  spec.version      = "0.2.50-alpha.1"
+  spec.version      = "0.2.50-alpha.2"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.swift_versions  = "5.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = '12.0'
+  spec.ios.deployment_target = '13.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.source       = { :git => "https://github.com/PayME-Miniapp/native-ios.git", :tag => spec.version.to_s }
@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'GCDWebServer', '~> 3.0'
   spec.dependency 'SwiftyJSON', '~> 4.0'
   spec.dependency 'NSLogger/Swift'
-  spec.dependency 'lottie-ios', '~> 3.5.0'
+  spec.dependency 'lottie-ios'
   spec.dependency 'Mixpanel-swift', '~> 4.0'
   spec.dependency 'CryptoSwift', '~> 1.8.0'
   spec.dependency 'SwiftyRSA'
