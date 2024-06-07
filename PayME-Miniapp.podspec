@@ -13,16 +13,14 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/PayME-Miniapp/native-ios.git", :tag => spec.version.to_s }
   spec.vendored_frameworks = "PayMEMiniApp.xcframework"
 
-  spec.dependencies = [
-    "ZIPFoundation", "~> 0.9",
-    "GCDWebServer", "~> 3.0",
-    "SwiftyJSON", "~> 4.0",
-    "NSLogger/Swift",
-    "lottie-ios",
-    "Mixpanel-swift", "~> 4.0",
-    "CryptoSwift", "~> 1.8.0",
-    "SwiftyRSA"
-  ]
+  spec.dependency 'ZIPFoundation', '~> 0.9'
+  spec.dependency 'GCDWebServer', '~> 3.0'
+  spec.dependency 'SwiftyJSON', '~> 4.0'
+  spec.dependency 'NSLogger/Swift'
+  spec.dependency 'lottie-ios'
+  spec.dependency 'Mixpanel-swift', '~> 4.0'
+  spec.dependency 'CryptoSwift', '~> 1.8.0'
+  spec.dependency 'SwiftyRSA'
 
   spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 end
