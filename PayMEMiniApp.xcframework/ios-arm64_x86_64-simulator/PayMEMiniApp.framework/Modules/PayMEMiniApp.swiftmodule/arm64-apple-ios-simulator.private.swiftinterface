@@ -10,6 +10,7 @@ import CoreImage
 import CryptoSwift
 import Foundation
 import GCDWebServer
+import KLPeKYC_NFC
 import LocalAuthentication
 import Lottie
 import Mixpanel
@@ -110,6 +111,7 @@ public struct MiniAppError {
 extension PayMEMiniApp.PayME {
   @_Concurrency.MainActor(unsafe) public func getBalance(of phone: Swift.String)
   @_Concurrency.MainActor(unsafe) public func getAccountInformation(of phone: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func getSessionKLP(of phone: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public func setLanguage(of language: PayMEMiniApp.Locale)
 }
 @_hasMissingDesignatedInitializers public class BiometricAuthenication {
@@ -117,6 +119,25 @@ extension PayMEMiniApp.PayME {
 }
 @_hasMissingDesignatedInitializers public class Console {
   @objc deinit
+}
+@objc public enum KLPFlowType : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
+  case nfc_ekyc
+  case ekyc
+  case nfc
+  case passport
+  case verify
+  public typealias RawValue = Swift.String
+  public init?(rawValue: PayMEMiniApp.KLPFlowType.RawValue)
+  public var rawValue: PayMEMiniApp.KLPFlowType.RawValue {
+    get
+  }
+  public var key: Swift.String {
+    get
+  }
+  public typealias AllCases = [PayMEMiniApp.KLPFlowType]
+  public static var allCases: [PayMEMiniApp.KLPFlowType] {
+    get
+  }
 }
 public enum PayMEAction : Swift.String {
   case PayME
@@ -129,6 +150,7 @@ public enum PayMEAction : Swift.String {
   case Withdraw
   case Transfer
   case KYC
+  case KalapaKYC
   case GetBalance
   case GetAccountInfo
   public init?(rawValue: Swift.String)
@@ -185,6 +207,8 @@ extension PayMEMiniApp.Environment : Swift.RawRepresentable {}
 extension PayMEMiniApp.Locale : Swift.Equatable {}
 extension PayMEMiniApp.Locale : Swift.Hashable {}
 extension PayMEMiniApp.Locale : Swift.RawRepresentable {}
+extension PayMEMiniApp.KLPFlowType : Swift.Equatable {}
+extension PayMEMiniApp.KLPFlowType : Swift.Hashable {}
 extension PayMEMiniApp.PayMEAction : Swift.Equatable {}
 extension PayMEMiniApp.PayMEAction : Swift.Hashable {}
 extension PayMEMiniApp.PayMEAction : Swift.RawRepresentable {}

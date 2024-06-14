@@ -252,6 +252,14 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
+typedef SWIFT_ENUM(NSInteger, KLPFlowType, open) {
+  KLPFlowTypeNfc_ekyc = 0,
+  KLPFlowTypeEkyc = 1,
+  KLPFlowTypeNfc = 2,
+  KLPFlowTypePassport = 3,
+  KLPFlowTypeVerify = 4,
+};
+
 @class NSCoder;
 @class NSString;
 @class NSBundle;
