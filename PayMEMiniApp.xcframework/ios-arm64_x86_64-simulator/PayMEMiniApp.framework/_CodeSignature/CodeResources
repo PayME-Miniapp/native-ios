@@ -12,81 +12,17 @@
 		<data>
 		DMSsmdo6SwzgubTZhNjZ9xpjjT4=
 		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/Assets.car</key>
-		<data>
-		HYeYrJLCrYgjQS271/av/ncs1y0=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/Info.plist</key>
-		<data>
-		Tdkhslfo0/BFzpoxyKrTy/9DtZE=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPCustomAlertVC.nib</key>
-		<data>
-		ZNChYy/Z/OVHj829KLccyHo4w/g=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPFaceVC.nib</key>
-		<data>
-		evezD3HAyM6PNdFkgIExy8u5KHY=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPNFCAntennaVC.nib</key>
-		<data>
-		E+hozgA1q5cWDRziQRtOcTrKaKU=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPPopupHolderViewController.nib</key>
-		<data>
-		IkCzwTSnMQZP1G/mthDvuYZNTfA=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPScanNFCVC.nib</key>
-		<data>
-		2PgIiW6v1JwaGG+oK6fr22AKJ5g=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPeKYC_NFC</key>
-		<data>
-		sr2rxRpUk36jU5iVw5FG9qUXSm4=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		Xp+Gl6ysuek0ypCLcqR2uGTQmp0=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/_CodeSignature/CodeResources</key>
-		<data>
-		YapF/QcJFXzWL34UT1H+fxiddR4=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/tiltLeft.gif</key>
-		<data>
-		wgxl2AXcXNeBb/VtevkzTAK6i3c=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/tiltRight.gif</key>
-		<data>
-		gFC1WdjBQ+ghN1YtZX9jVpQA/Kg=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnDown.gif</key>
-		<data>
-		art7RAKEBWKS5fnzgchKgyaBvrU=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnLeft.gif</key>
-		<data>
-		lDkcUnZVN7TFM1NNOwtYjeOZN/Y=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnRight.gif</key>
-		<data>
-		Li/bbwbAGvy1Lm9wo7xomqKKsG4=
-		</data>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnUp.gif</key>
-		<data>
-		d4TJTbNzdhMseX8WZjQO/4UK6co=
-		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Info.plist</key>
 		<data>
 		CvTBBbcYVvYAtc2hTneCrgAFdDo=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Pods_PayMEMiniApp</key>
 		<data>
-		B2qXj4mPNzqqO8mjpBHhSz4WCN4=
+		K80CHGK7pC0/DvZ0C8xjhYrwmxI=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		TjWqQjfQfxT3woAQYuF8n3TRJ8g=
+		Gcl1A6Wb+BE7nq0UalatZcLJnmc=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -94,7 +30,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		KL3L2ISn8l4I8cQdLFt4t70nQCI=
+		LYCUh60V005/UgIdR+Wei5M2J/c=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -205,118 +141,6 @@
 			bGeP2gM34bVtLGfyrmOeRQvn+iOlrVIbuxDlaYoYdag=
 			</data>
 		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RlHfziCE8YTOxdeod1WSv+7vUzUSe+wkPH45CS9DFdo=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5xGammpEC+hA2kZNbPwOnbgeM9hgxXA7WNWqNIJa/qI=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPCustomAlertVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZuTCxsihlK8NTzJpuNsTg3L+0WhBxISBenISYlkryTo=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPFaceVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			d0XwHFfqbF9J3RMmvzxOALnlT0Om+JllOWw6FeFeTz4=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPNFCAntennaVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CrsLkb8EoOQK4jlwE4F8nq0jWwWF0CS6xfZG652gwoI=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPPopupHolderViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ovnJnlQBX4sLDjuSmVFKzfYI4N+AwZ4IZm2yrqOv4wA=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPScanNFCVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VGF3OUDj08vZ5JPwUNodS1RgNz8m0bNcbmppM9AaDUw=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/KLPeKYC_NFC</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			t4+QXKAZNFMFwUGeVtAVZb2YEBsF9BmVdwIbCrQxCaI=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SWYKEE42QmLi4xwfGJyJnbMxi60APmVttjXjPVJa9Mc=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SIGx+ETa6kTHmBZehOD3qk/zlWnwyfeXeRvZB/2jE+Q=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/tiltLeft.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2BaFWI8IB2ZhKEbKBIeHN+UX7MkGUFaBHFXhQqkoapE=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/tiltRight.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DglqXZpGBjKJC22GjVnQJFpnvAmL6Nf44TERpi5A5TE=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnDown.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			U+Se1wtaiFMN+6SJ9pgKvV8BNHwOgeXlh3c9wbPpq0w=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnLeft.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gyAbiyHNANmjsj95deuKVYSlABPKOwcAgo58AlJzZIU=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnRight.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			H82bISUHIhph3Zr885toAu6BfUJJuUbxhQek1hSXlnA=
-			</data>
-		</dict>
-		<key>Frameworks/KLPeKYC_NFC.framework/turnUp.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lZ8IBYGvv5Xqs2j9g/tXuaXTPPRYN2wSOfjHrJXcAjo=
-			</data>
-		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -328,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			47vISRtMhmy8vTT7k1FE8PV81bYua9LS8qwxHBOkSDU=
+			25kQkXFDJKdL5jm+PIIoF5tINP8LIwgMJrb4zyrLGGc=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UOz3/YQAektwX180qUtVZK8MPwNCZyu1o/5NRftO9nA=
+			yTSbgaW4VIUR8pDVL/vVvqzfnsuj1iUP22WvBmJ9ZIw=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
@@ -349,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kZCWOkbROUzLFgz2SM3JPQUTrMhQDYy+BCwnmi7svEg=
+			UVUEVHovlBWQsJJE5/yyk6u2nOpHYaGvvU+ui7h14xE=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
