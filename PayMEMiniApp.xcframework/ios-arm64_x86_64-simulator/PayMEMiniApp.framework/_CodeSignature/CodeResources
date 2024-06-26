@@ -82,11 +82,11 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Pods_PayMEMiniApp</key>
 		<data>
-		fqqX9DIQxEV3xA7qQzuAvDtNqLA=
+		B2qXj4mPNzqqO8mjpBHhSz4WCN4=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		y02CUTVc9B/KWEW1yUHrMtgZJFE=
+		TjWqQjfQfxT3woAQYuF8n3TRJ8g=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		mbBK3KVIR25BhfNqTk0IklDLoQs=
+		KL3L2ISn8l4I8cQdLFt4t70nQCI=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		aBwwAWZYJU9yjRKXddjCU4o6M+k=
+		l0KuAaGl2xn1ut0/0m7MPSo/+Mg=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
@@ -328,14 +328,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6JPL3WBb4lYumO7kAK/ZjYr37IyVldx/pVCzo+AMQ1E=
+			47vISRtMhmy8vTT7k1FE8PV81bYua9LS8qwxHBOkSDU=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BHU9SGekErTUM5Zu7El0wtEgs3yo3LD8R6ZLJ7XwT7A=
+			UOz3/YQAektwX180qUtVZK8MPwNCZyu1o/5NRftO9nA=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
@@ -349,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2c9j7x4hOXAjJ8XAH29td41DwGvmgTbNOG2iPvBYwg4=
+			kZCWOkbROUzLFgz2SM3JPQUTrMhQDYy+BCwnmi7svEg=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
@@ -496,7 +496,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WN7hKgaMjY7mjQ3dSs9ZQihewV2u3ceX4As6c+RO8dc=
+			1eRQ1q83HOjCG0o+oYO5J3X5euLRMbAEOFYy0wY1Ra4=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>

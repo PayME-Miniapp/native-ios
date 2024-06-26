@@ -42,7 +42,7 @@
 		</data>
 		<key>Frameworks/KLPeKYC_NFC.framework/KLPeKYC_NFC</key>
 		<data>
-		NJSKPeNOTkxwz6YfMu66CHWarlw=
+		VeXX8SRt8JnGiKN0E/aKuL8eb+I=
 		</data>
 		<key>Frameworks/KLPeKYC_NFC.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Pods_PayMEMiniApp</key>
 		<data>
-		dI9NdKhZINYgAoRJwQYWaZ524gY=
+		vVY8IPadTKcfXPLmINR0TpV3554=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		J3eHiemszmXRtjF1QtjItVFMgSs=
+		SvlRmvD/MlzZE9W02TIfGR7Vkr0=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		LuB/r54Jd9yVp1QIrhBKP87VnC0=
+		x5RRhzE0TAu0NcBuj2B+a7u6QKw=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		9Se7EGwT80ae+rYpvDhpER9SU+w=
+		LlXkywgglzh0v4B7A8ujcAggJMQ=
 		</data>
 		<key>Headers/PayMEMiniApp-Swift.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		aBwwAWZYJU9yjRKXddjCU4o6M+k=
+		l0KuAaGl2xn1ut0/0m7MPSo/+Mg=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
@@ -238,7 +238,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jm99nhpL5DLpPuGddMpvVJIsAuNCKtt0Y46XxIOjYE0=
+			ecX9rh/CyFWN5e5TvJsFlMUb0MkUXMojPPTVtZ0UyGo=
 			</data>
 		</dict>
 		<key>Frameworks/KLPeKYC_NFC.framework/PrivacyInfo.xcprivacy</key>
@@ -308,14 +308,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dleoC5lOy1XhQM2meLGr7ufWc/DbDrtU3aYSZw26ZO8=
+			vKh3ocoG8qTXqH4HlfhLusHFsNP26DnzV3O8xDDjL0s=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h5wDNbXZ9CILd+BZ8RnmXW40gKhVwwyJRU9vEiJSuP4=
+			OcBRnBpLtq4etYHcCbH55i8blkKXnVEkgbCTDsLv+c0=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
@@ -329,7 +329,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YuwXSRgF/RwgD6VAzWKvv3LKF/YueUD0BjhBZuhBvPc=
+			ye+emQvKxiuhLLq+PInXheKf2PlmngqN/Z6/F1pj+oY=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
@@ -343,7 +343,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vzuxapD6FpUiQwE3qNGk5B+U2CVsVDcLtfS88rygntU=
+			gf3Y4Gq7sDSCPpzIFSkVfjlH7GdKnXsl8JG4oQ8jKkk=
 			</data>
 		</dict>
 		<key>Headers/PayMEMiniApp-Swift.h</key>
@@ -441,7 +441,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WN7hKgaMjY7mjQ3dSs9ZQihewV2u3ceX4As6c+RO8dc=
+			1eRQ1q83HOjCG0o+oYO5J3X5euLRMbAEOFYy0wY1Ra4=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>
