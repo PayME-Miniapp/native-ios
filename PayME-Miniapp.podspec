@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
 
   spec.source       = { :git => "https://github.com/PayME-Miniapp/native-ios.git", :tag => spec.version.to_s }
-  spec.vendored_frameworks = ["PayMEMiniApp.xcframework", "KLPeKYC_NFC"]
+  spec.vendored_frameworks = ["PayMEMiniApp.xcframework", "KLPeKYC_NFC.xcframework"]
 
   spec.dependency 'ZIPFoundation', '~> 0.9'
   spec.dependency 'GCDWebServer', '~> 3.0'
