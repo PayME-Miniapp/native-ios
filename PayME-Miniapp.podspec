@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PayME-Miniapp"
-  spec.version      = "0.3.0-alpha.4"
+  spec.version      = "0.3.0-alpha.5"
   spec.summary      = "A short description of PayMEMiniApp."
   spec.description  = "TODO: Add long description of the pod here."
   spec.homepage     = "https://github.com/PayME-Miniapp/native-ios"
@@ -21,6 +21,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'Mixpanel-swift', '~> 4.0'
   spec.dependency 'CryptoSwift', '~> 1.8.0'
   spec.dependency 'SwiftyRSA'
+  spec.dependency 'KLPeKYC_NFC'
 
   spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 end
