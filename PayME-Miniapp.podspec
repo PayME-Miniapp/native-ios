@@ -21,7 +21,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'Mixpanel-swift', '~> 4.0'
   spec.dependency 'CryptoSwift', '~> 1.8.0'
   spec.dependency 'SwiftyRSA'
-  spec.dependency 'KLPeKYC_NFC'
 
   spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 end
