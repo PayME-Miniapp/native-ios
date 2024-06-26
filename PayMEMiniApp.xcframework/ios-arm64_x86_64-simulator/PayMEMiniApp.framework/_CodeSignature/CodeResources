@@ -18,11 +18,11 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Pods_PayMEMiniApp</key>
 		<data>
-		K80CHGK7pC0/DvZ0C8xjhYrwmxI=
+		YcBU+R4ZloFpFA+HfgXC/AJoTps=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		Gcl1A6Wb+BE7nq0UalatZcLJnmc=
+		/xqI0oBZZU56EO55jjDFRQZe1pQ=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		LYCUh60V005/UgIdR+Wei5M2J/c=
+		jCpERNaZfKfLLOQi70TBjDFa7WI=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -152,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			25kQkXFDJKdL5jm+PIIoF5tINP8LIwgMJrb4zyrLGGc=
+			23qA38zXY0kLi9Qpps6RC5f0UfbobJ2w8jG9WjmSArM=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTSbgaW4VIUR8pDVL/vVvqzfnsuj1iUP22WvBmJ9ZIw=
+			o3INoiqnH7YsvLHohCMoEHVWHtQ6hGPv82hyKRGeSWM=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UVUEVHovlBWQsJJE5/yyk6u2nOpHYaGvvU+ui7h14xE=
+			pZBVmI/rCePDP8brBh+tJYy38LGAuLX7moxPQlARKXc=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
