@@ -1746,6 +1746,30 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "BundleType",
         "printedName": "BundleType",
@@ -3076,6 +3100,30 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -6932,6 +6980,146 @@
       "value": "\"1.0.21\""
     },
     {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 471,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 511,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5962,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6166,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6305,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6462,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 6543,
+      "length": 10,
+      "value": "\"iconBack\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6619,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6629,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6641,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6652,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6818,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7023,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7130,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7209,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 158,
+      "length": 26,
+      "value": "\"PayMEMiniApp.FaceAuthenCameraController\""
+    },
+    {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
       "kind": "IntegerLiteral",
       "offset": 176,
@@ -7662,112 +7850,119 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 532,
+      "offset": 538,
+      "length": 21,
+      "value": "\"jsRequestFaceAuthen\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
       "length": 15,
       "value": "\"jsOpenSetting\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 575,
+      "offset": 624,
       "length": 21,
       "value": "\"jsRequestDeviceInfo\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 671,
       "length": 19,
       "value": "\"jsRequestContacts\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 718,
       "length": 21,
       "value": "\"jsRequestPermission\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 712,
+      "offset": 761,
       "length": 15,
       "value": "\"jsOpenWebView\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 755,
+      "offset": 804,
       "length": 21,
       "value": "\"jsOneSignalSendTags\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 806,
+      "offset": 855,
       "length": 23,
       "value": "\"jsOneSignalDeleteTags\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 845,
+      "offset": 894,
       "length": 9,
       "value": "\"jsError\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 873,
+      "offset": 922,
       "length": 12,
       "value": "\"jsResponse\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 901,
+      "offset": 950,
       "length": 9,
       "value": "\"jsClose\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 977,
       "length": 11,
       "value": "\"jsOpenUrl\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 956,
+      "offset": 1005,
       "length": 10,
       "value": "\"jsSaveQR\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 986,
+      "offset": 1035,
       "length": 13,
       "value": "\"jsChangeEnv\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1022,
+      "offset": 1071,
       "length": 16,
       "value": "\"jsChangeLocale\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1071,
+      "offset": 1120,
       "length": 27,
       "value": "\"jsListScreensSwipeBlocked\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1120,
+      "offset": 1169,
       "length": 19,
       "value": "\"jsPostModalHeight\""
     },
@@ -7823,112 +8018,119 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 532,
+      "offset": 538,
+      "length": 21,
+      "value": "\"jsRequestFaceAuthen\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
       "length": 15,
       "value": "\"jsOpenSetting\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 575,
+      "offset": 624,
       "length": 21,
       "value": "\"jsRequestDeviceInfo\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 671,
       "length": 19,
       "value": "\"jsRequestContacts\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 718,
       "length": 21,
       "value": "\"jsRequestPermission\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 712,
+      "offset": 761,
       "length": 15,
       "value": "\"jsOpenWebView\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 755,
+      "offset": 804,
       "length": 21,
       "value": "\"jsOneSignalSendTags\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 806,
+      "offset": 855,
       "length": 23,
       "value": "\"jsOneSignalDeleteTags\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 845,
+      "offset": 894,
       "length": 9,
       "value": "\"jsError\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 873,
+      "offset": 922,
       "length": 12,
       "value": "\"jsResponse\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 901,
+      "offset": 950,
       "length": 9,
       "value": "\"jsClose\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 977,
       "length": 11,
       "value": "\"jsOpenUrl\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 956,
+      "offset": 1005,
       "length": 10,
       "value": "\"jsSaveQR\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 986,
+      "offset": 1035,
       "length": 13,
       "value": "\"jsChangeEnv\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1022,
+      "offset": 1071,
       "length": 16,
       "value": "\"jsChangeLocale\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1071,
+      "offset": 1120,
       "length": 27,
       "value": "\"jsListScreensSwipeBlocked\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1120,
+      "offset": 1169,
       "length": 19,
       "value": "\"jsPostModalHeight\""
     },
