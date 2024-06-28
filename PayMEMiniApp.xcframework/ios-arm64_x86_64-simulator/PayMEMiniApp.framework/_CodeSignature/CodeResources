@@ -18,11 +18,11 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Pods_PayMEMiniApp</key>
 		<data>
-		cL/N5TmipIrvdX6+SgObSC6xOS8=
+		atAateO93JVKVo4X0KyAMr4Vbno=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		U67Q8UBablYrLY/FTANKnWU0+AM=
+		swCUT1cCetggLUxf7IkroNqP1Yg=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		oq3Atl0/hC2SyVHGNyMq2R9OVf0=
+		+r2r3RYuHicW4ue7ElrDUt5TZsk=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tFO3zin2PeVAipwc/Y1GVMImQ2Q=
+		TBOPHGLLI+J8tVdeQ4TMaV1XWMs=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dOiCwV1SfjRRdjHhkhaMdKrGfBA=
+		cpcF3U7VZxXKVcHEZOj5EnsGxNg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4dDrCewiHNSeO6MmzuyIOjvjcWo9etNKLKDAlCN16EI=
+			pi3aUtnRZ7OgF1HaBUsmpi5xeaCJi3CDdJgw29fLgP8=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VbIyUHbzKX7/Hw+Q2+L0ec5itoBaFCXcOvAKxwvDQi4=
+			y8+B5evB1Rw60m8xsou0a38OPj7P9hYhhHe9F5WTMc4=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LS1dBjjsuIePSeBACi/WrQHCG184NxaDCEp5wW/QtwQ=
+			ZFcm+7+ZPHJyVWqRihmNCmVfrWAL6Av76yt+Y+AnHEU=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sjuvP82mKZmD8iBWYBHXOwUyxJGYc+s35FAea0mM89Q=
+			NM2V/0SCnspI0X/DI6uTfH0W6tvE5jVIpT7sA5M8uDg=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -271,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/gI8W+W61TpVHL1eJbrjOSN9v8YoqS1P6ewDwjfFNsA=
+			7uKbPZgsMjIZnesFcihWzBJ5vYZpbyp0x1Bl0uvqUb0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
