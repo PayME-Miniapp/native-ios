@@ -18,11 +18,11 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/Pods_PayMEMiniApp</key>
 		<data>
-		zGC/iMXJdIiWGzO4fvi3lrGCR8c=
+		imSzoqvGbRvQNZhL0u4MnrXhmSk=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		URlzaITPgkE864pCVZKxTCiuRZc=
+		ESbq6bePchWyLNqyosC4gaJsyNE=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		q2qiW6y8RFdTP/pQs60ljT3GIRg=
+		9Rs3Oh41Zc3JFhMzJXyU+zWfrVA=
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		Lw96+e774QEmJ8LW0+QTnO+LepM=
+		/JAoFoN92kYehbkL769vH3pzjxo=
 		</data>
 		<key>Headers/PayMEMiniApp-Swift.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3UxVs9nIhIiXvAc/MdMf6G7h/Mw=
+		e0wmCwn8Ptkb0H2TRov4tWRIO5A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0D6qXkXfswxHIiNbOuLtZURhaopixQtwQHfDAZDb4aQ=
+			kzh9Fgb3xgeSOlmcoiSX2jvwpUZtwEccKh69OFNL6zk=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yzT3Dsh8U7N02fTehMEKRFkUQt9MqHo4ail/h4kMMGM=
+			Yj6GTQLh9utijmtlimwN5RDW2W1AL9bJ4I8vK22ehqI=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeRequirements</key>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W4neAtHM21zz2OAS0Mfwbm/KCF1wmXw+BK5KcccMBmg=
+			M52J66Ei4jSQQi/dpMVD/8ye+l2d/5zJe6KmJjzdB1U=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayMEMiniApp.framework/_CodeSignature/CodeResources</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9sCpxX1NMYG7IIiQgYRTp7AOpNldujqFZJy4tUhgJ0A=
+			0MXCl1vaO2GQxTpQr6RxDCA3n9ry7urStH3sHQyRXf0=
 			</data>
 		</dict>
 		<key>Headers/PayMEMiniApp-Swift.h</key>
@@ -216,7 +216,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lp4YtMHqFc3lU6iPTQRWS8oEfIHdJ8FcLopmc4A/pcA=
+			J8fv7vVUG945zx+iiqs6MWLds+J7hJWudGKemiCxqEI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
