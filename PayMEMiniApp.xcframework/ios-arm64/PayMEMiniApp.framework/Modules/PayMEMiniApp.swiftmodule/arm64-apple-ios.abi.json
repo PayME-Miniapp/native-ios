@@ -5921,13 +5921,6 @@
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
-      "kind": "BooleanLiteral",
-      "offset": 554,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 5,
