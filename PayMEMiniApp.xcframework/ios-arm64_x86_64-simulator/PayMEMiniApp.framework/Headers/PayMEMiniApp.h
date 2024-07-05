@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <KLPeKYC_NFC/KLPeKYC_NFC.h>
+#import <KalapaSDK/KalapaSDK.h>
 
 //! Project version number for PayMEMiniApp.
 FOUNDATION_EXPORT double PayMEMiniAppVersionNumber;

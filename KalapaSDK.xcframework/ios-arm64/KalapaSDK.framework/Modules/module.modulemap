@@ -1,0 +1,11 @@
+framework module KalapaSDK {
+  umbrella header "KalapaSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module KalapaSDK.Swift {
+  header "KalapaSDK-Swift.h"
+  requires objc
+}
