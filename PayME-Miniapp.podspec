@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'GCDWebServer', '~> 3.0'
   spec.dependency 'SwiftyJSON', '~> 4.0'
   spec.dependency 'NSLogger/Swift'
-  spec.dependency 'lottie-ios'
+  spec.dependency 'lottie-ios', '~> 4.4.0'
   spec.dependency 'Mixpanel-swift', '~> 4.0'
   spec.dependency 'CryptoSwift', '~> 1.8.0'
   spec.dependency 'SwiftyRSA'

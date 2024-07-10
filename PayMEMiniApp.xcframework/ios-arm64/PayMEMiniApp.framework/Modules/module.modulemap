@@ -1,7 +1,7 @@
 framework module PayMEMiniApp {
   umbrella header "PayMEMiniApp.h"
-  export *
 
+  export *
   module * { export * }
 }
 
