@@ -42656,44 +42656,51 @@
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
       "kind": "StringLiteral",
-      "offset": 2803,
+      "offset": 2837,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
       "kind": "StringLiteral",
-      "offset": 2873,
+      "offset": 2907,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3058,
+      "offset": 3092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3377,
+      "offset": 3365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
       "kind": "StringLiteral",
-      "offset": 3492,
+      "offset": 3480,
       "length": 18,
       "value": "\"klp_error_happen\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3736,
+      "offset": 3724,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/ViewController\/NFCAntennaVC\/NFCAntennaVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3874,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Utils\/Helpers.swift",
@@ -47262,1575 +47269,973 @@
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 7415,
-      "length": 57,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 7447,
-      "length": 1,
-      "value": "\"\/api\/nfc\/register-device\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 7775,
+      "offset": 7404,
       "length": 20,
       "value": "\"[Client] post url:\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 7874,
+      "offset": 7503,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 7885,
+      "offset": 7514,
       "length": 5,
       "value": "\"%20\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 8034,
+      "offset": 7663,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 8133,
+      "offset": 7762,
       "length": 18,
       "value": "\"[Client] headers\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 8433,
-      "length": 26,
-      "value": "\"[Client] GET finish url:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8678,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 8736,
-      "length": 18,
-      "value": "\"klp_error_happen\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9035,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 9062,
-      "length": 19,
-      "value": "\"klp_error_network\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9212,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 9393,
-      "length": 21,
-      "value": "\"[Client] GET error:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 9472,
-      "length": 45,
-      "value": "\"A data connection is not currently allowed.\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9680,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 9706,
-      "length": 25,
-      "value": "\"klp_error_network_short\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9861,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10081,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 10210,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Dictionary",
-      "offset": 10234,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10281,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10351,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10417,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10422,
-      "length": 116,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10439,
-      "length": 23,
-      "value": "\"klp_error_doc_invalid\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10464,
-      "length": 1,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10471,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10493,
-      "length": 1,
-      "value": "\". \""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10511,
-      "length": 24,
-      "value": "\"klp_error_please_retry\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10537,
-      "length": 9,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10545,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10606,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 10658,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 10840,
-      "length": 92,
-      "value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 19, 21, 40, 41, 42, 43, 400, 401, 403, 500]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11431,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 11458,
-      "length": 18,
-      "value": "\"klp_common_error\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11577,
-      "length": 3,
-      "value": "204"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Dictionary",
-      "offset": 11650,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11724,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11814,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12074,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 12369,
+      "offset": 8438,
       "length": 20,
       "value": "\"[Client] post url:\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 12468,
+      "offset": 8537,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 12479,
+      "offset": 8548,
       "length": 5,
       "value": "\"%20\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 12628,
+      "offset": 8697,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 12727,
+      "offset": 8796,
       "length": 18,
       "value": "\"[Client] headers\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 13080,
-      "length": 45,
-      "value": "\"A data connection is not currently allowed.\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13289,
-      "length": 2,
-      "value": "-1"
+      "kind": "BooleanLiteral",
+      "offset": 9188,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 13315,
-      "length": 25,
-      "value": "\"klp_error_network_short\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13448,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13668,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 13764,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 13857,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 13927,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13993,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 13998,
-      "length": 116,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14015,
-      "length": 23,
-      "value": "\"klp_error_doc_invalid\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14040,
-      "length": 1,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14047,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14069,
-      "length": 1,
-      "value": "\". \""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14087,
-      "length": 24,
-      "value": "\"klp_error_please_retry\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14113,
-      "length": 9,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 14121,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14182,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 14283,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 14460,
-      "length": 92,
-      "value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 19, 21, 40, 41, 42, 43, 400, 401, 403, 500]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15129,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15218,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15505,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 15870,
+      "offset": 9575,
       "length": 20,
       "value": "\"[Client] post url:\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 16029,
+      "offset": 9734,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 16120,
+      "offset": 9825,
       "length": 18,
       "value": "\"[Client] headers\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 16483,
+      "offset": 10188,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 17352,
+      "offset": 11057,
       "length": 15,
       "value": "\"image_ios.jpg\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 17398,
+      "offset": 11103,
       "length": 7,
       "value": "\"front\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 17432,
+      "offset": 11137,
       "length": 21,
       "value": "\"image_ios_front.jpg\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 17490,
+      "offset": 11195,
       "length": 6,
       "value": "\"back\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 17523,
+      "offset": 11228,
       "length": 20,
       "value": "\"image_ios_back.jpg\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "FloatLiteral",
-      "offset": 17867,
+      "offset": 11572,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18036,
+      "offset": 11741,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18126,
+      "offset": 11831,
       "length": 23,
       "value": "\"\r\n--\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18144,
+      "offset": 11849,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18181,
+      "offset": 11886,
       "length": 84,
       "value": "\"Content-Disposition: form-data; name=\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18232,
+      "offset": 11937,
       "length": 1,
       "value": "\"\"; filename=\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18258,
+      "offset": 11963,
       "length": 1,
       "value": "\"\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18297,
+      "offset": 12002,
       "length": 33,
       "value": "\"Content-Type: image\/jpg\r\n\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18410,
+      "offset": 12115,
       "length": 23,
       "value": "\"\r\n--\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18428,
+      "offset": 12133,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18465,
+      "offset": 12170,
       "length": 60,
       "value": "\"Content-Disposition: form-data; name=\"signature\"\r\n\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18557,
+      "offset": 12262,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18570,
+      "offset": 12275,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18620,
+      "offset": 12325,
       "length": 25,
       "value": "\"\r\n--\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18638,
+      "offset": 12343,
       "length": 2,
       "value": "\"--\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18811,
+      "offset": 12516,
       "length": 43,
       "value": "\"multipart\/form-data; boundary=\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18853,
+      "offset": 12558,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18876,
+      "offset": 12581,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 18994,
+      "offset": 12699,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 19050,
+      "offset": 12755,
       "length": 26,
       "value": "\"Request: \""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 19066,
+      "offset": 12771,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 19075,
+      "offset": 12780,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 19198,
+      "offset": 12903,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 19915,
+      "offset": 13653,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 19973,
+      "offset": 13711,
       "length": 18,
       "value": "\"klp_error_happen\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 20063,
+      "offset": 13801,
       "length": 25,
       "value": "\"[Client] request error:\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 20316,
+      "offset": 14054,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 20343,
+      "offset": 14081,
       "length": 19,
       "value": "\"klp_error_network\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 20464,
+      "offset": 14202,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 20685,
+      "offset": 14423,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 20765,
+      "offset": 14503,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 20893,
+      "offset": 14631,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Dictionary",
-      "offset": 20918,
+      "offset": 14656,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 20949,
+      "offset": 14888,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 21051,
+      "offset": 14990,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 21134,
+      "offset": 15073,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Dictionary",
-      "offset": 21164,
+      "offset": 15103,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 21221,
+      "offset": 15160,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 21288,
+      "offset": 15227,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 21318,
+      "offset": 15257,
       "length": 8,
       "value": "[0, 200]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 21380,
+      "offset": 15319,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Dictionary",
-      "offset": 21409,
+      "offset": 15348,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 21533,
+      "offset": 15472,
       "length": 87,
       "value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 19, 21, 40, 41, 42, 43, 401, 403, 500]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 22022,
+      "offset": 15961,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 22294,
+      "offset": 16233,
       "length": 20,
       "value": "\"[Client] post url:\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 22453,
+      "offset": 16392,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 22488,
+      "offset": 16427,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 22566,
+      "offset": 16505,
       "length": 18,
       "value": "\"[Client] headers\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 22851,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23090,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23292,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 23388,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23528,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23617,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23669,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23758,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 23988,
-      "length": 22,
-      "value": "\"[Client] post error:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24098,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 24426,
-      "length": 20,
-      "value": "\"[Client] post url:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 24473,
-      "length": 24,
-      "value": "\"urlString \""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 24496,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 24571,
-      "length": 13,
-      "value": "\"Invalid URL\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 24687,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 24778,
-      "length": 18,
-      "value": "\"[Client] headers\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 25054,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 25163,
-      "length": 26,
-      "value": "\"body param \""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 25188,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 25370,
-      "length": 27,
-      "value": "\"[Client] post finish url:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 25478,
-      "length": 22,
-      "value": "\"[Client] post error:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 25557,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 25769,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 25865,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 25927,
-      "length": 37,
-      "value": "\"[Client] post success: post Session\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 26016,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26172,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26235,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 26450,
-      "length": 22,
-      "value": "\"[Client] post error:\""
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26533,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Dictionary",
-      "offset": 26788,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Dictionary",
-      "offset": 26825,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Dictionary",
-      "offset": 26866,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
-      "kind": "Array",
-      "offset": 26899,
+      "offset": 16790,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "BooleanLiteral",
-      "offset": 26939,
+      "offset": 17042,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
+      "kind": "Dictionary",
+      "offset": 17321,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
+      "kind": "Dictionary",
+      "offset": 17358,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
+      "kind": "Dictionary",
+      "offset": 17399,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
+      "kind": "Array",
+      "offset": 17432,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 26973,
+      "offset": 17506,
       "length": 12,
       "value": "\"face_image\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 27348,
+      "offset": 17881,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 27494,
+      "offset": 18027,
       "length": 17,
       "value": "\"Boundary-Kalapa\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 27540,
+      "offset": 18073,
       "length": 43,
       "value": "\"multipart\/form-data; boundary=\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 27582,
+      "offset": 18115,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 27605,
+      "offset": 18138,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Dictionary",
-      "offset": 28273,
+      "offset": 18806,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Dictionary",
-      "offset": 28310,
+      "offset": 18843,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "BooleanLiteral",
-      "offset": 28345,
+      "offset": 18878,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 28642,
+      "offset": 19175,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 28852,
+      "offset": 19385,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 28897,
+      "offset": 19430,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 28937,
+      "offset": 19470,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 29058,
+      "offset": 19591,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 29412,
+      "offset": 19945,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 29533,
+      "offset": 20066,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 30000,
+      "offset": 20533,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30182,
+      "offset": 20715,
       "length": 19,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30200,
+      "offset": 20733,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 30314,
+      "offset": 20847,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30531,
+      "offset": 21064,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30537,
+      "offset": 21070,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30543,
+      "offset": 21076,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30565,
+      "offset": 21098,
       "length": 3,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30660,
+      "offset": 21193,
       "length": 17,
       "value": "\"Boundary-Kalapa\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "BooleanLiteral",
-      "offset": 30768,
+      "offset": 21301,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30863,
+      "offset": 21396,
       "length": 19,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 30877,
+      "offset": 21410,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31005,
+      "offset": 21538,
       "length": 57,
       "value": "\"Content-Disposition: form-data; name=\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31051,
+      "offset": 21584,
       "length": 1,
       "value": "\"\"\r\n\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31094,
+      "offset": 21627,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31103,
+      "offset": 21636,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 31150,
+      "offset": 21683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "FloatLiteral",
-      "offset": 31247,
+      "offset": 21780,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31292,
+      "offset": 21825,
       "length": 13,
       "value": "\"anh\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31300,
+      "offset": 21833,
       "length": 1,
       "value": "\".jpg\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31333,
+      "offset": 21866,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31395,
+      "offset": 21928,
       "length": 8,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31401,
+      "offset": 21934,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31406,
+      "offset": 21939,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31498,
+      "offset": 22031,
       "length": 95,
       "value": "\"Content-Disposition: form-data; name=\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31549,
+      "offset": 22082,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31560,
+      "offset": 22093,
       "length": 1,
       "value": "\"\"; filename=\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31586,
+      "offset": 22119,
       "length": 1,
       "value": "\"\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31625,
+      "offset": 22158,
       "length": 35,
       "value": "\"Content-Type: \""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31651,
+      "offset": 22184,
       "length": 1,
       "value": "\"\r\n\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31782,
+      "offset": 22315,
       "length": 6,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "IntegerLiteral",
-      "offset": 31807,
+      "offset": 22340,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31845,
+      "offset": 22378,
       "length": 4,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 31879,
+      "offset": 22412,
       "length": 4,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "Array",
-      "offset": 32063,
+      "offset": 22596,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32236,
+      "offset": 22769,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32243,
+      "offset": 22776,
       "length": 1,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32256,
+      "offset": 22789,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32750,
+      "offset": 23283,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32759,
+      "offset": 23292,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32984,
+      "offset": 23517,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 32993,
+      "offset": 23526,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33145,
+      "offset": 23678,
       "length": 7,
       "value": "\":#[]@\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33189,
+      "offset": 23722,
       "length": 13,
       "value": "\"!$&'()*+,;=\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33324,
+      "offset": 23857,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33353,
+      "offset": 23886,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33377,
+      "offset": 23910,
       "length": 2,
       "value": "\"\""
     },
@@ -48844,42 +48249,42 @@
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33726,
+      "offset": 24259,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 33733,
+      "offset": 24266,
       "length": 1,
       "value": "\"[]\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 34012,
+      "offset": 24545,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 34018,
+      "offset": 24551,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 34080,
+      "offset": 24613,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/iosdev\/Development\/Kalapa\/iOS\/ekyc-ios\/KalapaSDK\/Network\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 34089,
+      "offset": 24622,
       "length": 7,
       "value": "\"false\""
     },
