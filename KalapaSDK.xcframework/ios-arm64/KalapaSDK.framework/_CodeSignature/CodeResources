@@ -38,7 +38,7 @@
 		</data>
 		<key>KLPFaceVC.nib</key>
 		<data>
-		1g2B8Jf14Q66oVrhEY5xuh9m5iQ=
+		WWlbBAfFbArftP37rrmopiORrBc=
 		</data>
 		<key>KLPPopupHolderViewController.nib</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1lpdTWS4e+OACZCS8BTEmWy9xFY=
+		DF0vWRm5XBefUXgoNGLdptgX0d4=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -207,11 +207,11 @@
 		</data>
 		<key>flashcard.mlmodelc/coremldata.bin</key>
 		<data>
-		E/4UlgkPecZcQdX3GL94ySbS7HY=
+		Uhi355G/fOj/7EA9nwVHFermJEY=
 		</data>
 		<key>flashcard.mlmodelc/metadata.json</key>
 		<data>
-		3gfFfOY07hMkBncCFu/ClC6TxO0=
+		34EIZiJL/IDM1pwsBM1z4dCJBCU=
 		</data>
 		<key>flashcard.mlmodelc/model0/analytics/coremldata.bin</key>
 		<data>
@@ -239,11 +239,11 @@
 		</data>
 		<key>idcard.mlmodelc/coremldata.bin</key>
 		<data>
-		Cjfd6u9CoXXv2TYpJqdJkEHrNR0=
+		KEXquIDlfVFzYJaidAwVaFY1KSE=
 		</data>
 		<key>idcard.mlmodelc/metadata.json</key>
 		<data>
-		UWZfg0OYFxrTSfHS7WOcou48mCo=
+		03IZrNFxrRD+6fg2jEPKCtHXO9o=
 		</data>
 		<key>idcard.mlmodelc/model0/analytics/coremldata.bin</key>
 		<data>
@@ -251,7 +251,7 @@
 		</data>
 		<key>idcard.mlmodelc/model0/coremldata.bin</key>
 		<data>
-		9zff9i9zCFCqDl3M5GsfZGZ0gl0=
+		dKnbsVdWFgKSP5VPi9iLPjjreZk=
 		</data>
 		<key>idcard.mlmodelc/model0/model.espresso.net</key>
 		<data>
@@ -366,7 +366,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jo3R63UR4WdOf65KGC4dTBd/4CA/CdjFD1RAlb/7QyY=
+			ZT3eaNnjZNN3K0pnicjXVvrx+gxyVLi8PiQTCoKSkqE=
 			</data>
 		</dict>
 		<key>KLPPopupHolderViewController.nib</key>
@@ -450,7 +450,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVVXv8J9xqM8NAyD6Uk6iibEF4puRhTpLgyLeo+ry/Y=
+			WqT/yNqFM4pR2bXmEqUAlOc/Mdhz+2QbWBpUVKLd9PE=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -655,14 +655,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aDtOJROOmiYzrGozNtIRpLh7tLR7X1/ofsL1eca2iE0=
+			76WBv2NspaChQ/FYbSgnvXoQgkagB2Uzs22X+v42qUw=
 			</data>
 		</dict>
 		<key>flashcard.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tx22/T2tBaL0WZ+MqOyZyPfsK8ZfHgF83Xh2lYEb/Zc=
+			2zi+T0bTz7PxiHTiGyJ5Sd25++UspnOT3FhFQeM7Uc0=
 			</data>
 		</dict>
 		<key>flashcard.mlmodelc/model0/analytics/coremldata.bin</key>
@@ -711,14 +711,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpIZb81sJxgTRyTwUdMQM29zCLtcsWW+Y9lkiifZi7Q=
+			nCIb453ZXhgTo20tAgKMSXuR+9faPdkOfMoVIU7Lkik=
 			</data>
 		</dict>
 		<key>idcard.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mCb9HKgl6tJDdDcqJmfFllIAR78YHck8ahjnX5uObO4=
+			ge2U1oehefMbywDVVSqmxDE2FzKlIPlOnrTy1/s1yQI=
 			</data>
 		</dict>
 		<key>idcard.mlmodelc/model0/analytics/coremldata.bin</key>
@@ -732,7 +732,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+W0P0XBOBN/80app3iMr6kAZxtgrodjYR7/A+zVw7Gk=
+			TFYLeGdykl6AQNGQPKEthrTwwsUCCLM2ZrMDo1rJa6w=
 			</data>
 		</dict>
 		<key>idcard.mlmodelc/model0/model.espresso.net</key>
