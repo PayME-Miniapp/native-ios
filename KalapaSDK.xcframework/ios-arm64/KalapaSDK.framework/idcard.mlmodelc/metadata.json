@@ -92,8 +92,8 @@
     "generatedClassName" : "idcard",
     "userDefinedMetadata" : {
       "stride" : "32",
-      "Confidence threshold" : "0.1",
       "IoU threshold" : "0.15",
+      "Confidence threshold" : "0.1",
       "task" : "detect",
       "imgsz" : "[288, 288]",
       "batch" : "1",
