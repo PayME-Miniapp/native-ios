@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		udI4A0xGjS9AT7HQBkQFhz4T8JE=
+		HySD69nPWDETpbmTrplQilogNHU=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Cqc7ARaovBKpfmQDveqH+Z6uLZo=
+		7YOD9O2xf5w7oxTvLohWWCPzeDU=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		udI4A0xGjS9AT7HQBkQFhz4T8JE=
+		HySD69nPWDETpbmTrplQilogNHU=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+o2LcJHm+5iuc5iixWcwCX/1l7Y=
+		0pUyt67OIFRE3iV6ulrwrBIrarg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -239,7 +239,7 @@
 		</data>
 		<key>flashcard.mlmodelc/model0/coremldata.bin</key>
 		<data>
-		wRFgGQdJUCdJqPoaCnGY0x1tezw=
+		J7JOYf2Rsjsq5uJP8gau7WbeIbE=
 		</data>
 		<key>flashcard.mlmodelc/model0/model.mil</key>
 		<data>
@@ -263,7 +263,7 @@
 		</data>
 		<key>idcard.mlmodelc/metadata.json</key>
 		<data>
-		03IZrNFxrRD+6fg2jEPKCtHXO9o=
+		uFEvXqE8o8G9DWx6GDJMeWcaCYI=
 		</data>
 		<key>idcard.mlmodelc/model0/analytics/coremldata.bin</key>
 		<data>
@@ -470,7 +470,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRFOiNvR1XHK9VIeE8hoMHRytD+4rn7A8zSCRzIu0R8=
+			7g1xewKiLti+d5aA6/lei1vf1i6MwH+CTiCyqYX96UU=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -498,14 +498,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lO0MNvFn60KlNKiskFZJ8DJue16fzBWdvaUk54kSjXs=
+			lOYScTV0kmHr+SXlUatG4gn5G3z8usJbm+4qu2SYK5k=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRFOiNvR1XHK9VIeE8hoMHRytD+4rn7A8zSCRzIu0R8=
+			7g1xewKiLti+d5aA6/lei1vf1i6MwH+CTiCyqYX96UU=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -533,7 +533,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sX0YHa22m+4kqansbcIh8urwxtws5fxTxHpRyRIbPu0=
+			QS/jHBNo5TMHOPFUUoMYw4izsfgHWoplF1a4hAfyPZ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -731,7 +731,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FNYyUlZOIQKEXgCN4PY4guZR+SaM+fMiwENnkWhtIOk=
+			7IYbkKESZqXFDmeOhsGyPymFVKAS8CkJ24cdEtWYbhE=
 			</data>
 		</dict>
 		<key>flashcard.mlmodelc/model0/model.mil</key>
@@ -773,7 +773,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ge2U1oehefMbywDVVSqmxDE2FzKlIPlOnrTy1/s1yQI=
+			mxeizhHNhEAYMVe70ZvzVg2TsBE0AWRikIEyUQ08OIM=
 			</data>
 		</dict>
 		<key>idcard.mlmodelc/model0/analytics/coremldata.bin</key>
