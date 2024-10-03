@@ -12,6 +12,174 @@
 		<data>
 		DMSsmdo6SwzgubTZhNjZ9xpjjT4=
 		</data>
+		<key>Frameworks/KalapaSDK.framework/Assets.car</key>
+		<data>
+		Uezf8uQ3/0vCUJsLpyU2Fb62iE8=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/ConfirmViewController.nib</key>
+		<data>
+		kzwutsl9dHKVmuhLGtht465oE50=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/GuideVC.nib</key>
+		<data>
+		9CSG283ZRxb3wf3CxyotWfOXXYE=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/IDCaptureVC.nib</key>
+		<data>
+		UJDrl2uBvv7KpAi9BmkzD1hUefI=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/Info.plist</key>
+		<data>
+		vTztHB8oQkxM9KQFUO5ZriRheNc=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/InforCell.nib</key>
+		<data>
+		yxwDApZc8mJGRv2Nccy/KeHo5sA=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPAlertVC.nib</key>
+		<data>
+		pGnViWPvOEz2g8g6SLpdaSpiI2s=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPFaceVC.nib</key>
+		<data>
+		rvtgabhUyFismYszKq3MfAfDqZA=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPNFCAntennaVC.nib</key>
+		<data>
+		XKtgUGdP1PqZPUvsbvi6hxFecRY=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPPopupHolderViewController.nib</key>
+		<data>
+		IkCzwTSnMQZP1G/mthDvuYZNTfA=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPResultNFCVC.nib</key>
+		<data>
+		SlT/t4yImlRpo4CmQ6SSk9LraSc=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPResulteKYCVC.nib</key>
+		<data>
+		1HU0+YXDyQT4twMbT3kCiB7gdNY=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KLPScanNFCVC.nib</key>
+		<data>
+		OuBXFvNsizOhUvgv7jdA9bk+Cro=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/KalapaSDK</key>
+		<data>
+		mlnNjCSMWd/QvUoAHsaL7dTng6I=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/Main.storyboardc/Info.plist</key>
+		<data>
+		GnMdGFfDuvwAuWJN7FS9ELLozY4=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/TutorialButtonView.nib</key>
+		<data>
+		FTvPH3JlRQmxNOa/Mu/VMq3qU38=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ISNFZ3joXWwLrnrPkyJlv6Lf+qQ=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		c3drmztbQzdZTXZ5xJVZJbKyuCs=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/coremldata.bin</key>
+		<data>
+		IFNnX3lk6HePuEZLGIQlj/1I8ZA=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/metadata.json</key>
+		<data>
+		JzumqWhS8FDjXSqqWZyNprfwPg4=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/analytics/coremldata.bin</key>
+		<data>
+		24ppOAHUtsiCiVrf6FodQrXXc8M=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/coremldata.bin</key>
+		<data>
+		J7JOYf2Rsjsq5uJP8gau7WbeIbE=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/model.mil</key>
+		<data>
+		l66QWnx2oqdBBJfCXgCRLcwuneU=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/weights/weight.bin</key>
+		<data>
+		hxz25NVqqe1k+DLhSJakF7kvPyI=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model1/coremldata.bin</key>
+		<data>
+		ZtIuuGbhSH6425Cd2GqlYpTy0lw=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		d42KVSZ0j/oBQXong1QYfCA4ssA=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/coremldata.bin</key>
+		<data>
+		Cjfd6u9CoXXv2TYpJqdJkEHrNR0=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/metadata.json</key>
+		<data>
+		03IZrNFxrRD+6fg2jEPKCtHXO9o=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/analytics/coremldata.bin</key>
+		<data>
+		WYcyKG2C4JOdNowOu12fq5T9sdo=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/coremldata.bin</key>
+		<data>
+		dKnbsVdWFgKSP5VPi9iLPjjreZk=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model.espresso.net</key>
+		<data>
+		/IwLpI2cK+wRbXYdp0LtafFuiIY=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model.espresso.shape</key>
+		<data>
+		3S+oLuYW2Bk25/lT8gwPL4uiavo=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model.espresso.weights</key>
+		<data>
+		Txy0xE+202q6KHAZKa5YEozOSV8=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model/coremldata.bin</key>
+		<data>
+		tGU7K8v0jbmLrWPOZkDsl7EBsZk=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/neural_network_optionals/coremldata.bin</key>
+		<data>
+		tkgF5pxT7RlO+9uypQti9obolyA=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model1/coremldata.bin</key>
+		<data>
+		NXxIiW4XQUGbpyD4n+G6aqXqmfc=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/tiltLeft.gif</key>
+		<data>
+		wgxl2AXcXNeBb/VtevkzTAK6i3c=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/tiltRight.gif</key>
+		<data>
+		gFC1WdjBQ+ghN1YtZX9jVpQA/Kg=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/turnDown.gif</key>
+		<data>
+		art7RAKEBWKS5fnzgchKgyaBvrU=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/turnLeft.gif</key>
+		<data>
+		lDkcUnZVN7TFM1NNOwtYjeOZN/Y=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/turnRight.gif</key>
+		<data>
+		Li/bbwbAGvy1Lm9wo7xomqKKsG4=
+		</data>
+		<key>Frameworks/KalapaSDK.framework/turnUp.gif</key>
+		<data>
+		d4TJTbNzdhMseX8WZjQO/4UK6co=
+		</data>
 		<key>Headers/PayMEMiniApp-Swift.h</key>
 		<data>
 		hFGRJbsj6YfFw7jEqtJWzqHReOQ=
@@ -22,15 +190,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		//WN4aPYD9E6vhVd3/Q0ovIWUl0=
+		vuoVzzjyyovStqZeqiWXnf5LFF0=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1BHvZqD4NlNVc7SawhFeIQ9j90g=
+		MOOIvZ+BDZsb3OSyglGgbpkVg44=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cInaofUmsaptMGiyN/gk+W3mQDo=
+		D0FkLhjk10pxXca5pbTV+mQNUmw=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +206,19 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cInaofUmsaptMGiyN/gk+W3mQDo=
+		D0FkLhjk10pxXca5pbTV+mQNUmw=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NyhdlObG14aRc7wd9dTrKTparVg=
+		M6gA6b7xQmHucOmr0bsl+faFipk=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1BHvZqD4NlNVc7SawhFeIQ9j90g=
+		MOOIvZ+BDZsb3OSyglGgbpkVg44=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uQTPHWDPQrMDFk5QULjTCNPGO7M=
+		DBTuvKw3XyNMhkad6KbLqNq6fYA=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +226,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uQTPHWDPQrMDFk5QULjTCNPGO7M=
+		DBTuvKw3XyNMhkad6KbLqNq6fYA=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mtnMCpPy9Mir+rxeV5wyeWH/h0Y=
+		vzUz+sE2uoss6cOMbncRaQ3J9Yo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,6 +281,300 @@
 			bGeP2gM34bVtLGfyrmOeRQvn+iOlrVIbuxDlaYoYdag=
 			</data>
 		</dict>
+		<key>Frameworks/KalapaSDK.framework/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EwKoYNuFmsTdHUBRKYM/lPoMvk5CunugqlKXFUAT7N8=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/ConfirmViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O3cfxiTpm6WgEXfAH/zbFSUX5YixDm3v8Wd1WILrijY=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/GuideVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fc5PCwLzAP2FzFrHWFxxhuzyBj9oZnyZzcWXd889yJQ=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/IDCaptureVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p0zmbXjliKw7R9aBxwe8DWKhwyKWIOUlgzkUrxYoRdw=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tH6PpbhPIaCJ5LySSs4ehmrjeARa/Gqo/eNmouleujM=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/InforCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e1zEWU1qeiXcQAm91HtVtbXIgSxGPxRvTl/aWV18/vY=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPAlertVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aYn+fi75tMsS1GEmkr+kN1LuZEI8DLsN9HIYJFmUrUE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPFaceVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			chxKwYu2f0RIwvnuewfTn1kd1Nd58soitGKJAuOXagc=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPNFCAntennaVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			in9kft9IPNi2zzNXnOqk2Ha/WNHweJZngSemmqp24IM=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPPopupHolderViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ovnJnlQBX4sLDjuSmVFKzfYI4N+AwZ4IZm2yrqOv4wA=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPResultNFCVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZzzZfo4EL9fK2zwdB67iZY62KploHpdXPD17IFNqebM=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPResulteKYCVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0vyHeKFc63nI1jTPzr651qDyKK9qRAcibTdlG0+g4zI=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KLPScanNFCVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gN6DFDiqwrV23JeH5sr2W2dqoGIiy2ZNA1oiHKBF7LU=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/KalapaSDK</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LYw7J7i8UmeBeLFcgCiSNHgR3BrfCoXAEKsb/ds3kXY=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/Main.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9gq+m2SfIqZdO4RnP+Q5bwx0h1nftPpvwkJZZ8jBiZE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/TutorialButtonView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NHpU1Ds5a0tupQMwkqsLyp+6VrFwrf5TYUUc4q4jDaM=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GUVl5ART821AoTWOQdXGvu5OPdTqVUI3gI0RCOICXdM=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EyniSMkt4awMGKCAcvzDPKL1gj3gyZiCJ095xaZMwVw=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+izE7rXTjVjSBAxLz81YCEo8ynLGlGLffiS5lwVpCPw=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			phr/txtoMGKzrIjjCqK70dNKInpy5vbDG4yLOLlWVlA=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WoKBBJsqZaO+VBz9n5SehLj+HFJRzpDkbaFib+1U5Yo=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7IYbkKESZqXFDmeOhsGyPymFVKAS8CkJ24cdEtWYbhE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/model.mil</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bjajqTOpMs2ffLWMj364hAcq6V6qGSfhDb4F3WI1UNU=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model0/weights/weight.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P8YmBHKtUbOJ7RPMrhPZcVIfG+mtTawdOmdAVvFLf7s=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/flashcard.mlmodelc/model1/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MkLY6cZlBHGUwQcm8E60ELuEDQwLJdGs5wVDYoQlSeo=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a8hzYLAAZy1QHu4psOHw2uQO2hBK8+R8Qrf3G1LR1G4=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gpIZb81sJxgTRyTwUdMQM29zCLtcsWW+Y9lkiifZi7Q=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ge2U1oehefMbywDVVSqmxDE2FzKlIPlOnrTy1/s1yQI=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zvv0UByXamWTe/kJ32E7S90UrHff7P+WVG4UOg8JdjE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TFYLeGdykl6AQNGQPKEthrTwwsUCCLM2ZrMDo1rJa6w=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model.espresso.net</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vxi/PBbn0+SiTn+OYs1XobWUPZ3FAqUjYKKSrgmk7x8=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model.espresso.shape</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qNNnurL/iwWigYiCwM4S21XZr009v56Bcc+W8SaZxZw=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tFSPccGRF2y0WDYFuVWpijXwhQfDXjEVFmpSUa0IfuE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JsMfzXP3J1PCXEF2nqub8rHW9vXpXkr2ag9c2kxRcE8=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model0/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/idcard.mlmodelc/model1/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A053yveiwgh35xO5xxMbw74hiQPfQeH7lDuTj57GSdM=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/tiltLeft.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2BaFWI8IB2ZhKEbKBIeHN+UX7MkGUFaBHFXhQqkoapE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/tiltRight.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DglqXZpGBjKJC22GjVnQJFpnvAmL6Nf44TERpi5A5TE=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/turnDown.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U+Se1wtaiFMN+6SJ9pgKvV8BNHwOgeXlh3c9wbPpq0w=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/turnLeft.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gyAbiyHNANmjsj95deuKVYSlABPKOwcAgo58AlJzZIU=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/turnRight.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H82bISUHIhph3Zr885toAu6BfUJJuUbxhQek1hSXlnA=
+			</data>
+		</dict>
+		<key>Frameworks/KalapaSDK.framework/turnUp.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lZ8IBYGvv5Xqs2j9g/tXuaXTPPRYN2wSOfjHrJXcAjo=
+			</data>
+		</dict>
 		<key>Headers/PayMEMiniApp-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -131,14 +593,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tLuRXeVGRe9YRl7EH2wkN4LKG7reFSnOXN5bFlQInDw=
+			FMUpRovJ2OrJVN7BaYiRGc7OfQ38VUuLs3A29O/CJPw=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ibP7pAg+u78wmvJkuBjbwUWaNR//XN9/13LdPHwl72g=
+			IuLPWspSAwa3ortZBczVu+ZEl/Zok7+bkhLNwQ3gIWo=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -152,28 +614,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ibP7pAg+u78wmvJkuBjbwUWaNR//XN9/13LdPHwl72g=
+			IuLPWspSAwa3ortZBczVu+ZEl/Zok7+bkhLNwQ3gIWo=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cPsHpzNXTJjQ14z8Gix0xowSDu/L3f0SwchkT1zAo9o=
+			oqY5CQj0AQTkeRQCRv03V8oQYX7fNRNGs6rq8fk+iT0=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tLuRXeVGRe9YRl7EH2wkN4LKG7reFSnOXN5bFlQInDw=
+			FMUpRovJ2OrJVN7BaYiRGc7OfQ38VUuLs3A29O/CJPw=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4UrZT8mQIL3TRSlQpk1MCMgAcE9OJ21KefIsAKTvOEs=
+			yzy50IF1fL/w22MvMlBs3YieTCXfn3ogxwFswWz9trY=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -187,14 +649,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4UrZT8mQIL3TRSlQpk1MCMgAcE9OJ21KefIsAKTvOEs=
+			yzy50IF1fL/w22MvMlBs3YieTCXfn3ogxwFswWz9trY=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2tn1p8qhbs4cPdba2wQPR3wVfS0dLaET9Pc/wCORO2A=
+			zl02NdObYux5AwBSIElPrJ1Dir3AKUNBjE/K6lkARhI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

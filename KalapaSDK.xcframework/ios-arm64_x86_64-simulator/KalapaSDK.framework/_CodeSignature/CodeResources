@@ -6,7 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		quofVy68Rt/l2LDpslACEzVEqNU=
+		Uezf8uQ3/0vCUJsLpyU2Fb62iE8=
+		</data>
+		<key>ConfirmViewController.nib</key>
+		<data>
+		kzwutsl9dHKVmuhLGtht465oE50=
+		</data>
+		<key>GuideVC.nib</key>
+		<data>
+		9CSG283ZRxb3wf3CxyotWfOXXYE=
 		</data>
 		<key>Headers/KLPCrypto.h</key>
 		<data>
@@ -14,7 +22,7 @@
 		</data>
 		<key>Headers/KalapaSDK-Swift.h</key>
 		<data>
-		pxvKVU5q1gzZJXk7L4j1y9xuaDA=
+		GiAszA2g2u+qg4Na7YM57hkT1M4=
 		</data>
 		<key>Headers/KalapaSDK.h</key>
 		<data>
@@ -22,23 +30,27 @@
 		</data>
 		<key>IDCaptureVC.nib</key>
 		<data>
-		6mQD1K33nWQNyH0jLsfICdMi/hw=
+		UJDrl2uBvv7KpAi9BmkzD1hUefI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7uD8fkdESZSd7x3e1773x5srj0w=
+		vTztHB8oQkxM9KQFUO5ZriRheNc=
 		</data>
 		<key>InforCell.nib</key>
 		<data>
-		4Y+EJAU5pEpeKLEbSr79ZKCquOQ=
+		yxwDApZc8mJGRv2Nccy/KeHo5sA=
 		</data>
 		<key>KLPAlertVC.nib</key>
 		<data>
-		AmSWUd8jlviy1Hoc53c1dd2bUzs=
+		pGnViWPvOEz2g8g6SLpdaSpiI2s=
 		</data>
 		<key>KLPFaceVC.nib</key>
 		<data>
-		WWlbBAfFbArftP37rrmopiORrBc=
+		rvtgabhUyFismYszKq3MfAfDqZA=
+		</data>
+		<key>KLPNFCAntennaVC.nib</key>
+		<data>
+		XKtgUGdP1PqZPUvsbvi6hxFecRY=
 		</data>
 		<key>KLPPopupHolderViewController.nib</key>
 		<data>
@@ -46,192 +58,79 @@
 		</data>
 		<key>KLPResultNFCVC.nib</key>
 		<data>
-		vTEJ1RAkDH9N8UmAdO49uIzwKrI=
+		SlT/t4yImlRpo4CmQ6SSk9LraSc=
 		</data>
 		<key>KLPResulteKYCVC.nib</key>
 		<data>
-		cxWvuBuoeW0/kiF33DiyieyqbIA=
+		1HU0+YXDyQT4twMbT3kCiB7gdNY=
 		</data>
 		<key>KLPScanNFCVC.nib</key>
 		<data>
-		mSGTyelPDjR8k0xksfVH4wtp0Fg=
-		</data>
-		<key>Main.storyboardc/2vI-Tc-ohd-view-gke-Az-Q03.nib</key>
-		<data>
-		ixZyt8wv0PT9v48EgEw1PEco3ik=
-		</data>
-		<key>Main.storyboardc/A0v-n5-1La-view-GsG-zH-YOD.nib</key>
-		<data>
-		ecJ4ZX9ePKNoiyZoCPyLrVDQ8yI=
-		</data>
-		<key>Main.storyboardc/ConfirmPassportViewController.nib</key>
-		<data>
-		DPO0hcn5d/lV01i2/f0/cb3cFEI=
-		</data>
-		<key>Main.storyboardc/ConfirmViewController.nib</key>
-		<data>
-		/li43Ge2WOulKon0Dhl9Abkwzaw=
-		</data>
-		<key>Main.storyboardc/GuideVC.nib</key>
-		<data>
-		kou+LgOs4p90LT7d6N5zZd1TURY=
+		OuBXFvNsizOhUvgv7jdA9bk+Cro=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
-		ycMcrlQrxZZN7DHaP4Snt5FIIFU=
-		</data>
-		<key>Main.storyboardc/Zw4-Xf-iAd-view-tbr-Oa-aKM.nib</key>
-		<data>
-		lFI3L6yHAxEhJSmcjqSJ3h1t9w4=
+		GnMdGFfDuvwAuWJN7FS9ELLozY4=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HySD69nPWDETpbmTrplQilogNHU=
+		a4LCUfzg1Sut0hwf6g5WQNNEZHQ=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XjcavxtUkw1WClCKz1ynay7koM8=
+		KtV1kkZdzz+0ISGnwrRZ0sKCXZ4=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OVA0DJvKNHSQBsF1hD4T3YgFuAw=
+		iR28P3eM5+I5Z9MSrOnZmfQ2OMk=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XjcavxtUkw1WClCKz1ynay7koM8=
+		KtV1kkZdzz+0ISGnwrRZ0sKCXZ4=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7YOD9O2xf5w7oxTvLohWWCPzeDU=
+		51/b1/2vrVlJeXRt86kyTmZDxoY=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HySD69nPWDETpbmTrplQilogNHU=
+		a4LCUfzg1Sut0hwf6g5WQNNEZHQ=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qI/1Yl/C5tO8PL1//du96LSrlws=
+		SGcPKseGBuw1ZnZV945btd5POec=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FtXmgzIlOZHKy4+IzUa/9R4h+Jc=
+		K72JwX454euhB2tPKzB7LUE56mo=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qI/1Yl/C5tO8PL1//du96LSrlws=
+		SGcPKseGBuw1ZnZV945btd5POec=
 		</data>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0pUyt67OIFRE3iV6ulrwrBIrarg=
+		PybhWYJinTWdH6sFXOAp6nPRQxE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		s3VxFhfotv8PN3YxO49/NQBqW/E=
 		</data>
-		<key>NFCAntennaVC.nib</key>
-		<data>
-		a2vzzCJ53Q7QJhVsTHawg2oFks8=
-		</data>
-		<key>Raleway-Black.ttf</key>
-		<data>
-		s0GxhduccjGIRVjc2rASTS9e0dA=
-		</data>
-		<key>Raleway-BlackItalic.ttf</key>
-		<data>
-		0CHIS3PC/E4JTItp13kzo5bxLXc=
-		</data>
-		<key>Raleway-Bold.ttf</key>
-		<data>
-		/Xmbb7Sv8alALgcasC0d3qcxuGg=
-		</data>
-		<key>Raleway-BoldItalic.ttf</key>
-		<data>
-		V3bsI7w/PA3hD8/KoyrlyN2Eizc=
-		</data>
-		<key>Raleway-ExtraBold.ttf</key>
-		<data>
-		HJJxXBNHOPKVa/dYGBUiJDx1ht0=
-		</data>
-		<key>Raleway-ExtraBoldItalic.ttf</key>
-		<data>
-		RFSErSDcnSsCamxsMb8VlfNU57k=
-		</data>
-		<key>Raleway-ExtraLight.ttf</key>
-		<data>
-		6/jYalZCgBhKYFj8DwzJVp6DzpE=
-		</data>
-		<key>Raleway-ExtraLightItalic.ttf</key>
-		<data>
-		EpAJ2OyOVm6gS3EIbLL9VyNH6WQ=
-		</data>
-		<key>Raleway-Italic.ttf</key>
-		<data>
-		rL9KffIm7RmR+bjcW46jH5Lxmrc=
-		</data>
-		<key>Raleway-Light.ttf</key>
-		<data>
-		xmIWynfOI3OHuzJMPO45z0ru+/Q=
-		</data>
-		<key>Raleway-LightItalic.ttf</key>
-		<data>
-		u3aDpoP96L/KWnmWyqK3auf8D6Q=
-		</data>
-		<key>Raleway-Medium.ttf</key>
-		<data>
-		nTX4BemPlecvXQpM7XOXWE1zSb4=
-		</data>
-		<key>Raleway-MediumItalic.ttf</key>
-		<data>
-		u7ncDcYUWJfptKOxDyf+kvyre6w=
-		</data>
-		<key>Raleway-Regular.ttf</key>
-		<data>
-		wBqv8E6tSgi4m8uB09PZVDRetn8=
-		</data>
-		<key>Raleway-SemiBold.ttf</key>
-		<data>
-		dfT8oNTYDiuaYtMoMmHpM3hvuME=
-		</data>
-		<key>Raleway-SemiBoldItalic.ttf</key>
-		<data>
-		RpHo61lQN+TrVTtHm5K8bJxAsgE=
-		</data>
-		<key>Raleway-Thin.ttf</key>
-		<data>
-		ga3vCAT2s9CuuPl38+xhgIuzonQ=
-		</data>
-		<key>Raleway-ThinItalic.ttf</key>
-		<data>
-		d+vf4yniRLo3Pagd1Eqrr1JvUUc=
-		</data>
-		<key>StepbarView.nib</key>
-		<data>
-		O5PaF2qYnQ0pOl73eo17uqIwATU=
-		</data>
 		<key>TutorialButtonView.nib</key>
 		<data>
-		8ulwVXBvLizuJhLRRcK/+c2tJBc=
+		FTvPH3JlRQmxNOa/Mu/VMq3qU38=
 		</data>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T+d5K1v/Jnk0fQxCTsfvNBsYcDE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>flashcard.mlmodelc/analytics/coremldata.bin</key>
 		<data>
 		c3drmztbQzdZTXZ5xJVZJbKyuCs=
 		</data>
 		<key>flashcard.mlmodelc/coremldata.bin</key>
 		<data>
-		Uhi355G/fOj/7EA9nwVHFermJEY=
+		IFNnX3lk6HePuEZLGIQlj/1I8ZA=
 		</data>
 		<key>flashcard.mlmodelc/metadata.json</key>
 		<data>
-		34EIZiJL/IDM1pwsBM1z4dCJBCU=
+		JzumqWhS8FDjXSqqWZyNprfwPg4=
 		</data>
 		<key>flashcard.mlmodelc/model0/analytics/coremldata.bin</key>
 		<data>
@@ -259,11 +158,11 @@
 		</data>
 		<key>idcard.mlmodelc/coremldata.bin</key>
 		<data>
-		+ij7wwUoeN9D2DNncHE8kS5g5UY=
+		Cjfd6u9CoXXv2TYpJqdJkEHrNR0=
 		</data>
 		<key>idcard.mlmodelc/metadata.json</key>
 		<data>
-		uFEvXqE8o8G9DWx6GDJMeWcaCYI=
+		03IZrNFxrRD+6fg2jEPKCtHXO9o=
 		</data>
 		<key>idcard.mlmodelc/model0/analytics/coremldata.bin</key>
 		<data>
@@ -321,15 +220,6 @@
 		<data>
 		d4TJTbNzdhMseX8WZjQO/4UK6co=
 		</data>
-		<key>vi.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4viZX+3/8CFrXki9lLV0spvfjmw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -337,7 +227,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BIXdDrBA/eUfgyqcGJtw6smrkyeOGZV3txHYIofklSw=
+			EwKoYNuFmsTdHUBRKYM/lPoMvk5CunugqlKXFUAT7N8=
+			</data>
+		</dict>
+		<key>ConfirmViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O3cfxiTpm6WgEXfAH/zbFSUX5YixDm3v8Wd1WILrijY=
+			</data>
+		</dict>
+		<key>GuideVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fc5PCwLzAP2FzFrHWFxxhuzyBj9oZnyZzcWXd889yJQ=
 			</data>
 		</dict>
 		<key>Headers/KLPCrypto.h</key>
@@ -351,7 +255,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X2PAFZQzr0XCzNAzXJiMRtfYgUmtPdPIDcd9gEj6MT8=
+			OKLzelSnme0hX0RdB59ZIlsnIkzw6uZMDkqoI1FvF0U=
 			</data>
 		</dict>
 		<key>Headers/KalapaSDK.h</key>
@@ -365,28 +269,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aEJ2ru8bBRybi46jqi4KlVOj4ppO1mmlswM8EYBIhmI=
+			p0zmbXjliKw7R9aBxwe8DWKhwyKWIOUlgzkUrxYoRdw=
 			</data>
 		</dict>
 		<key>InforCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tu9eBy2/bY91/tXJ4A5DkEOXSiW6ksp0Ez2huJeaIf0=
+			e1zEWU1qeiXcQAm91HtVtbXIgSxGPxRvTl/aWV18/vY=
 			</data>
 		</dict>
 		<key>KLPAlertVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sTT7HUjb4XPBiyX1T/IsS3sJqK0Z+Htdv3Z8VqCXIxk=
+			aYn+fi75tMsS1GEmkr+kN1LuZEI8DLsN9HIYJFmUrUE=
 			</data>
 		</dict>
 		<key>KLPFaceVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZT3eaNnjZNN3K0pnicjXVvrx+gxyVLi8PiQTCoKSkqE=
+			chxKwYu2f0RIwvnuewfTn1kd1Nd58soitGKJAuOXagc=
+			</data>
+		</dict>
+		<key>KLPNFCAntennaVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			in9kft9IPNi2zzNXnOqk2Ha/WNHweJZngSemmqp24IM=
 			</data>
 		</dict>
 		<key>KLPPopupHolderViewController.nib</key>
@@ -400,140 +311,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JFCqIf5jARU2G1PPxs7Tr8kV3BnQDteTTYRtoghi5jk=
+			ZzzZfo4EL9fK2zwdB67iZY62KploHpdXPD17IFNqebM=
 			</data>
 		</dict>
 		<key>KLPResulteKYCVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WoqT+pt9DDeK1UD0lWCdlqP/fYTtfkp9uBJCUp3CIYM=
+			0vyHeKFc63nI1jTPzr651qDyKK9qRAcibTdlG0+g4zI=
 			</data>
 		</dict>
 		<key>KLPScanNFCVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dTqGlhf60sUmZiRL1nTM4wkPIgoO8IzrWWkpgZWlbVI=
-			</data>
-		</dict>
-		<key>Main.storyboardc/2vI-Tc-ohd-view-gke-Az-Q03.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qCvL6C2hazMqBjz7e+xU4dQ9RWvEHjT+KAx06jNCDQc=
-			</data>
-		</dict>
-		<key>Main.storyboardc/A0v-n5-1La-view-GsG-zH-YOD.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5h8vHl8af0j6WzvJVMSMCL8L4BDOpA3ZzGUPlvZaJJA=
-			</data>
-		</dict>
-		<key>Main.storyboardc/ConfirmPassportViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			G4yakvjHmeIR1O8FPTGPSWdqFSTuDECEf/AoSyvvr3g=
-			</data>
-		</dict>
-		<key>Main.storyboardc/ConfirmViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0BZgrGGKqU6RbgpKMtWgUinQ5ukpIs1DclMveHswTDw=
-			</data>
-		</dict>
-		<key>Main.storyboardc/GuideVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oLxuooiaOQbZe2pYncsQNNpddap3fY1dxYYD2Ud0eww=
+			gN6DFDiqwrV23JeH5sr2W2dqoGIiy2ZNA1oiHKBF7LU=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			glTO2Vu7BhvdbRij5ASXvwGIEvYJVcThivJbVGwWc3Y=
-			</data>
-		</dict>
-		<key>Main.storyboardc/Zw4-Xf-iAd-view-tbr-Oa-aKM.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jG6EvV5lkYjW+sLZwxPVIrQUE9F15Dzk4DmrR4wXpxU=
+			9gq+m2SfIqZdO4RnP+Q5bwx0h1nftPpvwkJZZ8jBiZE=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7g1xewKiLti+d5aA6/lei1vf1i6MwH+CTiCyqYX96UU=
+			pgIsXn4wr43z7YqMJ7M12dVja8fVzKJW1zxrDkUP8+A=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uxhj0GCfiNHCcCVw0Q/qBaFUGRgH354AOtYO6XzQfEQ=
+			QVBW2aoWA6IbR8kM6r5uvv3xqTwWLkigGIMbyAwQ+Js=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+KVFcTflaSsx3R7J44k7SL04Hr382FRFYMMJwS+MZUw=
+			kL9f/R/S41ImXdpTNVtZlmkCFRspRFa859VnDQOtRYw=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uxhj0GCfiNHCcCVw0Q/qBaFUGRgH354AOtYO6XzQfEQ=
+			QVBW2aoWA6IbR8kM6r5uvv3xqTwWLkigGIMbyAwQ+Js=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lOYScTV0kmHr+SXlUatG4gn5G3z8usJbm+4qu2SYK5k=
+			9I7cTJ4L8aJDl0pjNzwdB3OkaC+ITVQpCvlLMe4WNtY=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7g1xewKiLti+d5aA6/lei1vf1i6MwH+CTiCyqYX96UU=
+			pgIsXn4wr43z7YqMJ7M12dVja8fVzKJW1zxrDkUP8+A=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wfc0B6/4qjyv2ztrNz7XlF/2ZD1WDI1j2RqNVrAmMEU=
+			Bk2AamzTrHylr7m2YmnjmtNNQheJl6QlmEhzL8oOs9M=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gcGATVJKeOHRFLUHIdPZjnVTTPIRAlvw/9bB/TFwe88=
+			WSOjYEPguN/BEuXUXy83+7cPsxZzJuLD/dXbFoFSl1A=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wfc0B6/4qjyv2ztrNz7XlF/2ZD1WDI1j2RqNVrAmMEU=
+			Bk2AamzTrHylr7m2YmnjmtNNQheJl6QlmEhzL8oOs9M=
 			</data>
 		</dict>
 		<key>Modules/KalapaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QS/jHBNo5TMHOPFUUoMYw4izsfgHWoplF1a4hAfyPZ0=
+			MQKOaiqGON3Eh0hircOgKhu3lVQh2+/0wyakIN5xjzY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -543,161 +412,12 @@
 			+FjPbCJaSA4BTqRUcN5veFP8ReWKA36wbs5YfD1BcUE=
 			</data>
 		</dict>
-		<key>NFCAntennaVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fRh51IB8SQECjqS+hRJNZG0uOZdghDNSIddx9fKWMME=
-			</data>
-		</dict>
-		<key>Raleway-Black.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LRFJymB141WfpCNBB0dLO1ALxHm6oL2qiplWOlh8YvU=
-			</data>
-		</dict>
-		<key>Raleway-BlackItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FzPOEuM3FnFTHjoAzs2YAXiKfRPNdmouj3q7sNj5T8M=
-			</data>
-		</dict>
-		<key>Raleway-Bold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hcaoGOM66LYtFWclIsCxLy5gJoD3XEQU7oFac1lq02U=
-			</data>
-		</dict>
-		<key>Raleway-BoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			u+UIDtrqxHc9E8K0P9lqB+rALW66nU5OIhN1GLfrm50=
-			</data>
-		</dict>
-		<key>Raleway-ExtraBold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EY4jft95bddsRT6RKk9EWBbpGLw/8dOUGyVIwKj9/ik=
-			</data>
-		</dict>
-		<key>Raleway-ExtraBoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oNPGsAX8c8lnBTWa+EVDJJHKZzqE4EeLEARfUjn2tLE=
-			</data>
-		</dict>
-		<key>Raleway-ExtraLight.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8kW+EFDzHdFvjYxL4gfiw672jg3pQWjMZZQ9zqYQB3g=
-			</data>
-		</dict>
-		<key>Raleway-ExtraLightItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dDzDPFDq/2NJS58eHzmqZ0NZaUbObJwenQAw4uwkr8M=
-			</data>
-		</dict>
-		<key>Raleway-Italic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AnbwSgAFUMbyQJ+BcyJAC6zZkFH8n/XrRCiKtuNtJMM=
-			</data>
-		</dict>
-		<key>Raleway-Light.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VtNYW7dQg5wmwAcZxFD7EO67Be9jYJI/6k8jcq1dk0U=
-			</data>
-		</dict>
-		<key>Raleway-LightItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0qIKP+Dks5syhjuQ3lk9K5r+Wp2fyaWH1oAZhihNG88=
-			</data>
-		</dict>
-		<key>Raleway-Medium.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9abc0yJ9GnXbR6Z3DmF9gHfLpCwUbR1kea45RDHH1A4=
-			</data>
-		</dict>
-		<key>Raleway-MediumItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			X8TR24zpCJAWkkkgOmPl703bhzfeycx8Iv/iJB5r83E=
-			</data>
-		</dict>
-		<key>Raleway-Regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3pDMTzv4x+lJyr/CWISkvX0JXMGZqGiqJy4imQN+92M=
-			</data>
-		</dict>
-		<key>Raleway-SemiBold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VkNo5J0tfWUAVkknjD4ELWlU315d7jh0o7VIrQZ9sMw=
-			</data>
-		</dict>
-		<key>Raleway-SemiBoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			poWSfWaDEOD27cucPM2hLQSGTHISd88Inb4jLqEGwQ4=
-			</data>
-		</dict>
-		<key>Raleway-Thin.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AzTmf2WikG3/HNPYx4S4NCyh9b7gBXm+VIU3YCcBzk4=
-			</data>
-		</dict>
-		<key>Raleway-ThinItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KVOWqeJwVoFI7iQvXx7BTksbDLwduVW3Lcx7safKBnY=
-			</data>
-		</dict>
-		<key>StepbarView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CCumvrg1PYVUZGR1J2eryM3ByBw6q9k86xdt/4orul4=
-			</data>
-		</dict>
 		<key>TutorialButtonView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B2piyX8fHSlhQtOb4FtfdMKX1N9oaIKqc2n3FhtKwGs=
+			NHpU1Ds5a0tupQMwkqsLyp+6VrFwrf5TYUUc4q4jDaM=
 			</data>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tpN9OdeHFVQRBXgUmIDZrly6te9wp4qGh0hhHOB0tcc=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>flashcard.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
@@ -710,14 +430,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			76WBv2NspaChQ/FYbSgnvXoQgkagB2Uzs22X+v42qUw=
+			+izE7rXTjVjSBAxLz81YCEo8ynLGlGLffiS5lwVpCPw=
 			</data>
 		</dict>
 		<key>flashcard.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2zi+T0bTz7PxiHTiGyJ5Sd25++UspnOT3FhFQeM7Uc0=
+			phr/txtoMGKzrIjjCqK70dNKInpy5vbDG4yLOLlWVlA=
 			</data>
 		</dict>
 		<key>flashcard.mlmodelc/model0/analytics/coremldata.bin</key>
@@ -766,14 +486,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3xQzzMFGxQmiLmnJy6YgIPJIQTmJ98fetVwtZelaDFk=
+			gpIZb81sJxgTRyTwUdMQM29zCLtcsWW+Y9lkiifZi7Q=
 			</data>
 		</dict>
 		<key>idcard.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mxeizhHNhEAYMVe70ZvzVg2TsBE0AWRikIEyUQ08OIM=
+			ge2U1oehefMbywDVVSqmxDE2FzKlIPlOnrTy1/s1yQI=
 			</data>
 		</dict>
 		<key>idcard.mlmodelc/model0/analytics/coremldata.bin</key>
@@ -873,15 +593,6 @@
 			<data>
 			lZ8IBYGvv5Xqs2j9g/tXuaXTPPRYN2wSOfjHrJXcAjo=
 			</data>
-		</dict>
-		<key>vi.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7R6aH8VQOFl3MDPtzpzizU6OuGDMvb1GCDpnQZ6+Uk8=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

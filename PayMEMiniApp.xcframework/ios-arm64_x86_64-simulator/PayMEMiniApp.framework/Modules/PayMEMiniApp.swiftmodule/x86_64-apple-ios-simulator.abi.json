@@ -3277,6 +3277,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreNFC",
+        "printedName": "CoreNFC",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6170,7 +6177,7 @@
       "kind": "StringLiteral",
       "offset": 752,
       "length": 8,
-      "value": "\"1.0.10\""
+      "value": "\"1.0.22\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
@@ -7134,6 +7141,13 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
+      "offset": 1266,
+      "length": 24,
+      "value": "\"jsRequestNFCPermission\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
       "offset": 221,
       "length": 7,
       "value": "\"jsLog\""
@@ -7307,25 +7321,11 @@
       "value": "\"jsPostModalHeight\""
     },
     {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 196,
-      "length": 8,
-      "value": "\"CAMERA\""
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 222,
-      "length": 15,
-      "value": "\"READ_CONTACTS\""
-    },
-    {
-      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 253,
-      "length": 7,
-      "value": "\"PHOTO\""
+      "offset": 1266,
+      "length": 24,
+      "value": "\"jsRequestNFCPermission\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
@@ -7351,42 +7351,77 @@
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 274,
+      "length": 5,
+      "value": "\"NFC\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 8,
+      "value": "\"CAMERA\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 15,
+      "value": "\"READ_CONTACTS\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 253,
+      "length": 7,
+      "value": "\"PHOTO\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 5,
+      "value": "\"NFC\""
+    },
+    {
+      "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
       "length": 9,
       "value": "\"GRANTED\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 339,
+      "offset": 358,
       "length": 9,
       "value": "\"BLOCKED\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 366,
+      "offset": 385,
       "length": 9,
       "value": "\"LIMITED\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 331,
       "length": 9,
       "value": "\"GRANTED\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 339,
+      "offset": 358,
       "length": 9,
       "value": "\"BLOCKED\""
     },
     {
       "filePath": "\/Users\/minhdat-tran\/Documents\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 366,
+      "offset": 385,
       "length": 9,
       "value": "\"LIMITED\""
     },

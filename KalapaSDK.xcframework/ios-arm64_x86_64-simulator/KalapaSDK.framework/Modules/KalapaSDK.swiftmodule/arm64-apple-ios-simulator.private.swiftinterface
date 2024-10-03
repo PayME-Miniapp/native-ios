@@ -21,16 +21,6 @@ import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class KLPPopupHolderViewController : KalapaSDK.KLPPopupViewController {
-  @_Concurrency.MainActor(unsafe) public static func newVC(mainPopVC: UIKit.UIViewController, fixedTop: CoreFoundation.CGFloat? = nil, fixedLeading: CoreFoundation.CGFloat = 20, fixedTrailing: CoreFoundation.CGFloat = 20) -> KalapaSDK.KLPPopupHolderViewController
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class Constant {
   public enum MediaType {
     case FRONT
@@ -79,54 +69,42 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class ConfirmResult : ObjectiveC.NSObject {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class DecisionDetail : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class KLPDecisionDetail : ObjectiveC.NSObject {
   final public let code: Swift.String?
   final public let decisionDetailDescription: Swift.String?
   final public let decisionDetailViDescription: Swift.String?
   final public let isPass: Swift.Int?
   final public let alias: Swift.String?
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc deinit
-}
-extension UIKit.UIColor {
-  convenience public init(klpHexString: Swift.String)
 }
 extension UIKit.UIImage {
   convenience public init?(klpNamed: Swift.String)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class KLPPopupViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var canDismissOnTap: Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func show(onVC: UIKit.UIViewController, _ isPop: Swift.Bool = true)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension KalapaSDK.KLPPopupViewController : UIKit.UIViewControllerTransitioningDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
-}
-extension KalapaSDK.KLPPopupViewController : UIKit.UIViewControllerAnimatedTransitioning {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func transitionDuration(using transitionContext: (any UIKit.UIViewControllerContextTransitioning)?) -> Foundation.TimeInterval
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func animateTransition(using transitionContext: any UIKit.UIViewControllerContextTransitioning)
+extension Swift.Dictionary {
+  public func klp_getStringForKey(key: Swift.String) -> Swift.String
+  @inlinable internal mutating func klp_append(_ other: [Key : Value]) {
+        return self.merge(other, uniquingKeysWith: { $1 }) // replacing current value
+    }
+  @inlinable internal func klp_appending(_ other: [Key : Value]) -> [Key : Value] {
+        return self.merging(other, uniquingKeysWith: { $1 }) // replacing current value
+    }
 }
 @_hasMissingDesignatedInitializers @objc public class KalapaResult : ObjectiveC.NSObject {
-  @objc public var frontResult: KalapaSDK.FrontResult?
-  @objc public var backResult: KalapaSDK.BackResult?
+  @objc public var frontResult: KalapaSDK.KLPFrontResult?
+  @objc public var backResult: KalapaSDK.KLPBackResult?
   @objc public var decision: Swift.String?
-  @objc public var decision_detail: [KalapaSDK.DecisionDetail]?
+  @objc public var decision_detail: [KalapaSDK.KLPDecisionDetail]?
   @objc public var session: Swift.String?
-  public var nfcModel: KalapaSDK.KLPNfcModel?
+  @objc public var nfcModel: KalapaSDK.KLPNfcModel?
   @objc public var rawJson: [Swift.String : Any]
-  public var mrzOfBackResult: Swift.String? {
-    get
+  @objc public var mrzOfBackResult: Swift.String? {
+    @objc get
   }
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc deinit
 }
-@objc public class FrontResult : ObjectiveC.NSObject, Foundation.NSCoding {
+@objc public class KLPFrontResult : ObjectiveC.NSObject, Foundation.NSCoding {
   public var blurScore: Swift.Float?
   public var cardType: Swift.String?
   public var fields: KalapaSDK.Field?
@@ -134,17 +112,19 @@ extension KalapaSDK.KLPPopupViewController : UIKit.UIViewControllerAnimatedTrans
   public var photocopyScore: Swift.Float?
   public var qrCode: KalapaSDK.QRCode?
   public var mrzData: KalapaSDK.MRZ?
-  public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc required public init(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
 }
-public class QRCode {
-  public var data: KalapaSDK.QRCode.QRCodeData?
-  public var error: KalapaSDK.BaseError?
-  public func toDictionary() -> [Swift.String : Any]
-  public init(fromDictionary dictionary: [Swift.String : Any])
-  @_hasMissingDesignatedInitializers public class QRCodeData {
+@objc public class QRCode : ObjectiveC.NSObject {
+  @objc public var data: KalapaSDK.QRCode.QRCodeData?
+  @objc public var error: KalapaSDK.BaseError?
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @_hasMissingDesignatedInitializers @objc public class QRCodeData : ObjectiveC.NSObject {
+    @objc public func toDictionary() -> [Swift.String : Any]
     @objc deinit
   }
   @objc deinit
@@ -152,65 +132,65 @@ public class QRCode {
 @objc public class BaseError : ObjectiveC.NSObject, Foundation.NSCoding, Swift.Codable {
   final public let code: Swift.Int?
   final public let message: Swift.String?
-  public init(fromDictionary dictionary: [Swift.String : Any])
-  public func toDictionary() -> [Swift.String : Any]
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc required public init(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public class MRZ {
-  public var data: KalapaSDK.MRZ.MrzData?
-  public var error: KalapaSDK.BaseError?
-  public func toDictionary() -> [Swift.String : Any]
-  public init(fromDictionary dictionary: [Swift.String : Any])
-  public class MrzData {
+@objc public class MRZ : ObjectiveC.NSObject {
+  @objc public var data: KalapaSDK.MRZ.MrzData?
+  @objc public var error: KalapaSDK.BaseError?
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public class MrzData : ObjectiveC.NSObject {
     public var raw_mrz: Swift.String?
-    public func toDictionary() -> [Swift.String : Any]
-    public init(fromDictionary dictionary: [Swift.String : Any])
+    @objc public func toDictionary() -> [Swift.String : Any]
+    @objc public init(fromDictionary dictionary: [Swift.String : Any])
     @objc deinit
   }
   @objc deinit
 }
 @objc public class Field : ObjectiveC.NSObject, Foundation.NSCoding {
-  public var birthday: Swift.String?
-  public var country: Swift.String?
-  public var doe: Swift.String?
-  public var doi: Swift.String?
-  public var ethnicity: Swift.String?
-  public var features: Swift.String?
-  public var gender: Swift.String?
-  public var home: Swift.String?
-  public var homeEntities: KalapaSDK.HomeEntity?
-  public var idNumber: Swift.String?
-  public var name: Swift.String?
-  public var national: Swift.String?
-  public var poi: Swift.String?
-  public var religion: Swift.String?
-  public var resident: Swift.String?
-  public var residentEntities: KalapaSDK.ResidentEntity?
-  public var type: Swift.String?
-  public init(fromDictionary dictionary: [Swift.String : Any])
-  public func toDictionary() -> [Swift.String : Any]
+  @objc public var birthday: Swift.String?
+  @objc public var country: Swift.String?
+  @objc public var doe: Swift.String?
+  @objc public var doi: Swift.String?
+  @objc public var ethnicity: Swift.String?
+  @objc public var features: Swift.String?
+  @objc public var gender: Swift.String?
+  @objc public var home: Swift.String?
+  @objc public var homeEntities: KalapaSDK.HomeEntity?
+  @objc public var idNumber: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var national: Swift.String?
+  @objc public var poi: Swift.String?
+  @objc public var religion: Swift.String?
+  @objc public var resident: Swift.String?
+  @objc public var residentEntities: KalapaSDK.ResidentEntity?
+  @objc public var type: Swift.String?
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc required public init(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
 }
 @objc public class ResidentEntity : ObjectiveC.NSObject, Foundation.NSCoding {
-  public var district: Swift.String?
-  public var province: Swift.String?
-  public var unknown: Swift.String?
-  public var ward: Swift.String?
-  public init(fromDictionary dictionary: [Swift.String : Any])
-  public func toDictionary() -> [Swift.String : Any]
+  @objc public var district: Swift.String?
+  @objc public var province: Swift.String?
+  @objc public var unknown: Swift.String?
+  @objc public var ward: Swift.String?
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc required public init(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
 }
 @objc public class HomeEntity : ObjectiveC.NSObject, Foundation.NSCoding {
-  public init(fromDictionary dictionary: [Swift.String : Any])
-  public func toDictionary() -> [Swift.String : Any]
+  @objc public init(fromDictionary dictionary: [Swift.String : Any])
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc required public init(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
@@ -281,8 +261,12 @@ extension KalapaSDK.PassiveAuthenticationError : Foundation.LocalizedError {
 }
 @_inheritsConvenienceInitializers @objc final public class Kalapa : ObjectiveC.NSObject {
   @objc public static var shared: KalapaSDK.Kalapa
-  final public func run(flowType: KalapaSDK.KLPFlowType = .nfc_ekyc(mrz: nil), withConfig: KalapaSDK.KLPConfig)
+  final public func run(flowType: KalapaSDK.KLPFlowType = .ekyc, withConfig: KalapaSDK.KLPConfig, rawDataProcessor: any KalapaSDK.KLPRawDataProcessor)
+  final public func run(flowType: KalapaSDK.KLPFlowType = .ekyc, withConfig: KalapaSDK.KLPConfig)
+  @objc final public func run(flow: Swift.String, withConfig: KalapaSDK.KLPConfig)
+  @objc final public func run(flow: Swift.String, withConfig: KalapaSDK.KLPConfig, rawDataProcessor: any KalapaSDK.KLPRawDataProcessor)
   @objc final public func run(withConfig: KalapaSDK.KLPConfig, from viewController: UIKit.UIViewController, animated flag: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+  @objc final public func restart()
   @objc final public func close(isCancel: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
   @objc override dynamic public init()
   @objc deinit
@@ -295,12 +279,16 @@ extension KalapaSDK.Kalapa {
   @objc final public func klp_localize(key: Swift.String) -> Swift.String
   @objc final public func getConfig() -> KalapaSDK.KLPConfig
   @objc final public func setConfig(_ config: KalapaSDK.KLPConfig)
-  @objc final public func syncLocalize()
+  @objc final public func syncLocalizeWithCompletion(_ completion: (() -> Swift.Void)? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc final public func syncLocalize() async
+  #endif
   final public func showLoading(fromVC: UIKit.UIViewController? = nil, text: Swift.String? = nil, colorAnimation: UIKit.UIColor? = nil, interaction: Swift.Bool = false)
   final public func hideLoading()
   final public func showAlert(alertType: KalapaSDK.KLPAlertVC.TypeOfAlert, title: Swift.String? = nil, message: Swift.String? = nil, cancelCompletion: (() -> Swift.Void)? = nil, okCompletion: (() -> Swift.Void)? = nil, animated: Swift.Bool = true, presentCompletion: (() -> Swift.Void)? = nil, fromVC: UIKit.UIViewController? = nil)
 }
-@_hasMissingDesignatedInitializers @objc public class BackResult : ObjectiveC.NSObject, Foundation.NSCoding {
+@_hasMissingDesignatedInitializers @objc public class KLPBackResult : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc public func toDictionary() -> [Swift.String : Any]
   @objc required public init(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
@@ -312,6 +300,9 @@ extension KalapaSDK.Kalapa {
   public typealias RawValue = Swift.String
   public init?(rawValue: KalapaSDK.KLPFaceLivenessVersion.RawValue)
   public var rawValue: KalapaSDK.KLPFaceLivenessVersion.RawValue {
+    get
+  }
+  public var note: Swift.String {
     get
   }
   public var desc: Swift.String {
@@ -326,13 +317,20 @@ extension KalapaSDK.Kalapa {
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class KLPAppearance : ObjectiveC.NSObject {
-  @objc public static func builder() -> KalapaSDK.KLPAppearance
+  @objc public static func Builder() -> KalapaSDK.KLPAppearance
+  @discardableResult
   @objc final public func withLanguage(_ language: Swift.String = "vi") -> KalapaSDK.KLPAppearance
+  @discardableResult
   @objc final public func withMainColor(_ mainColor: Swift.String = "3270EA") -> KalapaSDK.KLPAppearance
+  @discardableResult
   @objc final public func withMainTextColor(_ mainTextColor: Swift.String = "000000") -> KalapaSDK.KLPAppearance
-  @objc final public func withBtnTextColor(_ btnTextColor: Swift.String = "ffffff") -> KalapaSDK.KLPAppearance
-  @objc final public func withBackgroundColor(_ backgroundColor: Swift.String = "ffffff") -> KalapaSDK.KLPAppearance
+  @discardableResult
+  @objc final public func withBtnTextColor(_ btnTextColor: Swift.String = "FFFFFF") -> KalapaSDK.KLPAppearance
+  @discardableResult
+  @objc final public func withBackgroundColor(_ backgroundColor: Swift.String = "FFFFFF") -> KalapaSDK.KLPAppearance
+  @discardableResult
   @objc final public func withIsAnimatedButton(_ isAnimatedButton: Swift.Bool = true) -> KalapaSDK.KLPAppearance
+  @discardableResult
   @objc final public func withCornerRadiusButton(_ cornerRadiusButton: CoreFoundation.CGFloat = 10) -> KalapaSDK.KLPAppearance
   @objc final public func build() -> KalapaSDK.KLPAppearance
   @objc deinit
@@ -352,23 +350,35 @@ public enum KLPFlowType : Swift.Equatable {
   }
   public static func == (lhs: KalapaSDK.KLPFlowType, rhs: KalapaSDK.KLPFlowType) -> Swift.Bool
 }
-extension UIKit.UIDevice {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public class func currentAppVersion() -> Swift.String
+@objc public enum KLPLogLevel : Swift.Int, Swift.CaseIterable {
+  case debug = 1
+  case info = 2
+  case warning = 3
+  case error = 4
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [KalapaSDK.KLPLogLevel]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [KalapaSDK.KLPLogLevel] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-extension Swift.Dictionary {
-  public func klp_getStringForKey(key: Swift.String) -> Swift.String
-  public func klp_getIntForKey(key: Swift.String) -> Swift.Int
-  public func klp_getBoolForKey(key: Swift.String) -> Swift.Bool
-  @inlinable internal mutating func klp_append(_ other: [Key : Value]) {
-        return self.merge(other, uniquingKeysWith: { $1 }) // replacing current value
-    }
-  @inlinable internal func klp_appending(_ other: [Key : Value]) -> [Key : Value] {
-        return self.merging(other, uniquingKeysWith: { $1 }) // replacing current value
-    }
+@objc public protocol KLPRawDataProcessor {
+  @objc func processNFCData(jsonNfc: [Swift.String : Any], completion: @escaping (KalapaSDK.KLPConfig.Result) -> Swift.Void)
+  @objc func processLivenessData(faceImageData: Foundation.NSData, faceImageBase64String: Swift.String, variant: Swift.String, completion: @escaping (KalapaSDK.KLPConfig.Result) -> Swift.Void)
+  @objc func processCaptureData(isFront: Swift.Bool, idCardImageData: Foundation.NSData, idCardImageBase64String: Swift.String, completion: @escaping (KalapaSDK.KLPConfig.Result) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc final public class KLPConfig : ObjectiveC.NSObject {
+  @objc final public var appearance: KalapaSDK.KLPAppearance {
+    get
+  }
   @discardableResult
-  @objc public static func builder(session: Swift.String) -> KalapaSDK.KLPConfig
+  @objc public static func Builder(session: Swift.String) -> KalapaSDK.KLPConfig
   @discardableResult
   @objc final public func withSession(_ session: Swift.String) -> KalapaSDK.KLPConfig
   @discardableResult
@@ -376,15 +386,17 @@ extension Swift.Dictionary {
   @discardableResult
   @objc final public func withLivenessVersion(_ livenessVersion: KalapaSDK.KLPFaceLivenessVersion) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func withNfcRetryLimit(_ nfcRetryLimit: Swift.Int) -> KalapaSDK.KLPConfig
+  @objc final public func withMRZ(_ mrz: Swift.String?) -> KalapaSDK.KLPConfig
+  @discardableResult
+  @objc final public func withFaceDataBase64(_ faceDataBase64: Swift.String?) -> KalapaSDK.KLPConfig
   @discardableResult
   @objc final public func withAppearance(_ appearance: KalapaSDK.KLPAppearance) -> KalapaSDK.KLPConfig
   @discardableResult
   @objc final public func withShowResultScreen(_ showResultScreen: Swift.Bool) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func withIDtep(idDataHandler: @escaping KalapaSDK.KLPConfig.IDDataHandler) -> KalapaSDK.KLPConfig
+  @objc final public func withIDStep(isFrontId: Swift.Bool = true, idDataHandler: @escaping KalapaSDK.KLPConfig.IDDataHandler) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func withNFCStep(nfcDatahandler: @escaping KalapaSDK.KLPConfig.NFCDataHandler) -> KalapaSDK.KLPConfig
+  @objc final public func withNFCStep(mrz: Swift.String? = nil, nfcDatahandler: @escaping KalapaSDK.KLPConfig.NFCDataHandler) -> KalapaSDK.KLPConfig
   @discardableResult
   @objc final public func withFaceStep(livenessVersion: KalapaSDK.KLPFaceLivenessVersion = .passive, faceDataHandler: @escaping KalapaSDK.KLPConfig.FaceDataHandler) -> KalapaSDK.KLPConfig
   @discardableResult
@@ -396,13 +408,18 @@ extension Swift.Dictionary {
   @discardableResult
   @objc final public func withResultHandler(_ resultHandler: ((_ result: KalapaSDK.KalapaResult?) -> Swift.Void)?) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func withExpiredHandler(_ expiredHandler: (() -> Swift.Void)?) -> KalapaSDK.KLPConfig
+  @objc final public func withExpiredHandler(_ expiredHandler: KalapaSDK.KLPConfig.VoidHandler?) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func withEndSessionHandler(_ endSessionHandler: (() -> Swift.Void)?) -> KalapaSDK.KLPConfig
+  @objc final public func withTimeoutScanNFCHandler(_ timeoutScanNFCHandler: KalapaSDK.KLPConfig.VoidHandler?) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func withCancelSessionHandler(_ cancelSessionHandler: (() -> Swift.Void)?) -> KalapaSDK.KLPConfig
+  @objc final public func withCancelSessionHandler(_ cancelSessionHandler: KalapaSDK.KLPConfig.VoidHandler?) -> KalapaSDK.KLPConfig
   @discardableResult
-  @objc final public func build() throws -> KalapaSDK.KLPConfig
+  @objc final public func withLogHandler(_ logHandler: KalapaSDK.KLPConfig.LogHandler?) -> KalapaSDK.KLPConfig
+  @objc final public func build(completion: ((_ config: KalapaSDK.KLPConfig) -> Swift.Void)? = nil) throws
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  @objc final public func build() async throws -> KalapaSDK.KLPConfig
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -410,6 +427,8 @@ extension KalapaSDK.KLPConfig {
   public typealias IDDataHandler = (_ IDData: Foundation.NSData, _ IDBase64String: Swift.String, _ completion: @escaping (_ result: KalapaSDK.KLPConfig.Result) -> Swift.Void) -> Swift.Void
   public typealias NFCDataHandler = (_ jsonNfc: [Swift.String : Any], _ completion: @escaping (_ result: KalapaSDK.KLPConfig.Result) -> Swift.Void) -> Swift.Void
   public typealias FaceDataHandler = (_ faceData: Foundation.NSData, _ faceBase64String: Swift.String, _ variant: Swift.String, _ completion: @escaping (_ result: KalapaSDK.KLPConfig.Result) -> Swift.Void) -> Swift.Void
+  public typealias LogHandler = (_ logLevel: KalapaSDK.KLPLogLevel, _ logAction: Swift.String, _ screenId: Swift.String, _ data: [Swift.String : Any], _ metadata: [Swift.String : Any]) -> Swift.Void
+  public typealias VoidHandler = () -> Swift.Void
   public typealias ShowErrorAlertHandler = (Swift.String, UIKit.UIViewController) -> Swift.Void
   @objc public enum ErrorKind : Swift.Int, Foundation.LocalizedError {
     case missingSDKSession
@@ -434,57 +453,38 @@ extension KalapaSDK.KLPConfig {
     }
   }
   @objc public class Result : ObjectiveC.NSObject {
-    @objc public init(type: KalapaSDK.KLPConfig.ResultType, errorDescription: Swift.String? = nil)
+    @objc public init(type: KalapaSDK.KLPConfig.ResultType, error: KalapaSDK.KalapaError? = nil, dataResponse: [Swift.String : Any]? = nil)
     @objc deinit
   }
 }
-public struct KLPNfcModel : Swift.Codable {
-  public var id_number: Swift.String?
-  public var name: Swift.String?
-  public var nationality: Swift.String?
-  public var date_of_issuance: Swift.String?
-  public var father_name: Swift.String?
-  public var personal_identification: Swift.String?
-  public var date_of_expiry: Swift.String?
-  public var old_id_number: Swift.String?
-  public var nation: Swift.String?
-  public var religion: Swift.String?
-  public var address: Swift.String?
-  public var face_image: Swift.String?
-  public var hometown: Swift.String?
-  public var mother_name: Swift.String?
-  public var mrz: Swift.String?
-  public var date_of_birth: Swift.String?
-  public var spouse_name: Swift.String?
-  public var gender: Swift.String?
-  public var faceImageBase64: Swift.String? {
-    get
-  }
-  public func toDictionary() -> [Swift.String : Any]
-  public func toJSONString() -> Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class KalapaButton : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var isEnabled: Swift.Bool {
+@_inheritsConvenienceInitializers @objc public class KLPNfcModel : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var id_number: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var nationality: Swift.String?
+  @objc public var date_of_issuance: Swift.String?
+  @objc public var father_name: Swift.String?
+  @objc public var personal_identification: Swift.String?
+  @objc public var date_of_expiry: Swift.String?
+  @objc public var old_id_number: Swift.String?
+  @objc public var nation: Swift.String?
+  @objc public var religion: Swift.String?
+  @objc public var address: Swift.String?
+  @objc public var face_image: Swift.String?
+  @objc public var hometown: Swift.String?
+  @objc public var mother_name: Swift.String?
+  @objc public var mrz: Swift.String?
+  @objc public var date_of_birth: Swift.String?
+  @objc public var spouse_name: Swift.String?
+  @objc public var gender: Swift.String?
+  @objc public var faceImageBase64: Swift.String? {
     @objc get
-    @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var isHighlighted: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) public func setUpButton(isConfirmButton: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJSONString() -> Swift.String
+  @objc override dynamic public init()
   @objc deinit
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class KLPAlertVC : UIKit.UIViewController {
   public enum TypeOfAlert {
@@ -504,23 +504,17 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public class KalapaError {
-  public static let incorrectResponse: KalapaSDK.KalapaError
-  public var code: Swift.Int {
-    get
-  }
-  public var message: Swift.String {
-    get
-  }
-  public func toDictionary() -> [Swift.String : Any]
+@objc public class KalapaError : ObjectiveC.NSObject {
+  public static let commonError: KalapaSDK.KalapaError
   public init(code: Swift.Int)
-  public init(code: Swift.Int, message: Swift.String)
+  convenience public init(code: Swift.Int, message: Swift.String)
+  public init(code: Swift.Int, errorDescription: Swift.String)
+  public var errorDescription: Swift.String? {
+    get
+  }
   @objc deinit
 }
-public protocol KalapaViewSetup {
-  func setup()
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class KalapaBaseWithoutNibView : UIKit.UIView, KalapaSDK.KalapaViewSetup {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class KalapaBaseWithoutNibView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) open func setup()
@@ -536,6 +530,9 @@ extension KalapaSDK.Constant.KalapaDocumentType : Swift.Equatable {}
 extension KalapaSDK.Constant.KalapaDocumentType : Swift.Hashable {}
 extension KalapaSDK.KLPFaceLivenessVersion : Swift.Equatable {}
 extension KalapaSDK.KLPFaceLivenessVersion : Swift.Hashable {}
+extension KalapaSDK.KLPLogLevel : Swift.Equatable {}
+extension KalapaSDK.KLPLogLevel : Swift.Hashable {}
+extension KalapaSDK.KLPLogLevel : Swift.RawRepresentable {}
 extension KalapaSDK.KLPConfig.ErrorKind : Swift.Equatable {}
 extension KalapaSDK.KLPConfig.ErrorKind : Swift.Hashable {}
 extension KalapaSDK.KLPConfig.ErrorKind : Swift.RawRepresentable {}

@@ -7,6 +7,7 @@ import Combine
 import CommonCrypto
 import ContactsUI
 import CoreImage
+import CoreNFC
 import CryptoSwift
 import Foundation
 import GCDWebServer

@@ -301,23 +301,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
 @class NSCoder;
-
-SWIFT_CLASS("_TtC9KalapaSDK10BackResult")
-@interface BackResult : NSObject <NSCoding>
-/// NSCoding required initializer.
-/// Fills the data from the passed decoder
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// NSCoding required method.
-/// Encodes mode properties into the decoder
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 
 SWIFT_CLASS("_TtC9KalapaSDK9BaseError")
 @interface BaseError : NSObject <NSCoding>
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -325,53 +315,48 @@ SWIFT_CLASS("_TtC9KalapaSDK9BaseError")
 @end
 
 
-
-SWIFT_CLASS("_TtC9KalapaSDK13ConfirmResult")
-@interface ConfirmResult : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC9KalapaSDK14DecisionDetail")
-@interface DecisionDetail : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@class HomeEntity;
+@class ResidentEntity;
 
 SWIFT_CLASS("_TtC9KalapaSDK5Field")
 @interface Field : NSObject <NSCoding>
+@property (nonatomic, copy) NSString * _Nullable birthday;
+@property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, copy) NSString * _Nullable doe;
+@property (nonatomic, copy) NSString * _Nullable doi;
+@property (nonatomic, copy) NSString * _Nullable ethnicity;
+@property (nonatomic, copy) NSString * _Nullable features;
+@property (nonatomic, copy) NSString * _Nullable gender;
+@property (nonatomic, copy) NSString * _Nullable home;
+@property (nonatomic, strong) HomeEntity * _Nullable homeEntities;
+@property (nonatomic, copy) NSString * _Nullable idNumber;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable national;
+@property (nonatomic, copy) NSString * _Nullable poi;
+@property (nonatomic, copy) NSString * _Nullable religion;
+@property (nonatomic, copy) NSString * _Nullable resident;
+@property (nonatomic, strong) ResidentEntity * _Nullable residentEntities;
+@property (nonatomic, copy) NSString * _Nullable type;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-
-SWIFT_CLASS("_TtC9KalapaSDK11FrontResult")
-@interface FrontResult : NSObject <NSCoding>
-/// NSCoding required initializer.
-/// Fills the data from the passed decoder
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// NSCoding required method.
-/// Encodes mode properties into the decoder
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS("_TtC9KalapaSDK10HomeEntity")
 @interface HomeEntity : NSObject <NSCoding>
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9KalapaSDK10KLPAlertVC")
@@ -386,9 +371,9 @@ SWIFT_CLASS("_TtC9KalapaSDK10KLPAlertVC")
 /// Example usage:
 /// \code
 /// let appearance = KLPAppearance
-///     .builder()
+///     .Builder()
 ///     .withLanguage("vi")
-///     .withMainColor("3270EA")
+///     .withMainColor("#6CB096")
 ///     .build()
 ///
 /// \endcode
@@ -396,30 +381,45 @@ SWIFT_CLASS("_TtC9KalapaSDK13KLPAppearance")
 @interface KLPAppearance : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-+ (KLPAppearance * _Nonnull)builder SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withLanguage:(NSString * _Nonnull)language SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withMainColor:(NSString * _Nonnull)mainColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withMainTextColor:(NSString * _Nonnull)mainTextColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withBtnTextColor:(NSString * _Nonnull)btnTextColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withBackgroundColor:(NSString * _Nonnull)backgroundColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withIsAnimatedButton:(BOOL)isAnimatedButton SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withCornerRadiusButton:(CGFloat)cornerRadiusButton SWIFT_WARN_UNUSED_RESULT;
++ (KLPAppearance * _Nonnull)Builder SWIFT_WARN_UNUSED_RESULT;
+- (KLPAppearance * _Nonnull)withLanguage:(NSString * _Nonnull)language;
+- (KLPAppearance * _Nonnull)withMainColor:(NSString * _Nonnull)mainColor;
+- (KLPAppearance * _Nonnull)withMainTextColor:(NSString * _Nonnull)mainTextColor;
+- (KLPAppearance * _Nonnull)withBtnTextColor:(NSString * _Nonnull)btnTextColor;
+- (KLPAppearance * _Nonnull)withBackgroundColor:(NSString * _Nonnull)backgroundColor;
+- (KLPAppearance * _Nonnull)withIsAnimatedButton:(BOOL)isAnimatedButton;
+- (KLPAppearance * _Nonnull)withCornerRadiusButton:(CGFloat)cornerRadiusButton;
 - (KLPAppearance * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC9KalapaSDK13KLPBackResult")
+@interface KLPBackResult : NSObject <NSCoding>
+/// Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+/// NSCoding required initializer.
+/// Fills the data from the passed decoder
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// NSCoding required method.
+/// Encodes mode properties into the decoder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 enum KLPFaceLivenessVersion : NSInteger;
 @class NSData;
 @class Result;
 @class KalapaResult;
+enum KLPLogLevel : NSInteger;
 
 /// The configuration class that helps the SDK run its flow.
 /// Example usage:
 /// \code
 /// do {
-///     let config = try KLPConfig.builder(session: {your_session})
+///     let config = try KLPConfig.Builder(session: {your_session})
 ///         .withAppearance(appearance)
 ///         .withLivenessVersion(.passive)
-///         .withNfcRetryLimit(3)
 ///         .withShowResultScreen(true)
 ///         .withResultHandler(_resultHandler(_:))
 ///         .withExpiredHandler(_expiredHandler)
@@ -434,24 +434,28 @@ enum KLPFaceLivenessVersion : NSInteger;
 /// \endcode
 SWIFT_CLASS("_TtC9KalapaSDK9KLPConfig")
 @interface KLPConfig : NSObject
-+ (KLPConfig * _Nonnull)builderWithSession:(NSString * _Nonnull)session;
+@property (nonatomic, readonly, strong) KLPAppearance * _Nonnull appearance;
++ (KLPConfig * _Nonnull)BuilderWithSession:(NSString * _Nonnull)session;
 - (KLPConfig * _Nonnull)withSession:(NSString * _Nonnull)session;
 - (KLPConfig * _Nonnull)withBaseUrl:(NSString * _Nonnull)baseUrl;
 - (KLPConfig * _Nonnull)withLivenessVersion:(enum KLPFaceLivenessVersion)livenessVersion;
-- (KLPConfig * _Nonnull)withNfcRetryLimit:(NSInteger)nfcRetryLimit;
+- (KLPConfig * _Nonnull)withMRZ:(NSString * _Nullable)mrz;
+- (KLPConfig * _Nonnull)withFaceDataBase64:(NSString * _Nullable)faceDataBase64;
 - (KLPConfig * _Nonnull)withAppearance:(KLPAppearance * _Nonnull)appearance;
 - (KLPConfig * _Nonnull)withShowResultScreen:(BOOL)showResultScreen;
-- (KLPConfig * _Nonnull)withIDtepWithIdDataHandler:(void (^ _Nonnull)(NSData * _Nonnull, NSString * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))idDataHandler;
-- (KLPConfig * _Nonnull)withNFCStepWithNfcDatahandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))nfcDatahandler;
+- (KLPConfig * _Nonnull)withIDStepWithIsFrontId:(BOOL)isFrontId idDataHandler:(void (^ _Nonnull)(NSData * _Nonnull, NSString * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))idDataHandler;
+- (KLPConfig * _Nonnull)withNFCStepWithMrz:(NSString * _Nullable)mrz nfcDatahandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))nfcDatahandler;
 - (KLPConfig * _Nonnull)withFaceStepWithLivenessVersion:(enum KLPFaceLivenessVersion)livenessVersion faceDataHandler:(void (^ _Nonnull)(NSData * _Nonnull, NSString * _Nonnull, NSString * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))faceDataHandler;
 - (KLPConfig * _Nonnull)withShowLoadingHandler:(void (^ _Nullable)(UIViewController * _Nullable))showLoadingHandler;
 - (KLPConfig * _Nonnull)withHideLoadingHandler:(void (^ _Nullable)(void))hideLoadingHandler;
 - (KLPConfig * _Nonnull)withShowErrorAlertHandler:(void (^ _Nullable)(NSString * _Nonnull, UIViewController * _Nonnull))showErrorAlertHandler;
 - (KLPConfig * _Nonnull)withResultHandler:(void (^ _Nullable)(KalapaResult * _Nullable))resultHandler;
 - (KLPConfig * _Nonnull)withExpiredHandler:(void (^ _Nullable)(void))expiredHandler;
-- (KLPConfig * _Nonnull)withEndSessionHandler:(void (^ _Nullable)(void))endSessionHandler;
+- (KLPConfig * _Nonnull)withTimeoutScanNFCHandler:(void (^ _Nullable)(void))timeoutScanNFCHandler;
 - (KLPConfig * _Nonnull)withCancelSessionHandler:(void (^ _Nullable)(void))cancelSessionHandler;
-- (KLPConfig * _Nullable)buildAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (KLPConfig * _Nonnull)withLogHandler:(void (^ _Nullable)(enum KLPLogLevel, NSString * _Nonnull, NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))logHandler;
+- (BOOL)buildAndReturnError:(NSError * _Nullable * _Nullable)error completion:(void (^ _Nullable)(KLPConfig * _Nonnull))completion;
+- (void)buildWithCompletionHandler:(void (^ _Nonnull)(KLPConfig * _Nullable, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -471,10 +475,19 @@ typedef SWIFT_ENUM(NSInteger, ResultType, open) {
   ResultTypeFailure = 1,
 };
 
+@class KalapaError;
 
 SWIFT_CLASS("_TtCC9KalapaSDK9KLPConfig6Result")
 @interface Result : NSObject
-- (nonnull instancetype)initWithType:(enum ResultType)type errorDescription:(NSString * _Nullable)errorDescription OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum ResultType)type error:(KalapaError * _Nullable)error dataResponse:(NSDictionary<NSString *, id> * _Nullable)dataResponse OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9KalapaSDK17KLPDecisionDetail")
+@interface KLPDecisionDetail : NSObject
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -486,36 +499,84 @@ typedef SWIFT_ENUM(NSInteger, KLPFaceLivenessVersion, open) {
 };
 
 
-SWIFT_CLASS("_TtC9KalapaSDK22KLPPopupViewController")
-@interface KLPPopupViewController : UIViewController
-- (void)viewDidLoad;
-- (void)viewWillDisappear:(BOOL)animated;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC9KalapaSDK14KLPFrontResult")
+@interface KLPFrontResult : NSObject <NSCoding>
+/// Instantiate the instance using the passed dictionary values to set the properties values
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+/// NSCoding required initializer.
+/// Fills the data from the passed decoder
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// NSCoding required method.
+/// Encodes mode properties into the decoder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, KLPLogLevel, open) {
+  KLPLogLevelDebug = 1,
+  KLPLogLevelInfo = 2,
+  KLPLogLevelWarning = 3,
+  KLPLogLevelError = 4,
+};
+
+
+SWIFT_CLASS("_TtC9KalapaSDK11KLPNfcModel")
+@interface KLPNfcModel : NSObject
+@property (nonatomic, copy) NSString * _Nullable id_number;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable nationality;
+@property (nonatomic, copy) NSString * _Nullable date_of_issuance;
+@property (nonatomic, copy) NSString * _Nullable father_name;
+@property (nonatomic, copy) NSString * _Nullable personal_identification;
+@property (nonatomic, copy) NSString * _Nullable date_of_expiry;
+@property (nonatomic, copy) NSString * _Nullable old_id_number;
+@property (nonatomic, copy) NSString * _Nullable nation;
+@property (nonatomic, copy) NSString * _Nullable religion;
+@property (nonatomic, copy) NSString * _Nullable address;
+@property (nonatomic, copy) NSString * _Nullable face_image;
+@property (nonatomic, copy) NSString * _Nullable hometown;
+@property (nonatomic, copy) NSString * _Nullable mother_name;
+@property (nonatomic, copy) NSString * _Nullable mrz;
+@property (nonatomic, copy) NSString * _Nullable date_of_birth;
+@property (nonatomic, copy) NSString * _Nullable spouse_name;
+@property (nonatomic, copy) NSString * _Nullable gender;
+@property (nonatomic, readonly, copy) NSString * _Nullable faceImageBase64;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toJSONString SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC9KalapaSDK28KLPPopupHolderViewController")
-@interface KLPPopupHolderViewController : KLPPopupViewController
-@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@protocol UIViewControllerAnimatedTransitioning;
-
-@interface KLPPopupViewController (SWIFT_EXTENSION(KalapaSDK)) <UIViewControllerTransitioningDelegate>
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForPresentedController:(UIViewController * _Nonnull)presented presentingController:(UIViewController * _Nonnull)presenting sourceController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)dismissed SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@protocol UIViewControllerContextTransitioning;
-
-@interface KLPPopupViewController (SWIFT_EXTENSION(KalapaSDK)) <UIViewControllerAnimatedTransitioning>
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
-- (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+SWIFT_PROTOCOL("_TtP9KalapaSDK19KLPRawDataProcessor_")
+@protocol KLPRawDataProcessor
+/// Verify raw NFC data handler
+/// \param jsonNfc JSON-NFC raw data
+///
+/// \param completion a closure function that is used to handle the result of the verify raw NFC data
+///
+- (void)processNFCDataWithJsonNfc:(NSDictionary<NSString *, id> * _Nonnull)jsonNfc completion:(void (^ _Nonnull)(Result * _Nonnull))completion;
+/// Verify the user’s face data handler
+/// \param faceImageData The image data of the user’s face requiring verification, with applied compression.
+///
+/// \param faceImageBase64String The base64-encoded string representation of the user’s face image, with the default encoding options applied after compression.
+///
+/// \param variant Key for liveness version, where <code>p</code> is represented by <code>.passive</code>, <code>sa</code> by <code>.semiActive</code>, and <code>.a</code> by <code>.active</code>
+///
+/// \param completion a closure function used to handle the result of verifying the user’s facial data.
+///
+- (void)processLivenessDataWithFaceImageData:(NSData * _Nonnull)faceImageData faceImageBase64String:(NSString * _Nonnull)faceImageBase64String variant:(NSString * _Nonnull)variant completion:(void (^ _Nonnull)(Result * _Nonnull))completion;
+/// Verify the user’s id card data handler
+/// \param isFront Indicates the position of the ID card. If true, it is the front of the ID card; otherwise, it is the back of the ID card.
+///
+/// \param idCardImageData The image data of the user’s passport requiring verification, with applied compression.
+///
+/// \param idCardImageBase64String The base64-encoded string representation of the user’s face image, with the default encoding options applied after compression.
+///
+/// \param completion a closure function used to handle the result of verifying the user’s facial data.
+///
+- (void)processCaptureDataWithIsFront:(BOOL)isFront idCardImageData:(NSData * _Nonnull)idCardImageData idCardImageBase64String:(NSString * _Nonnull)idCardImageBase64String completion:(void (^ _Nonnull)(Result * _Nonnull))completion;
 @end
 
 
@@ -524,6 +585,20 @@ SWIFT_CLASS("_TtC9KalapaSDK6Kalapa")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Kalapa * _Nonnull shared;)
 + (Kalapa * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(Kalapa * _Nonnull)value;
+/// Run the SDK with flow type support Objective-C.
+/// \param flowType The flow type that determines the SDK’s behavior.
+///
+/// \param withConfig The configuration that helps the SDK run.
+///
+- (void)runWithFlow:(NSString * _Nonnull)flow withConfig:(KLPConfig * _Nonnull)withConfig;
+/// Run the SDK with flow type support Objective-C.
+/// \param flowType The flow type that determines the SDK’s behavior.
+///
+/// \param withConfig The configuration that helps the SDK run.
+///
+/// \param rawDataProcessor The Kalapa handler object which help SDK process data.
+///
+- (void)runWithFlow:(NSString * _Nonnull)flow withConfig:(KLPConfig * _Nonnull)withConfig rawDataProcessor:(id <KLPRawDataProcessor> _Nonnull)rawDataProcessor;
 /// Run the SDK without flow type, need custom step in config.
 /// \param withConfig The configuration that helps the SDK run.
 ///
@@ -534,6 +609,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Kalapa * _Nonnull shar
 /// \param completion A closure to be called when the SDK flow completes.
 ///
 - (void)runWithConfig:(KLPConfig * _Nonnull)withConfig from:(UIViewController * _Nonnull)viewController animated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
+- (void)restart;
 - (void)closeWithIsCancel:(BOOL)isCancel completion:(void (^ _Nullable)(void))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -547,7 +623,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Kalapa * _Nonnull shar
 - (NSString * _Nonnull)klp_localizeWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (KLPConfig * _Nonnull)getConfig SWIFT_WARN_UNUSED_RESULT;
 - (void)setConfig:(KLPConfig * _Nonnull)config;
-- (void)syncLocalize;
+- (void)syncLocalizeWithCompletion:(void (^ _Nullable)(void))completion;
+- (void)syncLocalizeWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
 
@@ -557,31 +634,46 @@ SWIFT_CLASS("_TtC9KalapaSDK24KalapaBaseWithoutNibView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITouch;
-@class UIEvent;
 
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC9KalapaSDK12KalapaButton")
-@interface KalapaButton : UIButton
-@property (nonatomic, getter=isEnabled) BOOL enabled;
-@property (nonatomic, getter=isHighlighted) BOOL highlighted;
-- (void)awakeFromNib;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC9KalapaSDK11KalapaError")
+@interface KalapaError : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 SWIFT_CLASS("_TtC9KalapaSDK12KalapaResult")
 @interface KalapaResult : NSObject
-@property (nonatomic, strong) FrontResult * _Nullable frontResult;
-@property (nonatomic, strong) BackResult * _Nullable backResult;
+@property (nonatomic, strong) KLPFrontResult * _Nullable frontResult;
+@property (nonatomic, strong) KLPBackResult * _Nullable backResult;
 @property (nonatomic, copy) NSString * _Nullable decision;
-@property (nonatomic, copy) NSArray<DecisionDetail *> * _Nullable decision_detail;
+@property (nonatomic, copy) NSArray<KLPDecisionDetail *> * _Nullable decision_detail;
 @property (nonatomic, copy) NSString * _Nullable session;
+@property (nonatomic, strong) KLPNfcModel * _Nullable nfcModel;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull rawJson;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzOfBackResult;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MrzData;
+
+SWIFT_CLASS("_TtC9KalapaSDK3MRZ")
+@interface MRZ : NSObject
+@property (nonatomic, strong) MrzData * _Nullable data;
+@property (nonatomic, strong) BaseError * _Nullable error;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC9KalapaSDK3MRZ7MrzData")
+@interface MrzData : NSObject
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -590,9 +682,35 @@ SWIFT_CLASS("_TtC9KalapaSDK12KalapaResult")
 
 
 
+@class QRCodeData;
+
+SWIFT_CLASS("_TtC9KalapaSDK6QRCode")
+@interface QRCode : NSObject
+@property (nonatomic, strong) QRCodeData * _Nullable data;
+@property (nonatomic, strong) BaseError * _Nullable error;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC9KalapaSDK6QRCode10QRCodeData")
+@interface QRCodeData : NSObject
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC9KalapaSDK14ResidentEntity")
 @interface ResidentEntity : NSObject <NSCoding>
+@property (nonatomic, copy) NSString * _Nullable district;
+@property (nonatomic, copy) NSString * _Nullable province;
+@property (nonatomic, copy) NSString * _Nullable unknown;
+@property (nonatomic, copy) NSString * _Nullable ward;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -600,14 +718,6 @@ SWIFT_CLASS("_TtC9KalapaSDK14ResidentEntity")
 @end
 
 
-
-
-
-
-
-@interface UIDevice (SWIFT_EXTENSION(KalapaSDK))
-+ (NSString * _Nonnull)currentAppVersion SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -929,23 +1039,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
 @class NSCoder;
-
-SWIFT_CLASS("_TtC9KalapaSDK10BackResult")
-@interface BackResult : NSObject <NSCoding>
-/// NSCoding required initializer.
-/// Fills the data from the passed decoder
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// NSCoding required method.
-/// Encodes mode properties into the decoder
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 
 SWIFT_CLASS("_TtC9KalapaSDK9BaseError")
 @interface BaseError : NSObject <NSCoding>
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -953,53 +1053,48 @@ SWIFT_CLASS("_TtC9KalapaSDK9BaseError")
 @end
 
 
-
-SWIFT_CLASS("_TtC9KalapaSDK13ConfirmResult")
-@interface ConfirmResult : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC9KalapaSDK14DecisionDetail")
-@interface DecisionDetail : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@class HomeEntity;
+@class ResidentEntity;
 
 SWIFT_CLASS("_TtC9KalapaSDK5Field")
 @interface Field : NSObject <NSCoding>
+@property (nonatomic, copy) NSString * _Nullable birthday;
+@property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, copy) NSString * _Nullable doe;
+@property (nonatomic, copy) NSString * _Nullable doi;
+@property (nonatomic, copy) NSString * _Nullable ethnicity;
+@property (nonatomic, copy) NSString * _Nullable features;
+@property (nonatomic, copy) NSString * _Nullable gender;
+@property (nonatomic, copy) NSString * _Nullable home;
+@property (nonatomic, strong) HomeEntity * _Nullable homeEntities;
+@property (nonatomic, copy) NSString * _Nullable idNumber;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable national;
+@property (nonatomic, copy) NSString * _Nullable poi;
+@property (nonatomic, copy) NSString * _Nullable religion;
+@property (nonatomic, copy) NSString * _Nullable resident;
+@property (nonatomic, strong) ResidentEntity * _Nullable residentEntities;
+@property (nonatomic, copy) NSString * _Nullable type;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-
-SWIFT_CLASS("_TtC9KalapaSDK11FrontResult")
-@interface FrontResult : NSObject <NSCoding>
-/// NSCoding required initializer.
-/// Fills the data from the passed decoder
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// NSCoding required method.
-/// Encodes mode properties into the decoder
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS("_TtC9KalapaSDK10HomeEntity")
 @interface HomeEntity : NSObject <NSCoding>
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9KalapaSDK10KLPAlertVC")
@@ -1014,9 +1109,9 @@ SWIFT_CLASS("_TtC9KalapaSDK10KLPAlertVC")
 /// Example usage:
 /// \code
 /// let appearance = KLPAppearance
-///     .builder()
+///     .Builder()
 ///     .withLanguage("vi")
-///     .withMainColor("3270EA")
+///     .withMainColor("#6CB096")
 ///     .build()
 ///
 /// \endcode
@@ -1024,30 +1119,45 @@ SWIFT_CLASS("_TtC9KalapaSDK13KLPAppearance")
 @interface KLPAppearance : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-+ (KLPAppearance * _Nonnull)builder SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withLanguage:(NSString * _Nonnull)language SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withMainColor:(NSString * _Nonnull)mainColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withMainTextColor:(NSString * _Nonnull)mainTextColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withBtnTextColor:(NSString * _Nonnull)btnTextColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withBackgroundColor:(NSString * _Nonnull)backgroundColor SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withIsAnimatedButton:(BOOL)isAnimatedButton SWIFT_WARN_UNUSED_RESULT;
-- (KLPAppearance * _Nonnull)withCornerRadiusButton:(CGFloat)cornerRadiusButton SWIFT_WARN_UNUSED_RESULT;
++ (KLPAppearance * _Nonnull)Builder SWIFT_WARN_UNUSED_RESULT;
+- (KLPAppearance * _Nonnull)withLanguage:(NSString * _Nonnull)language;
+- (KLPAppearance * _Nonnull)withMainColor:(NSString * _Nonnull)mainColor;
+- (KLPAppearance * _Nonnull)withMainTextColor:(NSString * _Nonnull)mainTextColor;
+- (KLPAppearance * _Nonnull)withBtnTextColor:(NSString * _Nonnull)btnTextColor;
+- (KLPAppearance * _Nonnull)withBackgroundColor:(NSString * _Nonnull)backgroundColor;
+- (KLPAppearance * _Nonnull)withIsAnimatedButton:(BOOL)isAnimatedButton;
+- (KLPAppearance * _Nonnull)withCornerRadiusButton:(CGFloat)cornerRadiusButton;
 - (KLPAppearance * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC9KalapaSDK13KLPBackResult")
+@interface KLPBackResult : NSObject <NSCoding>
+/// Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+/// NSCoding required initializer.
+/// Fills the data from the passed decoder
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// NSCoding required method.
+/// Encodes mode properties into the decoder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 enum KLPFaceLivenessVersion : NSInteger;
 @class NSData;
 @class Result;
 @class KalapaResult;
+enum KLPLogLevel : NSInteger;
 
 /// The configuration class that helps the SDK run its flow.
 /// Example usage:
 /// \code
 /// do {
-///     let config = try KLPConfig.builder(session: {your_session})
+///     let config = try KLPConfig.Builder(session: {your_session})
 ///         .withAppearance(appearance)
 ///         .withLivenessVersion(.passive)
-///         .withNfcRetryLimit(3)
 ///         .withShowResultScreen(true)
 ///         .withResultHandler(_resultHandler(_:))
 ///         .withExpiredHandler(_expiredHandler)
@@ -1062,24 +1172,28 @@ enum KLPFaceLivenessVersion : NSInteger;
 /// \endcode
 SWIFT_CLASS("_TtC9KalapaSDK9KLPConfig")
 @interface KLPConfig : NSObject
-+ (KLPConfig * _Nonnull)builderWithSession:(NSString * _Nonnull)session;
+@property (nonatomic, readonly, strong) KLPAppearance * _Nonnull appearance;
++ (KLPConfig * _Nonnull)BuilderWithSession:(NSString * _Nonnull)session;
 - (KLPConfig * _Nonnull)withSession:(NSString * _Nonnull)session;
 - (KLPConfig * _Nonnull)withBaseUrl:(NSString * _Nonnull)baseUrl;
 - (KLPConfig * _Nonnull)withLivenessVersion:(enum KLPFaceLivenessVersion)livenessVersion;
-- (KLPConfig * _Nonnull)withNfcRetryLimit:(NSInteger)nfcRetryLimit;
+- (KLPConfig * _Nonnull)withMRZ:(NSString * _Nullable)mrz;
+- (KLPConfig * _Nonnull)withFaceDataBase64:(NSString * _Nullable)faceDataBase64;
 - (KLPConfig * _Nonnull)withAppearance:(KLPAppearance * _Nonnull)appearance;
 - (KLPConfig * _Nonnull)withShowResultScreen:(BOOL)showResultScreen;
-- (KLPConfig * _Nonnull)withIDtepWithIdDataHandler:(void (^ _Nonnull)(NSData * _Nonnull, NSString * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))idDataHandler;
-- (KLPConfig * _Nonnull)withNFCStepWithNfcDatahandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))nfcDatahandler;
+- (KLPConfig * _Nonnull)withIDStepWithIsFrontId:(BOOL)isFrontId idDataHandler:(void (^ _Nonnull)(NSData * _Nonnull, NSString * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))idDataHandler;
+- (KLPConfig * _Nonnull)withNFCStepWithMrz:(NSString * _Nullable)mrz nfcDatahandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))nfcDatahandler;
 - (KLPConfig * _Nonnull)withFaceStepWithLivenessVersion:(enum KLPFaceLivenessVersion)livenessVersion faceDataHandler:(void (^ _Nonnull)(NSData * _Nonnull, NSString * _Nonnull, NSString * _Nonnull, void (^ _Nonnull)(Result * _Nonnull)))faceDataHandler;
 - (KLPConfig * _Nonnull)withShowLoadingHandler:(void (^ _Nullable)(UIViewController * _Nullable))showLoadingHandler;
 - (KLPConfig * _Nonnull)withHideLoadingHandler:(void (^ _Nullable)(void))hideLoadingHandler;
 - (KLPConfig * _Nonnull)withShowErrorAlertHandler:(void (^ _Nullable)(NSString * _Nonnull, UIViewController * _Nonnull))showErrorAlertHandler;
 - (KLPConfig * _Nonnull)withResultHandler:(void (^ _Nullable)(KalapaResult * _Nullable))resultHandler;
 - (KLPConfig * _Nonnull)withExpiredHandler:(void (^ _Nullable)(void))expiredHandler;
-- (KLPConfig * _Nonnull)withEndSessionHandler:(void (^ _Nullable)(void))endSessionHandler;
+- (KLPConfig * _Nonnull)withTimeoutScanNFCHandler:(void (^ _Nullable)(void))timeoutScanNFCHandler;
 - (KLPConfig * _Nonnull)withCancelSessionHandler:(void (^ _Nullable)(void))cancelSessionHandler;
-- (KLPConfig * _Nullable)buildAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (KLPConfig * _Nonnull)withLogHandler:(void (^ _Nullable)(enum KLPLogLevel, NSString * _Nonnull, NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))logHandler;
+- (BOOL)buildAndReturnError:(NSError * _Nullable * _Nullable)error completion:(void (^ _Nullable)(KLPConfig * _Nonnull))completion;
+- (void)buildWithCompletionHandler:(void (^ _Nonnull)(KLPConfig * _Nullable, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1099,10 +1213,19 @@ typedef SWIFT_ENUM(NSInteger, ResultType, open) {
   ResultTypeFailure = 1,
 };
 
+@class KalapaError;
 
 SWIFT_CLASS("_TtCC9KalapaSDK9KLPConfig6Result")
 @interface Result : NSObject
-- (nonnull instancetype)initWithType:(enum ResultType)type errorDescription:(NSString * _Nullable)errorDescription OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum ResultType)type error:(KalapaError * _Nullable)error dataResponse:(NSDictionary<NSString *, id> * _Nullable)dataResponse OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9KalapaSDK17KLPDecisionDetail")
+@interface KLPDecisionDetail : NSObject
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1114,36 +1237,84 @@ typedef SWIFT_ENUM(NSInteger, KLPFaceLivenessVersion, open) {
 };
 
 
-SWIFT_CLASS("_TtC9KalapaSDK22KLPPopupViewController")
-@interface KLPPopupViewController : UIViewController
-- (void)viewDidLoad;
-- (void)viewWillDisappear:(BOOL)animated;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC9KalapaSDK14KLPFrontResult")
+@interface KLPFrontResult : NSObject <NSCoding>
+/// Instantiate the instance using the passed dictionary values to set the properties values
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+/// NSCoding required initializer.
+/// Fills the data from the passed decoder
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// NSCoding required method.
+/// Encodes mode properties into the decoder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, KLPLogLevel, open) {
+  KLPLogLevelDebug = 1,
+  KLPLogLevelInfo = 2,
+  KLPLogLevelWarning = 3,
+  KLPLogLevelError = 4,
+};
+
+
+SWIFT_CLASS("_TtC9KalapaSDK11KLPNfcModel")
+@interface KLPNfcModel : NSObject
+@property (nonatomic, copy) NSString * _Nullable id_number;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable nationality;
+@property (nonatomic, copy) NSString * _Nullable date_of_issuance;
+@property (nonatomic, copy) NSString * _Nullable father_name;
+@property (nonatomic, copy) NSString * _Nullable personal_identification;
+@property (nonatomic, copy) NSString * _Nullable date_of_expiry;
+@property (nonatomic, copy) NSString * _Nullable old_id_number;
+@property (nonatomic, copy) NSString * _Nullable nation;
+@property (nonatomic, copy) NSString * _Nullable religion;
+@property (nonatomic, copy) NSString * _Nullable address;
+@property (nonatomic, copy) NSString * _Nullable face_image;
+@property (nonatomic, copy) NSString * _Nullable hometown;
+@property (nonatomic, copy) NSString * _Nullable mother_name;
+@property (nonatomic, copy) NSString * _Nullable mrz;
+@property (nonatomic, copy) NSString * _Nullable date_of_birth;
+@property (nonatomic, copy) NSString * _Nullable spouse_name;
+@property (nonatomic, copy) NSString * _Nullable gender;
+@property (nonatomic, readonly, copy) NSString * _Nullable faceImageBase64;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toJSONString SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC9KalapaSDK28KLPPopupHolderViewController")
-@interface KLPPopupHolderViewController : KLPPopupViewController
-@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@protocol UIViewControllerAnimatedTransitioning;
-
-@interface KLPPopupViewController (SWIFT_EXTENSION(KalapaSDK)) <UIViewControllerTransitioningDelegate>
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForPresentedController:(UIViewController * _Nonnull)presented presentingController:(UIViewController * _Nonnull)presenting sourceController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)dismissed SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@protocol UIViewControllerContextTransitioning;
-
-@interface KLPPopupViewController (SWIFT_EXTENSION(KalapaSDK)) <UIViewControllerAnimatedTransitioning>
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
-- (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+SWIFT_PROTOCOL("_TtP9KalapaSDK19KLPRawDataProcessor_")
+@protocol KLPRawDataProcessor
+/// Verify raw NFC data handler
+/// \param jsonNfc JSON-NFC raw data
+///
+/// \param completion a closure function that is used to handle the result of the verify raw NFC data
+///
+- (void)processNFCDataWithJsonNfc:(NSDictionary<NSString *, id> * _Nonnull)jsonNfc completion:(void (^ _Nonnull)(Result * _Nonnull))completion;
+/// Verify the user’s face data handler
+/// \param faceImageData The image data of the user’s face requiring verification, with applied compression.
+///
+/// \param faceImageBase64String The base64-encoded string representation of the user’s face image, with the default encoding options applied after compression.
+///
+/// \param variant Key for liveness version, where <code>p</code> is represented by <code>.passive</code>, <code>sa</code> by <code>.semiActive</code>, and <code>.a</code> by <code>.active</code>
+///
+/// \param completion a closure function used to handle the result of verifying the user’s facial data.
+///
+- (void)processLivenessDataWithFaceImageData:(NSData * _Nonnull)faceImageData faceImageBase64String:(NSString * _Nonnull)faceImageBase64String variant:(NSString * _Nonnull)variant completion:(void (^ _Nonnull)(Result * _Nonnull))completion;
+/// Verify the user’s id card data handler
+/// \param isFront Indicates the position of the ID card. If true, it is the front of the ID card; otherwise, it is the back of the ID card.
+///
+/// \param idCardImageData The image data of the user’s passport requiring verification, with applied compression.
+///
+/// \param idCardImageBase64String The base64-encoded string representation of the user’s face image, with the default encoding options applied after compression.
+///
+/// \param completion a closure function used to handle the result of verifying the user’s facial data.
+///
+- (void)processCaptureDataWithIsFront:(BOOL)isFront idCardImageData:(NSData * _Nonnull)idCardImageData idCardImageBase64String:(NSString * _Nonnull)idCardImageBase64String completion:(void (^ _Nonnull)(Result * _Nonnull))completion;
 @end
 
 
@@ -1152,6 +1323,20 @@ SWIFT_CLASS("_TtC9KalapaSDK6Kalapa")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Kalapa * _Nonnull shared;)
 + (Kalapa * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(Kalapa * _Nonnull)value;
+/// Run the SDK with flow type support Objective-C.
+/// \param flowType The flow type that determines the SDK’s behavior.
+///
+/// \param withConfig The configuration that helps the SDK run.
+///
+- (void)runWithFlow:(NSString * _Nonnull)flow withConfig:(KLPConfig * _Nonnull)withConfig;
+/// Run the SDK with flow type support Objective-C.
+/// \param flowType The flow type that determines the SDK’s behavior.
+///
+/// \param withConfig The configuration that helps the SDK run.
+///
+/// \param rawDataProcessor The Kalapa handler object which help SDK process data.
+///
+- (void)runWithFlow:(NSString * _Nonnull)flow withConfig:(KLPConfig * _Nonnull)withConfig rawDataProcessor:(id <KLPRawDataProcessor> _Nonnull)rawDataProcessor;
 /// Run the SDK without flow type, need custom step in config.
 /// \param withConfig The configuration that helps the SDK run.
 ///
@@ -1162,6 +1347,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Kalapa * _Nonnull shar
 /// \param completion A closure to be called when the SDK flow completes.
 ///
 - (void)runWithConfig:(KLPConfig * _Nonnull)withConfig from:(UIViewController * _Nonnull)viewController animated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
+- (void)restart;
 - (void)closeWithIsCancel:(BOOL)isCancel completion:(void (^ _Nullable)(void))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1175,7 +1361,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Kalapa * _Nonnull shar
 - (NSString * _Nonnull)klp_localizeWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (KLPConfig * _Nonnull)getConfig SWIFT_WARN_UNUSED_RESULT;
 - (void)setConfig:(KLPConfig * _Nonnull)config;
-- (void)syncLocalize;
+- (void)syncLocalizeWithCompletion:(void (^ _Nullable)(void))completion;
+- (void)syncLocalizeWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
 
@@ -1185,31 +1372,46 @@ SWIFT_CLASS("_TtC9KalapaSDK24KalapaBaseWithoutNibView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITouch;
-@class UIEvent;
 
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC9KalapaSDK12KalapaButton")
-@interface KalapaButton : UIButton
-@property (nonatomic, getter=isEnabled) BOOL enabled;
-@property (nonatomic, getter=isHighlighted) BOOL highlighted;
-- (void)awakeFromNib;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC9KalapaSDK11KalapaError")
+@interface KalapaError : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 SWIFT_CLASS("_TtC9KalapaSDK12KalapaResult")
 @interface KalapaResult : NSObject
-@property (nonatomic, strong) FrontResult * _Nullable frontResult;
-@property (nonatomic, strong) BackResult * _Nullable backResult;
+@property (nonatomic, strong) KLPFrontResult * _Nullable frontResult;
+@property (nonatomic, strong) KLPBackResult * _Nullable backResult;
 @property (nonatomic, copy) NSString * _Nullable decision;
-@property (nonatomic, copy) NSArray<DecisionDetail *> * _Nullable decision_detail;
+@property (nonatomic, copy) NSArray<KLPDecisionDetail *> * _Nullable decision_detail;
 @property (nonatomic, copy) NSString * _Nullable session;
+@property (nonatomic, strong) KLPNfcModel * _Nullable nfcModel;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull rawJson;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzOfBackResult;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MrzData;
+
+SWIFT_CLASS("_TtC9KalapaSDK3MRZ")
+@interface MRZ : NSObject
+@property (nonatomic, strong) MrzData * _Nullable data;
+@property (nonatomic, strong) BaseError * _Nullable error;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC9KalapaSDK3MRZ7MrzData")
+@interface MrzData : NSObject
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1218,9 +1420,35 @@ SWIFT_CLASS("_TtC9KalapaSDK12KalapaResult")
 
 
 
+@class QRCodeData;
+
+SWIFT_CLASS("_TtC9KalapaSDK6QRCode")
+@interface QRCode : NSObject
+@property (nonatomic, strong) QRCodeData * _Nullable data;
+@property (nonatomic, strong) BaseError * _Nullable error;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC9KalapaSDK6QRCode10QRCodeData")
+@interface QRCodeData : NSObject
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC9KalapaSDK14ResidentEntity")
 @interface ResidentEntity : NSObject <NSCoding>
+@property (nonatomic, copy) NSString * _Nullable district;
+@property (nonatomic, copy) NSString * _Nullable province;
+@property (nonatomic, copy) NSString * _Nullable unknown;
+@property (nonatomic, copy) NSString * _Nullable ward;
+- (nonnull instancetype)initFromDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1228,14 +1456,6 @@ SWIFT_CLASS("_TtC9KalapaSDK14ResidentEntity")
 @end
 
 
-
-
-
-
-
-@interface UIDevice (SWIFT_EXTENSION(KalapaSDK))
-+ (NSString * _Nonnull)currentAppVersion SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
