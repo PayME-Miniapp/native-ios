@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <KalapaSDK/KalapaSDK.h>
 
 //! Project version number for PayMEMiniApp.
 FOUNDATION_EXPORT double PayMEMiniAppVersionNumber;
