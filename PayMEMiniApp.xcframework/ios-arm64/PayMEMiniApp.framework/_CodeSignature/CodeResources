@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EUrqmbSHRQmjXjRdwU9FQTLb1qM=
+		kjneMJxFoUV8vcKHc1DcQrMOIyY=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WZYbbBBjtQNrTga7XSfewrYL0Aw=
+		X9fglpfUgGBuN2YRJnb51U1+nSQ=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		sPE+gyroYW8zKCLh6NuqwYgiIuY=
+		+hXZxBR2JRwicMaEOkZ4UA1R864=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		sPE+gyroYW8zKCLh6NuqwYgiIuY=
+		+hXZxBR2JRwicMaEOkZ4UA1R864=
 		</data>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KvS1TN013wfKSBepHYIk4Q/HFQI=
+		fqkZNJUROUw1gnd5hi3jpq3sPkE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -52,6 +52,15 @@
 		<data>
 		gKj4kCtwK2hbp4AWLStDaE6dHX0=
 		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			80BslRqjDP5KQcXUq53fEyR4NiI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>iconBack.png</key>
 		<data>
 		YrnplKBaAWY9c2xRZ3M96lwDTT8=
@@ -70,12 +79,21 @@
 		</data>
 		<key>sdkWebapp3-main.zip</key>
 		<data>
-		8uktULucymb2QWA+t7eI4NX//H8=
+		XzDlsiFERRlOSp0XQtKbU8KY7bE=
 		</data>
 		<key>updatePatchProgress.json</key>
 		<data>
 		2JpM6Qb0NE7lPVO45TZNkvDyXRM=
 		</data>
+		<key>vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qKbISqA+CErfaWGsCK/lNbxPUYw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -111,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fe6UbXUkKfeusaHot9cPXWF/9gz+LFrGxiezxxBSFZU=
+			UJA0y7YmwaE5gBqOUas90pwOc/Uc3jUHmvq1v0oXEvA=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oyHQbk/3Qv69nYrSfPSLwzdI865snyhOLjNqYlLxz7k=
+			aNNszsgLvNtpKJlFNmDYPPJe1K+o9sO2ing0oNY2/14=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -132,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oyHQbk/3Qv69nYrSfPSLwzdI865snyhOLjNqYlLxz7k=
+			aNNszsgLvNtpKJlFNmDYPPJe1K+o9sO2ing0oNY2/14=
 			</data>
 		</dict>
 		<key>Modules/PayMEMiniApp.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y1QSKdyPM9Sw5Aslb97E+3nlI6QRUzSnZFzZiy00ueA=
+			e2VtFOvVbkqQiBmQ81SZWLWpi2K6cE44RMto4YbKSRc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -155,6 +173,15 @@
 			<data>
 			mLXTt7glt34RhvOAeK7fl+DVgv7B9raBIyjlDs6dzjA=
 			</data>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wc5DJRfliFZYo+ajFiCODOP13lWNgBbCLd574LqXxN0=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>iconBack.png</key>
 		<dict>
@@ -188,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gg94xeap1Cm8z4q6IWjNdQSHl9Dem6m670pPdNWnupg=
+			f2pxRAw35iUxDyXt42rkZ2Q6uaGVJf/wQuYhvygo6oE=
 			</data>
 		</dict>
 		<key>updatePatchProgress.json</key>
@@ -197,6 +224,15 @@
 			<data>
 			/bIouPXGGZ9zvl2Sw58IyS5kGBEQYppujmGfL7qTc8g=
 			</data>
+		</dict>
+		<key>vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fYzUcacfP5ITIQFyioGq+I9bBFRSi8ndmBQGv6Y/qTk=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

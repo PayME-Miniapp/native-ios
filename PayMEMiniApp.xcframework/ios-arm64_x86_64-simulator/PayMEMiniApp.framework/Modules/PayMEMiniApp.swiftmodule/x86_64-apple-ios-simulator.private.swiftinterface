@@ -16,6 +16,7 @@ import LocalAuthentication
 import Lottie
 import Mixpanel
 import NSLogger
+import Network
 @_exported import PayMEMiniApp
 import Photos
 import Security
@@ -119,6 +120,12 @@ extension PayMEMiniApp.PayME {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Console {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Localization {
+  public static func setLanguage(_ locale: PayMEMiniApp.Locale)
+  public static func currentLocale() -> PayMEMiniApp.Locale
+  public static func isEnglish() -> Swift.Bool
   @objc deinit
 }
 public enum PayMEAction : Swift.String {
