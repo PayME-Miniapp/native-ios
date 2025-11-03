@@ -6340,1554 +6340,1554 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 17,
       "value": "\"VideoDataOutput\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
       "kind": "Array",
       "offset": 261,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 12,
       "value": "\"background\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 8,
       "value": "\"active\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 16,
       "value": "\"mixpanel_queue\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/TrackingService.swift",
       "kind": "Dictionary",
       "offset": 344,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 11266,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "FloatLiteral",
       "offset": 11304,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 11359,
       "length": 9,
       "value": "\"#E8E9EB\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 11416,
       "length": 9,
       "value": "\"#33CB33\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 11469,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 11508,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 11588,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 11614,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 11632,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 11674,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 11693,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 11886,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 12117,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 12162,
       "length": 9,
       "value": "\"#6E6E6E\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 12253,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 12296,
       "length": 14,
       "value": "\"loading.data\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 12616,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 12661,
       "length": 9,
       "value": "\"#6E6E6E\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 12752,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 12854,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "FloatLiteral",
       "offset": 12971,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 13249,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 13292,
       "length": 16,
       "value": "\"loading.reload\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 13443,
       "length": 9,
       "value": "\"#33CB33\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 13490,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 13518,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 13962,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 14007,
       "length": 9,
       "value": "\"#E53935\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 14098,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 14188,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 14215,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 14487,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 14619,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 14646,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 14946,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 15043,
       "length": 9,
       "value": "\"#6E6E6E\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 15350,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 15395,
       "length": 9,
       "value": "\"#6E6E6E\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "IntegerLiteral",
       "offset": 15486,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
       "offset": 15943,
       "length": 21,
       "value": "\"loading.interrupted\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
       "offset": 582,
       "length": 31,
       "value": "\"com.payme.app.user.downloadjs\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "IntegerLiteral",
       "offset": 667,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 7,
       "value": "\"0.0.0\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "FloatLiteral",
       "offset": 282,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "IntegerLiteral",
       "offset": 330,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "IntegerLiteral",
       "offset": 371,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "FloatLiteral",
       "offset": 415,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "BooleanLiteral",
       "offset": 468,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/DownloadService.swift",
       "kind": "IntegerLiteral",
       "offset": 1331,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/NetworkMonitor.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/NetworkMonitor.swift",
       "kind": "StringLiteral",
       "offset": 299,
       "length": 21,
       "value": "\"NetworkMonitorQueue\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/NetworkMonitor.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/NetworkMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 362,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 250,
       "length": 7,
       "value": "\"LOCAL\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 5,
       "value": "\"DEV\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 9,
       "value": "\"SANDBOX\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 12,
       "value": "\"PRODUCTION\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 9,
       "value": "\"STAGING\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 408,
       "length": 4,
       "value": "\"vi\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 427,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 654,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 17,
       "value": "\"miniapp_product\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
       "kind": "StringLiteral",
       "offset": 752,
       "length": 8,
       "value": "\"1.0.23\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "StringLiteral",
       "offset": 235,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "StringLiteral",
       "offset": 269,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 489,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 510,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 533,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 567,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7251,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7475,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7626,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7799,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "StringLiteral",
       "offset": 7897,
       "length": 10,
       "value": "\"iconBack\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8002,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8012,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8024,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8035,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8215,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8442,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8561,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8648,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
       "kind": "IntegerLiteral",
       "offset": 178,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
       "kind": "IntegerLiteral",
       "offset": 195,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
       "kind": "IntegerLiteral",
       "offset": 214,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "BooleanLiteral",
       "offset": 284,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "IntegerLiteral",
       "offset": 458,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "IntegerLiteral",
       "offset": 561,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/CircleProgessView.swift",
       "kind": "IntegerLiteral",
       "offset": 2546,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 689,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 895,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 955,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1034,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1045,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1055,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 1082,
       "length": 14,
       "value": "\"common.close\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1339,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 1402,
       "length": 24,
       "value": "\"arrow.counterclockwise\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1602,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1649,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1737,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1889,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2094,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 2144,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
       "offset": 4861,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
       "offset": 185,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 264,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "Array",
       "offset": 561,
       "length": 9,
       "value": "[0, 0, 0]"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6468,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6672,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6811,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6968,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 7049,
       "length": 10,
       "value": "\"iconBack\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7125,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7135,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7147,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7158,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7304,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 7385,
       "length": 13,
       "value": "\"iconCapture\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7570,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
       "offset": 7642,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 7790,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7897,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 7927,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8104,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8158,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8167,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8179,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8189,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8242,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8325,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8477,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
       "offset": 8536,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 8572,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 8612,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/CardDetectorCameraController.swift",
       "kind": "FloatLiteral",
       "offset": 8636,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/Console.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/Console.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 16,
       "value": "\"nslogger_queue\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 426,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 445,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 498,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 5594,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 5798,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 5937,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6094,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 6175,
       "length": 10,
       "value": "\"iconBack\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6251,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6261,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6273,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6284,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6450,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "BooleanLiteral",
       "offset": 6655,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6762,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "IntegerLiteral",
       "offset": 6841,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PartialTransparentView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PartialTransparentView.swift",
       "kind": "FloatLiteral",
       "offset": 205,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PartialTransparentView.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PartialTransparentView.swift",
       "kind": "FloatLiteral",
       "offset": 270,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 658,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 7,
       "value": "\"jsLog\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 250,
       "length": 15,
       "value": "\"jsPreferences\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 22,
       "value": "\"jsRequestPreferences\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 350,
       "length": 27,
       "value": "\"jsBiometricAuthentication\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 18,
       "value": "\"jsRequestCardKYC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 18,
       "value": "\"jsRequestFaceKYC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 490,
       "length": 20,
       "value": "\"jsRequestKalapaKYC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 537,
       "length": 20,
       "value": "\"jsRequestKalapaNFC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 585,
       "length": 21,
       "value": "\"jsRequestFaceAuthen\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 15,
       "value": "\"jsOpenSetting\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 21,
       "value": "\"jsRequestDeviceInfo\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 718,
       "length": 19,
       "value": "\"jsRequestContacts\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 21,
       "value": "\"jsRequestPermission\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 808,
       "length": 15,
       "value": "\"jsOpenWebView\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 851,
       "length": 21,
       "value": "\"jsOneSignalSendTags\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 902,
       "length": 23,
       "value": "\"jsOneSignalDeleteTags\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 941,
       "length": 9,
       "value": "\"jsError\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 969,
       "length": 12,
       "value": "\"jsResponse\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 997,
       "length": 9,
       "value": "\"jsClose\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1024,
       "length": 11,
       "value": "\"jsOpenUrl\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1052,
       "length": 10,
       "value": "\"jsSaveQR\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1082,
       "length": 13,
       "value": "\"jsChangeEnv\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1118,
       "length": 16,
       "value": "\"jsChangeLocale\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1167,
       "length": 27,
       "value": "\"jsListScreensSwipeBlocked\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1216,
       "length": 19,
       "value": "\"jsPostModalHeight\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
       "offset": 1266,
       "length": 24,
       "value": "\"jsRequestNFCPermission\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 8,
       "value": "\"CAMERA\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 222,
       "length": 15,
       "value": "\"READ_CONTACTS\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 7,
       "value": "\"PHOTO\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 5,
       "value": "\"NFC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 9,
       "value": "\"GRANTED\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 9,
       "value": "\"BLOCKED\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 385,
       "length": 9,
       "value": "\"LIMITED\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 179,
       "length": 7,
       "value": "\"PAYME\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 6,
       "value": "\"OPEN\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 5,
       "value": "\"PAY\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 9,
       "value": "\"PAYMENT\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 13,
       "value": "\"TRANSFER_QR\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 305,
       "length": 9,
       "value": "\"SERVICE\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 9,
       "value": "\"DEPOSIT\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 360,
       "length": 10,
       "value": "\"WITHDRAW\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 389,
       "length": 10,
       "value": "\"TRANSFER\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 5,
       "value": "\"KYC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 438,
       "length": 11,
       "value": "\"KalapaKYC\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 13,
       "value": "\"GET_BALANCE\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "StringLiteral",
       "offset": 508,
       "length": 18,
       "value": "\"GET_ACCOUNT_INFO\""
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1215,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1973,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2822,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3751,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3783,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "IntegerLiteral",
       "offset": 4434,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 4523,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
       "offset": 4555,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMECombine.swift",
+      "filePath": "\/Users\/minh-dat\/Documents\/PayME\/MiniApp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMECombine.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 2,
