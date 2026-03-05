@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'NSLogger/Swift'
   spec.dependency 'lottie-ios', '~> 4.6.0'
   spec.dependency 'Mixpanel-swift', '~> 5.0'
-  spec.dependency 'CryptoSwift', '~> 1.9.0'
+  spec.dependency 'CryptoSwift', '~> 1.8.0'
   spec.dependency 'SwiftyRSA'
   spec.dependency 'KalapaEkycSDK', '~> 2.8.0'
 
