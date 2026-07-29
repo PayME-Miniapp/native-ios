@@ -122,8 +122,25 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
@@ -134,6 +151,16 @@
         "kind": "Import",
         "name": "Lottie",
         "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -813,10 +840,21 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "PayMEMiniApp",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -837,6 +875,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -1706,6 +1761,20 @@
         "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -3389,6 +3458,34 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
           "RawDocComment"
@@ -3439,6 +3536,20 @@
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "GCDWebServer",
+        "printedName": "GCDWebServer",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -3536,13 +3647,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftyJSON",
-        "printedName": "SwiftyJSON",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3550,6 +3654,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -3769,6 +3880,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
         "declKind": "Import",
@@ -3822,13 +3940,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp"
-      },
-      {
-        "kind": "Import",
-        "name": "GCDWebServer",
-        "printedName": "GCDWebServer",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -3916,10 +4027,31 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "PayMEMiniApp",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -5438,6 +5570,383 @@
         "printedName": "PayMEOpeningParam",
         "children": [
           {
+            "kind": "Function",
+            "name": "payme",
+            "printedName": "payme(phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV5payme5phoneACSS_tFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV5payme5phoneACSS_tFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV4open5phoneACSS_tFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV4open5phoneACSS_tFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "kyc",
+            "printedName": "kyc(phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV3kyc5phoneACSS_tFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV3kyc5phoneACSS_tFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "kalapaKYC",
+            "printedName": "kalapaKYC(phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV9kalapaKYC5phoneACSS_tFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV9kalapaKYC5phoneACSS_tFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "service",
+            "printedName": "service(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEServiceParam",
+                "printedName": "PayMEMiniApp.PayMEServiceParam",
+                "usr": "s:12PayMEMiniApp0A14MEServiceParamV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV7service5phone4dataACSS_AA0a9MEServiceE0VtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV7service5phone4dataACSS_AA0a9MEServiceE0VtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deposit",
+            "printedName": "deposit(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.PayMEPayParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEPayParam",
+                    "printedName": "PayMEMiniApp.PayMEPayParam",
+                    "usr": "s:12PayMEMiniApp0A10MEPayParamV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV7deposit5phone4dataACSS_AA0a5MEPayE0VSgtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV7deposit5phone4dataACSS_AA0a5MEPayE0VSgtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withdraw",
+            "printedName": "withdraw(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.PayMEPayParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEPayParam",
+                    "printedName": "PayMEMiniApp.PayMEPayParam",
+                    "usr": "s:12PayMEMiniApp0A10MEPayParamV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV8withdraw5phone4dataACSS_AA0a5MEPayE0VSgtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV8withdraw5phone4dataACSS_AA0a5MEPayE0VSgtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "transfer",
+            "printedName": "transfer(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayMEMiniApp.PayMEPayParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayMEPayParam",
+                    "printedName": "PayMEMiniApp.PayMEPayParam",
+                    "usr": "s:12PayMEMiniApp0A10MEPayParamV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV8transfer5phone4dataACSS_AA0a5MEPayE0VSgtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV8transfer5phone4dataACSS_AA0a5MEPayE0VSgtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pay",
+            "printedName": "pay(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEPaymentParam",
+                "printedName": "PayMEMiniApp.PayMEPaymentParam",
+                "usr": "s:12PayMEMiniApp0A14MEPaymentParamV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV3pay5phone4dataACSS_AA0a9MEPaymentE0VtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV3pay5phone4dataACSS_AA0a9MEPaymentE0VtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "payment",
+            "printedName": "payment(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEPaymentDirectParam",
+                "printedName": "PayMEMiniApp.PayMEPaymentDirectParam",
+                "usr": "s:12PayMEMiniApp0A20MEPaymentDirectParamV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV7payment5phone4dataACSS_AA0a15MEPaymentDirectE0VtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV7payment5phone4dataACSS_AA0a15MEPaymentDirectE0VtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "transferQR",
+            "printedName": "transferQR(phone:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayMEOpeningParam",
+                "printedName": "PayMEMiniApp.PayMEOpeningParam",
+                "usr": "s:12PayMEMiniApp0A14MEOpeningParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayMETransferQRParam",
+                "printedName": "PayMEMiniApp.PayMETransferQRParam",
+                "usr": "s:12PayMEMiniApp0A17METransferQRParamV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12PayMEMiniApp0A14MEOpeningParamV10transferQR5phone4dataACSS_AA0A17METransferQRParamVtFZ",
+            "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV10transferQR5phone4dataACSS_AA0A17METransferQRParamVtFZ",
+            "moduleName": "PayMEMiniApp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(action:phone:data:)",
@@ -5479,8 +5988,10 @@
             "usr": "s:12PayMEMiniApp0A14MEOpeningParamV6action5phone4dataAcA0A8MEActionO_SSypSgtcfc",
             "mangledName": "$s12PayMEMiniApp0A14MEOpeningParamV6action5phone4dataAcA0A8MEActionO_SSypSgtcfc",
             "moduleName": "PayMEMiniApp",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "init_kind": "Designated"
           }
@@ -5721,6 +6232,13 @@
             "mangledName": "$sSY"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -6397,267 +6915,50 @@
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11266,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 11304,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
       "kind": "StringLiteral",
-      "offset": 11359,
-      "length": 9,
-      "value": "\"#E8E9EB\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 11416,
-      "length": 9,
-      "value": "\"#33CB33\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11469,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11508,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11701,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11932,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 11977,
-      "length": 9,
-      "value": "\"#6E6E6E\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12068,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 12111,
-      "length": 14,
-      "value": "\"loading.data\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12431,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 12476,
-      "length": 9,
-      "value": "\"#6E6E6E\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12567,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12669,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 12786,
-      "length": 3,
-      "value": "0.8"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13064,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 13107,
-      "length": 16,
-      "value": "\"loading.reload\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 13258,
-      "length": 9,
-      "value": "\"#33CB33\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13305,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13333,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13777,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 13822,
-      "length": 9,
-      "value": "\"#E53935\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13913,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14003,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14030,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14302,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14434,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14461,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14761,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 14858,
-      "length": 9,
-      "value": "\"#6E6E6E\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15165,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 15210,
-      "length": 9,
-      "value": "\"#6E6E6E\""
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15301,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/View\/PatchProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 15758,
+      "offset": 7274,
       "length": 21,
       "value": "\"loading.interrupted\""
     },
     {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController+SourceManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 237,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchSourceStore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 889,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
+      "kind": "BooleanLiteral",
+      "offset": 672,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 703,
       "length": 31,
       "value": "\"com.payme.app.user.downloadjs\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
+      "offset": 788,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 800,
       "length": 7,
       "value": "\"0.0.0\""
     },
@@ -7084,14 +7385,35 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
-      "offset": 4861,
+      "offset": 6567,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 185,
+      "offset": 2218,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3092,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3277,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3466,
       "length": 5,
       "value": "false"
     },
@@ -7334,6 +7656,13 @@
       "value": "\"nslogger_queue\""
     },
     {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchVersionClient.swift",
+      "kind": "StringLiteral",
+      "offset": 109,
+      "length": 73,
+      "value": "\"https:\/\/static.payme.vn\/frontend\/miniapp-store\/PayMEMiniAppVersion.json\""
+    },
+    {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceDetector\/FaceDetectorCameraController.swift",
       "kind": "StringLiteral",
       "offset": 245,
@@ -7476,14 +7805,14 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 392,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 658,
+      "offset": 726,
       "length": 5,
       "value": "false"
     },

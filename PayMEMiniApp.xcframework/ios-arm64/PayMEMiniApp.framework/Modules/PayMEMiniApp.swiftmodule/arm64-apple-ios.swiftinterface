@@ -167,6 +167,18 @@ public struct PayMEPayParam {
   public init(amount: Swift.Int? = 0, extraData: [Swift.String : Any]? = nil, description: Swift.String? = nil, isBackToApp: Swift.Bool? = true, isShowResult: Swift.Bool? = true)
 }
 public struct PayMEOpeningParam {
+  public static func payme(phone: Swift.String) -> PayMEMiniApp.PayMEOpeningParam
+  public static func open(phone: Swift.String) -> PayMEMiniApp.PayMEOpeningParam
+  public static func kyc(phone: Swift.String) -> PayMEMiniApp.PayMEOpeningParam
+  public static func kalapaKYC(phone: Swift.String) -> PayMEMiniApp.PayMEOpeningParam
+  public static func service(phone: Swift.String, data: PayMEMiniApp.PayMEServiceParam) -> PayMEMiniApp.PayMEOpeningParam
+  public static func deposit(phone: Swift.String, data: PayMEMiniApp.PayMEPayParam? = nil) -> PayMEMiniApp.PayMEOpeningParam
+  public static func withdraw(phone: Swift.String, data: PayMEMiniApp.PayMEPayParam? = nil) -> PayMEMiniApp.PayMEOpeningParam
+  public static func transfer(phone: Swift.String, data: PayMEMiniApp.PayMEPayParam? = nil) -> PayMEMiniApp.PayMEOpeningParam
+  public static func pay(phone: Swift.String, data: PayMEMiniApp.PayMEPaymentParam) -> PayMEMiniApp.PayMEOpeningParam
+  public static func payment(phone: Swift.String, data: PayMEMiniApp.PayMEPaymentDirectParam) -> PayMEMiniApp.PayMEOpeningParam
+  public static func transferQR(phone: Swift.String, data: PayMEMiniApp.PayMETransferQRParam) -> PayMEMiniApp.PayMEOpeningParam
+  @available(*, deprecated, message: "Use typed PayMEOpeningParam factories such as .pay(phone:data:) or .open(phone:) instead.")
   public init(action: PayMEMiniApp.PayMEAction, phone: Swift.String, data: Any? = nil)
 }
 public enum PayMEOpeningType : Swift.String {
