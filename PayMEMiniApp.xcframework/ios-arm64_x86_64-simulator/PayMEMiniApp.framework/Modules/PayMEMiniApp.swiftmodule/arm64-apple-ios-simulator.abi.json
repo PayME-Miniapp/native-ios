@@ -780,17 +780,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
           },
           {
             "kind": "Conformance",
@@ -839,6 +839,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -1605,52 +1612,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1661,10 +1626,59 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -1679,13 +1693,6 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -2019,17 +2026,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -2314,17 +2321,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -2527,17 +2534,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -4814,17 +4821,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -6190,17 +6197,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -6866,6 +6873,97 @@
         "printedName": "SwiftyRSA",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "ZIPFoundation",
+        "printedName": "ZIPFoundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PayMEMiniApp"
       }
     ],
     "json_format_version": 8
@@ -6884,6 +6982,41 @@
       "offset": 261,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 408,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 452,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
+      "kind": "Dictionary",
+      "offset": 579,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 19,
+      "value": "\"SAVE_IMAGE_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Frameworks\/GCDWebServerExtension.swift",
+      "kind": "Dictionary",
+      "offset": 1378,
+      "length": 28,
+      "value": "[(\"wasm\", \"application\/wasm\")]"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/AppStatePlugin.swift",
@@ -6921,6 +7054,20 @@
       "value": "\"loading.interrupted\""
     },
     {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/MiniAppModel\/PayMEVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 1871,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/MiniAppModel\/PayMEVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1887,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController+SourceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 237,
@@ -6951,14 +7098,14 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "IntegerLiteral",
-      "offset": 788,
+      "offset": 897,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchController.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 909,
       "length": 7,
       "value": "\"0.0.0\""
     },
@@ -7086,7 +7233,7 @@
       "kind": "StringLiteral",
       "offset": 752,
       "length": 8,
-      "value": "\"1.0.23\""
+      "value": "\"1.0.24\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
@@ -7385,35 +7532,35 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Services\/FileService.swift",
       "kind": "Array",
-      "offset": 6567,
+      "offset": 6554,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 2218,
+      "offset": 2381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3092,
+      "offset": 3151,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3277,
+      "offset": 3336,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3466,
+      "offset": 3525,
       "length": 5,
       "value": "false"
     },
@@ -7658,7 +7805,7 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/PatchController\/PatchVersionClient.swift",
       "kind": "StringLiteral",
-      "offset": 109,
+      "offset": 209,
       "length": 73,
       "value": "\"https:\/\/static.payme.vn\/frontend\/miniapp-store\/PayMEMiniAppVersion.json\""
     },
@@ -7999,6 +8146,13 @@
       "value": "\"jsRequestNFCPermission\""
     },
     {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 1317,
+      "length": 20,
+      "value": "\"jsReleaseKYCImages\""
+    },
+    {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/PermissionStatusPlugin.swift",
       "kind": "StringLiteral",
       "offset": 196,
@@ -8200,6 +8354,510 @@
       "offset": 310,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/KYCImageStore.swift",
+      "kind": "Array",
+      "offset": 112,
+      "length": 115,
+      "value": "[\"kycFrontIdCard.jpeg\", \"kycBackIdCard.jpeg\", \"kycFace1.jpeg\", \"kycFace2.jpeg\", \"kycFace3.jpeg\", \"authenFace.jpeg\"]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/KYCImageStore.swift",
+      "kind": "Dictionary",
+      "offset": 295,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/OTASignatureVerifier.swift",
+      "kind": "Array",
+      "offset": 350,
+      "length": 137,
+      "value": "[\"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEXffdQxmdluFTDprn4zvzPSSXCsNHnCl9Z+5pjOzkGPNcYQN\/Su0xCyTD2CTVorLVwvltPgDB6VPTJZKh4mUvrg==\"]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/OTASignatureVerifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 637,
+      "length": 11,
+      "value": "100000000"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/OTASignatureVerifier.swift",
+      "kind": "Array",
+      "offset": 1412,
+      "length": 169,
+      "value": "[0x30, 0x59, 0x30, 0x13, 0x06, 0x07, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x02, 0x01, 0x06, 0x08, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x03, 0x01, 0x07, 0x03, 0x42, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/PatchArtifactStore.swift",
+      "kind": "StringLiteral",
+      "offset": 113,
+      "length": 21,
+      "value": "\".payme-install.json\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "Array",
+      "offset": 379,
+      "length": 162,
+      "value": "[\"action\", \"type\", \"callback\", \"env\", \"appId\", \"sdkVersion\", \"miniAppVersion\", \"platform\", \"screen\", \"step\", \"status\", \"result\", \"code\", \"errorCode\"]"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 581,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 621,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1604,
+      "length": 14,
+      "value": "\"camera_setup\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1634,
+      "length": 14,
+      "value": "\"camera_frame\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1662,
+      "length": 12,
+      "value": "\"save_image\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1698,
+      "length": 14,
+      "value": "\"card_capture\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1734,
+      "length": 21,
+      "value": "\"face_authen_capture\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1783,
+      "length": 20,
+      "value": "\"face_kyc_capture_1\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1823,
+      "length": 20,
+      "value": "\"face_kyc_capture_2\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 20,
+      "value": "\"face_kyc_capture_3\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1904,
+      "length": 10,
+      "value": "\"contacts\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1936,
+      "length": 21,
+      "value": "\"onesignal_send_tags\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 1981,
+      "length": 23,
+      "value": "\"onesignal_delete_tags\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2024,
+      "length": 10,
+      "value": "\"open_url\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2047,
+      "length": 10,
+      "value": "\"navigate\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2076,
+      "length": 17,
+      "value": "\"start_webserver\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2107,
+      "length": 12,
+      "value": "\"serve_file\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2145,
+      "length": 16,
+      "value": "\"encode_request\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2175,
+      "length": 11,
+      "value": "\"transport\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2205,
+      "length": 9,
+      "value": "\"get_url\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2226,
+      "length": 10,
+      "value": "\"is_exist\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2245,
+      "length": 6,
+      "value": "\"move\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2260,
+      "length": 6,
+      "value": "\"copy\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2276,
+      "length": 7,
+      "value": "\"unzip\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2294,
+      "length": 8,
+      "value": "\"remove\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2328,
+      "length": 16,
+      "value": "\"remote_version\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2362,
+      "length": 16,
+      "value": "\"remote_default\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2402,
+      "length": 24,
+      "value": "\"remote_same_as_current\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2456,
+      "length": 21,
+      "value": "\"optional_not_cached\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2498,
+      "length": 19,
+      "value": "\"optional_fallback\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2536,
+      "length": 17,
+      "value": "\"download_failed\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2581,
+      "length": 18,
+      "value": "\"download_cleanup\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2619,
+      "length": 18,
+      "value": "\"fallback_default\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2656,
+      "length": 17,
+      "value": "\"generate_source\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2697,
+      "length": 14,
+      "value": "\"patch_source\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2732,
+      "length": 20,
+      "value": "\"patch_source_ready\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2770,
+      "length": 16,
+      "value": "\"default_source\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2815,
+      "length": 19,
+      "value": "\"discard_artifacts\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2860,
+      "length": 25,
+      "value": "\"local_version_malformed\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2920,
+      "length": 26,
+      "value": "\"remote_version_malformed\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 2966,
+      "length": 19,
+      "value": "\"cache_dir_missing\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3012,
+      "length": 17,
+      "value": "\"current_version\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3049,
+      "length": 18,
+      "value": "\"manifest_invalid\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3095,
+      "length": 18,
+      "value": "\"rollback_refused\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3135,
+      "length": 20,
+      "value": "\"download_integrity\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3312,
+      "length": 18,
+      "value": "\"CAMERA_NOT_FOUND\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3357,
+      "length": 26,
+      "value": "\"CAMERA_INPUT_UNAVAILABLE\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3419,
+      "length": 27,
+      "value": "\"CAMERA_OUTPUT_UNAVAILABLE\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3479,
+      "length": 32,
+      "value": "\"CAMERA_ORIENTATION_UNSUPPORTED\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3547,
+      "length": 27,
+      "value": "\"CAMERA_CONNECTION_MISSING\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3601,
+      "length": 26,
+      "value": "\"CAMERA_FRAME_UNAVAILABLE\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3658,
+      "length": 22,
+      "value": "\"IMAGE_CONVERT_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3700,
+      "length": 19,
+      "value": "\"IMAGE_CROP_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3744,
+      "length": 15,
+      "value": "\"INVALID_PARAM\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3774,
+      "length": 13,
+      "value": "\"INVALID_URL\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3805,
+      "length": 17,
+      "value": "\"CANNOT_OPEN_URL\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3848,
+      "length": 17,
+      "value": "\"ROUTE_NOT_FOUND\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3881,
+      "length": 15,
+      "value": "\"URL_NOT_FOUND\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3920,
+      "length": 20,
+      "value": "\"DEST_DIR_NOT_FOUND\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 3965,
+      "length": 15,
+      "value": "\"ENCODE_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 4002,
+      "length": 21,
+      "value": "\"DEFAULT_ZIP_MISSING\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 4053,
+      "length": 20,
+      "value": "\"INTEGRITY_MISMATCH\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "StringLiteral",
+      "offset": 4094,
+      "length": 20,
+      "value": "\"DOWNLOAD_TOO_LARGE\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TrustedWebOrigin.swift",
+      "kind": "StringLiteral",
+      "offset": 88,
+      "length": 24,
+      "value": "\"http:\/\/localhost:29398\""
     }
   ]
 }
