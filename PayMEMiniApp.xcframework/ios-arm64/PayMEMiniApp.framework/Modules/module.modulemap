@@ -7,5 +7,4 @@ framework module PayMEMiniApp {
 
 module PayMEMiniApp.Swift {
   header "PayMEMiniApp-Swift.h"
-  requires objc
 }
