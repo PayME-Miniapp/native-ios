@@ -1024,7 +1024,8 @@
               "Preconcurrency",
               "Custom",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1136,7 +1137,8 @@
               "Preconcurrency",
               "Custom",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7211,7 +7213,7 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "BooleanLiteral",
-      "offset": 672,
+      "offset": 1169,
       "length": 5,
       "value": "false"
     },
@@ -8093,7 +8095,14 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 726,
+      "offset": 6979,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7019,
       "length": 5,
       "value": "false"
     },

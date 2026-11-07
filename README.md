@@ -4,7 +4,7 @@
 
 SDK nhúng PayME Miniapp (ví, thanh toán, nạp/rút/chuyển tiền, eKYC, thanh toán dịch vụ) vào ứng dụng iOS của đối tác.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.1** (SDK 1.0.24). Xem [lịch sử phiên bản](https://github.com/PayME-Miniapp/native-ios/releases).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.2** (SDK 1.0.24). Xem [lịch sử phiên bản](https://github.com/PayME-Miniapp/native-ios/releases).
 
 > Từ 0.8.0, SDK nhận `identityToken` thay cho số điện thoại. Đây là thay đổi không tương thích với 0.7.x. Xem [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x).
 
@@ -53,7 +53,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.1'
+  pod 'PayME-Miniapp', '0.8.2'
 end
 
 post_install do |installer|
@@ -82,7 +82,7 @@ Nếu `Podfile` đã có `post_install`, gộp nội dung trên vào khối hi�
 Có thể cài trực tiếp theo tag git thay cho CocoaPods trunk:
 
 ```ruby
-pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.1'
+pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.2'
 ```
 
 **Khi nâng cấp phiên bản:**
@@ -513,7 +513,7 @@ extension WalletViewController {
 | --- | --- | --- | --- |
 | `IDENTITY_TOKEN_REQUIRED` | `open` (action bắt buộc token), `getBalance`, `getAccountInformation` | identityToken rỗng. SDK không gọi mạng và không mở mini-app. | Lấy token từ server rồi gọi lại |
 | `401` | `open`, `getBalance`, `getAccountInformation` | identityToken sai hoặc hết hạn. Mini-app (nếu đang mở) tự đóng. | Lấy token mới từ server rồi gọi lại |
-| `USER_CANCEL` | `open` | Người dùng đóng mini-app, hoặc mini-app bị đóng bằng `close` | Không coi là lỗi. Có thể đến sau `onResponse`; xử lý sao cho gọi nhiều lần không gây tác dụng phụ. |
+| `USER_CANCEL` | `open` | Người dùng đóng mini-app, hoặc mini-app bị đóng bằng `close` | Không coi là lỗi. Mỗi lần đóng chỉ báo một lần; không gửi nếu mini-app đã đóng bằng một `onResponse`/`onError` khác. |
 | `SYSTEM_CANCEL` | `open` | SDK không khởi động được mini-app trên thiết bị | Thử mở lại. Báo PayME nếu lặp lại. |
 | `-1` | `open` | Lỗi chung do mini-app báo; `description` chứa thông điệp. Mini-app thường tự đóng. | Hiển thị `description` |
 | Mã khác | `open` | Lỗi nghiệp vụ mini-app chuyển tiếp từ PayME BE | Hiển thị `description`, ghi log `code` để tra cứu với PayME |
@@ -531,7 +531,7 @@ extension WalletViewController {
 
 | 0.7.x | 0.8.x |
 | --- | --- |
-| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.1'` (cần Xcode 26.2+) |
+| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.2'` (cần Xcode 26.2+) |
 | `.payme(phone:)` | `.payme()` |
 | `.open(phone:)` | `.open(identityToken:)` |
 | `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |

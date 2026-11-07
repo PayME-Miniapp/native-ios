@@ -4,7 +4,7 @@
 
 An SDK that embeds the PayME Miniapp (wallet, payments, deposit/withdraw/transfer, eKYC, bill payments) into a partner's iOS app.
 
-Current version: pod `PayME-Miniapp` **0.8.1** (SDK 1.0.24). See the [release history](https://github.com/PayME-Miniapp/native-ios/releases).
+Current version: pod `PayME-Miniapp` **0.8.2** (SDK 1.0.24). See the [release history](https://github.com/PayME-Miniapp/native-ios/releases).
 
 > Since 0.8.0 the SDK takes an `identityToken` instead of a phone number. This is a breaking change from 0.7.x. See [Upgrading from 0.7.x](#upgrading-from-07x).
 
@@ -53,7 +53,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.1'
+  pod 'PayME-Miniapp', '0.8.2'
 end
 
 post_install do |installer|
@@ -82,7 +82,7 @@ If your `Podfile` already has a `post_install` block, merge the lines above into
 You can also install straight from the git tag instead of CocoaPods trunk:
 
 ```ruby
-pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.1'
+pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.2'
 ```
 
 **When upgrading:**
@@ -513,7 +513,7 @@ extension WalletViewController {
 | --- | --- | --- | --- |
 | `IDENTITY_TOKEN_REQUIRED` | `open` (actions that require a token), `getBalance`, `getAccountInformation` | Empty identityToken. The SDK makes no network call and does not open the mini-app. | Get a token from your server and retry |
 | `401` | `open`, `getBalance`, `getAccountInformation` | Invalid or expired identityToken. The mini-app (if open) closes itself. | Get a new token from your server and retry |
-| `USER_CANCEL` | `open` | The user closed the mini-app, or it was closed with `close` | Not an error. It may arrive after `onResponse`; make your handling safe to run more than once. |
+| `USER_CANCEL` | `open` | The user closed the mini-app, or it was closed with `close` | Not an error. Reported once per close; not sent when the mini-app already closed with another `onResponse`/`onError`. |
 | `SYSTEM_CANCEL` | `open` | The SDK could not start the mini-app on the device | Try opening again. Report to PayME if it persists. |
 | `-1` | `open` | Generic error reported by the mini-app; `description` holds the message. The mini-app usually closes. | Show `description` |
 | Other codes | `open` | Business error passed through by the mini-app from the PayME backend | Show `description`; log `code` for follow-up with PayME |
@@ -531,7 +531,7 @@ extension WalletViewController {
 
 | 0.7.x | 0.8.x |
 | --- | --- |
-| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.1'` (requires Xcode 26.2+) |
+| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.2'` (requires Xcode 26.2+) |
 | `.payme(phone:)` | `.payme()` |
 | `.open(phone:)` | `.open(identityToken:)` |
 | `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
