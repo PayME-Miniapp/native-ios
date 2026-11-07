@@ -8982,21 +8982,21 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 5881,
+      "offset": 5907,
       "length": 15,
       "value": "\"identityToken\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 5979,
-      "length": 51,
-      "value": "\"(identityToken\\\\?\"?\\s*[:=]\\s*\\\\?\"?)[^\"\\\\,}&\\s]+\""
+      "offset": 6147,
+      "length": 66,
+      "value": "\"(identityToken(?:\\\\*[\"'])?\\s*[:=]\\s*(?:\\\\*[\"'])?)[^\"'\\\\,}&\\s]+\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Security\/TelemetryPolicy.swift",
       "kind": "BooleanLiteral",
-      "offset": 7306,
+      "offset": 7489,
       "length": 5,
       "value": "false"
     },
