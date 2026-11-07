@@ -1378,6 +1378,72 @@
           },
           {
             "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayMEMiniApp@objc(cs)PayME(im)viewWillDisappear:",
+            "mangledName": "$s12PayMEMiniApp0A2MEC17viewWillDisappearyySbF",
+            "moduleName": "PayMEMiniApp",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayMEMiniApp@objc(cs)PayME(im)viewDidDisappear:",
+            "mangledName": "$s12PayMEMiniApp0A2MEC16viewDidDisappearyySbF",
+            "moduleName": "PayMEMiniApp",
+            "overriding": true,
+            "objc_name": "viewDidDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "close",
             "printedName": "close(from:)",
             "children": [
@@ -1409,7 +1475,8 @@
             "declAttributes": [
               "Preconcurrency",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7213,7 +7280,7 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayME.swift",
       "kind": "BooleanLiteral",
-      "offset": 1169,
+      "offset": 1161,
       "length": 5,
       "value": "false"
     },
@@ -7365,6 +7432,13 @@
       "value": "\"1.0.24\""
     },
     {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/PayME\/PayMEConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1008,
+      "length": 3,
+      "value": "502"
+    },
+    {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
       "kind": "StringLiteral",
       "offset": 235,
@@ -7501,6 +7575,13 @@
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/MiniAppModel\/MiniAppModel.swift",
       "kind": "BooleanLiteral",
       "offset": 388,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/MiniAppModel\/MiniAppModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 515,
       "length": 5,
       "value": "false"
     },
@@ -8095,14 +8176,56 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6979,
+      "offset": 1281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7019,
+      "offset": 1453,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1577,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1741,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2042,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8309,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17229,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/MiniAppViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17269,
       "length": 5,
       "value": "false"
     },

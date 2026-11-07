@@ -311,6 +311,8 @@ SWIFT_CLASS("_TtC12PayMEMiniApp5PayME")
 @interface PayME : UIViewController
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end

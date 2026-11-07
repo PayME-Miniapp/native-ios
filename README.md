@@ -4,7 +4,9 @@
 
 SDK nhúng PayME Miniapp (ví, thanh toán, nạp/rút/chuyển tiền, eKYC, thanh toán dịch vụ) vào ứng dụng iOS của đối tác.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.2** (SDK 1.0.24). Xem [lịch sử phiên bản](https://github.com/PayME-Miniapp/native-ios/releases).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.3** (SDK 1.0.24, mini-app patch 0502). Xem [lịch sử phiên bản](#lịch-sử-phiên-bản-và-hỗ-trợ).
+
+> `0.8.0`–`0.8.2` có cùng API với `0.8.3`; nên dùng `0.8.3`. Tag `0.8.2` có trên GitHub nhưng không được phát hành lên CocoaPods trunk.
 
 > Từ 0.8.0, SDK nhận `identityToken` thay cho số điện thoại. Đây là thay đổi không tương thích với 0.7.x. Xem [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x).
 
@@ -53,7 +55,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.2'
+  pod 'PayME-Miniapp', '0.8.3'
 end
 
 post_install do |installer|
@@ -82,7 +84,7 @@ Nếu `Podfile` đã có `post_install`, gộp nội dung trên vào khối hi�
 Có thể cài trực tiếp theo tag git thay cho CocoaPods trunk:
 
 ```ruby
-pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.2'
+pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.3'
 ```
 
 **Khi nâng cấp phiên bản:**
@@ -282,7 +284,7 @@ public init(key: PayMEKey, locale: Locale? = .vi)
 Lưu ý:
 
 - `PayMEMiniApp` khai báo enum `Locale` và `Environment` trùng tên với `Foundation.Locale` và `SwiftUI.Environment`. Dùng dạng rút gọn (`.vi`, `.sbx`) hoặc ghi đầy đủ `PayMEMiniApp.Locale`.
-- `delegate` là tham chiếu mạnh. Nếu view controller vừa giữ `PayME` vừa là delegate, gán `payme.delegate = nil` khi không dùng nữa để tránh giữ vòng tham chiếu.
+- `delegate` và `walletDelegate` là tham chiếu mạnh (strong). Nếu object làm delegate cũng giữ `PayME` (ví dụ view controller vừa giữ `payme` vừa là delegate) thì tạo vòng tham chiếu: dùng một object trung gian không giữ `PayME`, hoặc gán `payme.delegate = nil` khi không dùng nữa.
 
 ### PayMEConfig
 
@@ -316,10 +318,19 @@ public func open(
 | Tham số | Kiểu | Bắt buộc | Ý nghĩa |
 | --- | --- | --- | --- |
 | `openData` | `PayMEOpeningParam` | Có | Action cần mở, tạo bằng các factory ở mục [Các action](#các-action) |
-| `currentVC` | `UIViewController?` | Có (thực tế) | View controller đang hiển thị. SDK present mini-app từ view controller này. |
+| `currentVC` | `UIViewController?` | Có (thực tế) | View controller đang hiển thị. SDK present mini-app từ view controller này. Truyền `nil` chỉ khi `PayME` đã nằm trong một `UINavigationController`: SDK push mini-app vào navigation đó (bỏ qua `type`). Không có cả hai thì `onError` trả `MINIAPP_CANNOT_PRESENT`. |
 | `type` | `PayMEOpeningType?` | Không | `.screen` (toàn màn hình, mặc định) hoặc `.modal` (bottom sheet; iOS 15 trở lên có thể kéo giãn) |
 
 Kết quả trả về qua [`PayMEDelegate`](#paymedelegate).
+
+#### Mở, đóng và kết quả đóng
+
+- **Mỗi lúc chỉ một mini-app.** Gọi `open` khi đang có mini-app mở, hoặc một lần `open` khác chưa xong (đang kiểm tra/tải bản cập nhật), trả `onError` với `MINIAPP_ALREADY_OPEN`. Mini-app đang mở giữ nguyên.
+- **Mở lại ngay trong callback đóng.** Gọi `open` khi mini-app cũ đang đóng (ví dụ trong callback `USER_CANCEL`, hoặc ngay sau `close()`): SDK hoãn lần mở này đến khi mini-app cũ đã đóng hẳn rồi mới mở. SDK chỉ giữ lần hoãn mới nhất, lần bị thay trả `MINIAPP_ALREADY_OPEN`. Gọi `close()` khi có lần mở đang hoãn thì lần đó bị huỷ với `USER_CANCEL`.
+- **Một kết quả đóng mỗi phiên.** Mỗi lần mở, đối tác nhận đúng một kết quả đóng: `USER_CANCEL`, hoặc `onResponse`/`onError` làm mini-app đóng. Sau đó phiên không gọi thêm callback nào. Mini-app chỉ bị che (camera eKYC, webview phụ, view controller khác present lên trên) rồi hiện lại thì không có `USER_CANCEL`.
+- **Mở kiểu present** (`.screen`, `.modal`): khi có kết quả đóng, SDK tự đóng mini-app (cùng những gì đang che nó) và gọi callback. Đối tác không cần dismiss.
+- **Mở kiểu push** (`from: nil`): khi mini-app tự đóng (nút đóng trong mini-app, hoặc `onResponse`/`onError` làm mini-app đóng), SDK xử lý như 0.8.1: navigation controller chứa mini-app đang được present thì SDK dismiss nó; không được present thì SDK không tự pop, đối tác pop trong callback như trước. Callback vẫn chỉ gọi một lần. Riêng `close()` thì SDK tự gỡ mini-app (cùng màn chờ `PayME` ngay dưới nó), giữ các màn đối tác đã push phía trên; đã gọi `close()` thì đừng tự pop trong callback `USER_CANCEL`.
+- **Không khởi động được mini-app** (máy chủ web cục bộ của SDK không chạy được): `onError` trả `SYSTEM_CANCEL` và mini-app tự đóng, không để lại màn trắng.
 
 ### Các action
 
@@ -452,7 +463,11 @@ public func setLanguage(of language: Locale)
 public func close(from currentVC: UIViewController? = nil)
 ```
 
-Đóng mini-app đang mở. Truyền view controller đã dùng làm `from` khi gọi `open`. Mini-app đóng theo cách này sẽ trả `onError` với code `USER_CANCEL`.
+Đóng mini-app đang mở, dù mở kiểu present hay push, kể cả khi mini-app đang bị che (camera, webview phụ): những gì đang che được đóng cùng. Tham số `from` không còn được dùng và chỉ giữ để tương thích mã nguồn: SDK luôn đóng chính mini-app, không dismiss nhầm màn của đối tác.
+
+- Khi mini-app đã đóng, `onError` trả `USER_CANCEL` một lần.
+- Gọi khi SDK đang kiểm tra/tải bản cập nhật (mini-app chưa hiện): huỷ lần mở đó, đóng màn chờ và trả `USER_CANCEL`.
+- Gọi khi không có mini-app nào mở: không làm gì.
 
 ### PayMEDelegate
 
@@ -513,8 +528,10 @@ extension WalletViewController {
 | --- | --- | --- | --- |
 | `IDENTITY_TOKEN_REQUIRED` | `open` (action bắt buộc token), `getBalance`, `getAccountInformation` | identityToken rỗng. SDK không gọi mạng và không mở mini-app. | Lấy token từ server rồi gọi lại |
 | `401` | `open`, `getBalance`, `getAccountInformation` | identityToken sai hoặc hết hạn. Mini-app (nếu đang mở) tự đóng. | Lấy token mới từ server rồi gọi lại |
-| `USER_CANCEL` | `open` | Người dùng đóng mini-app, hoặc mini-app bị đóng bằng `close` | Không coi là lỗi. Mỗi lần đóng chỉ báo một lần; không gửi nếu mini-app đã đóng bằng một `onResponse`/`onError` khác. |
-| `SYSTEM_CANCEL` | `open` | SDK không khởi động được mini-app trên thiết bị | Thử mở lại. Báo PayME nếu lặp lại. |
+| `USER_CANCEL` | `open` | Người dùng đóng mini-app hoặc màn chờ tải bản cập nhật, hoặc mini-app bị đóng bằng `close` | Không coi là lỗi. Mỗi phiên chỉ báo một lần; không gửi nếu mini-app đã đóng bằng một `onResponse`/`onError` khác, và không gửi khi mini-app chỉ bị che. |
+| `SYSTEM_CANCEL` | `open` | SDK không khởi động được mini-app trên thiết bị (ví dụ máy chủ web cục bộ không chạy được). Mini-app tự đóng. | Thử mở lại. Báo PayME nếu lặp lại. |
+| `MINIAPP_ALREADY_OPEN` | `open` | Đang có mini-app mở hoặc một lần `open` chưa xong; hoặc lần mở đang hoãn bị lần `open` mới thay. Mini-app đang mở giữ nguyên. | Đợi kết quả đóng của mini-app hiện tại, hoặc gọi `close()` rồi mở lại |
+| `MINIAPP_CANNOT_PRESENT` | `open` | Không có chỗ hiển thị mini-app: `open(from: nil)` khi `PayME` không nằm trong `UINavigationController` | Truyền `from` là view controller đang hiển thị, hoặc đặt `PayME` vào navigation controller |
 | `-1` | `open` | Lỗi chung do mini-app báo; `description` chứa thông điệp. Mini-app thường tự đóng. | Hiển thị `description` |
 | Mã khác | `open` | Lỗi nghiệp vụ mini-app chuyển tiếp từ PayME BE | Hiển thị `description`, ghi log `code` để tra cứu với PayME |
 | `ENCODE_FAILED` | `getBalance`, `getAccountInformation` | Không mã hoá được request, thường do key thiếu hoặc sai định dạng | Kiểm tra `PayMEKey` |
@@ -531,7 +548,7 @@ extension WalletViewController {
 
 | 0.7.x | 0.8.x |
 | --- | --- |
-| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.2'` (cần Xcode 26.2+) |
+| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.3'` (cần Xcode 26.2+) |
 | `.payme(phone:)` | `.payme()` |
 | `.open(phone:)` | `.open(identityToken:)` |
 | `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
@@ -562,6 +579,12 @@ Giao diện mini-app (web bundle) được đóng sẵn trong SDK và có thể 
 - Nếu mạng của bạn có tường lửa, cho phép truy cập `https://static.payme.vn`.
 
 ## Lịch sử phiên bản và hỗ trợ
+
+| Phiên bản | Thay đổi chính |
+| --- | --- |
+| 0.8.3 | Mỗi phiên một kết quả đóng (`USER_CANCEL` một lần, không báo khi mini-app chỉ bị che). `close()` đóng chính mini-app, bỏ qua `from`. Kiểu push: mini-app tự đóng thì giữ cách xử lý của 0.8.1 (đối tác pop trong callback), `close()` thì SDK tự pop. Thêm `MINIAPP_ALREADY_OPEN`, `MINIAPP_CANNOT_PRESENT`; mở lại trong callback đóng được hoãn đến khi mini-app cũ đóng hẳn. Lỗi khởi động máy chủ web trả `SYSTEM_CANCEL` và đóng mini-app. Mini-app patch 0502. |
+| 0.8.2 | Chỉ có tag GitHub, không phát hành lên CocoaPods trunk. Dùng 0.8.3. |
+| 0.8.0, 0.8.1 | `identityToken` thay cho số điện thoại. Xem [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x). |
 
 - Ghi chú phát hành: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).
 - Bộ key, tài liệu API `identityToken/init`, môi trường sandbox và hỗ trợ tích hợp: liên hệ PayME.

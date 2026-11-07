@@ -4,7 +4,9 @@
 
 An SDK that embeds the PayME Miniapp (wallet, payments, deposit/withdraw/transfer, eKYC, bill payments) into a partner's iOS app.
 
-Current version: pod `PayME-Miniapp` **0.8.2** (SDK 1.0.24). See the [release history](https://github.com/PayME-Miniapp/native-ios/releases).
+Current version: pod `PayME-Miniapp` **0.8.3** (SDK 1.0.24, mini-app patch 0502). See the [release history](#changelog-and-support).
+
+> `0.8.0`–`0.8.2` have the same API as `0.8.3`; use `0.8.3`. The `0.8.2` tag exists on GitHub but was never published to CocoaPods trunk.
 
 > Since 0.8.0 the SDK takes an `identityToken` instead of a phone number. This is a breaking change from 0.7.x. See [Upgrading from 0.7.x](#upgrading-from-07x).
 
@@ -53,7 +55,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.2'
+  pod 'PayME-Miniapp', '0.8.3'
 end
 
 post_install do |installer|
@@ -82,7 +84,7 @@ If your `Podfile` already has a `post_install` block, merge the lines above into
 You can also install straight from the git tag instead of CocoaPods trunk:
 
 ```ruby
-pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.2'
+pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.3'
 ```
 
 **When upgrading:**
@@ -282,7 +284,7 @@ public init(key: PayMEKey, locale: Locale? = .vi)
 Notes:
 
 - `PayMEMiniApp` declares `Locale` and `Environment` enums whose names clash with `Foundation.Locale` and `SwiftUI.Environment`. Use the short form (`.vi`, `.sbx`) or the full name `PayMEMiniApp.Locale`.
-- `delegate` is a strong reference. If the view controller that owns `PayME` is also its delegate, set `payme.delegate = nil` when you are done to break the retain cycle.
+- `delegate` and `walletDelegate` are strong references. If the delegate object also holds `PayME` (for example a view controller that owns `payme` and is its delegate), this creates a retain cycle: use an intermediate object that does not hold `PayME`, or set `payme.delegate = nil` when you are done.
 
 ### PayMEConfig
 
@@ -316,10 +318,19 @@ public func open(
 | Parameter | Type | Required | Meaning |
 | --- | --- | --- | --- |
 | `openData` | `PayMEOpeningParam` | Yes | The action to open, built with a factory from [Actions](#actions) |
-| `currentVC` | `UIViewController?` | Yes (in practice) | The visible view controller. The SDK presents the mini-app from it. |
+| `currentVC` | `UIViewController?` | Yes (in practice) | The visible view controller. The SDK presents the mini-app from it. Pass `nil` only when `PayME` is already inside a `UINavigationController`: the SDK pushes the mini-app onto that navigation controller (`type` is ignored). With neither, `onError` reports `MINIAPP_CANNOT_PRESENT`. |
 | `type` | `PayMEOpeningType?` | No | `.screen` (full screen, default) or `.modal` (bottom sheet; resizable on iOS 15 and later) |
 
 Results are delivered through [`PayMEDelegate`](#paymedelegate).
+
+#### Opening, closing and the closing result
+
+- **One mini-app at a time.** Calling `open` while a mini-app is open, or while another `open` has not finished (update check or download in progress), calls `onError` with `MINIAPP_ALREADY_OPEN`. The open mini-app is not affected.
+- **Reopening from the closing callback.** Calling `open` while the previous mini-app is closing (for example inside its `USER_CANCEL` callback, or right after `close()`) is deferred until the previous mini-app has gone. Only the latest deferred call is kept; a replaced one gets `MINIAPP_ALREADY_OPEN`. Calling `close()` while an open is deferred cancels it with `USER_CANCEL`.
+- **One closing result per session.** Each open delivers exactly one closing result: `USER_CANCEL`, or the `onResponse`/`onError` that closes the mini-app. The session sends no callback after that. When the mini-app is only covered (eKYC camera, sub-webview, another presented view controller) and comes back, no `USER_CANCEL` is sent.
+- **Present mode** (`.screen`, `.modal`): on a closing result the SDK closes the mini-app itself (together with anything covering it) and calls the callback. The partner does not need to dismiss.
+- **Push mode** (`from: nil`): when the mini-app closes itself (its close button, or an `onResponse`/`onError` that closes it), the SDK behaves as in 0.8.1: if the navigation controller holding the mini-app is presented, the SDK dismisses it; otherwise the SDK does not pop, and the partner pops in the callback as before. The callback is still called once. `close()` is different: the SDK removes the mini-app itself (together with the `PayME` loading screen right below it) and keeps partner screens pushed above it; after calling `close()`, do not pop again in the `USER_CANCEL` callback.
+- **The mini-app cannot start** (the SDK's local web server fails to start): `onError` reports `SYSTEM_CANCEL` and the mini-app closes instead of showing a blank screen.
 
 ### Actions
 
@@ -452,7 +463,11 @@ Changes the display language (`.vi` or `.en`). Takes effect the next time the mi
 public func close(from currentVC: UIViewController? = nil)
 ```
 
-Closes the open mini-app. Pass the view controller you used as `from` when calling `open`. A mini-app closed this way calls `onError` with code `USER_CANCEL`.
+Closes the open mini-app, whether it was presented or pushed, even while it is covered (camera, sub-webview): whatever covers it is closed too. The `from` parameter is no longer used and is kept only for source compatibility: the SDK always closes the mini-app itself and never dismisses a partner screen by mistake.
+
+- Once the mini-app has closed, `onError` reports `USER_CANCEL` once.
+- Called while the SDK is checking or downloading an update (the mini-app is not shown yet): cancels that open, closes the loading screen and reports `USER_CANCEL`.
+- Called when no mini-app is open: does nothing.
 
 ### PayMEDelegate
 
@@ -513,8 +528,10 @@ extension WalletViewController {
 | --- | --- | --- | --- |
 | `IDENTITY_TOKEN_REQUIRED` | `open` (actions that require a token), `getBalance`, `getAccountInformation` | Empty identityToken. The SDK makes no network call and does not open the mini-app. | Get a token from your server and retry |
 | `401` | `open`, `getBalance`, `getAccountInformation` | Invalid or expired identityToken. The mini-app (if open) closes itself. | Get a new token from your server and retry |
-| `USER_CANCEL` | `open` | The user closed the mini-app, or it was closed with `close` | Not an error. Reported once per close; not sent when the mini-app already closed with another `onResponse`/`onError`. |
-| `SYSTEM_CANCEL` | `open` | The SDK could not start the mini-app on the device | Try opening again. Report to PayME if it persists. |
+| `USER_CANCEL` | `open` | The user closed the mini-app or the update loading screen, or it was closed with `close` | Not an error. Reported once per session; not sent when the mini-app already closed with another `onResponse`/`onError`, nor when it is only covered. |
+| `SYSTEM_CANCEL` | `open` | The SDK could not start the mini-app on the device (for example the local web server failed to start). The mini-app closes. | Try opening again. Report to PayME if it persists. |
+| `MINIAPP_ALREADY_OPEN` | `open` | A mini-app is open or another `open` has not finished; or a deferred open was replaced by a newer `open`. The open mini-app is not affected. | Wait for the current mini-app's closing result, or call `close()` and open again |
+| `MINIAPP_CANNOT_PRESENT` | `open` | Nowhere to show the mini-app: `open(from: nil)` while `PayME` is not inside a `UINavigationController` | Pass the visible view controller as `from`, or put `PayME` in a navigation controller |
 | `-1` | `open` | Generic error reported by the mini-app; `description` holds the message. The mini-app usually closes. | Show `description` |
 | Other codes | `open` | Business error passed through by the mini-app from the PayME backend | Show `description`; log `code` for follow-up with PayME |
 | `ENCODE_FAILED` | `getBalance`, `getAccountInformation` | The request could not be encrypted, usually because a key is missing or malformed | Check `PayMEKey` |
@@ -531,7 +548,7 @@ extension WalletViewController {
 
 | 0.7.x | 0.8.x |
 | --- | --- |
-| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.2'` (requires Xcode 26.2+) |
+| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.3'` (requires Xcode 26.2+) |
 | `.payme(phone:)` | `.payme()` |
 | `.open(phone:)` | `.open(identityToken:)` |
 | `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
@@ -562,6 +579,12 @@ The mini-app UI (a web bundle) ships inside the SDK and PayME can update it over
 - If your network uses a firewall, allow access to `https://static.payme.vn`.
 
 ## Changelog and support
+
+| Version | Main changes |
+| --- | --- |
+| 0.8.3 | One closing result per session (`USER_CANCEL` once, not sent when the mini-app is only covered). `close()` closes the mini-app itself and ignores `from`. Push mode: when the mini-app closes itself the 0.8.1 behavior is kept (the partner pops in the callback); `close()` pops it in the SDK. New `MINIAPP_ALREADY_OPEN`, `MINIAPP_CANNOT_PRESENT`; opening from the closing callback is deferred until the previous mini-app has gone. A web server start failure reports `SYSTEM_CANCEL` and closes the mini-app. Mini-app patch 0502. |
+| 0.8.2 | GitHub tag only, never published to CocoaPods trunk. Use 0.8.3. |
+| 0.8.0, 0.8.1 | `identityToken` instead of a phone number. See [Upgrading from 0.7.x](#upgrading-from-07x). |
 
 - Release notes: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).
 - Key sets, `identityToken/init` API documentation, sandbox access and integration support: contact PayME.
