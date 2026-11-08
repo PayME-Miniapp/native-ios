@@ -2,56 +2,39 @@
 
 # PayME Miniapp iOS SDK
 
-SDK nhúng PayME Miniapp (ví, thanh toán, nạp/rút/chuyển tiền, eKYC, thanh toán dịch vụ) vào ứng dụng iOS của đối tác.
+SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.3** (SDK 1.0.24, mini-app patch 0502). Xem [lịch sử phiên bản](#lịch-sử-phiên-bản-và-hỗ-trợ).
-
-> `0.8.0`–`0.8.2` có cùng API với `0.8.3`; nên dùng `0.8.3`. Tag `0.8.2` có trên GitHub nhưng không được phát hành lên CocoaPods trunk.
-
-> Từ 0.8.0, SDK nhận `identityToken` thay cho số điện thoại. Đây là thay đổi không tương thích với 0.7.x. Xem [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.3**.
 
 ## Mục lục
 
-- [Yêu cầu](#yêu-cầu)
-- [Cài đặt](#cài-đặt)
-- [Cấu hình ứng dụng](#cấu-hình-ứng-dụng)
-  - [Info.plist](#infoplist)
-  - [Capabilities](#capabilities)
-- [Bắt đầu nhanh](#bắt-đầu-nhanh)
-- [identityToken](#identitytoken)
-- [Tham chiếu API](#tham-chiếu-api)
-  - [Khởi tạo PayME](#khởi-tạo-payme)
-  - [PayMEConfig](#paymeconfig)
-  - [Mở mini-app](#mở-mini-app)
-  - [Các action](#các-action)
-  - [Tham số dữ liệu](#tham-số-dữ-liệu)
-  - [getBalance](#getbalance)
-  - [getAccountInformation](#getaccountinformation)
-  - [setLanguage](#setlanguage)
-  - [close](#close)
-  - [PayMEDelegate](#paymedelegate)
-- [Mã lỗi](#mã-lỗi)
-- [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
-- [Cập nhật OTA](#cập-nhật-ota)
-- [Lịch sử phiên bản và hỗ trợ](#lịch-sử-phiên-bản-và-hỗ-trợ)
+1. [Yêu cầu](#yêu-cầu)
+2. [Cài đặt](#cài-đặt)
+3. [Cấu hình ứng dụng](#cấu-hình-ứng-dụng)
+4. [Bắt đầu nhanh](#bắt-đầu-nhanh)
+5. [identityToken](#identitytoken)
+6. [API](#api)
+7. [Mã lỗi](#mã-lỗi)
+8. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
+9. [Hỗ trợ](#hỗ-trợ)
 
 ## Yêu cầu
 
-| Thành phần | Phiên bản |
-| --- | --- |
-| iOS (deployment target) | 13.0 trở lên |
-| Xcode | 26.2 trở lên |
-| Swift | Trình biên dịch Swift 6.2.3 trở lên (đi kèm Xcode 26.2). Framework được build bằng Swift 6.2.3 nên Xcode cũ hơn không đọc được. |
-| CocoaPods | Khuyến nghị 1.17.0 trở lên (bản dùng để phát hành SDK) |
-
-SDK là dynamic framework (`PayMEMiniApp.xcframework`), phân phối qua CocoaPods.
+- iOS 13.0 trở lên.
+- Xcode 26.2 trở lên (SDK build bằng Swift 6.2.3, Xcode cũ hơn không đọc được).
+- CocoaPods, khuyến nghị 1.17.0 trở lên.
+- Bộ key `appId`, `publicKey`, `privateKey` do PayME cấp.
+- Server của bạn gọi được API cấp `identityToken` của PayME.
 
 ## Cài đặt
 
-Khai báo pod trong `Podfile`:
+Thêm vào `Podfile`:
 
 ```ruby
-platform :ios, '13.0'
+# Mức iOS tối thiểu của ứng dụng (giống `platform :ios`). Build bằng Xcode 27 thì tối thiểu '15.0'.
+app_min_ios = '13.0'
+
+platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
@@ -61,104 +44,66 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # Framework được build với library evolution: các pod phụ thuộc cũng phải bật.
+      # SDK build với library evolution, các pod phụ thuộc cũng phải bật
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      # Một số pod phụ thuộc (ví dụ NSLogger) khai báo iOS thấp hơn 13.0, gây lỗi libarclite trên Xcode mới.
-      deployment_target = config.build_settings['IPHONEOS_DEPLOYMENT_TARGET']
-      if Gem::Version.new(deployment_target || '0') < Gem::Version.new('13.0')
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      # Nâng pod có iOS tối thiểu thấp hơn ứng dụng
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < app_min_ios.to_f
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = app_min_ios
       end
     end
   end
 end
 ```
-
-Sau đó chạy:
 
 ```sh
 pod install
 ```
 
-Nếu `Podfile` đã có `post_install`, gộp nội dung trên vào khối hiện có.
+- `Podfile` đã có `post_install`: gộp nội dung trên vào khối đó.
+- Nâng phiên bản SDK: chạy `pod install --repo-update`.
+- Dự án không dùng `use_frameworks!`: khai báo các pod sau là dynamic framework.
 
-Có thể cài trực tiếp theo tag git thay cho CocoaPods trunk:
+  ```ruby
+  $dynamic_framework = [
+    'PayME-Miniapp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'NSLogger', 'lottie-ios',
+    'SwiftyJSON', 'ZIPFoundation', 'Mixpanel-swift', 'MixpanelSwiftCommon', 'jsonlogic', 'json-enum'
+  ]
 
-```ruby
-pod 'PayME-Miniapp', :git => 'https://github.com/PayME-Miniapp/native-ios.git', :tag => '0.8.3'
-```
-
-**Khi nâng cấp phiên bản:**
-
-- Cài từ trunk: chạy `pod repo update` (hoặc `pod install --repo-update`) để CocoaPods thấy bản mới.
-- Cài theo tag git, hoặc đã từng cài 0.8.0: xoá cache rồi cài lại.
-
-  ```sh
-  pod cache clean PayME-Miniapp --all
-  pod install
-  ```
-
-**Dự án không dùng `use_frameworks!`:** khai báo các pod sau là dynamic framework.
-
-```ruby
-$dynamic_framework = [
-  'PayME-Miniapp',
-  'CryptoSwift',
-  'SwiftyRSA',
-  'GCDWebServer',
-  'NSLogger',
-  'lottie-ios',
-  'SwiftyJSON',
-  'ZIPFoundation',
-  'Mixpanel-swift',
-  'MixpanelSwiftCommon',
-  'jsonlogic',
-  'json-enum'
-]
-
-pre_install do |installer|
-  installer.pod_targets.each do |pod|
-    if $dynamic_framework.include?(pod.name)
-      def pod.build_type
-        Pod::BuildType.dynamic_framework
+  pre_install do |installer|
+    installer.pod_targets.each do |pod|
+      if $dynamic_framework.include?(pod.name)
+        def pod.build_type
+          Pod::BuildType.dynamic_framework
+        end
       end
     end
   end
-end
-```
+  ```
 
 ## Cấu hình ứng dụng
 
-### Info.plist
-
-Thêm các key sau. Mỗi chuỗi mô tả hiển thị trong hộp thoại xin quyền của iOS, nên viết rõ mục đích.
-
-![Các key cần thêm vào Info.plist](documents/info_plist.png)
-
-| Key | Tên hiển thị trong Xcode | Mục đích |
-| --- | --- | --- |
-| `NSCameraUsageDescription` | Privacy - Camera Usage Description | Chụp giấy tờ và khuôn mặt khi eKYC, xác thực khuôn mặt, quét mã QR |
-| `NSFaceIDUsageDescription` | Privacy - Face ID Usage Description | Xác thực bằng Face ID thay cho PIN |
-| `NSPhotoLibraryUsageDescription` | Privacy - Photo Library Usage Description | Chọn ảnh từ thư viện (ví dụ ảnh mã QR) |
-| `NSPhotoLibraryAddUsageDescription` | Privacy - Photo Library Additions Usage Description | Lưu ảnh mã QR vào thư viện |
-| `NSContactsUsageDescription` | Privacy - Contacts Usage Description | Chọn số điện thoại từ danh bạ khi chuyển tiền, nạp điện thoại |
-| `NFCReaderUsageDescription` | Privacy - NFC Scan Usage Description | Đọc chip CCCD khi eKYC bằng NFC |
-| `com.apple.developer.nfc.readersession.iso7816.select-identifiers` | ISO7816 application identifiers for NFC Tag Reader Session | Danh sách AID của chip CCCD |
-
-Ví dụ:
+Thêm vào `Info.plist` (sửa câu mô tả theo ứng dụng của bạn):
 
 ```xml
+<!-- Mở app ngân hàng khi thanh toán. Liên hệ PayME để nhận danh sách scheme đầy đủ -->
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>vcbpartner</string>
+  <string>bidv.smartbanking.partner</string>
+</array>
 <key>NSCameraUsageDescription</key>
-<string>Ứng dụng cần dùng camera để xác thực danh tính và quét mã QR</string>
+<string>Ứng dụng cần dùng máy ảnh để định danh và quét mã QR</string>
 <key>NSFaceIDUsageDescription</key>
-<string>Ứng dụng dùng Face ID để xác thực giao dịch</string>
+<string>Dùng Face ID để xác thực giao dịch</string>
 <key>NSPhotoLibraryUsageDescription</key>
 <string>Ứng dụng cần truy cập thư viện ảnh để chọn ảnh mã QR</string>
 <key>NSPhotoLibraryAddUsageDescription</key>
 <string>Ứng dụng cần lưu ảnh mã QR vào thư viện ảnh</string>
 <key>NSContactsUsageDescription</key>
-<string>Ứng dụng cần truy cập danh bạ để chọn số điện thoại</string>
+<string>Cho phép truy cập danh bạ để chọn nhanh số điện thoại</string>
+<!-- Đọc chip CCCD khi eKYC -->
 <key>NFCReaderUsageDescription</key>
-<string>Ứng dụng cần dùng NFC để đọc chip căn cước công dân</string>
+<string>Đọc chip căn cước công dân để định danh</string>
 <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
 <array>
   <string>A0000002471001</string>
@@ -167,25 +112,9 @@ Ví dụ:
 </array>
 ```
 
-**Mở app ngân hàng (tuỳ chọn).** Mini-app có thể mở app ngân hàng bằng deeplink trong một số luồng thanh toán. iOS chỉ cho mở các scheme đã khai báo trong `LSApplicationQueriesSchemes`. Liên hệ PayME để nhận danh sách scheme cần khai báo, ví dụ:
+Trong Xcode, vào target ứng dụng → **Signing & Capabilities** → **+ Capability** → thêm **Near Field Communication Tag Reading**.
 
-```xml
-<key>LSApplicationQueriesSchemes</key>
-<array>
-  <string>vcbpartner</string>
-  <string>bidv.smartbanking.partner</string>
-</array>
-```
-
-### Capabilities
-
-Trong Xcode, chọn target của app → **Signing & Capabilities** → nhấn **+ Capability**.
-
-![Cửa sổ thêm capability trong Xcode](documents/capabilities.png)
-
-- Thêm **Near Field Communication Tag Reading** để hỗ trợ eKYC bằng NFC. Xcode sẽ thêm entitlement `com.apple.developer.nfc.readersession.formats` với giá trị `TAG`.
-
-SDK không cần **Background Modes** (Background Fetch) và không cần xử lý `application(_:handleEventsForBackgroundURLSession:completionHandler:)`. Bản cập nhật mini-app được tải trong lúc mở, không tải nền.
+![Near Field Communication Tag Reading](documents/capabilities.png)
 
 ## Bắt đầu nhanh
 
@@ -198,393 +127,229 @@ final class WalletViewController: UIViewController, PayMEDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    // Sandbox: PayMEConfig.instance.env = .sbx; PayMEConfig.instance.setMode("miniapp_sandbox")
     payme = PayME(
       key: PayMEKey(
-        appId: "YOUR_APP_ID",
+        appId: "<APP_ID>",
         publicKey: "-----BEGIN PUBLIC KEY-----...-----END PUBLIC KEY-----",
         privateKey: "-----BEGIN RSA PRIVATE KEY-----...-----END RSA PRIVATE KEY-----"),
       locale: .vi)
     payme.delegate = self
   }
 
-  // identityToken do server của bạn lấy từ PayME, xem mục identityToken.
+  // identityToken do server của bạn lấy từ PayME
   func openWallet(identityToken: String) {
-    payme.open(with: .open(identityToken: identityToken), from: self, type: .screen)
+    payme.open(with: .open(identityToken: identityToken), from: self, type: .modal)
   }
 
-  func onResponse(action: PayMEAction, response: [String: Any]) { /* xử lý kết quả */ }
-  func onError(action: PayMEAction, error: PayMEError) { /* xem mục Mã lỗi */ }
+  func onResponse(action: PayMEAction, response: [String: Any]) { /* kết quả */ }
+  func onError(action: PayMEAction, error: PayMEError) { /* xem Mã lỗi */ }
 }
 ```
 
-Bộ key (`appId`, `publicKey`, `privateKey`) do PayME cấp riêng cho ứng dụng của bạn. Không đưa key thật vào source code public, README hay ảnh chụp màn hình.
+> Không đưa key thật vào mã nguồn công khai, README hay ảnh chụp màn hình.
 
 ## identityToken
 
-`identityToken` là chuỗi do PayME BE ký cho một người dùng của đối tác. SDK dùng chuỗi này để định danh người dùng, thay cho số điện thoại ở 0.7.x.
+`identityToken` là chuỗi PayME cấp cho từng người dùng của bạn. Ứng dụng truyền chuỗi này mỗi lần mở Miniapp.
 
-**Luồng lấy token:**
+1. Ứng dụng gọi server của bạn.
+2. Server của bạn gọi API `identityToken/init` của PayME với thông tin người dùng (liên hệ PayME để nhận tài liệu API). Không gọi API này từ ứng dụng.
+3. Ứng dụng truyền `identityToken` nhận được vào `open`, `getBalance` hoặc `getAccountInformation`.
 
-1. App gọi API của server đối tác để xin token cho người dùng đang đăng nhập.
-2. Server đối tác gọi API `identityToken/init` của PayME BE (server tới server) với thông tin người dùng. Liên hệ PayME để nhận tài liệu API này.
-3. Server trả token về app. App truyền token vào SDK (`open`, `getBalance`, `getAccountInformation`).
-
-```
-App đối tác ──(1)──▶ Server đối tác ──(2) identityToken/init──▶ PayME BE
-     ▲                      │
-     └───────(3) token ─────┘
-App đối tác ──▶ PayME SDK (open / getBalance / getAccountInformation)
-```
-
-**Thời hạn:** token có hiệu lực 15 phút và dùng lại được nhiều lần trong thời hạn đó. Hết hạn thì lấy token mới từ server.
-
-**Action nào cần token:**
-
-| Trường hợp | identityToken |
+| Action / hàm | `identityToken` |
 | --- | --- |
-| Mọi action trừ `PAYMENT` và `PAYME`, cùng `getBalance`, `getAccountInformation` | Bắt buộc |
-| `PAYMENT` (`.payment`) | Tuỳ chọn. Có token: thanh toán được bằng ví PayME. Không có: người dùng thanh toán như khách vãng lai (thẻ, QR). |
-| `PAYME` (`.payme()`) | Không dùng. Người dùng tự nhập số điện thoại và đăng nhập bằng PIN. |
+| `.payme()` | Không dùng (người dùng tự đăng nhập) |
+| `.payment` | Tuỳ chọn. Có thì người dùng trả được bằng ví PayME; không có thì thanh toán như khách vãng lai (thẻ, QR) |
+| Các action còn lại, `getBalance`, `getAccountInformation` | Bắt buộc |
 
-**Lỗi liên quan:**
+- Chuỗi có hiệu lực 15 phút, dùng lại được trong thời gian đó.
+- Rỗng: `onError` trả `IDENTITY_TOKEN_REQUIRED`, Miniapp không mở.
+- Sai hoặc hết hạn: `onError` trả `401` (Miniapp đóng nếu đang mở). Lấy chuỗi mới rồi gọi lại.
+- Chỉ giữ chuỗi trong bộ nhớ: không lưu, không ghi log, không đưa vào URL.
 
-- Token rỗng (hoặc chỉ có khoảng trắng): SDK trả `onError` với code `IDENTITY_TOKEN_REQUIRED`, không gọi mạng và không mở mini-app.
-- Token sai hoặc hết hạn: mini-app tự đóng và trả `onError` với code `401`. `getBalance` và `getAccountInformation` cũng trả `401`. Lấy token mới rồi gọi lại.
+## API
 
-**Bảo mật:**
+Gọi mọi hàm trên main thread. Kết quả và lỗi trả về qua `PayMEDelegate`, cũng trên main thread.
 
-- Chỉ server đối tác được gọi `identityToken/init`. Không gọi API này từ app và không nhúng thông tin xác thực của API vào app.
-- Chỉ giữ token trong bộ nhớ. Không ghi log, không lưu (UserDefaults, Keychain, file) và không đưa vào URL.
-- Lấy token ngay trước khi mở mini-app, không lấy sẵn từ lâu.
-- SDK không lưu token, xoá token khỏi bộ nhớ khi mini-app đóng và che token trong log.
-
-## Tham chiếu API
-
-Mọi API của `PayME` chạy trên main thread. Các callback của `PayMEDelegate` cũng được gọi trên main thread.
-
-### Khởi tạo PayME
+### Khởi tạo
 
 ```swift
-public init(key: PayMEKey, locale: Locale? = .vi)
+PayME(key: PayMEKey(appId:publicKey:privateKey:), locale: .vi)
 ```
 
-| Tham số | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `key` | `PayMEKey` | Có | Bộ key PayME cấp: `PayMEKey(appId:publicKey:privateKey:)` |
-| `locale` | `Locale?` (`PayMEMiniApp.Locale`) | Không | Ngôn ngữ hiển thị: `.vi` (mặc định) hoặc `.en` |
+| Tham số | Mô tả |
+| --- | --- |
+| `appId` | Mã ứng dụng do PayME cấp |
+| `publicKey` | Public key RSA của PayME, dạng PEM |
+| `privateKey` | Private key RSA của ứng dụng, dạng PEM như PayME cấp |
+| `locale` | `.vi` (mặc định) hoặc `.en` |
 
-| Trường của `PayMEKey` | Kiểu | Ý nghĩa |
-| --- | --- | --- |
-| `appId` | `String` | Mã ứng dụng do PayME cấp |
-| `publicKey` | `String` | Public key RSA của PayME, định dạng PEM (`-----BEGIN PUBLIC KEY-----...`) |
-| `privateKey` | `String` | Private key RSA của ứng dụng, định dạng PEM như PayME cấp (`-----BEGIN RSA PRIVATE KEY-----...`) |
-
-`PayME` là một `UIViewController`. Bạn không cần tự hiển thị nó: SDK tự present khi cần (ví dụ màn tải bản cập nhật). Giữ đối tượng `PayME` trong suốt thời gian dùng mini-app (ví dụ thuộc tính của view controller hoặc một service dùng chung).
-
-Lưu ý:
-
-- `PayMEMiniApp` khai báo enum `Locale` và `Environment` trùng tên với `Foundation.Locale` và `SwiftUI.Environment`. Dùng dạng rút gọn (`.vi`, `.sbx`) hoặc ghi đầy đủ `PayMEMiniApp.Locale`.
-- `delegate` và `walletDelegate` là tham chiếu mạnh (strong). Nếu object làm delegate cũng giữ `PayME` (ví dụ view controller vừa giữ `payme` vừa là delegate) thì tạo vòng tham chiếu: dùng một object trung gian không giữ `PayME`, hoặc gán `payme.delegate = nil` khi không dùng nữa.
+- Giữ đối tượng `PayME` suốt thời gian dùng Miniapp (ví dụ là thuộc tính của view controller). Bạn không cần tự hiển thị nó.
+- `delegate` là tham chiếu mạnh. Nếu delegate cũng giữ `PayME` thì có vòng tham chiếu: gán `payme.delegate = nil` khi không dùng nữa, hoặc dùng một object trung gian.
+- `Locale` và `Environment` của SDK trùng tên với `Foundation.Locale` và `SwiftUI.Environment`. Dùng dạng rút gọn (`.vi`, `.sbx`) hoặc ghi `PayMEMiniApp.Locale`.
 
 ### PayMEConfig
 
-Cấu hình dùng chung, truy cập qua `PayMEConfig.instance`. Đặt trước khi gọi `open`, `getBalance` hoặc `getAccountInformation`.
+Cấu hình dùng chung qua `PayMEConfig.instance`. Đặt trước khi gọi `open`, `getBalance` hoặc `getAccountInformation`.
 
-| Thuộc tính / hàm | Kiểu | Mặc định | Ý nghĩa |
-| --- | --- | --- | --- |
-| `env` | `Environment` | `.prod` | Môi trường PayME: `.prod` (production) hoặc `.sbx` (sandbox) |
-| `setMode(_:)` | `String` | `"miniapp_product"` | Kênh cập nhật mini-app. Khi chạy sandbox, dùng `"miniapp_sandbox"`. Chỉ đổi theo hướng dẫn của PayME. |
-| `locale` / `setLanguage(_:)` | `Locale` | `.vi` | Ngôn ngữ hiển thị |
-| `theme` | `Theme` | Màu PayME | Màu các màn camera eKYC native: `Theme(primary:background:textPrimary:)` |
-| `setDebugMode(_:)` | `Bool` | `false` | Bật log debug của SDK. Chỉ dùng khi phát triển, tắt ở bản phát hành. |
+| Thuộc tính / hàm | Mô tả |
+| --- | --- |
+| `env` | `.prod` (mặc định) hoặc `.sbx` (sandbox) |
+| `setMode(_:)` | Mặc định `"miniapp_product"`. Khi chạy sandbox, dùng `"miniapp_sandbox"` |
+| `theme` | Màu các màn camera eKYC: `Theme(primary:background:textPrimary:)` |
+| `setDebugMode(_:)` | Bật log của SDK khi phát triển. Tắt ở bản phát hành |
 
-Ví dụ chạy sandbox:
+### open
 
 ```swift
-PayMEConfig.instance.env = .sbx
-PayMEConfig.instance.setMode("miniapp_sandbox")
+payme.open(with: PayMEOpeningParam, from: UIViewController?, type: PayMEOpeningType?)
 ```
 
-### Mở mini-app
+- `from`: view controller đang hiển thị. SDK present Miniapp từ view controller này.
+- `type`: `.screen` (toàn màn hình, mặc định) hoặc `.modal` (trượt từ dưới lên).
+- `from: nil` chỉ dùng khi `PayME` đã nằm trong một `UINavigationController`: SDK push Miniapp vào navigation đó, bỏ qua `type`.
+
+| Factory | Chức năng | `data` |
+| --- | --- | --- |
+| `.open(identityToken:)` | Trang chủ ví (chưa liên kết thì mở luồng liên kết) | Không có |
+| `.kyc(identityToken:)` | Định danh (eKYC) | Không có |
+| `.kalapaKYC(identityToken:)` | Định danh qua Kalapa (có đọc chip NFC) | Không có |
+| `.pay(identityToken:data:)` | Thanh toán đơn hàng của bạn | [`PayMEPaymentParam`](#paymepaymentparam-pay) |
+| `.payment(identityToken:data:)` | Thanh toán giao dịch đã tạo qua API PayME | [`PayMEPaymentDirectParam`](#paymepaymentdirectparam-payment) |
+| `.transferQR(identityToken:data:)` | Chuyển tiền tới tài khoản ngân hàng | [`PayMETransferQRParam`](#paymetransferqrparam-transferqr) |
+| `.service(identityToken:data:)` | Thanh toán dịch vụ (điện, nước, thẻ…) | [`PayMEServiceParam`](#paymeserviceparam-service) |
+| `.deposit`, `.withdraw`, `.transfer` `(identityToken:data:)` | Nạp, rút, chuyển tiền | [`PayMEPayParam`](#paymepayparam-deposit-withdraw-transfer), tuỳ chọn |
+| `.payme()` | Toàn bộ ví PayME, người dùng tự đăng nhập | Không có |
 
 ```swift
-public func open(
-  with openData: PayMEOpeningParam,
-  from currentVC: UIViewController? = nil,
-  type: PayMEOpeningType? = .screen
-)
-```
-
-| Tham số | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `openData` | `PayMEOpeningParam` | Có | Action cần mở, tạo bằng các factory ở mục [Các action](#các-action) |
-| `currentVC` | `UIViewController?` | Có (thực tế) | View controller đang hiển thị. SDK present mini-app từ view controller này. Truyền `nil` chỉ khi `PayME` đã nằm trong một `UINavigationController`: SDK push mini-app vào navigation đó (bỏ qua `type`). Không có cả hai thì `onError` trả `MINIAPP_CANNOT_PRESENT`. |
-| `type` | `PayMEOpeningType?` | Không | `.screen` (toàn màn hình, mặc định) hoặc `.modal` (bottom sheet; iOS 15 trở lên có thể kéo giãn) |
-
-Kết quả trả về qua [`PayMEDelegate`](#paymedelegate).
-
-#### Mở, đóng và kết quả đóng
-
-- **Mỗi lúc chỉ một mini-app.** Gọi `open` khi đang có mini-app mở, hoặc một lần `open` khác chưa xong (đang kiểm tra/tải bản cập nhật), trả `onError` với `MINIAPP_ALREADY_OPEN`. Mini-app đang mở giữ nguyên.
-- **Mở lại ngay trong callback đóng.** Gọi `open` khi mini-app cũ đang đóng (ví dụ trong callback `USER_CANCEL`, hoặc ngay sau `close()`): SDK hoãn lần mở này đến khi mini-app cũ đã đóng hẳn rồi mới mở. SDK chỉ giữ lần hoãn mới nhất, lần bị thay trả `MINIAPP_ALREADY_OPEN`. Gọi `close()` khi có lần mở đang hoãn thì lần đó bị huỷ với `USER_CANCEL`.
-- **Một kết quả đóng mỗi phiên.** Mỗi lần mở, đối tác nhận đúng một kết quả đóng: `USER_CANCEL`, hoặc `onResponse`/`onError` làm mini-app đóng. Sau đó phiên không gọi thêm callback nào. Mini-app chỉ bị che (camera eKYC, webview phụ, view controller khác present lên trên) rồi hiện lại thì không có `USER_CANCEL`.
-- **Mở kiểu present** (`.screen`, `.modal`): khi có kết quả đóng, SDK tự đóng mini-app (cùng những gì đang che nó) và gọi callback. Đối tác không cần dismiss.
-- **Mở kiểu push** (`from: nil`): khi mini-app tự đóng (nút đóng trong mini-app, hoặc `onResponse`/`onError` làm mini-app đóng), SDK xử lý như 0.8.1: navigation controller chứa mini-app đang được present thì SDK dismiss nó; không được present thì SDK không tự pop, đối tác pop trong callback như trước. Callback vẫn chỉ gọi một lần. Riêng `close()` thì SDK tự gỡ mini-app (cùng màn chờ `PayME` ngay dưới nó), giữ các màn đối tác đã push phía trên; đã gọi `close()` thì đừng tự pop trong callback `USER_CANCEL`.
-- **Không khởi động được mini-app** (máy chủ web cục bộ của SDK không chạy được): `onError` trả `SYSTEM_CANCEL` và mini-app tự đóng, không để lại màn trắng.
-
-### Các action
-
-Tạo `PayMEOpeningParam` bằng các factory sau:
-
-| Factory | Action (`PayMEAction`) | identityToken | Dữ liệu | Mô tả |
-| --- | --- | --- | --- | --- |
-| `.open(identityToken: String)` | `OPEN` | Bắt buộc | Không | Mở trang chủ ví PayME. Người dùng chưa liên kết ví sẽ đi qua luồng liên kết. |
-| `.pay(identityToken: String, data: PayMEPaymentParam)` | `PAY` | Bắt buộc | Bắt buộc | Thanh toán một đơn hàng bằng ví PayME |
-| `.payment(identityToken: String? = nil, data: PayMEPaymentDirectParam)` | `PAYMENT` | Tuỳ chọn | Bắt buộc | Thanh toán giao dịch đã tạo sẵn. Không có token: thanh toán như khách vãng lai (thẻ, QR). |
-| `.deposit(identityToken: String, data: PayMEPayParam? = nil)` | `DEPOSIT` | Bắt buộc | Tuỳ chọn | Nạp tiền vào ví |
-| `.withdraw(identityToken: String, data: PayMEPayParam? = nil)` | `WITHDRAW` | Bắt buộc | Tuỳ chọn | Rút tiền từ ví |
-| `.transfer(identityToken: String, data: PayMEPayParam? = nil)` | `TRANSFER` | Bắt buộc | Tuỳ chọn | Chuyển tiền |
-| `.transferQR(identityToken: String, data: PayMETransferQRParam)` | `TRANSFER_QR` | Bắt buộc | Bắt buộc | Chuyển tiền từ ví tới tài khoản ngân hàng do đối tác chỉ định |
-| `.service(identityToken: String, data: PayMEServiceParam)` | `SERVICE` | Bắt buộc | Bắt buộc | Thanh toán dịch vụ (điện, nước, internet, thẻ cào…) |
-| `.kyc(identityToken: String)` | `KYC` | Bắt buộc | Không | Định danh tài khoản (eKYC) |
-| `.kalapaKYC(identityToken: String)` | `KalapaKYC` | Bắt buộc | Không | Định danh tài khoản qua Kalapa (bao gồm đọc chip NFC) |
-| `.payme()` | `PAYME` | Không dùng | Không | Mở ví PayME đầy đủ. Người dùng tự nhập số điện thoại và đăng nhập bằng PIN. |
-
-Ví dụ:
-
-```swift
-// Thanh toán đơn hàng bằng ví
 payme.open(
   with: .pay(
     identityToken: identityToken,
-    data: PayMEPaymentParam(amount: 100_000, transactionId: "ORDER_123", note: "Thanh toán đơn hàng")),
-  from: self,
-  type: .modal)
-
-// Thanh toán giao dịch đã tạo sẵn, người dùng là khách vãng lai
-payme.open(with: .payment(data: PayMEPaymentDirectParam(transaction: "TRANSACTION_ID")), from: self)
-
-// Nạp tiền với số tiền điền sẵn
+    data: PayMEPaymentParam(amount: 10_000, transactionId: "ORDER_123", note: "Đơn hàng 123")),
+  from: self, type: .modal)
+payme.open(with: .payment(data: PayMEPaymentDirectParam(transaction: "<TRANSACTION>")), from: self) // khách vãng lai
+payme.open(with: .service(identityToken: identityToken, data: PayMEServiceParam(service: "POWE")), from: self)
 payme.open(with: .deposit(identityToken: identityToken, data: PayMEPayParam(amount: 50_000)), from: self)
 ```
 
-### Tham số dữ liệu
+`amount` là số nguyên VND. Các tham số `data` dưới đây đều có thêm hai trường tuỳ chọn: `extraData` (`[String: Any]`, dữ liệu riêng của bạn, trả lại khi giao dịch thành công) và `isShowResult` (hiện màn hình kết quả của PayME, mặc định `true`).
 
-`extraData` ở mọi struct là dữ liệu do đối tác tự định nghĩa, được trả lại cho đối tác khi giao dịch thành công.
+#### PayMEPaymentParam (pay)
 
-**`PayMEPaymentParam`** (dùng cho `.pay`)
-
-| Trường | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `amount` | `Int` | Có | Số tiền giao dịch (VND) |
-| `transactionId` | `String` | Có | Mã giao dịch phía đối tác |
-| `note` | `String?` | Không | Ghi chú giao dịch |
-| `ipnUrl` | `String?` | Không | URL server đối tác nhận IPN từ PayME khi giao dịch đổi trạng thái (thành công, thất bại) |
-| `extraData` | `[String: Any]?` | Không | Dữ liệu bổ sung của đối tác |
-| `isShowResult` | `Bool?` | Không | Hiển thị màn kết quả của PayME. Mặc định `true`. |
-
-**`PayMEPaymentDirectParam`** (dùng cho `.payment`)
-
-| Trường | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `transaction` | `String` | Có | Mã giao dịch đã tạo sẵn trên hệ thống PayME |
-| `extraData` | `[String: Any]?` | Không | Dữ liệu bổ sung của đối tác |
-| `isShowResult` | `Bool?` | Không | Hiển thị màn kết quả của PayME. Mặc định `true`. |
-
-**`PayMEPayParam`** (dùng cho `.deposit`, `.withdraw`, `.transfer`)
-
-| Trường | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `amount` | `Int?` | Không | Số tiền điền sẵn (VND). Mặc định `0`: người dùng tự nhập. |
-| `description` | `String?` | Không | Mô tả giao dịch |
-| `extraData` | `[String: Any]?` | Không | Dữ liệu bổ sung của đối tác |
-| `isBackToApp` | `Bool?` | Không | Quay về app đối tác sau khi hoàn tất. Mặc định `true`. |
-| `isShowResult` | `Bool?` | Không | Hiển thị màn kết quả của PayME. Mặc định `true`. |
-
-**`PayMETransferQRParam`** (dùng cho `.transferQR`)
-
-| Trường | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `amount` | `Int` | Có | Số tiền (VND). Truyền `0` nếu để người dùng tự nhập. |
-| `swiftCode` | `String` | Có | Mã SWIFT của ngân hàng nhận |
-| `bankNumber` | `String` | Có | Số tài khoản hoặc số thẻ nhận |
-| `cardHolder` | `String` | Có | Tên chủ tài khoản nhận |
-| `partnerTransaction` | `String?` | Không | Mã giao dịch phía đối tác |
-| `note` | `String?` | Không | Ghi chú giao dịch |
-| `extraData` | `[String: Any]?` | Không | Dữ liệu bổ sung của đối tác |
-| `isShowResult` | `Bool?` | Không | Hiển thị màn kết quả của PayME. Mặc định `true`. |
-
-**`PayMEServiceParam`** (dùng cho `.service`)
-
-| Trường | Kiểu | Bắt buộc | Ý nghĩa |
-| --- | --- | --- | --- |
-| `service` | `String` | Có | Mã dịch vụ, ví dụ `POWE` (điện), `WATE` (nước), `ADSL` (internet), `TIVI` (truyền hình), `PPMB` (điện thoại trả sau), `MOBILE_CARD`, `MOBILE_TOPUP`, `GAME_CARD` |
-| `extraData` | `[String: Any]?` | Không | Dữ liệu bổ sung của đối tác |
-| `isBackToApp` | `Bool?` | Không | Quay về app đối tác sau khi hoàn tất. Mặc định `true`. |
-| `isShowResult` | `Bool?` | Không | Hiển thị màn kết quả của PayME. Mặc định `true`. |
-
-### getBalance
-
-```swift
-public func getBalance(identityToken: String)
-```
-
-Lấy số dư ví PayME của người dùng. Kết quả trả về `onResponse` với action `.GetBalance` (`GET_BALANCE`):
-
-| Key | Kiểu | Ý nghĩa |
+| Trường | Bắt buộc | Mô tả |
 | --- | --- | --- |
-| `linked` | `Bool` | `true` nếu người dùng đã liên kết ví PayME với ứng dụng |
-| `balance` | `Int64` | Số dư (VND). Chỉ có khi `linked == true`. |
-| `message` | `String` | Thông điệp từ PayME |
+| `amount` | Có | Số tiền |
+| `transactionId` | Có | Mã giao dịch của bạn |
+| `note` | Không | Ghi chú |
+| `ipnUrl` | Không | URL nhận thông báo trạng thái giao dịch |
 
-Lỗi trả về `onError`: `IDENTITY_TOKEN_REQUIRED`, `401` hoặc mã lỗi mạng (xem [Mã lỗi](#mã-lỗi)).
+#### PayMEPaymentDirectParam (payment)
 
-### getAccountInformation
+| Trường | Bắt buộc | Mô tả |
+| --- | --- | --- |
+| `transaction` | Có | Mã giao dịch PayME trả về khi bạn tạo giao dịch |
+
+#### PayMETransferQRParam (transferQR)
+
+| Trường | Bắt buộc | Mô tả |
+| --- | --- | --- |
+| `amount` | Có | Số tiền (`0` để người dùng tự nhập) |
+| `bankNumber` | Có | Số tài khoản hoặc số thẻ nhận |
+| `swiftCode` | Có | Mã SWIFT của ngân hàng nhận |
+| `cardHolder` | Có | Tên chủ tài khoản |
+| `note` | Không | Ghi chú |
+| `partnerTransaction` | Không | Mã giao dịch của bạn |
+
+#### PayMEServiceParam (service)
+
+| Trường | Bắt buộc | Mô tả |
+| --- | --- | --- |
+| `service` | Có | `POWE` (điện), `WATE` (nước), `ADSL` (internet), `TIVI` (truyền hình), `PPMB` (trả sau), `MOBILE_CARD` (thẻ điện thoại), `MOBILE_TOPUP` (nạp điện thoại), `GAME_CARD` (thẻ game) |
+| `isBackToApp` | Không | Quay về ứng dụng của bạn sau khi xong (mặc định `true`) |
+
+#### PayMEPayParam (deposit, withdraw, transfer)
+
+| Trường | Bắt buộc | Mô tả |
+| --- | --- | --- |
+| `amount` | Không | Số tiền điền sẵn (mặc định `0`: người dùng tự nhập) |
+| `description` | Không | Mô tả giao dịch |
+| `isBackToApp` | Không | Quay về ứng dụng của bạn sau khi xong (mặc định `true`) |
+
+### getBalance, getAccountInformation
 
 ```swift
-public func getAccountInformation(identityToken: String)
+payme.getBalance(identityToken: identityToken)
+payme.getAccountInformation(identityToken: identityToken)
 ```
 
-Lấy thông tin tài khoản PayME của người dùng. Kết quả trả về `onResponse` với action `.GetAccountInfo` (`GET_ACCOUNT_INFO`). `response` là object `accountInfo` do PayME BE trả về, luôn có `accountId` (số). Các trường khác phụ thuộc trạng thái tài khoản.
+Kết quả trả qua `onResponse`:
 
-Lỗi trả về `onError`: `IDENTITY_TOKEN_REQUIRED`, `401` hoặc mã lỗi mạng.
+- `.GetBalance`: `linked` (đã liên kết ví chưa), `balance` (`Int64`, có khi `linked` = `true`).
+- `.GetAccountInfo`: thông tin tài khoản ví, luôn có `accountId`.
 
-### setLanguage
+### setLanguage, close
 
-```swift
-public func setLanguage(of language: Locale)
-```
-
-Đổi ngôn ngữ hiển thị (`.vi` hoặc `.en`). Áp dụng cho lần mở mini-app tiếp theo.
-
-### close
-
-```swift
-public func close(from currentVC: UIViewController? = nil)
-```
-
-Đóng mini-app đang mở, dù mở kiểu present hay push, kể cả khi mini-app đang bị che (camera, webview phụ): những gì đang che được đóng cùng. Tham số `from` không còn được dùng và chỉ giữ để tương thích mã nguồn: SDK luôn đóng chính mini-app, không dismiss nhầm màn của đối tác.
-
-- Khi mini-app đã đóng, `onError` trả `USER_CANCEL` một lần.
-- Gọi khi SDK đang kiểm tra/tải bản cập nhật (mini-app chưa hiện): huỷ lần mở đó, đóng màn chờ và trả `USER_CANCEL`.
-- Gọi khi không có mini-app nào mở: không làm gì.
+- `setLanguage(of: .vi | .en)`: đổi ngôn ngữ, áp dụng cho lần mở Miniapp tiếp theo.
+- `close()`: đóng Miniapp đang mở (kể cả khi đang tải bản cập nhật) và báo `USER_CANCEL`. Không có Miniapp mở thì không làm gì.
 
 ### PayMEDelegate
 
 ```swift
-public protocol PayMEDelegate {
-  func onError(action: PayMEAction, error: PayMEError)
-  func onResponse(action: PayMEAction, response: Dictionary<String, Any>)
-}
+func onResponse(action: PayMEAction, response: [String: Any])
+func onError(action: PayMEAction, error: PayMEError)
 ```
 
-- `action`: action phát sinh sự kiện (`PayMEAction`: `.Open`, `.Pay`, `.Payment`, …, `.GetBalance`, `.GetAccountInfo`).
-- `onResponse`: kết quả thành công. Nội dung `response` phụ thuộc action và phiên bản mini-app. Với giao dịch, thường có các key như `transaction`, `state`, `amount`, `amountText`, `method`, `createdAt`, `paymentId`, `partnerTransaction`, `extraData`. Với eKYC: `action`, `code`, `message`.
-- `onError`: lỗi hoặc người dùng huỷ. Dùng `error.code` (`String`) để phân loại và `error.description` (`String`, đã bản địa hoá) để hiển thị.
+| Sự kiện | Nội dung | Khi nào |
+| --- | --- | --- |
+| `onResponse` | `action`, `response` | Giao dịch thành công, hoặc có kết quả `getBalance` / `getAccountInformation` |
+| `onError` | `action`, `error.code`, `error.description` | Có lỗi hoặc người dùng đóng Miniapp |
 
-Dự án dùng Swift 6 language mode: khai báo `@preconcurrency PayMEDelegate` khi cho view controller tuân thủ protocol, vì `PayMEDelegate` không gắn với `MainActor` (SDK luôn gọi callback trên main thread).
+- `error.description` đã bản địa hoá, dùng để hiển thị.
+- Dùng Swift 6 language mode: khai báo `@preconcurrency PayMEDelegate`.
+- Luôn xác nhận trạng thái giao dịch ở server (qua `ipnUrl` hoặc API PayME), không chỉ dựa vào `onResponse`.
 
-Luôn xác nhận trạng thái giao dịch cuối cùng ở server (qua `ipnUrl` hoặc API của PayME), không chỉ dựa vào `onResponse` trên app.
+### Mở và đóng Miniapp
 
-```swift
-extension WalletViewController {
-  func onResponse(action: PayMEAction, response: [String: Any]) {
-    switch action {
-    case .GetBalance:
-      let linked = response["linked"] as? Bool ?? false
-      let balance = response["balance"] as? Int64 ?? 0
-      print("linked: \(linked), balance: \(balance)")
-    default:
-      print("\(action.rawValue) completed")
-    }
-  }
-
-  func onError(action: PayMEAction, error: PayMEError) {
-    switch error.code {
-    case "USER_CANCEL":
-      break // Người dùng đóng mini-app, không phải lỗi
-    case "401", "IDENTITY_TOKEN_REQUIRED":
-      break // Lấy identityToken mới từ server rồi thử lại
-    default:
-      showAlert(message: error.description)
-    }
-  }
-
-  private func showAlert(message: String) {
-    let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "OK", style: .default))
-    present(alert, animated: true)
-  }
-}
-```
-
-**`PayMEWalletDelegate`** (thuộc tính `walletDelegate`) dành cho ứng dụng ví PayME (tag thông báo, đổi môi trường). Ứng dụng đối tác thường không cần.
+- Mỗi lúc chỉ mở một Miniapp. Gọi `open` khi đang có Miniapp mở sẽ nhận `MINIAPP_ALREADY_OPEN`.
+- Khi Miniapp đóng, bạn nhận kết quả đúng một lần: `onResponse`, `onError`, hoặc `USER_CANCEL` khi người dùng đóng. Có thể mở lại ngay trong callback này.
+- Mở kiểu present (`from: viewController`): SDK tự đóng Miniapp rồi gọi callback. Bạn không cần dismiss.
+- Mở kiểu push (`from: nil`), khi Miniapp tự đóng (người dùng bấm đóng, hoặc kết thúc giao dịch): navigation được present thì SDK tự dismiss; không thì bạn pop trong callback.
+- Sau khi gọi `close()`, SDK tự gỡ Miniapp ở cả hai kiểu. Không pop lại trong callback `USER_CANCEL`.
 
 ## Mã lỗi
 
-`error.code` có thể nhận các giá trị sau:
-
-| Code | Phát sinh từ | Ý nghĩa | Cách xử lý |
-| --- | --- | --- | --- |
-| `IDENTITY_TOKEN_REQUIRED` | `open` (action bắt buộc token), `getBalance`, `getAccountInformation` | identityToken rỗng. SDK không gọi mạng và không mở mini-app. | Lấy token từ server rồi gọi lại |
-| `401` | `open`, `getBalance`, `getAccountInformation` | identityToken sai hoặc hết hạn. Mini-app (nếu đang mở) tự đóng. | Lấy token mới từ server rồi gọi lại |
-| `USER_CANCEL` | `open` | Người dùng đóng mini-app hoặc màn chờ tải bản cập nhật, hoặc mini-app bị đóng bằng `close` | Không coi là lỗi. Mỗi phiên chỉ báo một lần; không gửi nếu mini-app đã đóng bằng một `onResponse`/`onError` khác, và không gửi khi mini-app chỉ bị che. |
-| `SYSTEM_CANCEL` | `open` | SDK không khởi động được mini-app trên thiết bị (ví dụ máy chủ web cục bộ không chạy được). Mini-app tự đóng. | Thử mở lại. Báo PayME nếu lặp lại. |
-| `MINIAPP_ALREADY_OPEN` | `open` | Đang có mini-app mở hoặc một lần `open` chưa xong; hoặc lần mở đang hoãn bị lần `open` mới thay. Mini-app đang mở giữ nguyên. | Đợi kết quả đóng của mini-app hiện tại, hoặc gọi `close()` rồi mở lại |
-| `MINIAPP_CANNOT_PRESENT` | `open` | Không có chỗ hiển thị mini-app: `open(from: nil)` khi `PayME` không nằm trong `UINavigationController` | Truyền `from` là view controller đang hiển thị, hoặc đặt `PayME` vào navigation controller |
-| `-1` | `open` | Lỗi chung do mini-app báo; `description` chứa thông điệp. Mini-app thường tự đóng. | Hiển thị `description` |
-| Mã khác | `open` | Lỗi nghiệp vụ mini-app chuyển tiếp từ PayME BE | Hiển thị `description`, ghi log `code` để tra cứu với PayME |
-| `ENCODE_FAILED` | `getBalance`, `getAccountInformation` | Không mã hoá được request, thường do key thiếu hoặc sai định dạng | Kiểm tra `PayMEKey` |
-| `DECODE_FAILED` | `getBalance`, `getAccountInformation` | Không giải mã được phản hồi, thường do `privateKey` không khớp | Kiểm tra `privateKey` và môi trường (`env`) |
-| `CONNECTION_LOST` | `getBalance`, `getAccountInformation` | Mất kết nối mạng, hoặc đăng ký thiết bị với PayME không thành công | Kiểm tra mạng, thử lại |
-| `TIMED_OUT` | `getBalance`, `getAccountInformation` | Hết thời gian chờ máy chủ | Thử lại |
-| `NO_RESPONSE` | `getBalance`, `getAccountInformation` | Máy chủ không trả dữ liệu hợp lệ | Thử lại sau |
-| `SERVER` | `getBalance`, `getAccountInformation` | Máy chủ trả lỗi; `description` là thông điệp của máy chủ | Hiển thị `description` |
-| `OTHER` | `getBalance`, `getAccountInformation` | Lỗi hệ thống khác; `description` là mô tả của iOS | Thử lại, ghi log |
+| `code` | Ý nghĩa | Cách xử lý |
+| --- | --- | --- |
+| `401` | `identityToken` sai hoặc hết hạn | Lấy `identityToken` mới rồi gọi lại |
+| `IDENTITY_TOKEN_REQUIRED` | Thiếu `identityToken` | Truyền `identityToken` |
+| `USER_CANCEL` | Người dùng đóng Miniapp, hoặc bạn gọi `close()` | Không phải lỗi |
+| `SYSTEM_CANCEL` | SDK không khởi động được Miniapp trên thiết bị | Mở lại; liên hệ PayME nếu lặp lại |
+| `MINIAPP_ALREADY_OPEN` | Đang có Miniapp mở | Đợi Miniapp đóng, hoặc gọi `close()` trước |
+| `MINIAPP_CANNOT_PRESENT` | Không có chỗ hiển thị Miniapp (`from: nil` khi `PayME` không nằm trong `UINavigationController`) | Truyền `from` là view controller đang hiển thị |
+| Mã khác | Lỗi mạng, máy chủ, key sai hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
 
 ## Nâng cấp từ 0.7.x
 
-0.8.x bỏ hoàn toàn tham số số điện thoại. Các struct dữ liệu (`PayMEPaymentParam`, `PayMEPayParam`, …), `PayMEDelegate` và `PayMEError` không đổi.
+Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương thích ngược. Các struct `data`, `PayMEDelegate` và `PayMEError` không đổi.
 
 | 0.7.x | 0.8.x |
 | --- | --- |
-| `pod 'PayME-Miniapp', '~> 0.7.x'` | `pod 'PayME-Miniapp', '0.8.3'` (cần Xcode 26.2+) |
+| `.open(phone:)`, `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.open(identityToken:)`, `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
+| `.pay(phone:data:)` và các action có `data` | `.pay(identityToken:data:)`, … |
+| `.payment(phone:data:)` | `.payment(identityToken:data:)`, `identityToken` tuỳ chọn |
 | `.payme(phone:)` | `.payme()` |
-| `.open(phone:)` | `.open(identityToken:)` |
-| `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
-| `.pay(phone:data:)`, `.service(phone:data:)`, `.transferQR(phone:data:)` | `.pay(identityToken:data:)`, `.service(identityToken:data:)`, `.transferQR(identityToken:data:)` |
-| `.deposit(phone:data:)`, `.withdraw(phone:data:)`, `.transfer(phone:data:)` | `.deposit(identityToken:data:)`, `.withdraw(identityToken:data:)`, `.transfer(identityToken:data:)` |
-| `.payment(phone:data:)` | `.payment(identityToken:data:)`, token tuỳ chọn |
-| `PayMEOpeningParam(action:phone:data:)` (deprecated) | Đã bỏ. Dùng các factory. |
-| `getBalance(of:)` | `getBalance(identityToken:)` |
-| `getAccountInformation(of:)` | `getAccountInformation(identityToken:)` |
-| `getBalance` báo lỗi định danh bằng `linked: false` | identityToken sai hoặc hết hạn trả `onError` code `401`. `linked: false` chỉ còn nghĩa là người dùng chưa liên kết ví. |
-| Background Fetch và `handleEventsForBackgroundURLSession` trong tài liệu cũ | Không cần |
+| `PayMEOpeningParam(action:phone:data:)` | Đã bỏ, dùng các factory |
+| `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
-Các bước:
+1. Server: tích hợp API `identityToken/init` (liên hệ PayME).
+2. Đổi pod thành `'0.8.3'`, rồi `pod install --repo-update`.
+3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
+4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
+5. Build bằng Xcode 26.2 trở lên.
 
-1. Xây API ở server để lấy `identityToken` (xem [identityToken](#identitytoken)).
-2. Đổi phiên bản pod, chạy `pod repo update` rồi `pod install`.
-3. Thay các lời gọi theo bảng trên.
-4. Xử lý thêm code `401` và `IDENTITY_TOKEN_REQUIRED` trong `onError`.
+## Hỗ trợ
 
-## Cập nhật OTA
+PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). Bộ key, môi trường sandbox, tài liệu API `identityToken/init` và API tạo giao dịch `PAYMENT`: liên hệ PayME.
 
-Giao diện mini-app (web bundle) được đóng sẵn trong SDK và có thể được PayME cập nhật qua mạng (OTA). Đối tác không cần cấu hình gì.
-
-- SDK kiểm tra bản cập nhật mỗi lần gọi `open`.
-- Bản cập nhật bắt buộc: SDK hiển thị màn tải trước khi mở mini-app. Lỗi mạng thì hiển thị nút tải lại.
-- Bản cập nhật không bắt buộc: không chặn việc mở mini-app.
-- Mỗi bản cập nhật được PayME ký số (ECDSA P-256), chỉ tải qua HTTPS từ `static.payme.vn` và được kiểm tra kích thước, SHA-256 trước khi cài. Bản không hợp lệ bị bỏ qua và SDK tiếp tục dùng bản đang có. SDK không bao giờ cài bản cũ hơn bản đang có.
-- Nếu mạng của bạn có tường lửa, cho phép truy cập `https://static.payme.vn`.
-
-## Lịch sử phiên bản và hỗ trợ
-
-| Phiên bản | Thay đổi chính |
-| --- | --- |
-| 0.8.3 | Mỗi phiên một kết quả đóng (`USER_CANCEL` một lần, không báo khi mini-app chỉ bị che). `close()` đóng chính mini-app, bỏ qua `from`. Kiểu push: mini-app tự đóng thì giữ cách xử lý của 0.8.1 (đối tác pop trong callback), `close()` thì SDK tự pop. Thêm `MINIAPP_ALREADY_OPEN`, `MINIAPP_CANNOT_PRESENT`; mở lại trong callback đóng được hoãn đến khi mini-app cũ đóng hẳn. Lỗi khởi động máy chủ web trả `SYSTEM_CANCEL` và đóng mini-app. Mini-app patch 0502. |
-| 0.8.2 | Chỉ có tag GitHub, không phát hành lên CocoaPods trunk. Dùng 0.8.3. |
-| 0.8.0, 0.8.1 | `identityToken` thay cho số điện thoại. Xem [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x). |
-
-- Ghi chú phát hành: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).
-- Bộ key, tài liệu API `identityToken/init`, môi trường sandbox và hỗ trợ tích hợp: liên hệ PayME.
+Ghi chú phát hành: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).
