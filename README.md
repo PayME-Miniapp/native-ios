@@ -159,7 +159,6 @@ final class WalletViewController: UIViewController, PayMEDelegate {
 
 | Action / hàm | `identityToken` |
 | --- | --- |
-| `.payme()` | Không dùng (người dùng tự đăng nhập) |
 | `.payment` | Tuỳ chọn. Có thì người dùng trả được bằng ví PayME; không có thì thanh toán như khách vãng lai (thẻ, QR) |
 | Các action còn lại, `getBalance`, `getAccountInformation` | Bắt buộc |
 
@@ -220,7 +219,6 @@ payme.open(with: PayMEOpeningParam, from: UIViewController?, type: PayMEOpeningT
 | `.transferQR(identityToken:data:)` | Chuyển tiền tới tài khoản ngân hàng | [`PayMETransferQRParam`](#paymetransferqrparam-transferqr) |
 | `.service(identityToken:data:)` | Thanh toán dịch vụ (điện, nước, thẻ…) | [`PayMEServiceParam`](#paymeserviceparam-service) |
 | `.deposit`, `.withdraw`, `.transfer` `(identityToken:data:)` | Nạp, rút, chuyển tiền | [`PayMEPayParam`](#paymepayparam-deposit-withdraw-transfer), tuỳ chọn |
-| `.payme()` | Toàn bộ ví PayME, người dùng tự đăng nhập | Không có |
 
 ```swift
 payme.open(
@@ -338,7 +336,6 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `.open(phone:)`, `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.open(identityToken:)`, `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
 | `.pay(phone:data:)` và các action có `data` | `.pay(identityToken:data:)`, … |
 | `.payment(phone:data:)` | `.payment(identityToken:data:)`, `identityToken` tuỳ chọn |
-| `.payme(phone:)` | `.payme()` |
 | `PayMEOpeningParam(action:phone:data:)` | Đã bỏ, dùng các factory |
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 

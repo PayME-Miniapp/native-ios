@@ -159,7 +159,6 @@ final class WalletViewController: UIViewController, PayMEDelegate {
 
 | Action / function | `identityToken` |
 | --- | --- |
-| `.payme()` | Not used (the user signs in themselves) |
 | `.payment` | Optional. With it, the user can pay with the PayME wallet; without it, they pay as a guest (card, QR) |
 | All other actions, `getBalance`, `getAccountInformation` | Required |
 
@@ -220,7 +219,6 @@ payme.open(with: PayMEOpeningParam, from: UIViewController?, type: PayMEOpeningT
 | `.transferQR(identityToken:data:)` | Transfer to a bank account | [`PayMETransferQRParam`](#paymetransferqrparam-transferqr) |
 | `.service(identityToken:data:)` | Bill payments (electricity, water, cards…) | [`PayMEServiceParam`](#paymeserviceparam-service) |
 | `.deposit`, `.withdraw`, `.transfer` `(identityToken:data:)` | Deposit, withdraw, transfer | [`PayMEPayParam`](#paymepayparam-deposit-withdraw-transfer), optional |
-| `.payme()` | The full PayME wallet; the user signs in themselves | None |
 
 ```swift
 payme.open(
@@ -338,7 +336,6 @@ func onError(action: PayMEAction, error: PayMEError)
 | `.open(phone:)`, `.kyc(phone:)`, `.kalapaKYC(phone:)` | `.open(identityToken:)`, `.kyc(identityToken:)`, `.kalapaKYC(identityToken:)` |
 | `.pay(phone:data:)` and other actions with `data` | `.pay(identityToken:data:)`, … |
 | `.payment(phone:data:)` | `.payment(identityToken:data:)`, `identityToken` optional |
-| `.payme(phone:)` | `.payme()` |
 | `PayMEOpeningParam(action:phone:data:)` | Removed, use the factories |
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
