@@ -154,7 +154,7 @@ final class WalletViewController: UIViewController, PayMEDelegate {
 `identityToken` là chuỗi PayME cấp cho từng người dùng của bạn. Ứng dụng truyền chuỗi này mỗi lần mở Miniapp.
 
 1. Ứng dụng gọi server của bạn.
-2. Server của bạn gọi API `identityToken/init` của PayME với thông tin người dùng (liên hệ PayME để nhận tài liệu API). Không gọi API này từ ứng dụng.
+2. Server của bạn gọi API `token-init` (`POST /be/ewallet/sdk/token-init`) của PayME với thông tin người dùng (liên hệ PayME để nhận tài liệu API). Không gọi API này từ ứng dụng.
 3. Ứng dụng truyền `identityToken` nhận được vào `open`, `getBalance` hoặc `getAccountInformation`.
 
 | Action / hàm | `identityToken` |
@@ -339,7 +339,7 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `PayMEOpeningParam(action:phone:data:)` | Đã bỏ, dùng các factory |
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
-1. Server: tích hợp API `identityToken/init` (liên hệ PayME).
+1. Server: tích hợp API `token-init` (liên hệ PayME).
 2. Đổi pod thành `'0.8.3'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
@@ -347,6 +347,6 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 
 ## Hỗ trợ
 
-PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). Bộ key, môi trường sandbox, tài liệu API `identityToken/init` và API tạo giao dịch `PAYMENT`: liên hệ PayME.
+PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). Bộ key, môi trường sandbox, tài liệu API `token-init` và API tạo giao dịch `PAYMENT`: liên hệ PayME.
 
 Ghi chú phát hành: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).

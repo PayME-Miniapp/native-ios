@@ -154,7 +154,7 @@ final class WalletViewController: UIViewController, PayMEDelegate {
 `identityToken` is a string PayME issues for each of your users. Your app passes it every time it opens the Miniapp.
 
 1. Your app calls your server.
-2. Your server calls PayME's `identityToken/init` API with the user's information (contact PayME for the API docs). Never call this API from the app.
+2. Your server calls PayME's `token-init` API (`POST /be/ewallet/sdk/token-init`) with the user's information (contact PayME for the API docs). Never call this API from the app.
 3. Your app passes the returned `identityToken` to `open`, `getBalance` or `getAccountInformation`.
 
 | Action / function | `identityToken` |
@@ -339,7 +339,7 @@ func onError(action: PayMEAction, error: PayMEError)
 | `PayMEOpeningParam(action:phone:data:)` | Removed, use the factories |
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
-1. Server: integrate the `identityToken/init` API (contact PayME).
+1. Server: integrate the `token-init` API (contact PayME).
 2. Change the pod to `'0.8.3'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
@@ -347,6 +347,6 @@ func onError(action: PayMEAction, error: PayMEError)
 
 ## Support
 
-PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). For the key set, the sandbox environment, the `identityToken/init` API docs and the `PAYMENT` transaction creation API: contact PayME.
+PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). For the key set, the sandbox environment, the `token-init` API docs and the `PAYMENT` transaction creation API: contact PayME.
 
 Release notes: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).
