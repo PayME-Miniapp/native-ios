@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'PayME-Miniapp'
-  spec.version      = '0.8.3'
+  spec.version      = '0.8.4'
   spec.summary      = 'PayME Miniapp SDK for iOS integration.'
   spec.description  = 'PayME Miniapp SDK for iOS: opens the PayME e-wallet mini-app (payments, deposits, withdrawals, transfers, KYC) inside a partner app.'
   spec.homepage     = 'https://github.com/PayME-Miniapp/native-ios'

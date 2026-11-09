@@ -4,7 +4,7 @@
 
 SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.3**.
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.4**.
 
 ## Mục lục
 
@@ -38,7 +38,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.3'
+  pod 'PayME-Miniapp', '0.8.4'
 end
 
 post_install do |installer|
@@ -340,7 +340,7 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: tích hợp API `token-init` (liên hệ PayME).
-2. Đổi pod thành `'0.8.3'`, rồi `pod install --repo-update`.
+2. Đổi pod thành `'0.8.4'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
 5. Build bằng Xcode 26.2 trở lên.
