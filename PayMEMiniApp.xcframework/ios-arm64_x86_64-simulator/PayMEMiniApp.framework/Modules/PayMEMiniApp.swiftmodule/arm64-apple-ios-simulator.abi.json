@@ -7436,7 +7436,7 @@
       "kind": "IntegerLiteral",
       "offset": 1008,
       "length": 3,
-      "value": "502"
+      "value": "505"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
@@ -8561,56 +8561,56 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1215,
+      "offset": 1771,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1973,
+      "offset": 2529,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2822,
+      "offset": 3378,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3751,
+      "offset": 4307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3783,
+      "offset": 4339,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4434,
+      "offset": 4990,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4523,
+      "offset": 5079,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Model\/PayMEModel\/PayMEPayModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4555,
+      "offset": 5111,
       "length": 4,
       "value": "true"
     },
