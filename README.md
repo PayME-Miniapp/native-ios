@@ -4,7 +4,7 @@
 
 SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.5**.
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.9.0**.
 
 ## Mục lục
 
@@ -15,16 +15,16 @@ Phiên bản hiện tại: pod `PayME-Miniapp` **0.8.5**.
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Mã lỗi](#mã-lỗi)
-8. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
-9. [Hỗ trợ](#hỗ-trợ)
+8. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
+9. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
+10. [Hỗ trợ](#hỗ-trợ)
 
 ## Yêu cầu
 
 - iOS 13.0 trở lên.
 - Xcode 26.2 trở lên (SDK build bằng Swift 6.2.3, Xcode cũ hơn không đọc được).
 - CocoaPods, khuyến nghị 1.17.0 trở lên.
-- Bộ key `appId`, `publicKey`, `privateKey` do PayME cấp.
-- Server của bạn gọi được API cấp `identityToken` của PayME.
+- Server của bạn gọi được API cấp `identityToken` của PayME (bằng bộ key PayME cấp cho server).
 
 ## Cài đặt
 
@@ -38,7 +38,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.5'
+  pod 'PayME-Miniapp', '0.9.0'
 end
 
 post_install do |installer|
@@ -128,12 +128,7 @@ final class WalletViewController: UIViewController, PayMEDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Sandbox: PayMEConfig.instance.env = .sbx; PayMEConfig.instance.setMode("miniapp_sandbox")
-    payme = PayME(
-      key: PayMEKey(
-        appId: "<APP_ID>",
-        publicKey: "-----BEGIN PUBLIC KEY-----...-----END PUBLIC KEY-----",
-        privateKey: "-----BEGIN RSA PRIVATE KEY-----...-----END RSA PRIVATE KEY-----"),
-      locale: .vi)
+    payme = PayME(locale: .vi)
     payme.delegate = self
   }
 
@@ -146,8 +141,6 @@ final class WalletViewController: UIViewController, PayMEDelegate {
   func onError(action: PayMEAction, error: PayMEError) { /* xem Mã lỗi */ }
 }
 ```
-
-> Không đưa key thật vào mã nguồn công khai, README hay ảnh chụp màn hình.
 
 ## identityToken
 
@@ -174,16 +167,14 @@ Gọi mọi hàm trên main thread. Kết quả và lỗi trả về qua `PayMED
 ### Khởi tạo
 
 ```swift
-PayME(key: PayMEKey(appId:publicKey:privateKey:), locale: .vi)
+PayME(locale: .vi)
 ```
 
 | Tham số | Mô tả |
 | --- | --- |
-| `appId` | Mã ứng dụng do PayME cấp |
-| `publicKey` | Public key RSA của PayME, dạng PEM |
-| `privateKey` | Private key RSA của ứng dụng, dạng PEM như PayME cấp |
 | `locale` | `.vi` (mặc định) hoặc `.en` |
 
+- Ứng dụng không cần truyền key: SDK đã có sẵn.
 - Giữ đối tượng `PayME` suốt thời gian dùng Miniapp (ví dụ là thuộc tính của view controller). Bạn không cần tự hiển thị nó.
 - `delegate` là tham chiếu mạnh. Nếu delegate cũng giữ `PayME` thì có vòng tham chiếu: gán `payme.delegate = nil` khi không dùng nữa, hoặc dùng một object trung gian.
 - `Locale` và `Environment` của SDK trùng tên với `Foundation.Locale` và `SwiftUI.Environment`. Dùng dạng rút gọn (`.vi`, `.sbx`) hoặc ghi `PayMEMiniApp.Locale`.
@@ -325,7 +316,11 @@ func onError(action: PayMEAction, error: PayMEError)
 | `SYSTEM_CANCEL` | SDK không khởi động được Miniapp trên thiết bị | Mở lại; liên hệ PayME nếu lặp lại |
 | `MINIAPP_ALREADY_OPEN` | Đang có Miniapp mở | Đợi Miniapp đóng, hoặc gọi `close()` trước |
 | `MINIAPP_CANNOT_PRESENT` | Không có chỗ hiển thị Miniapp (`from: nil` khi `PayME` không nằm trong `UINavigationController`) | Truyền `from` là view controller đang hiển thị |
-| Mã khác | Lỗi mạng, máy chủ, key sai hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
+| Mã khác | Lỗi mạng, máy chủ hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
+
+## Nâng cấp lên 0.9.0
+
+Đổi `PayME(key: PayMEKey(...), locale:)` thành `PayME(locale:)`. Hàm khởi tạo cũ vẫn chạy (deprecated) và bỏ qua key truyền vào.
 
 ## Nâng cấp từ 0.7.x
 
@@ -340,13 +335,13 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: tích hợp API `token-init` (liên hệ PayME).
-2. Đổi pod thành `'0.8.5'`, rồi `pod install --repo-update`.
+2. Đổi pod thành `'0.9.0'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
 5. Build bằng Xcode 26.2 trở lên.
 
 ## Hỗ trợ
 
-PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). Bộ key, môi trường sandbox, tài liệu API `token-init` và API tạo giao dịch `PAYMENT`: liên hệ PayME.
+PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). Bộ key cho server, môi trường sandbox, tài liệu API `token-init` và API tạo giao dịch `PAYMENT`: liên hệ PayME.
 
 Ghi chú phát hành: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).

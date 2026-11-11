@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: pod `PayME-Miniapp` **0.8.5**.
+Current version: pod `PayME-Miniapp` **0.9.0**.
 
 ## Table of contents
 
@@ -15,16 +15,16 @@ Current version: pod `PayME-Miniapp` **0.8.5**.
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Error codes](#error-codes)
-8. [Upgrading from 0.7.x](#upgrading-from-07x)
-9. [Support](#support)
+8. [Upgrading to 0.9.0](#upgrading-to-090)
+9. [Upgrading from 0.7.x](#upgrading-from-07x)
+10. [Support](#support)
 
 ## Requirements
 
 - iOS 13.0 or later.
 - Xcode 26.2 or later (the SDK is built with Swift 6.2.3; older Xcode versions cannot read it).
 - CocoaPods, 1.17.0 or later recommended.
-- The `appId`, `publicKey`, `privateKey` key set issued by PayME.
-- A server of yours that can call PayME's `identityToken` API.
+- A server of yours that can call PayME's `identityToken` API (with the key set PayME issues for your server).
 
 ## Installation
 
@@ -38,7 +38,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.8.5'
+  pod 'PayME-Miniapp', '0.9.0'
 end
 
 post_install do |installer|
@@ -128,12 +128,7 @@ final class WalletViewController: UIViewController, PayMEDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Sandbox: PayMEConfig.instance.env = .sbx; PayMEConfig.instance.setMode("miniapp_sandbox")
-    payme = PayME(
-      key: PayMEKey(
-        appId: "<APP_ID>",
-        publicKey: "-----BEGIN PUBLIC KEY-----...-----END PUBLIC KEY-----",
-        privateKey: "-----BEGIN RSA PRIVATE KEY-----...-----END RSA PRIVATE KEY-----"),
-      locale: .vi)
+    payme = PayME(locale: .vi)
     payme.delegate = self
   }
 
@@ -146,8 +141,6 @@ final class WalletViewController: UIViewController, PayMEDelegate {
   func onError(action: PayMEAction, error: PayMEError) { /* see Error codes */ }
 }
 ```
-
-> Do not put real keys in public source code, READMEs or screenshots.
 
 ## identityToken
 
@@ -174,16 +167,14 @@ Call every function on the main thread. Results and errors come back through `Pa
 ### Initialization
 
 ```swift
-PayME(key: PayMEKey(appId:publicKey:privateKey:), locale: .vi)
+PayME(locale: .vi)
 ```
 
 | Parameter | Description |
 | --- | --- |
-| `appId` | App ID issued by PayME |
-| `publicKey` | PayME's RSA public key, PEM format |
-| `privateKey` | Your app's RSA private key, PEM format as issued by PayME |
 | `locale` | `.vi` (default) or `.en` |
 
+- Your app does not pass any key: the SDK has it built in.
 - Keep the `PayME` object alive while you use the Miniapp (for example as a view controller property). You do not need to display it yourself.
 - `delegate` is a strong reference. If the delegate also holds `PayME`, you get a retain cycle: set `payme.delegate = nil` when done, or use an intermediate object.
 - The SDK's `Locale` and `Environment` clash with `Foundation.Locale` and `SwiftUI.Environment`. Use the short form (`.vi`, `.sbx`) or write `PayMEMiniApp.Locale`.
@@ -325,7 +316,11 @@ func onError(action: PayMEAction, error: PayMEError)
 | `SYSTEM_CANCEL` | The SDK could not start the Miniapp on the device | Open again; contact PayME if it repeats |
 | `MINIAPP_ALREADY_OPEN` | A Miniapp is already open | Wait for it to close, or call `close()` first |
 | `MINIAPP_CANNOT_PRESENT` | Nowhere to show the Miniapp (`from: nil` while `PayME` is not inside a `UINavigationController`) | Pass `from` as the view controller on screen |
-| Other codes | Network, server, wrong key or business errors | Show `description`, retry; contact PayME if it repeats |
+| Other codes | Network, server or business errors | Show `description`, retry; contact PayME if it repeats |
+
+## Upgrading to 0.9.0
+
+Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old initializer still works (deprecated) and ignores the key.
 
 ## Upgrading from 0.7.x
 
@@ -340,13 +335,13 @@ func onError(action: PayMEAction, error: PayMEError)
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Change the pod to `'0.8.5'`, then run `pod install --repo-update`.
+2. Change the pod to `'0.9.0'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.
 
 ## Support
 
-PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). For the key set, the sandbox environment, the `token-init` API docs and the `PAYMENT` transaction creation API: contact PayME.
+PayME Technology Corporation, email [hotro@payme.vn](mailto:hotro@payme.vn). For the server key set, the sandbox environment, the `token-init` API docs and the `PAYMENT` transaction creation API: contact PayME.
 
 Release notes: [GitHub Releases](https://github.com/PayME-Miniapp/native-ios/releases).
