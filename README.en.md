@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: pod `PayME-Miniapp` **0.9.0**.
+Current version: pod `PayME-Miniapp` **0.9.1** (the keyboard opens by itself when the Miniapp shows a PIN/OTP input, as before 0.7.6).
 
 ## Table of contents
 
@@ -38,7 +38,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.9.0'
+  pod 'PayME-Miniapp', '0.9.1'
 end
 
 post_install do |installer|
@@ -335,7 +335,7 @@ Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old init
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Change the pod to `'0.9.0'`, then run `pod install --repo-update`.
+2. Change the pod to `'0.9.1'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.
