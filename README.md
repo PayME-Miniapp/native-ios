@@ -290,8 +290,32 @@ func onError(action: PayMEAction, error: PayMEError)
 
 | Sự kiện | Nội dung | Khi nào |
 | --- | --- | --- |
-| `onResponse` | `action`, `response` | Giao dịch thành công, hoặc có kết quả `getBalance` / `getAccountInformation` |
+| `onResponse` | `action`, `response` | Có kết quả giao dịch (xem `state` bên dưới), hoặc có kết quả `getBalance` / `getAccountInformation` |
 | `onError` | `action`, `error.code`, `error.description` | Có lỗi hoặc người dùng đóng Miniapp |
+
+**Kết quả giao dịch.** Với `PAY`, `PAYMENT`, `TRANSFER_QR`, `SERVICE`, `DEPOSIT`, `WITHDRAW`, `TRANSFER`, Miniapp gửi `onResponse` khi người dùng rời màn kết quả, **ở mọi trạng thái giao dịch**, không chỉ khi thành công. Luôn kiểm tra `state`, và đối chiếu trên server (qua `ipnUrl` hoặc API tra cứu) trước khi giao hàng:
+
+| Trường | Ý nghĩa |
+| --- | --- |
+| `state` | `SUCCEEDED` thành công · `PENDING` đang xử lý (tra lại sau) · `FAILED` thất bại |
+| `transaction` | Mã giao dịch PayME |
+| `partnerTransaction` | Mã giao dịch của bạn (giá trị đã truyền khi mở) |
+| `amount`, `amountText` | Số tiền (số nguyên VND) và chuỗi đã định dạng |
+| `method`, `createdAt` | Phương thức thanh toán, thời điểm tạo |
+| `extraData` | Dữ liệu riêng bạn đã truyền |
+
+Miniapp cũng tự gửi `onResponse` với action `GET_BALANCE` khi số dư thay đổi (không do bạn gọi `getBalance`).
+
+```swift
+func onResponse(action: PayMEAction, response: [String: Any]) {
+  guard action == .Pay else { return }
+  switch response["state"] as? String {
+  case "SUCCEEDED": break // đã thanh toán
+  case "PENDING": break // đang xử lý: tra lại trên server
+  default: break // thất bại
+  }
+}
+```
 
 - `error.description` đã bản địa hoá, dùng để hiển thị.
 - Dùng Swift 6 language mode: khai báo `@preconcurrency PayMEDelegate`.

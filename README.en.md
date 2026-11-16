@@ -290,8 +290,32 @@ func onError(action: PayMEAction, error: PayMEError)
 
 | Event | Content | When |
 | --- | --- | --- |
-| `onResponse` | `action`, `response` | A transaction succeeds, or a `getBalance` / `getAccountInformation` result arrives |
+| `onResponse` | `action`, `response` | A transaction result is available (check `state` below), or a `getBalance` / `getAccountInformation` result arrives |
 | `onError` | `action`, `error.code`, `error.description` | An error occurs or the user closes the Miniapp |
+
+**Transaction results.** For `PAY`, `PAYMENT`, `TRANSFER_QR`, `SERVICE`, `DEPOSIT`, `WITHDRAW` and `TRANSFER`, the Miniapp sends `onResponse` when the user leaves the result screen, **whatever the transaction state**, not only on success. Always check `state`, and confirm on your server (via `ipnUrl` or a lookup API) before you deliver:
+
+| Field | Meaning |
+| --- | --- |
+| `state` | `SUCCEEDED` succeeded · `PENDING` still processing (check again later) · `FAILED` failed |
+| `transaction` | PayME transaction id |
+| `partnerTransaction` | Your transaction id (the value you passed when opening) |
+| `amount`, `amountText` | Amount (integer VND) and the formatted string |
+| `method`, `createdAt` | Payment method, creation time |
+| `extraData` | Your own data, as passed |
+
+The Miniapp also sends `onResponse` with action `GET_BALANCE` on its own when the balance changes (not from your `getBalance` call).
+
+```swift
+func onResponse(action: PayMEAction, response: [String: Any]) {
+  guard action == .Pay else { return }
+  switch response["state"] as? String {
+  case "SUCCEEDED": break // paid
+  case "PENDING": break // processing: check on your server
+  default: break // failed
+  }
+}
+```
 
 - `error.description` is localized, ready to display.
 - With Swift 6 language mode: declare `@preconcurrency PayMEDelegate`.
