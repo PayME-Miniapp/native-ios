@@ -3676,8 +3676,8 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PayMEMiniApp"
       },
@@ -3721,13 +3721,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "ContactsUI",
-        "printedName": "ContactsUI",
-        "declKind": "Import",
-        "moduleName": "PayMEMiniApp"
       },
       {
         "kind": "Import",
@@ -7479,7 +7472,7 @@
       "kind": "IntegerLiteral",
       "offset": 1020,
       "length": 3,
-      "value": "505"
+      "value": "509"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/FaceAuthen\/FaceAuthenCameraController.swift",
@@ -7627,6 +7620,13 @@
       "offset": 515,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/DeviceInfoPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 14,
+      "value": "\"PICK_CONTACT\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/CameraController\/CardDetector\/VisionCardDetector.swift",
@@ -7799,28 +7799,28 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 2381,
+      "offset": 2408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3151,
+      "offset": 3178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3336,
+      "offset": 3363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/NavitePlugin\/SendNativeMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3525,
+      "offset": 3552,
       "length": 5,
       "value": "false"
     },
@@ -8359,105 +8359,112 @@
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 759,
+      "length": 15,
+      "value": "\"jsPickContact\""
+    },
+    {
+      "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 802,
       "length": 21,
       "value": "\"jsRequestPermission\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 845,
       "length": 15,
       "value": "\"jsOpenWebView\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 888,
       "length": 21,
       "value": "\"jsOneSignalSendTags\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 939,
       "length": 23,
       "value": "\"jsOneSignalDeleteTags\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 941,
+      "offset": 978,
       "length": 9,
       "value": "\"jsError\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 969,
+      "offset": 1006,
       "length": 12,
       "value": "\"jsResponse\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1034,
       "length": 9,
       "value": "\"jsClose\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1024,
+      "offset": 1061,
       "length": 11,
       "value": "\"jsOpenUrl\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1052,
+      "offset": 1089,
       "length": 10,
       "value": "\"jsSaveQR\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 1119,
       "length": 13,
       "value": "\"jsChangeEnv\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1155,
       "length": 16,
       "value": "\"jsChangeLocale\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 1204,
       "length": 27,
       "value": "\"jsListScreensSwipeBlocked\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1216,
+      "offset": 1253,
       "length": 19,
       "value": "\"jsPostModalHeight\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1266,
+      "offset": 1303,
       "length": 24,
       "value": "\"jsRequestNFCPermission\""
     },
     {
       "filePath": "\/Users\/dattm\/Documents\/payme\/miniapp\/iOS\/payme-ewallet-lib-ios\/PayMEMiniApp\/Classes\/Controller\/MiniAppViewController\/Bridge\/WebViewJSBridge.swift",
       "kind": "StringLiteral",
-      "offset": 1317,
+      "offset": 1354,
       "length": 20,
       "value": "\"jsReleaseKYCImages\""
     },

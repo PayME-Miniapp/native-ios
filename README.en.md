@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: pod `PayME-Miniapp` **0.9.1** (the keyboard opens by itself when the Miniapp shows a PIN/OTP input, as before 0.7.6).
+Current version: pod `PayME-Miniapp` **0.10.0** (phone numbers are picked with the system contact picker, no contacts permission).
 
 ## Table of contents
 
@@ -15,9 +15,10 @@ Current version: pod `PayME-Miniapp` **0.9.1** (the keyboard opens by itself whe
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Error codes](#error-codes)
-8. [Upgrading to 0.9.0](#upgrading-to-090)
-9. [Upgrading from 0.7.x](#upgrading-from-07x)
-10. [Support](#support)
+8. [Upgrading to 0.10.0](#upgrading-to-0100)
+9. [Upgrading to 0.9.0](#upgrading-to-090)
+10. [Upgrading from 0.7.x](#upgrading-from-07x)
+11. [Support](#support)
 
 ## Requirements
 
@@ -38,7 +39,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.9.1'
+  pod 'PayME-Miniapp', '0.10.0'
 end
 
 post_install do |installer|
@@ -99,8 +100,6 @@ Add to `Info.plist` (adjust the descriptions to your app):
 <string>The app needs photo library access to pick QR code images</string>
 <key>NSPhotoLibraryAddUsageDescription</key>
 <string>The app needs to save QR code images to your photo library</string>
-<key>NSContactsUsageDescription</key>
-<string>Allow contacts access to pick phone numbers quickly</string>
 <!-- Read the national ID card chip during eKYC -->
 <key>NFCReaderUsageDescription</key>
 <string>Read the national ID card chip for identity verification</string>
@@ -318,6 +317,10 @@ func onError(action: PayMEAction, error: PayMEError)
 | `MINIAPP_CANNOT_PRESENT` | Nowhere to show the Miniapp (`from: nil` while `PayME` is not inside a `UINavigationController`) | Pass `from` as the view controller on screen |
 | Other codes | Network, server or business errors | Show `description`, retry; contact PayME if it repeats |
 
+## Upgrading to 0.10.0
+
+Picking a phone number for top-up uses the system contact picker, so the SDK no longer reads contacts. You can remove `NSContactsUsageDescription` from `Info.plist` if your app declares it only for the SDK.
+
 ## Upgrading to 0.9.0
 
 Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old initializer still works (deprecated) and ignores the key.
@@ -335,7 +338,7 @@ Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old init
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Change the pod to `'0.9.1'`, then run `pod install --repo-update`.
+2. Change the pod to `'0.10.0'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.

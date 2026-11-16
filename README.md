@@ -4,7 +4,7 @@
 
 SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.9.1** (bàn phím tự bật khi Miniapp mở ô nhập PIN/OTP, như trước 0.7.6).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.10.0** (chọn số điện thoại bằng bộ chọn danh bạ của hệ thống, không cần quyền danh bạ).
 
 ## Mục lục
 
@@ -15,9 +15,10 @@ Phiên bản hiện tại: pod `PayME-Miniapp` **0.9.1** (bàn phím tự bật 
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Mã lỗi](#mã-lỗi)
-8. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
-9. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
-10. [Hỗ trợ](#hỗ-trợ)
+8. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
+9. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
+10. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
+11. [Hỗ trợ](#hỗ-trợ)
 
 ## Yêu cầu
 
@@ -38,7 +39,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.9.1'
+  pod 'PayME-Miniapp', '0.10.0'
 end
 
 post_install do |installer|
@@ -99,8 +100,6 @@ Thêm vào `Info.plist` (sửa câu mô tả theo ứng dụng của bạn):
 <string>Ứng dụng cần truy cập thư viện ảnh để chọn ảnh mã QR</string>
 <key>NSPhotoLibraryAddUsageDescription</key>
 <string>Ứng dụng cần lưu ảnh mã QR vào thư viện ảnh</string>
-<key>NSContactsUsageDescription</key>
-<string>Cho phép truy cập danh bạ để chọn nhanh số điện thoại</string>
 <!-- Đọc chip CCCD khi eKYC -->
 <key>NFCReaderUsageDescription</key>
 <string>Đọc chip căn cước công dân để định danh</string>
@@ -318,6 +317,10 @@ func onError(action: PayMEAction, error: PayMEError)
 | `MINIAPP_CANNOT_PRESENT` | Không có chỗ hiển thị Miniapp (`from: nil` khi `PayME` không nằm trong `UINavigationController`) | Truyền `from` là view controller đang hiển thị |
 | Mã khác | Lỗi mạng, máy chủ hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
 
+## Nâng cấp lên 0.10.0
+
+Chọn số điện thoại khi nạp tiền dùng bộ chọn danh bạ của hệ thống nên SDK không còn đọc danh bạ. Có thể bỏ `NSContactsUsageDescription` khỏi `Info.plist` nếu ứng dụng chỉ khai báo vì SDK.
+
 ## Nâng cấp lên 0.9.0
 
 Đổi `PayME(key: PayMEKey(...), locale:)` thành `PayME(locale:)`. Hàm khởi tạo cũ vẫn chạy (deprecated) và bỏ qua key truyền vào.
@@ -335,7 +338,7 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: tích hợp API `token-init` (liên hệ PayME).
-2. Đổi pod thành `'0.9.1'`, rồi `pod install --repo-update`.
+2. Đổi pod thành `'0.10.0'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
 5. Build bằng Xcode 26.2 trở lên.
