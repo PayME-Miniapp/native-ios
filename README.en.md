@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: pod `PayME-Miniapp` **0.11.0** (installed from PayME's spec repo, because CocoaPods trunk stops accepting new versions on 2 December 2026).
+Current version: pod `PayME-Miniapp` **0.12.0** (installed from PayME's spec repo, because CocoaPods trunk stops accepting new versions on 2 December 2026).
 
 ## Table of contents
 
@@ -15,11 +15,12 @@ Current version: pod `PayME-Miniapp` **0.11.0** (installed from PayME's spec rep
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Error codes](#error-codes)
-8. [Upgrading to 0.11.0](#upgrading-to-0110)
-9. [Upgrading to 0.10.0](#upgrading-to-0100)
-10. [Upgrading to 0.9.0](#upgrading-to-090)
-11. [Upgrading from 0.7.x](#upgrading-from-07x)
-12. [Support](#support)
+8. [Upgrading to 0.12.0](#upgrading-to-0120)
+9. [Upgrading to 0.11.0](#upgrading-to-0110)
+10. [Upgrading to 0.10.0](#upgrading-to-0100)
+11. [Upgrading to 0.9.0](#upgrading-to-090)
+12. [Upgrading from 0.7.x](#upgrading-from-07x)
+13. [Support](#support)
 
 ## Requirements
 
@@ -44,7 +45,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.11.0'
+  pod 'PayME-Miniapp', '0.12.0'
 end
 
 post_install do |installer|
@@ -67,14 +68,13 @@ pod install
 
 - If your `Podfile` already has a `post_install`, merge the above into that block.
 - Older versions (up to 0.10.1) exist in both PayME's spec repo and CocoaPods trunk, so `pod install` may print `Found multiple specifications for PayME-Miniapp`. It is harmless: the pod comes from the first source.
-- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.11.0/PayME-Miniapp.podspec.json'` (change the version in the URL when you upgrade).
+- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.12.0/PayME-Miniapp.podspec'` (change the version in the URL when you upgrade).
 - To upgrade the SDK: run `pod install --repo-update`.
 - Projects without `use_frameworks!`: declare these pods as dynamic frameworks.
 
   ```ruby
   $dynamic_framework = [
-    'PayME-Miniapp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'NSLogger', 'lottie-ios',
-    'SwiftyJSON', 'ZIPFoundation', 'Mixpanel-swift', 'MixpanelSwiftCommon', 'jsonlogic', 'json-enum'
+    'PayME-Miniapp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'lottie-ios', 'SwiftyJSON'
   ]
 
   pre_install do |installer|
@@ -348,11 +348,22 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Nowhere to show the Miniapp (`from: nil` while `PayME` is not inside a `UINavigationController`) | Pass `from` as the view controller on screen |
 | Other codes | Network, server or business errors | Show `description`, retry; contact PayME if it repeats |
 
+## Upgrading to 0.12.0
+
+Breaking changes (announced in 0.11.0):
+
+- `PayMECombine.notificationSubject` is removed: use `combine.send(notification: userInfo)`.
+- `Console` and `BiometricAuthenication` are no longer public.
+- The SDK no longer pulls in `ZIPFoundation`, `NSLogger` or `Mixpanel-swift` (with `MixpanelSwiftCommon`, `jsonlogic`, `json-enum`). If your app uses those pods itself, declare them in your `Podfile`; projects using `$dynamic_framework` should drop those names from the list.
+- `import PayMEMiniApp` no longer re-exports third-party modules (`SwiftyJSON`, `CryptoSwift`, …) or their extensions: import those modules directly if you use them.
+- The SDK no longer sends events to Mixpanel.
+- The SDK ships a Privacy Manifest (`PrivacyInfo.xcprivacy`). When you archive, Xcode merges it into your app's privacy report (Organizer → right-click the archive → Generate Privacy Report); use that report for your App Store privacy labels.
+
 ## Upgrading to 0.11.0
 
 - Add the two `source` lines at the top of your `Podfile` as in [Installation](#installation), then run `pod install --repo-update`. No code change.
 - Apps that forward push notifications to the Miniapp: replace `combine.notificationSubject.send(JSON(userInfo))` with `combine.send(notification: userInfo)`. `notificationSubject` will be removed in 0.12.0.
-- From 0.12.0, `Console` and `BiometricAuthenication` are no longer public, and the SDK no longer pulls in `SwiftyJSON`, `ZIPFoundation`, `NSLogger` or `Mixpanel-swift`: if your app uses those pods itself, declare them in your `Podfile`.
+- From 0.12.0, `Console` and `BiometricAuthenication` are no longer public, and the SDK no longer pulls in `ZIPFoundation`, `NSLogger` or `Mixpanel-swift` (`SwiftyJSON` from 0.13.0): if your app uses those pods itself, declare them in your `Podfile`.
 
 ## Upgrading to 0.10.0
 
@@ -375,7 +386,7 @@ Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old init
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.11.0'`, then run `pod install --repo-update`.
+2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.12.0'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.
