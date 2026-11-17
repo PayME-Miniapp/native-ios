@@ -4,31 +4,33 @@
 
 SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.14.0** (cài qua repo spec của PayME vì CocoaPods trunk ngừng nhận phiên bản mới từ 02/12/2026).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.14.1** (cài qua repo spec của PayME vì CocoaPods trunk ngừng nhận phiên bản mới từ 02/12/2026). Swift Package Manager: [bản thử](#swift-package-manager-preview).
 
 ## Mục lục
 
 1. [Yêu cầu](#yêu-cầu)
 2. [Cài đặt](#cài-đặt)
-3. [Cấu hình ứng dụng](#cấu-hình-ứng-dụng)
-4. [Bắt đầu nhanh](#bắt-đầu-nhanh)
-5. [identityToken](#identitytoken)
-6. [API](#api)
-7. [Mã lỗi](#mã-lỗi)
-8. [Nâng cấp lên 0.14.0](#nâng-cấp-lên-0140)
-9. [Nâng cấp lên 0.13.0](#nâng-cấp-lên-0130)
-10. [Nâng cấp lên 0.12.0](#nâng-cấp-lên-0120)
-11. [Nâng cấp lên 0.11.0](#nâng-cấp-lên-0110)
-12. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
-13. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
-14. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
-15. [Hỗ trợ](#hỗ-trợ)
+3. [Swift Package Manager (preview)](#swift-package-manager-preview)
+4. [Cấu hình ứng dụng](#cấu-hình-ứng-dụng)
+5. [Bắt đầu nhanh](#bắt-đầu-nhanh)
+6. [identityToken](#identitytoken)
+7. [API](#api)
+8. [Mã lỗi](#mã-lỗi)
+9. [Nâng cấp lên 0.14.1](#nâng-cấp-lên-0141)
+10. [Nâng cấp lên 0.14.0](#nâng-cấp-lên-0140)
+11. [Nâng cấp lên 0.13.0](#nâng-cấp-lên-0130)
+12. [Nâng cấp lên 0.12.0](#nâng-cấp-lên-0120)
+13. [Nâng cấp lên 0.11.0](#nâng-cấp-lên-0110)
+14. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
+15. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
+16. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
+17. [Hỗ trợ](#hỗ-trợ)
 
 ## Yêu cầu
 
 - iOS 13.0 trở lên.
 - Xcode 26.2 trở lên (SDK build bằng Swift 6.2.3, Xcode cũ hơn không đọc được).
-- CocoaPods, khuyến nghị 1.17.0 trở lên.
+- CocoaPods, khuyến nghị 1.17.0 trở lên, hoặc Swift Package Manager ([bản thử](#swift-package-manager-preview)).
 - Server của bạn gọi được API cấp `identityToken` của PayME (bằng bộ key PayME cấp cho server).
 
 ## Cài đặt
@@ -47,7 +49,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.14.0'
+  pod 'PayME-Miniapp', '0.14.1'
 end
 
 post_install do |installer|
@@ -70,7 +72,7 @@ pod install
 
 - `Podfile` đã có `post_install`: gộp nội dung trên vào khối đó.
 - Bản cũ (đến 0.10.1) có ở cả repo spec của PayME và CocoaPods trunk, nên `pod install` có thể in `Found multiple specifications for PayME-Miniapp`. Cảnh báo này vô hại: pod được lấy từ nguồn đứng trước.
-- Không muốn thêm `source`: trỏ thẳng podspec, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.14.0/PayME-Miniapp.podspec'` (mỗi lần nâng cấp đổi số phiên bản trong URL).
+- Không muốn thêm `source`: trỏ thẳng podspec, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.14.1/PayME-Miniapp.podspec'` (mỗi lần nâng cấp đổi số phiên bản trong URL).
 - Nâng phiên bản SDK: chạy `pod install --repo-update`.
 - Dự án không dùng `use_frameworks!`: khai báo các pod sau là dynamic framework.
 
@@ -89,6 +91,26 @@ pod install
     end
   end
   ```
+
+## Swift Package Manager (preview)
+
+> Bản thử (preview) từ 0.14.1, để dùng thử SPM. CocoaPods ([Cài đặt](#cài-đặt)) vẫn là cách cài được khuyến nghị cho tới khi SPM chính thức.
+
+Trong Xcode: **File → Add Package Dependencies…**, nhập `https://github.com/PayME-Miniapp/payme-miniapp-spm.git`, chọn **Up to Next Minor Version** từ `0.14.1`, rồi thêm product `PayMEMiniApp` vào target ứng dụng. Trong `Package.swift`:
+
+```swift
+.package(url: "https://github.com/PayME-Miniapp/payme-miniapp-spm.git", .upToNextMinor(from: "0.14.1")),
+// trong dependencies của target:
+.product(name: "PayMEMiniApp", package: "payme-miniapp-spm"),
+```
+
+- Xcode 26.2 trở lên.
+- Dùng `.upToNextMinor(from: "0.14.1")`, không dùng `from:`: với bản 0.x, `from:` sẽ nhận cả bản minor mới có thay đổi phá vỡ.
+- Gói kéo theo Lottie 4.6.1 (`lottie-spm`), KalapaEkycSDK 2.8.x và iProov 12.5.0 (`iProov/ios-spm`). Ứng dụng tự dùng Lottie hay iProov thì **bắt buộc** dùng đúng các package này: `airbnb/lottie-spm` (không dùng `airbnb/lottie-ios` dạng source) và `iProov/ios-spm` (không dùng `iProov/ios`). Hai package trùng tên product/module là lỗi cứng của SwiftPM.
+- Ứng dụng đã nhúng bất kỳ bản GCDWebServer nào (pod hay fork SPM) thì chưa dùng được bản preview: gói mang theo `GCDWebServer.xcframework` riêng. Tiếp tục dùng CocoaPods.
+- Không cài SDK qua cả CocoaPods lẫn SPM trong cùng một ứng dụng. Dùng SPM thì không cần hai dòng `source` và khối `post_install` ở trên.
+- [Cấu hình ứng dụng](#cấu-hình-ứng-dụng) (`Info.plist`, capability NFC) giống như khi dùng CocoaPods.
+- Ứng dụng mẫu: [`Examples/SPMSmoke`](https://github.com/PayME-Miniapp/payme-miniapp-spm/tree/main/Examples/SPMSmoke).
 
 ## Cấu hình ứng dụng
 
@@ -350,6 +372,13 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Không có chỗ hiển thị Miniapp (`from: nil` khi `PayME` không nằm trong `UINavigationController`) | Truyền `from` là view controller đang hiển thị |
 | Mã khác | Lỗi mạng, máy chủ hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
 
+## Nâng cấp lên 0.14.1
+
+- Code giống hệt 0.14.0: API và hành vi của SDK không đổi, chỉ đổi số phiên bản. Phụ thuộc CocoaPods không đổi.
+- CocoaPods: đổi pod thành `'0.14.1'`, rồi `pod install --repo-update`.
+- Mới: [Swift Package Manager (preview)](#swift-package-manager-preview).
+- Lưu ý về iOS 15–17 của 0.14.0 vẫn áp dụng.
+
 ## Nâng cấp lên 0.14.0
 
 - SDK dùng crypto của hệ thống (CommonCrypto, Security, CryptoKit) và không còn kéo theo `CryptoSwift`, `SwiftyRSA`. Ứng dụng nào tự dùng các pod này thì khai báo trực tiếp trong `Podfile`; dự án dùng `$dynamic_framework` thì bỏ `'CryptoSwift'` và `'SwiftyRSA'` khỏi danh sách.
@@ -399,7 +428,7 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: tích hợp API `token-init` (liên hệ PayME).
-2. Thêm hai dòng `source` (xem [Cài đặt](#cài-đặt)), đổi pod thành `'0.14.0'`, rồi `pod install --repo-update`.
+2. Thêm hai dòng `source` (xem [Cài đặt](#cài-đặt)), đổi pod thành `'0.14.1'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
 5. Build bằng Xcode 26.2 trở lên.
