@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: pod `PayME-Miniapp` **0.10.1** (`getBalance` treats a blank `accessToken` as not linked, like Android 0.10.1).
+Current version: pod `PayME-Miniapp` **0.11.0** (installed from PayME's spec repo, because CocoaPods trunk stops accepting new versions on 2 December 2026).
 
 ## Table of contents
 
@@ -15,10 +15,11 @@ Current version: pod `PayME-Miniapp` **0.10.1** (`getBalance` treats a blank `ac
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Error codes](#error-codes)
-8. [Upgrading to 0.10.0](#upgrading-to-0100)
-9. [Upgrading to 0.9.0](#upgrading-to-090)
-10. [Upgrading from 0.7.x](#upgrading-from-07x)
-11. [Support](#support)
+8. [Upgrading to 0.11.0](#upgrading-to-0110)
+9. [Upgrading to 0.10.0](#upgrading-to-0100)
+10. [Upgrading to 0.9.0](#upgrading-to-090)
+11. [Upgrading from 0.7.x](#upgrading-from-07x)
+12. [Support](#support)
 
 ## Requirements
 
@@ -32,6 +33,10 @@ Current version: pod `PayME-Miniapp` **0.10.1** (`getBalance` treats a blank `ac
 Add to your `Podfile`:
 
 ```ruby
+# PayME's spec repo must come BEFORE the CDN: CocoaPods takes a pod from the first source that has it.
+source 'https://github.com/PayME-Miniapp/Specs.git'
+source 'https://cdn.cocoapods.org/'
+
 # Your app's minimum iOS version (same as `platform :ios`). With Xcode 27 the minimum is '15.0'.
 app_min_ios = '13.0'
 
@@ -39,13 +44,13 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.10.1'
+  pod 'PayME-Miniapp', '0.11.0'
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # The SDK is built with library evolution, so its dependencies must enable it too
+      # Required: the SDK is built with library evolution; without this the app crashes at launch (missing symbols)
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       # Raise pods whose minimum iOS is lower than the app's
       if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < app_min_ios.to_f
@@ -61,6 +66,8 @@ pod install
 ```
 
 - If your `Podfile` already has a `post_install`, merge the above into that block.
+- Older versions (up to 0.10.1) exist in both PayME's spec repo and CocoaPods trunk, so `pod install` may print `Found multiple specifications for PayME-Miniapp`. It is harmless: the pod comes from the first source.
+- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.11.0/PayME-Miniapp.podspec.json'` (change the version in the URL when you upgrade).
 - To upgrade the SDK: run `pod install --repo-update`.
 - Projects without `use_frameworks!`: declare these pods as dynamic frameworks.
 
@@ -341,6 +348,12 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Nowhere to show the Miniapp (`from: nil` while `PayME` is not inside a `UINavigationController`) | Pass `from` as the view controller on screen |
 | Other codes | Network, server or business errors | Show `description`, retry; contact PayME if it repeats |
 
+## Upgrading to 0.11.0
+
+- Add the two `source` lines at the top of your `Podfile` as in [Installation](#installation), then run `pod install --repo-update`. No code change.
+- Apps that forward push notifications to the Miniapp: replace `combine.notificationSubject.send(JSON(userInfo))` with `combine.send(notification: userInfo)`. `notificationSubject` will be removed in 0.12.0.
+- From 0.12.0, `Console` and `BiometricAuthenication` are no longer public, and the SDK no longer pulls in `SwiftyJSON`, `ZIPFoundation`, `NSLogger` or `Mixpanel-swift`: if your app uses those pods itself, declare them in your `Podfile`.
+
 ## Upgrading to 0.10.0
 
 Picking a phone number for top-up uses the system contact picker, so the SDK no longer reads contacts. You can remove `NSContactsUsageDescription` from `Info.plist` if your app declares it only for the SDK.
@@ -362,7 +375,7 @@ Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old init
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Change the pod to `'0.10.1'`, then run `pod install --repo-update`.
+2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.11.0'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.

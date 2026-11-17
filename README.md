@@ -4,7 +4,7 @@
 
 SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.10.1** (`getBalance` coi `accessToken` rỗng là chưa liên kết, giống Android 0.10.1).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.11.0** (cài qua repo spec của PayME vì CocoaPods trunk ngừng nhận phiên bản mới từ 02/12/2026).
 
 ## Mục lục
 
@@ -15,10 +15,11 @@ Phiên bản hiện tại: pod `PayME-Miniapp` **0.10.1** (`getBalance` coi `acc
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Mã lỗi](#mã-lỗi)
-8. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
-9. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
-10. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
-11. [Hỗ trợ](#hỗ-trợ)
+8. [Nâng cấp lên 0.11.0](#nâng-cấp-lên-0110)
+9. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
+10. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
+11. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
+12. [Hỗ trợ](#hỗ-trợ)
 
 ## Yêu cầu
 
@@ -32,6 +33,10 @@ Phiên bản hiện tại: pod `PayME-Miniapp` **0.10.1** (`getBalance` coi `acc
 Thêm vào `Podfile`:
 
 ```ruby
+# Repo spec của PayME phải đứng TRƯỚC CDN: CocoaPods lấy pod từ nguồn đầu tiên có nó.
+source 'https://github.com/PayME-Miniapp/Specs.git'
+source 'https://cdn.cocoapods.org/'
+
 # Mức iOS tối thiểu của ứng dụng (giống `platform :ios`). Build bằng Xcode 27 thì tối thiểu '15.0'.
 app_min_ios = '13.0'
 
@@ -39,13 +44,13 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.10.1'
+  pod 'PayME-Miniapp', '0.11.0'
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # SDK build với library evolution, các pod phụ thuộc cũng phải bật
+      # Bắt buộc: SDK build với library evolution, thiếu dòng này ứng dụng crash lúc mở (thiếu symbol)
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       # Nâng pod có iOS tối thiểu thấp hơn ứng dụng
       if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < app_min_ios.to_f
@@ -61,6 +66,8 @@ pod install
 ```
 
 - `Podfile` đã có `post_install`: gộp nội dung trên vào khối đó.
+- Bản cũ (đến 0.10.1) có ở cả repo spec của PayME và CocoaPods trunk, nên `pod install` có thể in `Found multiple specifications for PayME-Miniapp`. Cảnh báo này vô hại: pod được lấy từ nguồn đứng trước.
+- Không muốn thêm `source`: trỏ thẳng podspec, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.11.0/PayME-Miniapp.podspec.json'` (mỗi lần nâng cấp đổi số phiên bản trong URL).
 - Nâng phiên bản SDK: chạy `pod install --repo-update`.
 - Dự án không dùng `use_frameworks!`: khai báo các pod sau là dynamic framework.
 
@@ -341,6 +348,12 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Không có chỗ hiển thị Miniapp (`from: nil` khi `PayME` không nằm trong `UINavigationController`) | Truyền `from` là view controller đang hiển thị |
 | Mã khác | Lỗi mạng, máy chủ hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
 
+## Nâng cấp lên 0.11.0
+
+- Thêm hai dòng `source` ở đầu `Podfile` như phần [Cài đặt](#cài-đặt), rồi chạy `pod install --repo-update`. Không đổi code.
+- Ứng dụng chuyển push notification cho Miniapp: thay `combine.notificationSubject.send(JSON(userInfo))` bằng `combine.send(notification: userInfo)`. `notificationSubject` sẽ bị gỡ ở 0.12.0.
+- Từ 0.12.0, `Console` và `BiometricAuthenication` không còn public, và SDK không còn kéo theo `SwiftyJSON`, `ZIPFoundation`, `NSLogger`, `Mixpanel-swift`: ứng dụng nào tự dùng các pod này thì khai báo trực tiếp trong `Podfile`.
+
 ## Nâng cấp lên 0.10.0
 
 Chọn số điện thoại khi nạp tiền dùng bộ chọn danh bạ của hệ thống nên SDK không còn đọc danh bạ. Có thể bỏ `NSContactsUsageDescription` khỏi `Info.plist` nếu ứng dụng chỉ khai báo vì SDK.
@@ -362,7 +375,7 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: tích hợp API `token-init` (liên hệ PayME).
-2. Đổi pod thành `'0.10.1'`, rồi `pod install --repo-update`.
+2. Thêm hai dòng `source` (xem [Cài đặt](#cài-đặt)), đổi pod thành `'0.11.0'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
 5. Build bằng Xcode 26.2 trở lên.
