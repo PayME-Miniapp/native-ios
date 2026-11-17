@@ -4,7 +4,7 @@
 
 SDK để mở PayME Miniapp (ví, thanh toán, nạp, rút, chuyển tiền, thanh toán dịch vụ, eKYC) trong ứng dụng iOS của bạn.
 
-Phiên bản hiện tại: pod `PayME-Miniapp` **0.13.0** (cài qua repo spec của PayME vì CocoaPods trunk ngừng nhận phiên bản mới từ 02/12/2026).
+Phiên bản hiện tại: pod `PayME-Miniapp` **0.14.0** (cài qua repo spec của PayME vì CocoaPods trunk ngừng nhận phiên bản mới từ 02/12/2026).
 
 ## Mục lục
 
@@ -15,13 +15,14 @@ Phiên bản hiện tại: pod `PayME-Miniapp` **0.13.0** (cài qua repo spec c�
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Mã lỗi](#mã-lỗi)
-8. [Nâng cấp lên 0.13.0](#nâng-cấp-lên-0130)
-9. [Nâng cấp lên 0.12.0](#nâng-cấp-lên-0120)
-10. [Nâng cấp lên 0.11.0](#nâng-cấp-lên-0110)
-11. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
-12. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
-13. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
-14. [Hỗ trợ](#hỗ-trợ)
+8. [Nâng cấp lên 0.14.0](#nâng-cấp-lên-0140)
+9. [Nâng cấp lên 0.13.0](#nâng-cấp-lên-0130)
+10. [Nâng cấp lên 0.12.0](#nâng-cấp-lên-0120)
+11. [Nâng cấp lên 0.11.0](#nâng-cấp-lên-0110)
+12. [Nâng cấp lên 0.10.0](#nâng-cấp-lên-0100)
+13. [Nâng cấp lên 0.9.0](#nâng-cấp-lên-090)
+14. [Nâng cấp từ 0.7.x](#nâng-cấp-từ-07x)
+15. [Hỗ trợ](#hỗ-trợ)
 
 ## Yêu cầu
 
@@ -46,7 +47,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.13.0'
+  pod 'PayME-Miniapp', '0.14.0'
 end
 
 post_install do |installer|
@@ -69,13 +70,13 @@ pod install
 
 - `Podfile` đã có `post_install`: gộp nội dung trên vào khối đó.
 - Bản cũ (đến 0.10.1) có ở cả repo spec của PayME và CocoaPods trunk, nên `pod install` có thể in `Found multiple specifications for PayME-Miniapp`. Cảnh báo này vô hại: pod được lấy từ nguồn đứng trước.
-- Không muốn thêm `source`: trỏ thẳng podspec, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.13.0/PayME-Miniapp.podspec'` (mỗi lần nâng cấp đổi số phiên bản trong URL).
+- Không muốn thêm `source`: trỏ thẳng podspec, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.14.0/PayME-Miniapp.podspec'` (mỗi lần nâng cấp đổi số phiên bản trong URL).
 - Nâng phiên bản SDK: chạy `pod install --repo-update`.
 - Dự án không dùng `use_frameworks!`: khai báo các pod sau là dynamic framework.
 
   ```ruby
   $dynamic_framework = [
-    'PayME-Miniapp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'lottie-ios'
+    'PayME-Miniapp', 'GCDWebServer', 'lottie-ios'
   ]
 
   pre_install do |installer|
@@ -349,6 +350,12 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Không có chỗ hiển thị Miniapp (`from: nil` khi `PayME` không nằm trong `UINavigationController`) | Truyền `from` là view controller đang hiển thị |
 | Mã khác | Lỗi mạng, máy chủ hoặc lỗi nghiệp vụ | Hiển thị `description`, thử lại; liên hệ PayME nếu lặp lại |
 
+## Nâng cấp lên 0.14.0
+
+- SDK dùng crypto của hệ thống (CommonCrypto, Security, CryptoKit) và không còn kéo theo `CryptoSwift`, `SwiftyRSA`. Ứng dụng nào tự dùng các pod này thì khai báo trực tiếp trong `Podfile`; dự án dùng `$dynamic_framework` thì bỏ `'CryptoSwift'` và `'SwiftyRSA'` khỏi danh sách.
+- API của SDK không đổi.
+- **Lưu ý:** bản này đã kiểm tra trên iOS 18.6, 27.2 và máy thật iOS 27.2.1, **chưa kiểm tra trên iOS 15–17**. Ứng dụng hỗ trợ các bản iOS này nên thử luồng mở ví và thanh toán trước khi nâng cấp.
+
 ## Nâng cấp lên 0.13.0
 
 - SDK không còn kéo theo `SwiftyJSON`. Ứng dụng nào tự dùng pod này thì khai báo trực tiếp trong `Podfile`; dự án dùng `$dynamic_framework` thì bỏ `'SwiftyJSON'` khỏi danh sách.
@@ -392,7 +399,7 @@ Bản 0.8.x thay số điện thoại bằng `identityToken` và không tương 
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: tích hợp API `token-init` (liên hệ PayME).
-2. Thêm hai dòng `source` (xem [Cài đặt](#cài-đặt)), đổi pod thành `'0.13.0'`, rồi `pod install --repo-update`.
+2. Thêm hai dòng `source` (xem [Cài đặt](#cài-đặt)), đổi pod thành `'0.14.0'`, rồi `pod install --repo-update`.
 3. Thay mọi `phone` bằng `identityToken` theo bảng trên.
 4. Xử lý lỗi `401` và `IDENTITY_TOKEN_REQUIRED`. `getBalance` trả `linked: false` giờ chỉ có nghĩa là người dùng chưa liên kết ví.
 5. Build bằng Xcode 26.2 trở lên.
