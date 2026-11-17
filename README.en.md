@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: pod `PayME-Miniapp` **0.12.0** (installed from PayME's spec repo, because CocoaPods trunk stops accepting new versions on 2 December 2026).
+Current version: pod `PayME-Miniapp` **0.13.0** (installed from PayME's spec repo, because CocoaPods trunk stops accepting new versions on 2 December 2026).
 
 ## Table of contents
 
@@ -15,12 +15,13 @@ Current version: pod `PayME-Miniapp` **0.12.0** (installed from PayME's spec rep
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Error codes](#error-codes)
-8. [Upgrading to 0.12.0](#upgrading-to-0120)
-9. [Upgrading to 0.11.0](#upgrading-to-0110)
-10. [Upgrading to 0.10.0](#upgrading-to-0100)
-11. [Upgrading to 0.9.0](#upgrading-to-090)
-12. [Upgrading from 0.7.x](#upgrading-from-07x)
-13. [Support](#support)
+8. [Upgrading to 0.13.0](#upgrading-to-0130)
+9. [Upgrading to 0.12.0](#upgrading-to-0120)
+10. [Upgrading to 0.11.0](#upgrading-to-0110)
+11. [Upgrading to 0.10.0](#upgrading-to-0100)
+12. [Upgrading to 0.9.0](#upgrading-to-090)
+13. [Upgrading from 0.7.x](#upgrading-from-07x)
+14. [Support](#support)
 
 ## Requirements
 
@@ -45,7 +46,7 @@ platform :ios, app_min_ios
 use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.12.0'
+  pod 'PayME-Miniapp', '0.13.0'
 end
 
 post_install do |installer|
@@ -68,13 +69,13 @@ pod install
 
 - If your `Podfile` already has a `post_install`, merge the above into that block.
 - Older versions (up to 0.10.1) exist in both PayME's spec repo and CocoaPods trunk, so `pod install` may print `Found multiple specifications for PayME-Miniapp`. It is harmless: the pod comes from the first source.
-- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.12.0/PayME-Miniapp.podspec'` (change the version in the URL when you upgrade).
+- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.13.0/PayME-Miniapp.podspec'` (change the version in the URL when you upgrade).
 - To upgrade the SDK: run `pod install --repo-update`.
 - Projects without `use_frameworks!`: declare these pods as dynamic frameworks.
 
   ```ruby
   $dynamic_framework = [
-    'PayME-Miniapp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'lottie-ios', 'SwiftyJSON'
+    'PayME-Miniapp', 'CryptoSwift', 'SwiftyRSA', 'GCDWebServer', 'lottie-ios'
   ]
 
   pre_install do |installer|
@@ -348,6 +349,11 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Nowhere to show the Miniapp (`from: nil` while `PayME` is not inside a `UINavigationController`) | Pass `from` as the view controller on screen |
 | Other codes | Network, server or business errors | Show `description`, retry; contact PayME if it repeats |
 
+## Upgrading to 0.13.0
+
+- The SDK no longer pulls in `SwiftyJSON`. If your app uses that pod itself, declare it in your `Podfile`; projects using `$dynamic_framework` should drop `'SwiftyJSON'` from the list.
+- No SDK API changes.
+
 ## Upgrading to 0.12.0
 
 Breaking changes (announced in 0.11.0):
@@ -386,7 +392,7 @@ Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old init
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.12.0'`, then run `pod install --repo-update`.
+2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.13.0'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.
