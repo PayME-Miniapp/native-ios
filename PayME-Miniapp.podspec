@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'PayME-Miniapp'
-  spec.version      = '0.14.1'
+  spec.version      = '0.15.0'
   spec.summary      = 'PayME Miniapp SDK for iOS integration.'
   spec.description  = 'PayME Miniapp SDK for iOS: opens the PayME e-wallet mini-app (payments, deposits, withdrawals, transfers, KYC) inside a partner app.'
   spec.homepage     = 'https://github.com/PayME-Miniapp/native-ios'
@@ -34,11 +34,10 @@ THE SOFTWARE.
   # Binary nằm ở asset của GitHub Release (không commit vào git từ 0.11.0). Cùng zip, cùng sha256 với SPM.
   spec.source       = {
     :http => "https://github.com/PayME-Miniapp/native-ios/releases/download/#{spec.version}/PayMEMiniApp.xcframework.zip",
-    :sha256 => '0847fc3c3ebb0e0525cd89d08731a0a31aea91b2ff84393d2ec8502846985fa9'
+    :sha256 => '505e94479770c444faa81d5478cea4ebc8cee2882e78feea68aab20b70a0a959'
   }
   spec.vendored_frameworks = 'PayMEMiniApp.xcframework'
 
-  spec.dependency 'GCDWebServer', '~> 3.0'
   spec.dependency 'lottie-ios', '~> 4.6.0'
   spec.dependency 'KalapaEkycSDK', '~> 2.8.0'
 
