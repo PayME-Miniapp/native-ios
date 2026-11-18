@@ -4,7 +4,7 @@
 
 An SDK for opening the PayME Miniapp (wallet, payments, deposit, withdraw, transfer, bill payments, eKYC) in your iOS app.
 
-Current version: **0.15.0**. Install with [Swift Package Manager](#swift-package-manager-recommended) (recommended) or [CocoaPods](#cocoapods) from PayME's spec repo (CocoaPods trunk stops accepting new versions on 2 December 2026).
+Current version: **0.16.0**. Install with [Swift Package Manager](#swift-package-manager-recommended) (recommended) or [CocoaPods](#cocoapods) from PayME's spec repo (CocoaPods trunk stops accepting new versions on 2 December 2026).
 
 ## Table of contents
 
@@ -15,16 +15,17 @@ Current version: **0.15.0**. Install with [Swift Package Manager](#swift-package
 5. [identityToken](#identitytoken)
 6. [API](#api)
 7. [Error codes](#error-codes)
-8. [Upgrading to 0.15.0](#upgrading-to-0150)
-9. [Upgrading to 0.14.1](#upgrading-to-0141)
-10. [Upgrading to 0.14.0](#upgrading-to-0140)
-11. [Upgrading to 0.13.0](#upgrading-to-0130)
-12. [Upgrading to 0.12.0](#upgrading-to-0120)
-13. [Upgrading to 0.11.0](#upgrading-to-0110)
-14. [Upgrading to 0.10.0](#upgrading-to-0100)
-15. [Upgrading to 0.9.0](#upgrading-to-090)
-16. [Upgrading from 0.7.x](#upgrading-from-07x)
-17. [Support](#support)
+8. [Upgrading to 0.16.0](#upgrading-to-0160)
+9. [Upgrading to 0.15.0](#upgrading-to-0150)
+10. [Upgrading to 0.14.1](#upgrading-to-0141)
+11. [Upgrading to 0.14.0](#upgrading-to-0140)
+12. [Upgrading to 0.13.0](#upgrading-to-0130)
+13. [Upgrading to 0.12.0](#upgrading-to-0120)
+14. [Upgrading to 0.11.0](#upgrading-to-0110)
+15. [Upgrading to 0.10.0](#upgrading-to-0100)
+16. [Upgrading to 0.9.0](#upgrading-to-090)
+17. [Upgrading from 0.7.x](#upgrading-from-07x)
+18. [Support](#support)
 
 ## Requirements
 
@@ -39,18 +40,17 @@ Pick **one** way: Swift Package Manager or CocoaPods. Do not install the SDK bot
 
 ### Swift Package Manager (recommended)
 
-In Xcode: **File → Add Package Dependencies…**, enter `https://github.com/PayME-Miniapp/payme-miniapp-spm.git`, choose **Up to Next Minor Version** from `0.15.0`, then add the `PayMEMiniApp` product to your app target. In a `Package.swift`:
+In Xcode: **File → Add Package Dependencies…**, enter `https://github.com/PayME-Miniapp/payme-miniapp-spm.git`, choose **Up to Next Minor Version** from `0.16.0`, then add the `PayMEMiniApp` product to your app target. In a `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/PayME-Miniapp/payme-miniapp-spm.git", .upToNextMinor(from: "0.15.0")),
+.package(url: "https://github.com/PayME-Miniapp/payme-miniapp-spm.git", .upToNextMinor(from: "0.16.0")),
 // in the target's dependencies:
 .product(name: "PayMEMiniApp", package: "payme-miniapp-spm"),
 ```
 
 - Use `.upToNextMinor(from:)`, not `from:`: for 0.x versions, `from:` also picks up new minor versions with breaking changes.
-- The package brings Lottie 4.6.1 (`lottie-spm`), KalapaEkycSDK 2.8.x and iProov 12.5.0 (`iProov/ios-spm`). If your app also uses Lottie or iProov, it **must** use these same packages. With `airbnb/lottie-ios` from source or `iProov/ios`, Xcode fails to resolve with:
-  - `multiple packages ('lottie-ios', 'lottie-spm') declare targets with a conflicting name: 'Lottie'`
-  - `multiple similar targets 'iProov', 'iProovTargets' appear in package 'ios' and 'ios-spm'`
+- The package brings KalapaEkycSDK 2.8.x and iProov 12.5.0 (`iProov/ios-spm`). If your app also uses iProov, it **must** use this same package; with `iProov/ios` Xcode fails to resolve with: `multiple similar targets 'iProov', 'iProovTargets' appear in package 'ios' and 'ios-spm'`.
+- From 0.16.0 the SDK does not use Lottie: your app can use any Lottie version, installed any way.
 - You need neither the spec repo, the `source` lines nor the CocoaPods `post_install` block.
 - [App configuration](#app-configuration) (`Info.plist`, NFC capability) is the same as with CocoaPods.
 - Example app: [`Examples/SPMSmoke`](https://github.com/PayME-Miniapp/payme-miniapp-spm/tree/main/Examples/SPMSmoke).
@@ -68,17 +68,14 @@ source 'https://cdn.cocoapods.org/'
 app_min_ios = '13.0'
 
 platform :ios, app_min_ios
-use_frameworks!
 
 target 'YourApp' do
-  pod 'PayME-Miniapp', '0.15.0'
+  pod 'PayME-Miniapp', '0.16.0'
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # Required: the SDK is built with library evolution; without this the app crashes at launch (missing symbols)
-      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       # Raise pods whose minimum iOS is lower than the app's
       if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < app_min_ios.to_f
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = app_min_ios
@@ -92,33 +89,17 @@ end
 pod install
 ```
 
-- If your `Podfile` already has a `post_install`, merge the above into that block.
+- If your `Podfile` already has a `post_install`, merge the above into that block. The block is only needed when building with Xcode 27 (it raises the pods' minimum iOS).
+- `use_frameworks!` is optional; no pod needs to be declared dynamic.
 - Older versions (up to 0.10.1) exist in both PayME's spec repo and CocoaPods trunk, so `pod install` may print `Found multiple specifications for PayME-Miniapp`. It is harmless: the pod comes from the first source.
-- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.15.0/PayME-Miniapp.podspec'` (change the version in the URL when you upgrade).
+- Prefer not to add a `source`: point at the podspec directly, `pod 'PayME-Miniapp', :podspec => 'https://raw.githubusercontent.com/PayME-Miniapp/Specs/main/PayME-Miniapp/0.16.0/PayME-Miniapp.podspec'` (change the version in the URL when you upgrade).
 - To upgrade the SDK: run `pod install --repo-update`.
-- Projects without `use_frameworks!`: declare these pods as dynamic frameworks.
-
-  ```ruby
-  $dynamic_framework = [
-    'PayME-Miniapp', 'lottie-ios'
-  ]
-
-  pre_install do |installer|
-    installer.pod_targets.each do |pod|
-      if $dynamic_framework.include?(pod.name)
-        def pod.build_type
-          Pod::BuildType.dynamic_framework
-        end
-      end
-    end
-  end
-  ```
 
 ### Manual installation
 
 1. Download `PayMEMiniApp.xcframework.zip` from the matching [Release](https://github.com/PayME-Miniapp/native-ios/releases) and check its sha256 against `SHA256SUMS`.
 2. Drag `PayMEMiniApp.xcframework` into your project and choose **Embed & Sign**.
-3. Add the dependencies yourself: Lottie 4.6.x and KalapaEkycSDK 2.8.x (with iProov). The simplest way is to add them with Swift Package Manager (`lottie-spm`, `kalapa-ekyc-ios-sdk`).
+3. Add the KalapaEkycSDK 2.8.x dependency yourself (with iProov). The simplest way is Swift Package Manager (`kalapa-ekyc-ios-sdk`, `iProov/ios-spm`).
 
 ### CocoaPods support roadmap
 
@@ -386,6 +367,13 @@ func onResponse(action: PayMEAction, response: [String: Any]) {
 | `MINIAPP_CANNOT_PRESENT` | Nowhere to show the Miniapp (`from: nil` while `PayME` is not inside a `UINavigationController`) | Pass `from` as the view controller on screen |
 | Other codes | Network, server or business errors | Show `description`, retry; contact PayME if it repeats |
 
+## Upgrading to 0.16.0
+
+- The SDK **no longer uses Lottie**; its animations (face-capture guides, patch update) play from APNG images bundled in the SDK. The SDK now pulls in only `KalapaEkycSDK` (with iProov).
+- CocoaPods: if your app uses `lottie-ios` itself, declare it in your `Podfile`. Drop the `BUILD_LIBRARY_FOR_DISTRIBUTION` line from `post_install` and the `$dynamic_framework` list (if any); `use_frameworks!` is optional.
+- SPM: use `.upToNextMinor(from: "0.16.0")`. Your app can use any Lottie version, installed any way (including `airbnb/lottie-ios`).
+- No SDK API changes. The iOS 15–17 note of 0.14.0 still applies.
+
 ## Upgrading to 0.15.0
 
 - **Swift Package Manager is final** (no longer a preview) and is the recommended installation: see [Installation](#installation). Use `.upToNextMinor(from: "0.15.0")`.
@@ -454,7 +442,7 @@ Replace `PayME(key: PayMEKey(...), locale:)` with `PayME(locale:)`. The old init
 | `getBalance(of:)`, `getAccountInformation(of:)` | `getBalance(identityToken:)`, `getAccountInformation(identityToken:)` |
 
 1. Server: integrate the `token-init` API (contact PayME).
-2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.15.0'`, then run `pod install --repo-update`.
+2. Add the two `source` lines (see [Installation](#installation)), change the pod to `'0.16.0'`, then run `pod install --repo-update`.
 3. Replace every `phone` with `identityToken` as in the table above.
 4. Handle the `401` and `IDENTITY_TOKEN_REQUIRED` errors. `linked: false` from `getBalance` now only means the user has not linked a wallet.
 5. Build with Xcode 26.2 or later.
